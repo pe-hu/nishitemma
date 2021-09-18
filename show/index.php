@@ -36,6 +36,7 @@ fclose($fp);
 
 <link rel="stylesheet" type="text/css" href="../css/greating.css"/>
 <link rel="stylesheet" type="text/css" href="../css/list.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="org.js"></script>
 </head>
 
@@ -68,7 +69,7 @@ fclose($fp);
 <li class="list_item list_toggle" data-tag="<?=h($row[2])?>">
 <span><?=h($row[0])?></span>
 <p><?=h($row[1])?></p>
-<a style="display: <?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
+<a style="display:<?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
