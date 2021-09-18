@@ -11,25 +11,6 @@ hr {border:hidden; margin-bottom:5%;}
   transition:.5s all;
 }
 
-#header {
-  padding:1.25% 2.5%;
-  display: flex;
-  width:95%;
-  position:relative;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#header a {
-  color:#000;
-  text-decoration:none;
-  border-bottom:2px solid transparent;
-}
-#header a:hover {
-  cursor:pointer;
-  color:#ccc;
-  text-shadow:0.1rem 0.1rem #000;
-  border-bottom:2px solid #000;
-}
 #org,
 .list {
   width:95%;
@@ -59,7 +40,7 @@ hr {border:hidden; margin-bottom:5%;}
   border-radius:0.5rem;
   transition:1.5s all;
 }
-#org .status .label {
+#org .label {
   font-size: 1.25rem;
   border:2px solid #eee;
 }
@@ -69,26 +50,6 @@ hr {border:hidden; margin-bottom:5%;}
   background-color:#eee;
   text-shadow:0.1rem 0.1rem #000;
   transition:.5s all;
-}
-#org p {font-size:1rem; margin:0.5rem 0 0;}
-#org input[type="text"],
-#org input[type="url"],
-#org textarea {
-  font-size:1rem;
-  border:2px solid;
-  border-radius:0.5rem;
-  padding:1.25%; margin:1.25%;
-}
-#org input[type="text"],
-#org input[type="url"] {
-  width:95%;
-}
-#org textarea {
-  font-size:1rem;
-  border:2px solid;
-  border-radius:0.5rem;
-  padding:1.25%; margin:1.25%;
-  width:95%; height:12.5rem;
 }
 #org input[type="checkbox"],
 #org input[type="radio"] {
