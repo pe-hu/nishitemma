@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Web Template | vg.pe.hu</title>
+  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ウェブサイトvg.pe.hu のために制作したコードをまとめたウェブ・テンプレート">
+
+<link rel="stylesheet" type="text/css" href="../css/greating.css"/>
+</head>
+<body>
+<div id="menu"></div>
+<div id="greating">
+<div id="cv"></div>
+<div id="more"></div>
+</div>
+<div id="cv_link"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#menu").load("../menu/");
+$("#cv").load("../cv/greating.html");
+$("#more").load("../cv/more.html");
+$("#cv_link").load("../cv/link.html");
+})
+</script>
+</body>
+</html>
