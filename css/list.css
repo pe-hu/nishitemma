@@ -51,37 +51,14 @@ hr {border:hidden; margin-bottom:5%;}
   text-shadow:0.1rem 0.1rem #000;
   transition:.5s all;
 }
-#org input[type="checkbox"],
 #org input[type="radio"] {
   display: none;
 }
-#org input[type="checkbox"]:checked + label,
 #org input[type="radio"]:checked + label {
   color:#fff;
   background-color:#eee;
   text-shadow:0.1rem 0.1rem #000;
 }
-#org select {
-	margin:1vw;
-	padding:0.5%;
-	border:0.1rem solid;
-	border-radius:0.5rem;
-}
-.reset a, button {
-  display:block;
-  font-size:1.5rem;
-  text-align:center;
-  padding:0.25rem 0;
-  margin: 1.5rem 0;
-  background: #fff;
-  text-shadow:0.1rem 0.1rem #fff;
-  cursor: pointer;
-  border:2px solid #000;
-  border-radius:0.5rem;
-  width:100%;
-  transition:1s all;
-}
-.reset a:hover,
 .reset-button:hover,
 button:hover {
   color:#fff;
