@@ -72,10 +72,9 @@ fclose($fp);
 </li>
 <?php endforeach; ?>
 <?php else: ?>
-<li class="list_item list_toggle" data-tag="<?=h($row[2])?>">
+<li class="list_item list_toggle" data-tag="html">
 <span>Title</span>
 <p>contents</p>
-<a style="display: <?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endif; ?>
 </ul>
