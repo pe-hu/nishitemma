@@ -161,7 +161,7 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <script type="text/javascript">
 $(function(){
-$("#menu").load("https://creative-community.space/pehu/2019/menu.html");
+$("#menu").load("/jp/menu.html");
 })
 </script>
 <title>∧° ┐ | creative, community space</title>
