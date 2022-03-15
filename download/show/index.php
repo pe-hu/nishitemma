@@ -34,8 +34,8 @@ fclose($fp);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="ウェブサイトvg.pe.hu のために制作したコードをまとめたウェブ・テンプレート">
 
-<link rel="stylesheet" type="text/css" href="../css/greating.css"/>
-<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+<link rel="stylesheet" type="text/css" href="/jp/download/css/greating.css"/>
+<link rel="stylesheet" type="text/css" href="/jp/download/css/list.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="org.js"></script>
 </head>
@@ -86,8 +86,8 @@ fclose($fp);
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#menu").load("../menu/");
-$("#cv_link").load("../cv/link.html");
+$("#menu").load("/jp/download/menu/");
+$("#cv_link").load("/jp/download/cv/link.html");
 })
 </script>
 </body>
