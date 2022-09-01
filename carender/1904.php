@@ -45,10 +45,10 @@ fclose($fp);
 <ul class="month">
 <li><h1><b>4月<br>April</b></h1></li>
 <li><h1>FEATURED</h1>
-4-30 <a href="http://vg.pe.hu/2f/bff.html">Best Friends from France 2019</a>
-17-30 <a href="http://vg.pe.hu/2f/bff.html">Signed Curtain by Jean-Philippe Bretin, Vanessa Dziuba</a>
-26-30 <a href="http://vg.pe.hu/2f/bff.html">フランスのカード by Sammy Stein, Séverine Bascouert (L'Institut Sérigraphique)</a>
-26(fri) <a href="/jp/show/042619.html">Sensorisk Verden: Japan Showcase with パレード #26APR19FRI</a>
+4-30 <a href="https://vg.pe.hu/2f/bff.html">Best Friends from France 2019</a>
+17-30 <a href="https://vg.pe.hu/2f/bff.html">Signed Curtain by Jean-Philippe Bretin, Vanessa Dziuba</a>
+26-30 <a href="https://vg.pe.hu/2f/bff.html">フランスのカード by Sammy Stein, Séverine Bascouert (L'Institut Sérigraphique)</a>
+26(fri) <a href="https://vg.pe.hu/jp/show/042619.html">Sensorisk Verden: Japan Showcase with パレード #26APR19FRI</a>
 </li>
 </ul>
 </hedder>
