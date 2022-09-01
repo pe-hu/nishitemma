@@ -45,11 +45,11 @@ fclose($fp);
 <ul class="month">
 <li><h1><b>2月<br>February</b></h1></li>
 <li><h1>FEATURED</h1>
-2 (sat) <a href="/jp/show/020219.html">サウンドチェック</a>
-4 - 16 <a href="http://vg.pe.hu/2f/ms1.html">MS1</a>
-10 (sun) <a href="/jp/show/021019.html">#10FEB19SUN</a>
-22 - <a href="http://vg.pe.hu/2f/ns5.html">NS5</a>
-25 (mon) <a href="/jp/show/022519.html">VAMPIRE✞HUNTER™ one man gig</a>
+2 (sat) <a href="https://vg.pe.hu/jp/show/020219.html">サウンドチェック</a>
+4 - 16 <a href="https://vg.pe.hu/2f/ms1.html">MS1</a>
+10 (sun) <a href="https://vg.pe.hu/jp/show/021019.html">#10FEB19SUN</a>
+22 - <a href="https://vg.pe.hu/2f/ns5.html">NS5</a>
+25 (mon) <a href="https://vg.pe.hu/jp/show/022519.html">VAMPIRE✞HUNTER™ one man gig</a>
 </li>
 </ul>
 </hedder>
