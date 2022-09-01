@@ -45,10 +45,10 @@ fclose($fp);
 <ul class="month">
 <li><h1><b>1月<br>January</b></h1></li>
 <li><h1>FEATURED</h1>
-6 (sun) <a href="/jp/show/sign.html">Sign</a>
-7 - 19 <a href="http://vg.pe.hu/2f/tws1.html">TWS1</a>
-26 - 27 <a href="http://vg.pe.hu/2f/hf1.html">HF+S1</a>
-27 (sun) <a href="/jp/show/talk/">千紗子と純太の謎</a>
+6 (sun) <a href="https://vg.pe.hu/jp/show/sign.html">Sign</a>
+7 - 19 <a href="https://vg.pe.hu/2f/tws1.html">TWS1</a>
+26 - 27 <a href="https://vg.pe.hu/2f/hf1.html">HF+S1</a>
+27 (sun) <a href="https://vg.pe.hu/jp/show/talk/">千紗子と純太の謎</a>
 </li>
 </ul>
 </hedder>
