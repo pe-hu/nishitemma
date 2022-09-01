@@ -45,9 +45,9 @@ fclose($fp);
 <ul class="month">
 <li><h1><b>3月<br>March</b></h1></li>
 <li><h1>FEATURED</h1>
-17 - 30 <a href="http://vg.pe.hu/2f/nakayoshi_fair.html">なかよしフェアー</a>
-19(sat) <a href="/jp/show/031619.html">春の嵐の夜のBOWIEまつり</a>
-31 (sun) <a href="/jp/show/talk/">アンビエントお茶会 #01</a>
+17 - 30 <a href="https://vg.pe.hu/2f/nakayoshi_fair.html">なかよしフェアー</a>
+19(sat) <a href="https://vg.pe.hu/jp/show/031619.html">春の嵐の夜のBOWIEまつり</a>
+31 (sun) <a href="https://vg.pe.hu/jp/show/talk/">アンビエントお茶会 #01</a>
 </li>
 </ul>
 </hedder>
