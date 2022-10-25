@@ -1,7 +1,7 @@
 body,
-#index ul,
-#index li,
-#index .floor,
+#main ul,
+#main li,
+#main .floor,
 footer ul,
 footer li {
     font-size: 1rem;
@@ -24,7 +24,7 @@ footer li {
 }
 
 h1,
-#index,
+#main,
 header section,
 footer {
     letter-spacing: 0.04rem;
@@ -42,18 +42,12 @@ marquee {
 }
 
 a {
-    box-sizing: border-box;
     color: #000;
     text-decoration: none;
 }
 
 a:hover {
     font-style: oblique;
-}
-
-.pehu,
-.red {
-    color: red;
 }
 
 header h1,
@@ -65,8 +59,8 @@ b {
     font-size: 150%;
 }
 
-#index h1,
-#index .floor li a,
+#main h1,
+#main .floor li a,
 .pehu,
 .red,
 header section a {
@@ -74,11 +68,15 @@ header section a {
 }
 
 header h1,
-#index h1,
-#index ul p,
-header section a,
-footer ul {
+#main h1,
+#main ul p,
+header section a {
     line-height: 200%;
+}
+
+.pehu,
+.red {
+    color: red;
 }
 
 h1,
@@ -88,14 +86,14 @@ b {
 
 hr {
     clear: both;
-    border: none;
+    border: 0 none;
     padding-top: 1rem;
 }
 
-#index,
+#main,
 header,
 footer {
-    padding: 1rem 2.5vw;
+    padding: 2.5vw;
 }
 
 header section {
@@ -128,8 +126,8 @@ header section .dm:hover {
     background-color: blue;
 }
 
-#index ul,
-#index .floor,
+#main ul,
+#main .floor,
 footer ul {
     list-style-type: none;
     display: flex;
@@ -137,33 +135,33 @@ footer ul {
     justify-content: space-between;
 }
 
-#index ul a {
+#main ul a {
     display: inline-block;
     box-sizing: border-box;
     border: 1px solid red;
     padding: 0 0.25rem;
 }
 
-#index ul a:hover {
+#main ul a:hover {
     color: #fff;
     background-color: blue;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
 }
 
-#index ul li,
+#main ul li,
 footer ul li {
-    width: 47.5%;
+    width: 45%;
 }
 
-#index .floor {
+#main .floor {
     position: relative;
 }
 
-#index .floor li {
-    margin: 1rem 0 0;
+#main .floor li {
+    margin: 0.5rem 0;
 }
 
-#index .floor li a {
+#main .floor li a {
     display: block;
     width: 100%;
     padding: 25% 0;
@@ -173,13 +171,12 @@ footer ul li {
     text-align: center;
 }
 
-#index .floor li a:hover {
+#main .floor li a:hover {
     color: red;
     border: 1px solid red;
-    background: #fff;
 }
 
-#index ul .member {
+#main ul .member {
     text-align: center;
 }
 
@@ -200,8 +197,23 @@ marquee {
         margin: 0 0.5rem 0.5rem 0;
     }
 
-    #index ul li:not(.floor li),
-    footer ul li {
+    #event {
+        font-size: 2em;
+        float: left;
+        line-height: 1.5em;
+        width: 74vw;
+        height: auto;
+        padding: 20px;
+        margin: 1em auto 0;
+    }
+
+    .text li {
+        font-size: 1.75em;
+        width: auto;
+        padding: 2vw;
+    }
+
+    #main ul li:not(.floor li) {
         width: 100%;
     }
 }
