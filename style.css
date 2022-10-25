@@ -1,0 +1,207 @@
+body,
+#index ul,
+#index li,
+#index .floor,
+footer ul,
+footer li {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Apple Chancery", cursive;
+    src: url("apple-chancery.ttf");
+}
+
+@font-face {
+    font-family: "MS Mincho", serif;
+    src: url("MSMincho.ttf");
+}
+
+.pehu {
+    font-family: "Apple Chancery", cursive;
+}
+
+h1,
+#index,
+header section,
+footer {
+    letter-spacing: 0.04rem;
+    font-family: "MS Mincho", serif;
+}
+
+.en {
+    font-family: "Times New Roman";
+    padding-left: 0.5em;
+    letter-spacing: 0.05rem;
+}
+
+marquee {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+a {
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: oblique;
+}
+
+.pehu,
+.red {
+    color: red;
+}
+
+header h1,
+marquee {
+    font-size: 200%;
+}
+
+b {
+    font-size: 150%;
+}
+
+#index h1,
+#index .floor li a,
+.pehu,
+.red,
+header section a {
+    font-size: 125%;
+}
+
+header h1,
+#index h1,
+#index ul p,
+header section a,
+footer ul {
+    line-height: 200%;
+}
+
+h1,
+b {
+    font-weight: normal;
+}
+
+hr {
+    clear: both;
+    border: none;
+    padding-top: 1rem;
+}
+
+#index,
+header,
+footer {
+    padding: 1rem 2.5vw;
+}
+
+header section {
+    display: block;
+    padding-bottom: 1.5rem;
+}
+
+header section a {
+    padding: 0.25em;
+    margin: 0 1rem 1rem 0;
+}
+
+header section .topics {
+    background-color: #eee;
+}
+
+header section .flash {
+    color: #fff;
+    background-color: red;
+}
+
+header section .dm {
+    background-color: yellow;
+}
+
+header section .topics:hover,
+header section .flash:hover,
+header section .dm:hover {
+    color: #fff;
+    background-color: blue;
+}
+
+#index ul,
+#index .floor,
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#index ul a {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid red;
+    padding: 0 0.25rem;
+}
+
+#index ul a:hover {
+    color: #fff;
+    background-color: blue;
+    border: 1px solid #fff;
+}
+
+#index ul li,
+footer ul li {
+    width: 47.5%;
+}
+
+#index .floor {
+    position: relative;
+}
+
+#index .floor li {
+    margin: 1rem 0 0;
+}
+
+#index .floor li a {
+    display: block;
+    width: 100%;
+    padding: 25% 0;
+    margin-top: 0.5rem;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+}
+
+#index .floor li a:hover {
+    color: red;
+    border: 1px solid red;
+    background: #fff;
+}
+
+#index ul .member {
+    text-align: center;
+}
+
+marquee {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    header section a {
+        margin: 0 0.5rem 0.5rem 0;
+    }
+
+    #index ul li:not(.floor li),
+    footer ul li {
+        width: 100%;
+    }
+}

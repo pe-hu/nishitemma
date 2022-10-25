@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>∧° ┐ | creative, community space</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="menu"></div>
+  <div id="topic"></div>
+  <main id="index">
+    <h1>
+      <b><a href="/jp/">∧°┐</a></b>
+      は、3階建てのビルで、各階には2つの部屋があります。
+      <br />
+      <b><a class="pehu" href="/jp/">pehu</a></b>
+      owns a whole building, 3 floors and total 6 rooms in it.
+    </h1>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          <b>1階</b> には
+          <b><a href="kissa.html">喫茶スペース</a></b> とやりたいことをやるための
+          <b>フリースペース</b> があります。<br />
+          <b><a href="kissa.html">Cafe</a> and Rental space on the 1st floor,</b>
+          this floor has a free space for various activities.
+        </p>
+        <p>
+          <b>2階</b> には私たちが企画した展覧会を開催する
+          <b><a href="/2f/">ギャラリー</a></b>
+          と、売りたいものを売るための
+          <b><a href="shop/">ショップ</a></b>
+          があります。<br />
+          On the
+          <b>2nd floor</b> we have a
+          <b><a href="/2f/">gallery</a></b>
+          to have exhibitions we organized and a
+          <b><a href="shop/">shop</a></b>
+          to sell what our members want to sell. Now we are selling Books, CDs, Cassettes, Zines, used clothings and
+          more.
+        </p>
+        <p>
+          <b>3階</b> には、
+          <b>宿泊室</b> と、クリエイティブ会員だけが利用できる
+          <b>スタジオ</b> があります。
+          <br />On the 3rd floor, we are building a
+          <b>residency room</b> for invited artists and friends, and a
+          <b>studio room</b> for works and meetings.
+        </p>
+      </li>
+      <li>
+        <ol class="floor">
+          <li>3F
+            <a onmouseover="this.innerText='for Residences'" onmouseout="this.innerText='Private'">Private</a>
+          </li>
+          <li>3F
+            <a onmouseover="this.innerText='for Creative Members'" onmouseout="this.innerText='Studio'">Studio</a>
+          </li>
+          <li>2F
+            <a onmouseover="this.innerText='for Everyone'" onmouseout="this.innerText='Shop'" href="shop/">Shop</a>
+          </li>
+          <li>2F
+            <a onmouseover="this.innerText='for Everyone'" onmouseout="this.innerText='Gallery'" href="/2f/">Gallery</a>
+          </li>
+          <li>1F
+            <a onmouseover="this.innerText='for Everyone'" onmouseout="this.innerText='Cafe'" href="kissa.html">Cafe</a>
+          </li>
+          <li>1F
+            <a onmouseover="this.innerText='for Everyone'" onmouseout="this.innerText='Free Space'" href="show/">Free Space</a>
+          </li>
+        </ol>
+      </li>
+    </ul>
+    <hr />
+  </main>
+  <footer>
+    <p><b>Official Member 運営メンバー</b></p>
+    <ul>
+      <li>
+        <p><u>Chief Executive Officer / CEO</u>
+          <br />Hiroki Kusakabe
+        </p>
+        <p><u>Creative Member</u>
+          <br />Kazutaka Tsutsui
+          <br />Masamichi Furukawa
+          <br />M Otsu
+          <br />Moire
+          <br />Ray Washio
+          <br />Shoji Funakawa
+          <br />Hamaji (KK manga)
+          <br />Moire
+          <br />Yosuke Ide
+        </p>
+      </li>
+      <li>
+        <p><u>Co-Cafe Owner</u>
+          <br />Haruka N
+          <br />Ayami Konishi
+        </p>
+        <p><u>Co-Store Owner</u>
+          <br />abi
+          <br />tbpj
+          <br />Pure Voyage
+        </p>
+        <p><u>Co-Founder</u>
+          <br />Kaori Nakao
+          <br />Kazuma Sasajima
+        </p>
+        </hr>
+      </li>
+    </ul>
+  </footer>
+  <img src="nishitemma.png" style="padding: 0; margin: 0; display: block;" width="100%">
+  <marquee>Hello! We are pehu. We would like to provide the encounter with the current creative thinking and pleasures
+    of creative challenges for everyone.</marquee>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#menu").load("menu.html");
+      $("#topic").load("topic.html");
+    })
+  </script>
+</body>
+
+</html>

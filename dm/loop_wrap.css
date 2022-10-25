@@ -1,0 +1,46 @@
+:root {
+	--numOfList: 24;
+	--imgW: 240px;
+	--imgH: var(--imgH);
+	--BetweenImg: 0px;
+}
+
+#slideshow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.loop_wrap {
+	display: flex;
+	font-size: 0;
+	animation: slideshow 24s linear infinite;
+}
+
+.loop_wrap img {
+	width: var(--imgW);
+	height: var(--imgH);
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes slideshow {
+	100% {
+		transform: translateX(calc((var(--numOfList) * var(--imgW) + var(--BetweenImg) * var(--numOfList)) * -1));
+	}
+}
+
+@media screen and (max-width: 750px) {
+	:root {
+        --imgW: 33.333vw;
+    }
+}
+
+@media print {
+	:root {
+        --imgW: 37.5vw;
+    }
+
+	#slideshow {
+		margin-top: 1.5rem;
+	}
+}
