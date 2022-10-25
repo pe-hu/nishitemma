@@ -1,7 +1,7 @@
 .css-rotate {
 	position: relative;
 	transform-style: preserve-3d;
-    user-select: none;
+	user-select: none;
 	pointer-events: none;
 	z-index: -1;
 }
@@ -31,5 +31,11 @@
 
 	to {
 		transform: rotateY(360deg);
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.css-animation {
+		animation: rotate 0s linear infinite;
 	}
 }
