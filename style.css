@@ -213,7 +213,8 @@ marquee {
         padding: 2vw;
     }
 
-    #main ul li:not(.floor li) {
+    #main ul li:not(.floor li),
+    footer ul li {
         width: 100%;
     }
 }
