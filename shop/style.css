@@ -110,7 +110,6 @@ img {
     top: -webkit-fill-available;
     width: 100%;
     color: #000;
-    background-color: #fff;
 }
 
 #open img {
@@ -153,7 +152,9 @@ img {
 
 #menu {
     position: relative;
+    background-color: #fff;
 }
+
 #menu,
 #spinner {
     top: 0;
