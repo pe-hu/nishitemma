@@ -1,3 +1,34 @@
-#menu {
-    padding: 2.5%;
+hr {
+    clear: both;
+    border: none;
+}
+
+#images,
+#pdf {
+    position: relative;
+    width: 50vw;
+    float: left;
+}
+
+#images {
+    height: 50vw;
+}
+
+#images img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+#pdf {
+    height: 75vw;
+    max-height: 100vh;
+}
+
+#pdf iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
