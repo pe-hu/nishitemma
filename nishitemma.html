@@ -11,6 +11,24 @@
       src: url("MSMincho.ttf");
     }
 
+    #menu {
+      position: relative;
+      background-color: #fff;
+      box-sizing: border-box;
+      z-index: 100;
+    }
+
+    #menu .floor {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      min-height: 100vh;
+      box-sizing: border-box;
+      padding: 2.5%;
+      transform: translate(-50%, -50%);
+    }
+
     .floor {
       font-family: "MS Mincho", serif;
       letter-spacing: 0.05rem;
