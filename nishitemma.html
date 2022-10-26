@@ -68,6 +68,16 @@
     }
 
     @media screen and (max-width: 750px) {
+
+      #menu {
+        position: relative;
+        z-index: 1000;
+        background-color: #fff;
+        height: 100vw;
+        min-height: 100vh;
+        max-height: -webkit-fill-available;
+      }
+
       .floor {
         letter-spacing: 0.1vw;
         font-size: 2.5vw;
@@ -78,7 +88,7 @@
       }
 
       .floor li a {
-        padding: 25% 0;
+        padding: 10vw 0;
         margin-top: 1vw;
       }
     }
