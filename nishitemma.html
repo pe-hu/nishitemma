@@ -12,34 +12,28 @@
     }
 
     .floor {
-      letter-spacing: 0.04rem;
       font-family: "MS Mincho", serif;
-    }
-
-    .floor {
-      font-size: 1rem;
+      letter-spacing: 0.05rem;
+      font-size: 1.25rem;
+      list-style-type: none;
+      position: relative;
       padding: 0;
       margin: 0;
-      list-style-type: none;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
 
-    .floor {
-      position: relative;
-    }
-
     .floor li {
       margin: 0.5rem 0;
-      width: 47.5%;
+      width: 48.75%;
     }
 
     .floor li a {
       display: block;
       width: 100%;
-      padding: 25% 0;
-      margin-top: 0.5rem;
+      padding: 5rem 0;
+      margin-top: 0.25rem;
       border: 1px solid black;
       color: #000;
       font-size: 125%;
@@ -50,6 +44,23 @@
     .floor li a:hover {
       color: red;
       border: 1px solid red;
+    }
+
+    @media screen and (max-width: 750px) {
+
+      .floor {
+        letter-spacing: 0.1vw;
+        font-size: 2.5vw;
+      }
+
+      .floor li {
+        margin: 1.25vw 0;
+      }
+
+      .floor li a {
+        padding: 22.5% 0;
+        margin-top: 1vw;
+      }
     }
   </style>
 </head>
