@@ -8,71 +8,24 @@
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <title>31 Questions for daily life</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contents.css" />
     <link rel="stylesheet" href="scrollable.css" />
-    <style type="text/css">
-        body {
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        .library li {
-            background-size: 75%;
-        }
-
-        .cover {
-            background-image: url(a.png);
-        }
-
-        .a {
-            background-image: url(002.jpg);
-        }
-
-        .b {
-            background-image: url(003.jpg);
-        }
-
-        .c {
-            background-image: url(004.jpg);
-        }
-
-        .back {
-            background-image: url(001.jpg);
-        }
-
-        .end {
-            background-image: url(005.jpeg);
-        }
-
-        .library .buy a {
-            color: #000;
-        }
-
-        .library .buy a:hover {
-            color: red;
-        }
-
-        .library::-webkit-scrollbar-thumb,
-        .library li::-webkit-scrollbar-thumb {
-            background: #000;
-        }
-    </style>
 </head>
 
 <body>
+
+    <div id="daily">
+        <script src="daily.js"></script>
+    </div>
+
     <ul class="mousedragscrollable library">
         <li class="cover"></li>
 
-        <li>
-            <script src="daily.js"></script>
-            <script>
-                daily();
-            </script>
-        </li>
+        <li id="credit"></li>
 
         <li class="a"></li>
         <li class="b"></li>
         <li class="c"></li>
-
-        <li id="credit"></li>
         <li class="back"></li>
 
         <li class="end buy">

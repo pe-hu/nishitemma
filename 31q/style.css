@@ -1,48 +1,51 @@
-body,
-.library li .buy a {
-    padding: 0;
-    margin: 0;
-}
-
-#index {
-    font-size: 1.25rem;
+body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-#index,
-.library li img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 750px;
-    max-height: 100%;
+#daily {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 75vw;
 }
 
-.title .name {
-    font-size: 125%;
-    padding-right: 17.5%;
+.library li {
+    background-size: 75%;
 }
 
-#index span {
-    display: inline-block;
+.cover {
+    background-image: url(a.png);
 }
 
-#index .by {
-    width: 5%;
-    padding-right: 3.5%;
+.a {
+    background-image: url(002.jpg);
 }
 
-#index .as {
-    width: 17.5%;
-    padding-right: 0;
+.b {
+    background-image: url(003.jpg);
 }
 
-@media screen and (max-width: 750px) {
-    #index {
-        font-size: 2.5vw;
-        width: 90%;
-        max-width: 90%;
-    }
+.c {
+    background-image: url(004.jpg);
+}
+
+.back {
+    background-image: url(001.jpg);
+}
+
+.end {
+    background-image: url(005.jpeg);
+}
+
+.library .buy a {
+    color: #000;
+}
+
+.library .buy a:hover {
+    color: red;
+}
+
+.library::-webkit-scrollbar-thumb,
+.library li::-webkit-scrollbar-thumb {
+    background: #000;
 }
