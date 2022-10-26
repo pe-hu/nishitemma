@@ -26,8 +26,7 @@ img {
     src: url("MSMincho.ttf");
 }
 
-.pehu,
-.floor {
+.pehu {
     letter-spacing: 0.04rem;
     font-family: "MS Mincho", serif;
 }
