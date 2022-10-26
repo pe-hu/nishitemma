@@ -1,0 +1,61 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body,
+.mousedragscrollable,
+.library li {
+    margin: 0;
+    padding: 0;
+}
+
+.mousedragscrollable {
+    list-style: none;
+    white-space: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.library>* {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    width: 750px;
+    max-width: 90vw;
+    height: 95vh;
+    max-height: -webkit-fill-available;
+    white-space: normal;
+}
+
+.library li .content,
+.library .buy a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-height: 100%;
+}
+
+.library .buy a {
+    font-size: 2.5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.library::-webkit-scrollbar,
+.library li::-webkit-scrollbar {
+    width: 4vh;
+    height: 4vh;
+    background: #fff;
+}
+
+@media screen and (max-width: 750px) {
+    .library .buy a {
+        font-size: 7.5vw;
+    }
+}
