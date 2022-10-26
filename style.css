@@ -1,7 +1,6 @@
 body,
 #main ul,
-#main li,
-#main .floor,
+#main li:not(.floor li),
 footer ul,
 footer li {
     font-size: 1rem;
@@ -60,7 +59,6 @@ b {
 }
 
 #main h1,
-#main .floor li a,
 .pehu,
 .red,
 header section a {
@@ -127,7 +125,6 @@ header section .dm:hover {
 }
 
 #main ul,
-#main .floor,
 footer ul {
     list-style-type: none;
     display: flex;
@@ -135,7 +132,7 @@ footer ul {
     justify-content: space-between;
 }
 
-#main ul a {
+#main ul a:not(.floor li a) {
     display: inline-block;
     box-sizing: border-box;
     border: 1px solid red;
@@ -148,32 +145,9 @@ footer ul {
     border: 2px solid #fff;
 }
 
-#main ul li,
+#main ul li:not(.floor li),
 footer ul li {
     width: 45%;
-}
-
-#main .floor {
-    position: relative;
-}
-
-#main .floor li {
-    margin: 0.5rem 0;
-}
-
-#main .floor li a {
-    display: block;
-    width: 100%;
-    padding: 25% 0;
-    margin-top: 0.5rem;
-    border: 1px solid black;
-    text-decoration: none;
-    text-align: center;
-}
-
-#main .floor li a:hover {
-    color: red;
-    border: 1px solid red;
 }
 
 #main ul .member {

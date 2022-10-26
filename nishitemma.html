@@ -6,73 +6,65 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>∧° ┐ | creative, community space</title>
   <style>
-    body,
-    #index {
+    .floor {
+      font-size: 1rem;
       padding: 0;
       margin: 0;
-    }
-
-    @font-face {
-      font-family: "MS Mincho", serif;
-      src: url("MSMincho.ttf");
-    }
-
-    .pehu {
-      letter-spacing: 0.04rem;
-      font-family: "MS Mincho", serif;
-    }
-
-    #index {
-      width: 100%;
-      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
       list-style-type: none;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
 
-    #index li {
-      padding: 0;
-      margin: 0 1rem;
+    .floor {
+      position: relative;
     }
 
-    #index li a {
-      color: red;
-      font-size: 2rem;
-      text-decoration: none;
+    .floor li {
+      margin: 0.5rem 0;
+      width: 47.5%;
+    }
+
+    .floor li a {
       display: block;
-      padding: 0 0.25rem;
-      margin: 0.25rem 0 0;
+      width: 100%;
+      padding: 25% 0;
+      margin-top: 0.5rem;
+      border: 1px solid black;
+      color: #000;
+      font-size: 125%;
+      text-decoration: none;
+      text-align: center;
     }
 
-    #index a:hover {
-      color: #fff;
-      background-color: red;
-      font-style: oblique;
-    }
-
-    @media screen and (max-width: 750px) {
-
-      #index li {
-        padding: 0;
-        margin: 0 1vw;
-      }
-
-      #index li a {
-        font-size: 4.5vw;
-        padding: 0.5vw 1vw;
-        margin: 0.5vw 0 0;
-      }
+    .floor li a:hover {
+      color: red;
+      border: 1px solid red;
     }
   </style>
 </head>
 
 <body>
-  <ul id="index">
-    <li class="pehu"><a href="/jp/">∧°┐</a></li>
-    <li><a href="/jp/shop/">Shop</a></li>
-    <li><a href="/2f/">Gallery</a></li>
-  </ul>
+  <ol class="floor">
+    <li>3F
+      <a onmouseover="this.innerText='Members Only'" onmouseout="this.innerText='Residence'">Residence</a>
+    </li>
+    <li>3F
+      <a onmouseover="this.innerText='Members Only'" onmouseout="this.innerText='Studio'">Studio</a>
+    </li>
+    <li>2F
+      <a onmouseover="this.innerText='for Everyone'" onmouseout="this.innerText='Shop'" href="shop/">Shop</a>
+    </li>
+    <li>2F
+      <a onmouseover="this.innerText='for Everyone'" onmouseout="this.innerText='Gallery'" href="/2f/">Gallery</a>
+    </li>
+    <li>1F
+      <a onmouseover="this.innerText='for Everyone'" onmouseout="this.innerText='Cafe'" href="kissa/">Cafe</a>
+    </li>
+    <li>1F
+      <a onmouseover="this.innerText='for Everyone'" onmouseout="this.innerText='Free Space'" href="/jp/">∧° ┐</a>
+    </li>
+  </ol>
 </body>
 
 </html>

@@ -26,7 +26,8 @@ img {
     src: url("MSMincho.ttf");
 }
 
-.pehu {
+.pehu,
+.floor {
     letter-spacing: 0.04rem;
     font-family: "MS Mincho", serif;
 }
@@ -153,7 +154,9 @@ img {
 #menu {
     position: relative;
     background-color: #fff;
-    padding-bottom: 0.25rem;
+    box-sizing: border-box;
+    padding: 2.5%;
+    z-index: 100;
 }
 
 #menu,
@@ -161,11 +164,11 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
 }
 
 #spinner {
     height: 100vh;
+    z-index: 50;
 }
 
 #spinner img {
