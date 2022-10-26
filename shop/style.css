@@ -153,6 +153,7 @@ img {
 #menu {
     position: relative;
     background-color: #fff;
+    margin-bottom: 0.25rem;
 }
 
 #menu,
