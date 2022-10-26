@@ -13,29 +13,26 @@
 </head>
 
 <body>
-
+    <div id="menu"></div>
     <div id="daily">
         <script src="daily.js"></script>
     </div>
-
     <ul class="mousedragscrollable library">
         <li class="cover"></li>
-
         <li id="credit"></li>
-
         <li class="a"></li>
         <li class="b"></li>
         <li class="c"></li>
         <li class="back"></li>
-
         <li class="end buy">
-            <a href="https://newlifecollection.com/ca2/6/p-r2-s/" target="_parent">Buy now</a>
+            <a href="https://ichoose.pe.hu/" target="_blank">ichoose.pe.hu</a>
         </li>
     </ul>
 
     <script src="scrollable.js"></script>
     <script>
         $(function () {
+            $("#menu").load("../menu.html");
             $("#credit").load("contents.html");
         })
 

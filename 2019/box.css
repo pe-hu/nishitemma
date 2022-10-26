@@ -66,6 +66,7 @@
     letter-spacing: 0.1rem;
 }
 
+
 #box #contents .text p {
     font-size: 0.75rem;
     border: 2px dotted;
@@ -73,14 +74,14 @@
     margin: 0.25rem 0 1rem;
 }
 
-#calender img,
 #box #contents .text img,
 #box #contents .text iframe {
     width: 100%;
+    box-sizing: border-box;
 }
 
 #box #contents .text iframe {
-    height: 250px;
+    height: 230px;
 }
 
 #box #contents #special h3 {

@@ -4,7 +4,7 @@ body,
     margin: 0;
 }
 
-#index {
+#contents {
     font-size: 1.25rem;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -24,22 +24,22 @@ body,
     padding-right: 17.5%;
 }
 
-#index span {
+#contents span {
     display: inline-block;
 }
 
-#index .by {
+#contents .by {
     width: 5%;
     padding-right: 3.5%;
 }
 
-#index .as {
+#contents .as {
     width: 17.5%;
     padding-right: 0;
 }
 
 @media screen and (max-width: 750px) {
-    #index {
+    #contents {
         font-size: 2.5vw;
         width: 90%;
         max-width: 90%;
