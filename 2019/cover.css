@@ -44,7 +44,6 @@ body,
 }
 
 #left {
-  direction:rtl;
   float: left;
   width: 57.5%;
   height: 95%;
