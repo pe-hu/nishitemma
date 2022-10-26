@@ -1,0 +1,50 @@
+#buynow,
+#buynow h1,
+#buynow p {
+    margin: 2.5rem auto;
+}
+
+#buynow {
+    font-family: "YuGothic", "Yu Gothic", "游ゴシック体";
+    font-size: 0.75rem;
+    width: 75%;
+    max-width: 450px;
+}
+
+#buynow h1 {
+    font-size: 200%;
+    font-family: "MS Mincho", serif;
+    font-weight: 400;
+}
+
+#buynow p,
+#buynow h2 {
+    font-size: 125%;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+}
+
+#buynow iframe {
+    width: 100%;
+    height: 20vw;
+}
+
+#buynow h2 {
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+#buynow h2 a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    border: solid 0.1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#buynow h2 a:hover {
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
