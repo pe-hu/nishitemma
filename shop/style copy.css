@@ -1,0 +1,176 @@
+body {
+    background-image: url(bg.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-family: "ＭＳ 明朝", "MS Mincho";
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.04rem;
+  }
+
+  @font-face {
+    font-family: 'Fetamont-I2H77s3TbG';
+    src: url('Fetamont-I2H77s3TbG.eot');
+    src: url('Fetamont-I2H77s3TbG.eot?#iefix') format('embedded-opentype'),
+      url('Fetamont-I2H77s3TbG.woff') format('woff'),
+      url('Fetamont-I2H77s3TbG.ttf') format('truetype'),
+      url('Fetamont-I2H77s3TbG.svg#Fetamont-I2H77s3TbG') format('svg');
+  }
+
+  .marquee {
+    font-size: 5vw;
+    padding: 0;
+    margin: 0.5em 1em;
+    overflow: hidden;
+  }
+
+  .marquee p {
+    color: #fff;
+    text-shadow: 3px 3px 1px #000,
+      -2px 2px 1px #000,
+      2px -2px 1px #000,
+      -2px -2px 1px #000;
+    margin: 0;
+    padding-left: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: marquee;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translate(0);
+    }
+
+    to {
+      transform: translate(-100%);
+    }
+  }
+
+
+
+  #menu {
+    position: relative;
+    z-index: 100;
+    bottom: 0;
+  }
+
+  #info {
+    z-index: 100;
+  }
+
+  #act,
+  #info,
+  #text {
+    position: fixed;
+    bottom: 5%;
+    height: auto;
+    list-style-type: none;
+  }
+
+  #act {
+    color: pink;
+    top: 0;
+    right: 0;
+    padding: 0 1%;
+    font-family: "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro";
+    font-size: 4vw;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  #act a:hover {
+    color: #DDFFFF;
+    background-color: pink;
+  }
+
+  .store {
+    color: pink;
+    font-size: 6vw;
+  }
+
+  .name {
+    color: #DDFFFF;
+    font-size: 4vw;
+  }
+
+  #info {
+    padding: 0 1%;
+    letter-spacing: 0.2vw;
+    font-size: 4vw;
+    text-align: center;
+    pointer-events: none;
+    background-color: #BA2636;
+    color: #fff;
+    z-index: 2;
+    font-family: 'Fetamont-I2H77s3TbG';
+  }
+
+  #info .h1 {
+    font-size: 10vw;
+    letter-spacing: -0.1vw;
+  }
+
+  .f {
+    font-family: 'Savoye LET', sans-serif;
+    font-size: 10vw;
+  }
+
+  #text {
+    margin: 0;
+    animation: 0.99s linear infinite blink_effect;
+  }
+
+  @keyframes blink_effect {
+    0% {
+      visibility: hidden;
+    }
+
+    50% {
+      visibility: hidden;
+    }
+
+    100% {
+      visibility: visible;
+    }
+  }
+
+  .items {
+    font-family: "ＭＳ 明朝", "MS Mincho";
+    letter-spacing: 0.03rem;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    /* Safari */
+    flex-wrap: wrap;
+    -webkit-justify-content: space-evenly;
+    /* Safari */
+    justify-content: space-evenly;
+    -webkit-align-items: normal;
+    /* Safari */
+    align-items: normal;
+    margin: 0 0 4vw;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.5vw;
+  }
+
+  .items li {
+    color: #000;
+    float: left;
+    width: 326px;
+    padding: 0.5em 4vw;
+    margin: 0 0.5em 5vw;
+  }
+
+  .items li:last-of-type {
+    width: 725px;
+  }

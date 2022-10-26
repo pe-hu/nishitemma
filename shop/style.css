@@ -1,0 +1,202 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body,
+#open,
+img {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Shasta';
+    src: url('Fetamont-I2H77s3TbG.eot');
+    src: url('Fetamont-I2H77s3TbG.woff') format('woff'),
+        url('Fetamont-I2H77s3TbG.ttf') format('truetype'),
+        url('Fetamont-I2H77s3TbG.svg#Fetamont-I2H77s3TbG') format('svg');
+}
+
+.Shasta {
+    font-family: 'Shasta';
+}
+
+@font-face {
+    font-family: "MS Mincho", serif;
+    src: url("MSMincho.ttf");
+}
+
+.pehu {
+    letter-spacing: 0.04rem;
+    font-family: "MS Mincho", serif;
+}
+
+body {
+    background-image: url(bg.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#info,
+#links,
+#spinner {
+    position: fixed;
+    margin: 0;
+}
+
+#info,
+#spinner,
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+#info {
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: #BA2636;
+    text-align: center;
+    padding: 5vh;
+    font-size: 4.5vh;
+    letter-spacing: 0.25vh;
+    text-align: center;
+    z-index: 1;
+}
+
+#info h1 {
+    margin: 0;
+    font-size: 250%;
+    letter-spacing: -0.10vh;
+}
+
+#links {
+    top: 25vh;
+    right: 5vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    font-size: 2.5vw;
+    padding: 1vw;
+    z-index: 5;
+}
+
+#links p {
+    margin: 0;
+    font-size: 150%;
+}
+
+#links,
+#links a {
+    color: pink;
+}
+
+#links a,
+#links b,
+#links span {
+    display: inline-block;
+    padding: 0 1vw;
+}
+
+#links a:hover {
+    color: #DDFFFF;
+    background-color: pink;
+}
+
+#open {
+    position: relative;
+    top: 100vh;
+    top: -webkit-fill-available;
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+}
+
+#open img {
+    display: block;
+    width: 100%;
+}
+
+.marquee {
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.marquee p {
+    color: #fff;
+    text-shadow: 3px 3px 1px #000;
+    display: block;
+    white-space: nowrap;
+    padding-left: 100%;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: marquee;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+#menu {
+    position: relative;
+}
+#menu,
+#spinner {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#spinner {
+    height: 100vh;
+}
+
+#spinner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    -webkit-animation: 5s linear infinite spinner;
+    animation: 5s linear infinite spinner;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spinner {
+    from {
+        -webkit-transform: translate(-50%, -50%) rotateY(0deg);
+    }
+
+    to {
+        -webkit-transform: translate(-50%, -50%) rotateY(-360deg);
+    }
+}
+
+/* all other browsers */
+@keyframes spinner {
+    from {
+        -moz-transform: translate(-50%, -50%) rotateY(0deg);
+        -ms-transform: translate(-50%, -50%) rotateY(0deg);
+        transform: translate(-50%, -50%) rotateY(0deg);
+    }
+
+    to {
+        -moz-transform: translate(-50%, -50%) rotateY(-360deg);
+        -ms-transform: translate(-50%, -50%) rotateY(-360deg);
+        transform: translate(-50%, -50%) rotateY(-360deg);
+    }
+}
