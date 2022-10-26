@@ -23,7 +23,7 @@
 }
 
 #box #info {
-    font-family: "YuGothic", "Yu Gothic", "游ゴシック体";
+    font-family: "YuGothic", "Yu Gothic", "游ゴシック体", sans-serif;
     font-size: 0.75rem;
     display: block;
     clear: both;
