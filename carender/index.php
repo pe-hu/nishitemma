@@ -46,6 +46,8 @@ fclose($fp);
 
 <body>
   <div id="menu"></div>
+  
+  <hr />
 
   <h1 class="month">
     9月
