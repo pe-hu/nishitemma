@@ -10,6 +10,7 @@
 
 #collection #calendar,
 #collection button[type="submit"] {
+    color: #000;
     font-size: 1rem;
     margin: 0;
     border: 1px solid;
