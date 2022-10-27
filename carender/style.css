@@ -8,15 +8,7 @@ body {
     margin: 0;
 }
 
-.date .none,
-.date .empty p,
-.date .empty b,
-.date .empty u,
-.date .empty span,
-.date .close p,
-.date .close u,
-.date .close span,
-.open .event .none {
+.none {
   display: none;
 }
 
@@ -43,7 +35,7 @@ b {
 }
 
 u {
-  font-size: 150%;
+  font-size: 75%;
 }
 
 hr {
