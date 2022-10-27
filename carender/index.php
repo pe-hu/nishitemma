@@ -59,7 +59,6 @@ fclose($fp);
 <body>
   <form id="collection" method="GET">
     <select id="calendar" name="month">
-      <option>2019</option>
       <option value="1901">1月</option>
       <option value="1902">2月</option>
       <option value="1903">3月</option>
@@ -70,7 +69,7 @@ fclose($fp);
       <option value="1908">8月</option>
       <option value="1909">9月</option>
     </select>
-    <button type="submit" name="submit">決定</button>
+    <button type="submit" name="submit">2019</button>
   </form>
 
   <ul class="date">
