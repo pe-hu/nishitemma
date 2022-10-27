@@ -96,6 +96,14 @@ hr {
   background-color: gold;
 }
 
+.date li .show {
+  color: blue;
+}
+
+.date li .show u {
+  text-decoration: none;
+}
+
 .date li .show i:after {
   content: "2F Gallery";
   color: #fff;
