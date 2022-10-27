@@ -80,8 +80,8 @@ hr {
 
 .date li .show span {
   display: block;
-  padding: 0.5vw 0;
-  font-size: 200%;
+  padding: 2.5% 0;
+  font-size: 150%;
 }
 
 .date li .cafe i:after {
