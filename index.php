@@ -57,19 +57,18 @@ fclose($fp);
 </head>
 
 <body>
-  <div id="menu"></div>
-  <div id="topic"></div>
   <form id="collection" method="GET">
     <select id="calendar" name="month">
-      <option value="09">9月</option>
-      <option value="08">8月</option>
-      <option value="07">7月</option>
-      <option value="06">6月</option>
-      <option value="05">5月</option>
-      <option value="04">4月</option>
-      <option value="03">3月</option>
-      <option value="02">2月</option>
+      <option>∧° ┐</option>
       <option value="01">1月</option>
+      <option value="02">2月</option>
+      <option value="03">3月</option>
+      <option value="04">4月</option>
+      <option value="05">5月</option>
+      <option value="06">6月</option>
+      <option value="07">7月</option>
+      <option value="08">8月</option>
+      <option value="09">9月</option>
     </select>
     <button type="submit" name="submit">2019</button>
   </form>
@@ -113,6 +112,7 @@ fclose($fp);
     <?php endif; ?>
   </ul>
   <hr />
+  <div id="menu"></div>
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
