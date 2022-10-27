@@ -90,7 +90,7 @@ b {
   color: blue;
 }
 
-.date li .show {
+.date li .show span {
   padding: 1vw 0;
 }
 
