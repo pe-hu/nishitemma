@@ -9,12 +9,12 @@ function h($str)
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$month = "sample";
+$month = "2019/09";
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
 
-$source_file = "" . $month . ".csv";
+$source_file = "2019/" . $month . ".csv";
 
 $fp = fopen($source_file, 'r');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -52,22 +52,22 @@ fclose($fp);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>∧° ┐ | creative, community space</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="calendar.css" />
   <link rel="stylesheet" href="collection.css" />
 </head>
 
 <body>
   <form id="collection" method="GET">
     <select id="calendar" name="month">
-      <option value="1901">1月</option>
-      <option value="1902">2月</option>
-      <option value="1903">3月</option>
-      <option value="1904">4月</option>
-      <option value="1905">5月</option>
-      <option value="1906">6月</option>
-      <option value="1907">7月</option>
-      <option value="1908">8月</option>
-      <option value="1909">9月</option>
+      <option value="01">1月</option>
+      <option value="02">2月</option>
+      <option value="03">3月</option>
+      <option value="04">4月</option>
+      <option value="05">5月</option>
+      <option value="06">6月</option>
+      <option value="07">7月</option>
+      <option value="08">8月</option>
+      <option value="09">9月</option>
     </select>
     <button type="submit" name="submit">2019</button>
   </form>
