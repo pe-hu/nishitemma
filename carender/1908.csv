@@ -1,31 +1,34 @@
-open,1
-open,2
-open,3
-open,4
-open,5
-open,6
-open,7
-open,8
-open,9
-open,10
-open,11
-open,12
-open,13
-open,14
-open,15
-open,16
-open,17
-open,18
-open,19
-open,20
-open,21
-open,22
-open,23
-open,24
-open,25
-open,26
-open,27
-open,28
-open,29
-open,30
-open,31
+none,
+none,
+none,
+open,1,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,Green People,event,,,"by Laurel Schwulst, Elliott Cost"
+open,2,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,3,none,none,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
+open,4,none,none,none,none,none,none,none,event,,BON DANCE,
+open,5,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,6,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,7,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,8,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,9,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,10,none,none,shop,1 - 6pm,show,1 - 6pm,Last Day,none,none,none,
+open,11,none,none,none,none,none,none,none,event,,京丹後でキャンプ,
+open,12,none,none,none,none,none,none,none,event,,京丹後でキャンプ,
+close,13
+close,14
+close,15
+close,16
+open,17,none,none,none,none,none,none,none,event,,BON DANCE,
+close,18
+open,19,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,Tongue finishes back at the root of itself,event,,,"by Ferran Pla, Ana Martinez Fernandez"
+open,20,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,21,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,22,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,23,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,24,none,none,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
+close,25
+open,26,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,27,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,28,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,29,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,30,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
+open,31,none,none,shop,1 - 6pm,show,1 - 6pm,Last Day,none,none,none,
