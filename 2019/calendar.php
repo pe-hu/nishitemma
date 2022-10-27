@@ -9,12 +9,12 @@ function h($str)
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$month = "2019/09";
+$month = "09";
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
 
-$source_file = "2019/" . $month . ".csv";
+$source_file = $month . ".csv";
 
 $fp = fopen($source_file, 'r');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
