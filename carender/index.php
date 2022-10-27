@@ -13,11 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $kissa,
       $shop,
       $hour,
-      $gallery,
+      $show,
       $time,
       $title,
       $event,
       $info,
+      $name,
       $more
     ]);
     rewind($fp);
@@ -81,9 +82,11 @@ fclose($fp);
       <p class="<?=h($row[9])?>">
         <u>
           <?=h($row[10])?>
-        </u><br />
+        </u>
+        <br />
+        <i><?=h($row[11])?></i>
         <span>
-          <?=h($row[11])?>
+          <?=h($row[12])?>
         </span>
       </p>
     </li>
