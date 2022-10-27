@@ -59,7 +59,7 @@ fclose($fp);
 <body>
   <form id="collection" method="GET">
     <select id="calendar" name="month">
-      <option>∧°┐</option>
+      <option>∧° ┐</option>
       <option value="1">1月</option>
       <option value="2">2月</option>
       <option value="3">3月</option>
@@ -78,6 +78,7 @@ fclose($fp);
     </h1>
     <button type="submit" name="submit">2019</button>
   </form>
+
   <ul class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
