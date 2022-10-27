@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+hr {
+  border: none;
+  padding: 0.25vw;
+  margin: 0;
+}
+
 .none p,
 .date li .none {
   display: none;
