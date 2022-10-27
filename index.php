@@ -60,15 +60,15 @@ fclose($fp);
   <div id="topic"></div>
   <form id="collection" method="GET">
     <select id="calendar" name="month">
-      <option value="01">1月</option>
-      <option value="02">2月</option>
-      <option value="03">3月</option>
-      <option value="04">4月</option>
-      <option value="05">5月</option>
-      <option value="06">6月</option>
-      <option value="07">7月</option>
-      <option value="08">8月</option>
       <option value="09">9月</option>
+      <option value="08">8月</option>
+      <option value="07">7月</option>
+      <option value="06">6月</option>
+      <option value="05">5月</option>
+      <option value="04">4月</option>
+      <option value="03">3月</option>
+      <option value="02">2月</option>
+      <option value="01">1月</option>
     </select>
     <button type="submit" name="submit">2019</button>
   </form>
