@@ -57,6 +57,7 @@ fclose($fp);
 </head>
 
 <body>
+  <div id="topic"></div>
   <form id="collection" method="GET">
     <select id="calendar" name="month">
       <option value="01">1月</option>
@@ -71,7 +72,6 @@ fclose($fp);
     </select>
     <button type="submit" name="submit">2019</button>
   </form>
-
   <ul class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
@@ -116,6 +116,7 @@ fclose($fp);
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
+      $("#topic").load("topic.html");
       $("#menu").load("menu.html");
     })
   </script>
