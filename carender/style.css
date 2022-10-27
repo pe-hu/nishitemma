@@ -96,6 +96,10 @@ hr {
   background-color: blue;
 }
 
+.date li .show span {
+  display: block;
+}
+
 .open .gallery b {
   font-size: 1.25vw;
   color: #fff;
