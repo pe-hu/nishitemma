@@ -34,10 +34,6 @@ b {
   font-weight: normal;
 }
 
-u {
-  font-size: 75%;
-}
-
 hr {
   clear: both;
   border: 0 none;
@@ -72,42 +68,32 @@ hr {
   color: red;
 }
 
-.open p {
-  font-size: 1.25vw;
-}
-
-.open .hour {
-  font-size: 0.5vw;
+.date li p u {
+  font-size: 75%;
   color: #000;
-  font-weight: bolder;
 }
 
-.open .cafe b {
-  font-size: 1.25vw;
+.date li p i {
+  font-size: 125%;
+  font-style: normal;
+}
+
+.date li .cafe i:after {
+  content: "1F Cafe";
   color: #fff;
   background-color: red;
 }
 
-.open .cafe b:after {
-  content: "1F Cafe";
-}
-
-.open .cafe u:after {
-  content: "12:00 - 6pm";
-}
-
-.open .shop b {
-  font-size: 1.25vw;
-  color: #000;
-  background-color: yellow;
-}
-
-.open .shop b:after {
+.date li .shop i:after {
   content: "2F Shop";
+  color: #000;
+  background-color: gold;
 }
 
-.open .shop u:after {
-  content: "1 - 6pm";
+.date li .gallery i:after {
+  content: "2F Gallery";
+  color: #fff;
+  background-color: blue;
 }
 
 .open .gallery b {
@@ -121,14 +107,6 @@ hr {
   font-weight: 500;
   background-color: #fff;
   text-decoration: none;
-}
-
-.open .gallery b:after {
-  content: "Exhibition";
-}
-
-.open .gallery u:after {
-  content: "1 - 6pm";
 }
 
 .open .gallery .topic {
