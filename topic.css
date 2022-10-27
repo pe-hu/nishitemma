@@ -1,0 +1,122 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Apple Chancery", cursive;
+    src: url("apple-chancery.ttf");
+}
+
+@font-face {
+    font-family: "MS Mincho", serif;
+    src: url("MSMincho.ttf");
+}
+
+.apple {
+    font-family: "Apple Chancery", cursive;
+}
+
+h1,
+header section {
+    letter-spacing: 0.04rem;
+    font-family: "MS Mincho", serif;
+}
+
+.en {
+    font-family: "Times New Roman";
+    padding-left: 0.5em;
+    letter-spacing: 0.05rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: oblique;
+}
+
+header {
+    font-size: 1rem;
+}
+
+header h1,
+marquee {
+    font-size: 200%;
+}
+
+b {
+    font-size: 150%;
+}
+
+.red,
+header section a {
+    font-size: 125%;
+}
+
+header h1,
+header section a {
+    line-height: 200%;
+}
+
+.red {
+    color: red;
+}
+
+h1,
+b {
+    font-weight: normal;
+}
+
+hr,
+header section {
+    clear: both;
+    border: none;
+    padding-top: 1rem;
+}
+
+header {
+    padding: 2.5vw;
+}
+
+header section a {
+    padding: 0.25em;
+    margin: 0 1rem 1rem 0;
+}
+
+header section .topics {
+    background-color: #eee;
+}
+
+header section .flash {
+    color: #fff;
+    background-color: red;
+}
+
+header section .dm {
+    background-color: yellow;
+}
+
+header section .topics:hover,
+header section .flash:hover,
+header section .dm:hover {
+    color: #fff;
+    background-color: blue;
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        font-size: 0.75rem;
+    }
+
+    header section a {
+        margin: 0 0.5rem 0.5rem 0;
+    }
+
+    hr,
+    header section {
+        padding-top: 0.75rem;
+    }
+}

@@ -19,11 +19,6 @@ hr {
   display: none;
 }
 
-@font-face {
-  font-family: "MS Mincho", serif;
-  src: url("MSMincho.ttf");
-}
-
 .month,
 .date,
 #collection #calendar,
