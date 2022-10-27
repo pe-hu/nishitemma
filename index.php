@@ -57,6 +57,7 @@ fclose($fp);
 </head>
 
 <body>
+  <div id="menu"></div>
   <div id="topic"></div>
   <form id="collection" method="GET">
     <select id="calendar" name="month">
@@ -112,12 +113,11 @@ fclose($fp);
     <?php endif; ?>
   </ul>
   <hr />
-  <div id="menu"></div>
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $("#topic").load("topic.html");
       $("#menu").load("menu.html");
+      $("#topic").load("topic.html");
     })
   </script>
 </body>
