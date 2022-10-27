@@ -78,7 +78,7 @@ hr {
   font-style: normal;
 }
 
-.date li .show span {
+.date li p span {
   display: block;
   padding: 1vw 0;
   font-size: 200%;
@@ -111,50 +111,9 @@ hr {
   background-color: blue;
 }
 
-.open .gallery b {
-  font-size: 1.25vw;
-  color: #fff;
-  background-color: blue;
-}
-
-.open .gallery u {
-  color: blue;
-  font-weight: 500;
-  background-color: #fff;
-  text-decoration: none;
-}
-
-.open .gallery .topic {
-  color: blue;
-  margin-top: 1vw;
-  display: block;
-}
-
-.open .pre span:after,
-.open .last span:after {
-  color: #fff;
-  background: blue;
-  display: block;
-  margin-top: 1vw;
-}
-
-.open .pre span:after {
-  content: "Preview";
-}
-
-.open .last span:after {
-  content: "LAST DAY";
-}
-
-.open .run:after {
-  color: blue;
-  content: "→";
-  display: block;
-}
-
 .open .event {
-  font-size: 1.25vw;
-  border: 0.5vw dotted #000;
+  border: 0.2vw solid red;
+  border-radius: 50%;
 }
 
 .open .event .price {
@@ -171,19 +130,6 @@ hr {
 
 .open .pickup u {
   font-size: 2.5vw;
-}
-
-.open .discussion {
-  color: green;
-  background-color: #fff;
-}
-
-.open .discussion:before {
-  content: "8pm-";
-}
-
-.open .discussion u:before {
-  content: "Discussion";
 }
 
 .close .day:after {

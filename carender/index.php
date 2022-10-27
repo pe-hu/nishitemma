@@ -1,31 +1,32 @@
 <?php
 
-function h($str) {
-    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+function h($str)
+{
+  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 $fp = fopen('1901.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    flock($fp, LOCK_EX);
-    fputcsv($fp, [
-      $open,
-      $date,
-      $cafe,
-      $kissa,
-      $shop,
-      $hour,
-      $show,
-      $time,
-      $title,
-      $event,
-      $info,
-      $name,
-      $more
-    ]);
-    rewind($fp);
+  flock($fp, LOCK_EX);
+  fputcsv($fp, [
+    $open,
+    $date,
+    $cafe,
+    $kissa,
+    $shop,
+    $hour,
+    $show,
+    $time,
+    $title,
+    $event,
+    $info,
+    $name,
+    $more
+  ]);
+  rewind($fp);
 }
 flock($fp, LOCK_SH);
 while ($row = fgetcsv($fp)) {
-    $rows[] = $row;
+  $rows[] = $row;
 }
 flock($fp, LOCK_UN);
 fclose($fp);
@@ -52,46 +53,46 @@ fclose($fp);
   </h1>
 
   <ul class="date">
-    <?php if (!empty($rows)): ?>
-    <?php foreach ($rows as $row): ?>
-    <li class="<?=h($row[0])?>">
-      <b class="day">
-        <?=h($row[1])?>
-      </b>
-      <p class="<?=h($row[2])?>">
-        <i></i><br>
-        <u>
-          <?=h($row[3])?>
-        </u>
-      </p>
-      <p class="<?=h($row[4])?>">
-        <i></i><br>
-        <u>
-          <?=h($row[5])?>
-        </u>
-      </p>
-      <p class="<?=h($row[6])?>">
-        <i></i><br>
-        <u>
-          <?=h($row[7])?>
-        </u>
-        <span>
-          <?=h($row[8])?>
-        </span>
-      </p>
-      <p class="<?=h($row[9])?>">
-        <u>
-          <?=h($row[10])?>
-        </u>
-        <br />
-        <i><?=h($row[11])?></i>
-        <span>
-          <?=h($row[12])?>
-        </span>
-      </p>
-    </li>
-    <?php endforeach; ?>
-    <?php else: ?>
+    <?php if (!empty($rows)) : ?>
+      <?php foreach ($rows as $row) : ?>
+        <li class="<?= h($row[0]) ?>">
+          <b class="day">
+            <?= h($row[1]) ?>
+          </b>
+          <p class="<?= h($row[2]) ?>">
+            <i></i><br>
+            <u>
+              <?= h($row[3]) ?>
+            </u>
+          </p>
+          <p class="<?= h($row[4]) ?>">
+            <i></i><br>
+            <u>
+              <?= h($row[5]) ?>
+            </u>
+          </p>
+          <p class="<?= h($row[6]) ?>">
+            <i></i><br>
+            <u>
+              <?= h($row[7]) ?>
+            </u>
+            <span>
+              <?= h($row[8]) ?>
+            </span>
+          </p>
+          <p class="<?= h($row[9]) ?>">
+            <u>
+              <?= h($row[10]) ?>
+            </u>
+            <br />
+            <span><?= h($row[11]) ?></span>
+            <i>
+              <?= h($row[12]) ?>
+            </i>
+          </p>
+        </li>
+      <?php endforeach; ?>
+    <?php else : ?>
     <?php endif; ?>
   </ul>
 
@@ -113,7 +114,7 @@ fclose($fp);
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
-    $(function () {
+    $(function() {
       $("#menu").load("../menu.html");
     })
   </script>
