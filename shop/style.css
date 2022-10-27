@@ -14,8 +14,7 @@ img {
 
 #cover,
 #logo,
-#info,
-#main {
+#info {
     user-select: none;
     pointer-events: none;
 }
