@@ -5,7 +5,7 @@ none,3
 none,4
 none,5
 open,6,none,none,none,none,none,none,none,event,3 - 9pm,Sign,Grand Opening Party
-open,7,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,TWS1,none,none,none,
+open,7,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,TWS1,event,,,"by Fumio Kohama, Stefan Alexander, Shintaro Matsuo"
 open,8,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,9,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,10,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
@@ -24,7 +24,7 @@ open,22,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
 open,23,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
 open,24,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
 open,25,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
-open,26,cafe,12:00 - 6pm,shop,1 - 6pm,show,5 - 9pm,HF+S1,none,none,
+open,26,cafe,12:00 - 6pm,shop,1 - 6pm,show,5 - 9pm,HF+S1,event,,,"by ばばまさみ, 大川原暢人, 黒川岳, 船川翔司"
 open,27,cafe,12:00 - 6pm,none,none,show,1 - 6pm,HF+S1,event,3pm-,千紗子と純太の謎,name your price
 open,28,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
 open,29,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
