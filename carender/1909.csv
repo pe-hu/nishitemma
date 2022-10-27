@@ -18,10 +18,10 @@ open,11,none,none,none,none,none,none,none,event,12:00 -,最後のゴミ捨て,
 open,12
 open,13
 open,14
-open,15,none,none,none,none,none,none,none,event,1pm - 6pm,贈り物を送る,
-open,16
-open,17
-open,18
-open,19
-open,20
+open holiday,,none,none,none,none,none,none,none,event,1pm - 6pm,贈り物を送る,
+open holiday,,none,none,none,none,none,none,none,event,,We are closing down,
+open holiday,,none,none,none,none,none,none,none,event,,Cafe, Shop and Gallery,As of September 15th
+open holiday,,none,none,none,none,none,none,none,event,,誠に勝手ながら,9月15日を持って
+open holiday,,none,none,none,none,none,none,none,event,,完全閉店！,喫茶・店　と ギャラリー
+open,,none,none,none,none,none,none,none,event,,,
 open,21,none,none,none,none,none,none,none,event,11am -,全感覚祭19,大阪 堺route26周辺
