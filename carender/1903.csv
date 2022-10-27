@@ -9,7 +9,7 @@ open,4,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,7pm-,質問を考え
 open,5,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,6,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,7pm-,夜の散歩,
 open,7,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
-open,8,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,6pm-,英語だけで会話しながらトランプで遊ぶ,
+open,8,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,Last Day,event,6pm-,英語だけで会話しながらトランプで遊ぶ,
 close,9,
 close,10,
 open,11,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,7pm-,かおちょに聞きたい50のこと,,none
