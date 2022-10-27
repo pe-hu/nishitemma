@@ -22,8 +22,8 @@ close,16
 open,17,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,FS1,event,,,by 天気 | 🐴
 open,18,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
 open,19,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
-open,20
-open,21
+open,20,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,event,8pm -,Discussion,Members Only
+open,21,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,event,8pm -,あくちゃんに聞きたい50のこと,
 open,22,none,none,shop,1 - 6pm,show,1 - 6pm,"→",event,7:30pm -,川口貴大/古池寿浩/船川翔司/江崎將史,name your price
 close,23
 open,24,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
