@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.date p .none {
+.date li .none {
   display: none;
 }
 
