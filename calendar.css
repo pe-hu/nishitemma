@@ -3,7 +3,8 @@ html {
 }
 
 html,
-body {
+body,
+h1 {
   padding: 0;
   margin: 0;
 }
@@ -34,11 +35,6 @@ h1,
 b {
   font-size: 3vw;
   font-weight: normal;
-}
-
-.month {
-  padding: 0;
-  margin: 2%;
 }
 
 .date {
