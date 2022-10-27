@@ -36,13 +36,14 @@ b {
   font-weight: normal;
 }
 
-.month,
-.date {
+.month {
   padding: 0;
-  margin: 1%;
+  margin: 2%;
 }
 
 .date {
+  padding: 0;
+  margin: 1%;
   font-size: 1.25vw;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
