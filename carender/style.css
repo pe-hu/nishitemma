@@ -41,13 +41,13 @@ hr {
 }
 
 .month {
-    margin: 2.5% 1% 1%;
+    margin: 2%;
     padding: 0;
 }
 
 .date {
     padding: 0;
-    margin: 0 1%;
+    margin: 0 1% 2.5rem;
     font-size: 1vw;
     display:grid;
     grid-template-columns:repeat(7,1fr);
