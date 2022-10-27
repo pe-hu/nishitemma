@@ -90,7 +90,7 @@ hr {
   background-color: gold;
 }
 
-.date li .gallery i:after {
+.date li .show i:after {
   content: "2F Gallery";
   color: #fff;
   background-color: blue;
