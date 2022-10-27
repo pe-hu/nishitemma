@@ -72,6 +72,12 @@ fclose($fp);
     </select>
     <button type="submit" name="submit">2019</button>
   </form>
+  <h1>
+      <?php
+      date_default_timezone_set('Asia/Tokyo');
+      print(date($month) . "月")
+      ?>
+  </h1>
   <ul class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
