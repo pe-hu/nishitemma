@@ -95,7 +95,7 @@ fclose($fp);
     <?php else : ?>
     <?php endif; ?>
   </ul>
-
+  <hr />
   <form id="collection" method="GET">
     <select id="calendar" name="month">
       <option>2019</option>
