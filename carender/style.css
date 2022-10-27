@@ -64,7 +64,7 @@ b {
   color: #000;
 }
 
-.date li p i {
+.date li p i:not(.event i) {
   font-size: 125%;
   font-style: normal;
 }
