@@ -1,10 +1,22 @@
 <?php
 
+mb_language("ja");
+mb_internal_encoding("UTF-8");
+date_default_timezone_set('Asia/Tokyo');
+
 function h($str)
 {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
-$fp = fopen('1901.csv', 'a+b');
+
+$month = "sample";
+if (isset($_GET["month"])) {
+    $month = $_GET["month"];
+}
+
+$source_file = "" . $month . ".csv";
+
+$fp = fopen($source_file, 'r');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   flock($fp, LOCK_EX);
   fputcsv($fp, [
@@ -46,7 +58,7 @@ fclose($fp);
 
 <body>
   <div id="menu"></div>
-  
+
   <h1 class="month">
     9月
     <br>September
