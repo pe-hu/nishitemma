@@ -71,7 +71,7 @@ b {
 
 .date li p span {
   display: block;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 .date li .cafe i:after {
@@ -107,7 +107,7 @@ b {
 
 .date .close:after {
   content: "CLOSE";
-  font-size: 250%;
+  font-size: 200%;
   font-weight: 900;
   position: absolute;
   top: 50%;
