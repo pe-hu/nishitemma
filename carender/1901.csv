@@ -16,9 +16,9 @@ open,14,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,15,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,16,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,17,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
-open,18,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,9pm-,Concert by Sami Elu,,none
+open,18,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,9pm-,Concert by Sami Elu,name your price
 open,19,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,Last Day,none,none,none,
-open,20,none,none,none,none,none,none,none,event,6pm-,れんれんの試食会,
+open,20,none,none,none,none,none,none,none,event,6pm-,れんれんの試食会,Members Only
 open,21,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
 open,22,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
 open,23,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
