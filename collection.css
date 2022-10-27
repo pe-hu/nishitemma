@@ -15,6 +15,7 @@
     margin: 0;
     word-spacing: -.25ch;
     display: block;
+    border: 1px solid;
 }
 
 #collection #calendar,
