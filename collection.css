@@ -16,6 +16,7 @@
     word-spacing: -.25ch;
     display: block;
     border: 1px solid;
+    background: #fff;
 }
 
 #collection #calendar,
