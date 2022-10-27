@@ -7,13 +7,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Beauty Spot in ∧°┐</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
-  <div id="bg"></div>
+  <div id="cover"></div>
 
-  <div id="spinner">
-    <img src="bs.png">
+  <div id="logo">
+    <p><img src="bs.png"></p>
   </div>
 
   <section id="info">
@@ -48,7 +49,7 @@
     </p>
   </section>
 
-  <main id="open">
+  <main id="main">
     <div class="marquee">
       <p>Sup, Dude! Beauty spot is here. We selling Zine, Book, Cassette, CD, Record, Vintage and Original Clothes,
         Small
@@ -79,10 +80,12 @@
     $(function () {
       $(window).scroll(function () {
         var y = $(this).scrollTop();
-        var scale1 = y * 0.0005 + 1;
-        $("#links").css('transform', 'scale(' + scale1 + ')');
-        let rotate1 = y * -0.0005 + 1;
-        $("#info").css('transform', 'rotate(' + y + 'deg) scale(' + rotate1 + ')');
+        $("#logo img").css('transform', 'rotateY(' + y + 'deg)');
+
+        var plus = y * 0.0005 + 1;
+        $("#links").css('transform', 'rotateX(' + y + 'deg) scale(' + plus + ')');
+        let minus = y * -0.0005 + 1;
+        $("#info").css('transform', 'rotateZ(' + y + 'deg) scale(' + minus + ')');
       });
     });
   </script>
