@@ -8,13 +8,18 @@
     z-index: 100;
 }
 
+#collection h1,
 #collection #calendar,
 #collection button[type="submit"] {
     color: #000;
     font-size: 1rem;
     margin: 0;
-    border: 1px solid;
     word-spacing: -.25ch;
+    display: block;
+}
+
+#collection #calendar,
+#collection button[type="submit"] {
     display: block;
 }
 

@@ -3,8 +3,7 @@ html {
 }
 
 html,
-body,
-h1 {
+body {
   padding: 0;
   margin: 0;
 }
@@ -20,7 +19,6 @@ hr {
   display: none;
 }
 
-.month,
 .date,
 #collection #calendar,
 #collection button[type="submit"] {
@@ -31,7 +29,6 @@ ul {
   list-style-type: none;
 }
 
-h1,
 b {
   font-size: 3vw;
   font-weight: normal;
