@@ -35,15 +35,9 @@ b {
   font-weight: normal;
 }
 
-hr {
-  clear: both;
-  border: none;
-  padding: 0.5rem;
-}
-
 .date {
   padding: 0;
-  margin: 0 1%;
+  margin: 1%;
   font-size: 1vw;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
