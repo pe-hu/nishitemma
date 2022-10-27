@@ -95,7 +95,8 @@ fclose($fp);
             </u>
           </p>
           <p class="<?= h($row[6]) ?>">
-            <i></i><br>
+            <i></i>
+            <br>
             <u>
               <?= h($row[7]) ?>
             </u>
