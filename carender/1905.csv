@@ -8,26 +8,26 @@ close,5,
 close,6,
 open,7,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
 open,8,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
-open,9,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,8pm-,Discussion,Members Only
+open,9,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,8pm -,Discussion,Members Only
 open,10,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
-open,11,none,none,shop,1 - 6pm,none,none,none,event,1pm-,大暴れ,
-open,12,none,none,none,none,none,none,none,event,1pm-,にしてんバル,
+open,11,none,none,shop,1 - 6pm,none,none,none,event,1pm -,大暴れ,
+open,12,none,none,none,none,none,none,none,event,1pm -,にしてんバル,
 open,13,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
-open,14,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,7pm-,翻訳の会,
+open,14,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,7pm -,翻訳の会,
 open,15,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
-open,16,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,8pm-,Discussion,Members Only
-open,17,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,7pm-,ふなに聞きたい50のこと,
+open,16,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,8pm -,Discussion,Members Only
+open,17,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,7pm -,ふなに聞きたい50のこと,
 open,18,none,none,shop,1 - 6pm,none,none,none,none,none,none,
-open,19,none,none,none,none,none,none,none,event,5pm-,#19MAY19SUN,¥1500
+open,19,none,none,none,none,none,none,none,event,5pm -,#19MAY19SUN,¥1500
 open,20,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
-open,21,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,8pm-,靴下ハギレの会,
+open,21,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,8pm -,靴下ハギレの会,
 open,22,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
-open,23,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,8pm-,Discussion,Members Only
+open,23,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,event,8pm -,Discussion,Members Only
 open,24,cafe,12:00 - 6pm,shop,1 - 6pm,none,none,none,none,none,none,
-open,25,none,none,none,none,none,none,none,event,3pm-10pm,ポリバケツ,¥1000
+open,25,none,none,none,none,none,none,none,event,3 - 10pm,ポリバケツ,¥1000
 open,26,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,"NS1",event,,,"by Nicholas Strobelt, Joseph Torres, Yuu Takamizawa"
 open,27,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,28,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,29,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
-open,30,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,9pm-,Discussion,Members Only
+open,30,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,9pm -,Discussion,Members Only
 open,31,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
