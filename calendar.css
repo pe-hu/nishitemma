@@ -20,6 +20,7 @@ hr {
 }
 
 .date,
+#collection h1,
 #collection #calendar,
 #collection button[type="submit"] {
   font-family: "MS Mincho", serif;
