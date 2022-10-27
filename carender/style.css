@@ -54,7 +54,8 @@ b {
   color: blue;
 }
 
-.date li:nth-child(7n+7) {
+.date li:nth-child(7n+7),
+.holiday {
   color: red;
 }
 
