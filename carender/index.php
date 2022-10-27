@@ -102,12 +102,8 @@ fclose($fp);
             </span>
           </p>
           <p class="<?= h($row[9]) ?>">
-            <u>
-              <?= h($row[10]) ?>
-            </u>
-            <i>
-              <?= h($row[12]) ?>
-            </i>
+            <u><?= h($row[10]) ?></u>
+            <i><?= h($row[12]) ?></i>
             <span><?= h($row[11]) ?></span>
           </p>
         </li>
