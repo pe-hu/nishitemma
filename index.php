@@ -70,14 +70,14 @@ fclose($fp);
       <option value="8">8月</option>
       <option value="9">9月</option>
     </select>
-    <button type="submit" name="submit">2019</button>
-  </form>
-  <h1 class="month">
+    <h1 class="month">
       <?php
       date_default_timezone_set('Asia/Tokyo');
       print(date($month) . "月")
       ?>
-  </h1>
+    </h1>
+    <button type="submit" name="submit">2019</button>
+  </form>
   <ul class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
