@@ -1,0 +1,39 @@
+#collection {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2.5%;
+    margin: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#collection #calendar,
+#collection button[type="submit"] {
+    font-size: 1rem;
+    margin: 0;
+    border: 1px solid;
+    word-spacing: -.25ch;
+    display: block;
+}
+
+#collection #calendar {
+    padding: 0.5rem;
+}
+
+#collection button[type="submit"] {
+    background: transparent;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+}
+
+@media screen and (max-width: 550px) {
+    #collection {
+        padding: 1rem 0.5rem;
+    }
+}

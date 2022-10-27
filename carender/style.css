@@ -1,31 +1,42 @@
+html {
+    height: -webkit-fill-available;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  height: -webkit-fill-available;
+    padding: 0;
+    margin: 0;
+}
+
+.open .none,
+.date .empty p,
+.date .empty b,
+.date .empty u,
+.date .empty span,
+.date .close p,
+.date .close u,
+.date .close span,
+.open .event .none {
+  display: none;
 }
 
 @font-face {
-  font-family: "MS Mincho", serif;
-  src: url("MSMincho.ttf");
+    font-family: "MS Mincho", serif;
+    src: url("MSMincho.ttf");
 }
 
-#collection #month,
+.month,
+.date,
+#collection #calendar,
 #collection button[type="submit"] {
-  font-family: "MS Mincho", serif;
+    font-family: "MS Mincho", serif;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
+ul {
+    list-style-type: none;
 }
 
-a:hover {
-  color: #033330;
-  background-color: #fff;
-  font-style: oblique;
-}
-
+h1,
 b {
   font-size: 3vw;
   font-weight: normal;
@@ -41,40 +52,32 @@ hr {
   padding: 0;
 }
 
-ul {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-items: normal;
-  align-items: normal;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.month {
+    margin: 2.5%;
+    padding: 0;
 }
 
-.month a {
-  color: orange;
-  font-size: 2vw;
-  padding: 0.5vw;
-  margin-right: 1vw;
-  line-height: 5vw;
-  border: 1px solid orange;
-}
-
-.month li {
-  font-size: 1vw;
-  float: left;
-  width: auto;
-  padding: 0 2% 2%;
-  background-color: rgba(255, 255, 255, 0.5);
+.date {
+    padding: 0;
+    margin: 0 1%;
+    font-size: 1vw;
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    grid-gap: 0;
 }
 
 .date li {
-  font-size: 1vw;
-  float: left;
-  width: 10%;
-  padding: 2%;
-  background-color: rgba(255, 255, 255, 0.5);
+    padding: 2.5%;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.date li:nth-child(7n+6) {
+  color: blue;
+}
+
+.date li:nth-child(7n+7) {
+  color: red;
 }
 
 .open p {
@@ -196,26 +199,6 @@ ul {
 
 .open .discussion u:before {
   content: "Discussion";
-}
-
-.sat {
-  color: blue;
-}
-
-.sun {
-  color: red;
-}
-
-.open .none,
-.date .empty p,
-.date .empty b,
-.date .empty u,
-.date .empty span,
-.date .close p,
-.date .close u,
-.date .close span,
-.open .event .none {
-  display: none;
 }
 
 .close .day:after {

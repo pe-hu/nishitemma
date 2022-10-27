@@ -3,24 +3,23 @@
 function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
-
-$open = (string)filter_input(INPUT_POST, 'open');
-$day = (string)filter_input(INPUT_POST, 'week');
-$open = (string)filter_input(INPUT_POST, 'week');
-$cafe = (string)filter_input(INPUT_POST, 'cafe');
-$shop = (string)filter_input(INPUT_POST, 'shop');
-$gallery = (string)filter_input(INPUT_POST, 'gallery');
-$topic = (string)filter_input(INPUT_POST, 'topic');
-$event = (string)filter_input(INPUT_POST, 'event');
-$time = (string)filter_input(INPUT_POST, 'time');
-$title = (string)filter_input(INPUT_POST, 'title');
-$price = (string)filter_input(INPUT_POST, 'price');
-$discussion = (string)filter_input(INPUT_POST, 'discussion');
-
 $fp = fopen('sample.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$open, $day, $week, $cafe, $shop, $gallery, $topic, $event, $time, $title, $price, $discussion]);
+    fputcsv($fp, [
+      $open,
+      $date,
+      $cafe,
+      $kissa,
+      $shop,
+      $hour,
+      $gallery,
+      $time,
+      $title,
+      $event,
+      $info,
+      $more
+    ]);
     rewind($fp);
 }
 flock($fp, LOCK_SH);
@@ -52,27 +51,24 @@ __(__) <a href="___">Title</a>
 <ul class="date">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<li class="<?=h($row[0])?> <?=h($row[2])?>">
+<li class="<?=h($row[0])?>">
   <b class="day"><?=h($row[1])?></b>
-  <p class="cafe <?=h($row[3])?>">
-    <b></b><br>
-    <u class="hour"></u>
+  <p class="<?=h($row[2])?>">
+    <i></i><br>
+    <u><?=h($row[3])?></u>
   </p>
-  <p class="shop <?=h($row[4])?>">
-    <b></b><br>
-    <u class="hour"></u>
+  <p class="<?=h($row[4])?>">
+    <i></i><br>
+    <u><?=h($row[5])?></u>
   </p>
-  <p class="gallery <?=h($row[5])?>">
-    <b></b><br>
-    <u class="hour"></u>
-    <span class="topic"><?=h($row[6])?></span>
+  <p class="<?=h($row[6])?>">
+    <i></i><br>
+    <u><?=h($row[7])?></u>
+    <span><?=h($row[8])?></span>
   </p>
-  <p class="event <?=h($row[7])?>">
-    <?=h($row[8])?><br/><u><?=h($row[9])?></u><br/>
-    <span class="price"><?=h($row[10])?></span>
-  </p>
-  <p class="discussion <?=h($row[11])?>"><br/>
-    <u></u>
+  <p class="<?=h($row[9])?>">
+    <u><?=h($row[10])?></u><br/>
+    <span><?=h($row[11])?></span>
   </p>
 </li>
 <?php endforeach; ?>
