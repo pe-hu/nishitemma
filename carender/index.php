@@ -102,14 +102,13 @@ fclose($fp);
             </span>
           </p>
           <p class="<?= h($row[9]) ?>">
-            <span><?= h($row[11]) ?></span>
             <u>
               <?= h($row[10]) ?>
             </u>
-            <br />
             <i>
               <?= h($row[12]) ?>
             </i>
+            <span><?= h($row[11]) ?></span>
           </p>
         </li>
       <?php endforeach; ?>
