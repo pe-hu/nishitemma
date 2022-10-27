@@ -23,6 +23,7 @@
     display: block;
 }
 
+#collection h1,
 #collection #calendar {
     padding: 0.5rem;
 }
