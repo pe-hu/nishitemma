@@ -1,11 +1,11 @@
 html {
-    height: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .date li .none {
@@ -13,19 +13,19 @@ body {
 }
 
 @font-face {
-    font-family: "MS Mincho", serif;
-    src: url("MSMincho.ttf");
+  font-family: "MS Mincho", serif;
+  src: url("MSMincho.ttf");
 }
 
 .month,
 .date,
 #collection #calendar,
 #collection button[type="submit"] {
-    font-family: "MS Mincho", serif;
+  font-family: "MS Mincho", serif;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 h1,
@@ -41,18 +41,19 @@ hr {
 }
 
 .date {
-    padding: 0;
-    margin: 0 1%;
-    font-size: 1vw;
-    display:grid;
-    grid-template-columns:repeat(7,1fr);
-    grid-gap: 0;
+  padding: 0;
+  margin: 0 1%;
+  font-size: 1vw;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0;
 }
 
 .date li {
-    padding: 2.5%;
-    margin: 1%;
-    background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  padding: 2.5%;
+  margin: 1%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .date li:nth-child(7n+6) {
@@ -104,4 +105,13 @@ hr {
   content: "2F Gallery";
   color: #fff;
   background-color: blue;
+}
+
+.date .close:after {
+  content: "CLOSE";
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
