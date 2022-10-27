@@ -106,7 +106,6 @@ b {
 
 .date .close:after {
   content: "CLOSE";
-  color: red;
   font-size: 250%;
   font-weight: 900;
   position: absolute;
