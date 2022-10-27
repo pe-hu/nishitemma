@@ -110,6 +110,7 @@ hr {
 .date .close:after {
   content: "CLOSE";
   color: red;
+  font-size: 200%;
   position: absolute;
   top: 50%;
   left: 50%;
