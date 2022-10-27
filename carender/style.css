@@ -96,7 +96,8 @@ hr {
   background-color: gold;
 }
 
-.date li .show {
+.date li .show,
+.date li .show u {
   color: blue;
 }
 
