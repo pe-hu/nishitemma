@@ -40,11 +40,6 @@ hr {
   padding: 2rem;
 }
 
-.month {
-    margin: 2%;
-    padding: 0;
-}
-
 .date {
     padding: 0;
     margin: 0 1%;
@@ -109,10 +104,4 @@ hr {
   content: "2F Gallery";
   color: #fff;
   background-color: blue;
-}
-
-.open .event .price {
-  font-size: 1vw;
-  display: inline-block;
-  margin: 1vw;
 }

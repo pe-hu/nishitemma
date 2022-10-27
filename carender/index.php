@@ -11,7 +11,7 @@ function h($str)
 
 $month = "sample";
 if (isset($_GET["month"])) {
-    $month = $_GET["month"];
+  $month = $_GET["month"];
 }
 
 $source_file = "" . $month . ".csv";
@@ -59,10 +59,21 @@ fclose($fp);
 <body>
   <div id="menu"></div>
 
-  <h1 class="month">
-    9月
-    <br>September
-  </h1>
+  <form id="collection" method="GET">
+    <select id="calendar" name="month">
+      <option>2019</option>
+      <option value="1901">1月</option>
+      <option value="1902">2月</option>
+      <option value="1903">3月</option>
+      <option value="1904">4月</option>
+      <option value="1905">5月</option>
+      <option value="1906">6月</option>
+      <option value="1907">7月</option>
+      <option value="1908">8月</option>
+      <option value="1909">9月</option>
+    </select>
+    <button type="submit" name="submit">決定</button>
+  </form>
 
   <ul class="date">
     <?php if (!empty($rows)) : ?>
@@ -107,22 +118,6 @@ fclose($fp);
     <?php else : ?>
     <?php endif; ?>
   </ul>
-  <hr />
-  <form id="collection" method="GET">
-    <select id="calendar" name="month">
-      <option>2019</option>
-      <option value="1901">1月</option>
-      <option value="1902">2月</option>
-      <option value="1903">3月</option>
-      <option value="1904">4月</option>
-      <option value="1905">5月</option>
-      <option value="1906">6月</option>
-      <option value="1907">7月</option>
-      <option value="1908">8月</option>
-      <option value="1909">9月</option>
-    </select>
-    <button type="submit" name="submit">決定</button>
-  </form>
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
