@@ -9,7 +9,7 @@ function h($str)
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$month = "09";
+$month = "9";
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
@@ -60,19 +60,19 @@ fclose($fp);
   <form id="collection" method="GET">
     <select id="calendar" name="month">
       <option>∧°┐</option>
-      <option value="01">1月</option>
-      <option value="02">2月</option>
-      <option value="03">3月</option>
-      <option value="04">4月</option>
-      <option value="05">5月</option>
-      <option value="06">6月</option>
-      <option value="07">7月</option>
-      <option value="08">8月</option>
-      <option value="09">9月</option>
+      <option value="1">1月</option>
+      <option value="2">2月</option>
+      <option value="3">3月</option>
+      <option value="4">4月</option>
+      <option value="5">5月</option>
+      <option value="6">6月</option>
+      <option value="7">7月</option>
+      <option value="8">8月</option>
+      <option value="9">9月</option>
     </select>
     <button type="submit" name="submit">2019</button>
   </form>
-  <h1>
+  <h1 class="month">
       <?php
       date_default_timezone_set('Asia/Tokyo');
       print(date($month) . "月")
