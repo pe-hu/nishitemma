@@ -78,6 +78,11 @@ hr {
   font-style: normal;
 }
 
+.date li .show span {
+  display: block;
+  font-size: 200%;
+}
+
 .date li .cafe i:after {
   content: "1F Cafe";
   color: #fff;
@@ -94,10 +99,6 @@ hr {
   content: "2F Gallery";
   color: #fff;
   background-color: blue;
-}
-
-.date li .show span {
-  display: block;
 }
 
 .open .gallery b {
