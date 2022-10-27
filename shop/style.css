@@ -1,99 +1,85 @@
-@font-face {
-    font-family: 'Shasta';
-    src: url('Fetamont-I2H77s3TbG.eot');
-    src: url('Fetamont-I2H77s3TbG.woff') format('woff'),
-        url('Fetamont-I2H77s3TbG.ttf') format('truetype'),
-        url('Fetamont-I2H77s3TbG.svg#Fetamont-I2H77s3TbG') format('svg');
+html {
+    height: -webkit-fill-available;
 }
 
-.Shasta {
-    font-family: 'Shasta';
+body,
+#cover,
+#logo,
+#logo p,
+#main,
+img {
+    padding: 0;
+    margin: 0;
 }
 
-@font-face {
-    font-family: "MS Mincho", serif;
-    src: url("MSMincho.ttf");
+#cover,
+#logo,
+#info,
+#main {
+    user-select: none;
+    pointer-events: none;
 }
 
-.pehu {
-    letter-spacing: 0.04rem;
-    font-family: "MS Mincho", serif;
+#cover,
+#logo,
+#info,
+#links {
+    position: fixed;
+}
+
+#cover,
+#logo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+#cover {
+    z-index: 0;
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#logo {
+    z-index: 10;
+}
+
+#logo p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#logo img {
+    width: 100%;
 }
 
 #info {
-    color: #fff;
-    background-color: #BA2636;
-    text-align: center;
-    padding: 5vh;
-    font-size: 4.5vh;
-    letter-spacing: 0.25vh;
-    text-align: center;
-}
-
-#info h1 {
-    margin: 0;
-    font-size: 250%;
-    letter-spacing: -0.10vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 #links {
-    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
-    font-size: 2.5vw;
-    padding: 1vw;
-    background-color: rgba(255, 255, 255, 0.5);
+    top: 25vh;
+    right: 5vw;
+    z-index: 5;
 }
 
-#links p {
-    margin: 0;
-    font-size: 150%;
+#main {
+    position: relative;
+    top: 100vh;
+    top: -webkit-fill-available;
+    width: 100%;
 }
 
-#links,
-#links a {
-    color: pink;
-}
-
-#links a,
-#links b,
-#links span {
-    display: inline-block;
-    padding: 0 1vw;
-}
-
-#links a:hover {
-    color: #DDFFFF;
-    background-color: pink;
-}
-
-#main .marquee {
-    font-size: 5vw;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    background-color: yellow;
-}
-
-#main .marquee p {
-    color: #fff;
-    text-shadow: 3px 3px 1px #000;
+#main img {
     display: block;
-    white-space: nowrap;
-    padding-left: 100%;
-    margin: 0;
-    display: inline-block;
-    white-space: nowrap;
-    animation-name: marquee;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes marquee {
-    from {
-        transform: translate(0);
-    }
-
-    to {
-        transform: translate(-100%);
-    }
+    width: 100%;
 }
