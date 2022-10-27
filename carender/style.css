@@ -70,7 +70,6 @@ b {
 
 .date li p span {
   display: block;
-  padding: 1vw 0 0;
   font-size: 200%;
 }
 
@@ -89,6 +88,10 @@ b {
 .date li .show,
 .date li .show u {
   color: blue;
+}
+
+.date li .show {
+  padding: 1vw 0;
 }
 
 .date li .show u {
