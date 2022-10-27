@@ -13,7 +13,7 @@ open,12,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,8pm-,れんれん�
 open,13,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 close,14,
 open,15,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
-open,16,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,"Signed Curtain",none,none,"by Jean-Philippe Bretin, Vanessa Dziuba"
+open,16,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,"Signed Curtain",event,none,none,"by Jean-Philippe Bretin, Vanessa Dziuba"
 open,17,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,18,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,8pm-,Discussion,Members Only
 open,19,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,8pm-,れんれんに聞きたい50のこと,
@@ -24,7 +24,7 @@ open,23,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,24,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,25,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,8pm-,Discussion,Members Only
 open,26,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,7pm-,#26APR19FRI,¥2000-
-open,27,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,"フランスのカード",none,none,"by Sammy Stein, Séverine Bascouert"
+open,27,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,"フランスのカード",event,none,none,"by Sammy Stein, Séverine Bascouert"
 open,28,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,29,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,30,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,Last Day,event,6pm-,closeing party,
