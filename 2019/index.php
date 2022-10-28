@@ -9,13 +9,13 @@ function h($str)
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$year = date("Y");
+$year = "2019";
 $month = date("m");
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
 
-$source_file = $month . ".csv";
+$source_file = "../" . $month . ".csv";
 
 $fp = fopen($source_file, 'r');
 flock($fp, LOCK_SH);
@@ -46,7 +46,7 @@ fclose($fp);
 </head>
 
 <body>
-  <form id="index" method="GET">
+  <form id="index_form" method="GET">
     <select id="calendar" name="month">
       <option disabled selected hidden>Select Month</option>
       <option value="1">1月</option>
@@ -64,6 +64,7 @@ fclose($fp);
     </select>
     <h1>
       <?php
+      date_default_timezone_set('Asia/Tokyo');
       print(date($month) . "月")
       ?>
     </h1>
@@ -81,32 +82,14 @@ fclose($fp);
           <b class="day">
             <?= h($row[1]) ?>
           </b>
-          <p class="<?= h($row[2]) ?>">
-            <i></i><br>
+          <p style="display:<?= h($row[2]) ?>;">
+            <i><?= h($row[3]) ?></i><br>
             <u>
-              <?= h($row[3]) ?>
-            </u>
-          </p>
-          <p class="<?= h($row[4]) ?>">
-            <i></i><br>
-            <u>
-              <?= h($row[5]) ?>
-            </u>
-          </p>
-          <p class="<?= h($row[6]) ?>">
-            <i></i>
-            <br>
-            <u>
-              <?= h($row[7]) ?>
+              <?= h($row[4]) ?>
             </u>
             <span>
-              <?= h($row[8]) ?>
+              <?= h($row[5]) ?>
             </span>
-          </p>
-          <p class="<?= h($row[9]) ?>">
-            <u><?= h($row[10]) ?></u>
-            <i><?= h($row[12]) ?></i>
-            <span><?= h($row[11]) ?></span>
           </p>
         </li>
       <?php endforeach; ?>
