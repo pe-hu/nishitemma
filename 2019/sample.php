@@ -36,13 +36,26 @@ fclose($fp);
   <title>PHP Calendar</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="calendar.css" />
+  <link rel="stylesheet" href="fira_code.css">
   <style>
-    #index h1,
-    #index #calendar,
-    #index button[type="submit"] {
-      font-family: "MS Mincho", serif;
+    .date,
+    #index_form h1,
+    #index_form #calendar,
+    #index_form button[type="submit"] {
+      font-family: "Fira Code", monospace;
+    }
+
+    .date {
+      font-family: 'Fira Code VF';
     }
   </style>
+  <script type="text/javascript">
+    function onWeightChange(weight) {
+      // code_variable.style['font-weight'] = weight;
+      code_variable.style['font-variation-settings'] = "'wght' " + weight;
+      span_wght.innerText = weight;
+    }
+  </script>
 </head>
 
 <body>
