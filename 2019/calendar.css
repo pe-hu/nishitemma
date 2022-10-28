@@ -54,17 +54,7 @@ body {
   font-size: 150%;
 }
 
-.date hr {
-  border: none;
-  padding: 1vw;
-  margin: 0;
-}
-
 @media screen and (max-width: 550px) {
-
-  .date hr {
-    padding: 0.5vw
-  }
 
   .date {
     font-size: 2vw;
