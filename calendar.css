@@ -13,17 +13,6 @@ body {
   display: none;
 }
 
-.date,
-#collection h1,
-#collection #calendar,
-#collection button[type="submit"] {
-  font-family: "MS Mincho", serif;
-}
-
-ul {
-  list-style-type: none;
-}
-
 hr {
   border: none;
   padding: 1vw;
@@ -31,6 +20,8 @@ hr {
 }
 
 .date {
+  font-family: "MS Mincho", serif;
+  list-style-type: none;
   padding: 1%;
   margin: 0;
   font-size: 1.25vw;

@@ -1,3 +1,9 @@
+#collection h1,
+#collection #calendar,
+#collection button[type="submit"] {
+    font-family: "MS Mincho", serif;
+}
+
 #collection {
     display: flex;
     justify-content: space-between;

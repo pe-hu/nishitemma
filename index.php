@@ -9,6 +9,7 @@ function h($str)
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
+$year = "2019";
 $month = "9";
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
@@ -61,7 +62,7 @@ fclose($fp);
   <hr />
   <form id="collection" method="GET">
     <select id="calendar" name="month">
-      <option>∧°┐</option>
+      <option disabled selected>∧°┐</option>
       <option value="1">1月</option>
       <option value="2">2月</option>
       <option value="3">3月</option>
@@ -78,7 +79,11 @@ fclose($fp);
       print(date($month) . "月")
       ?>
     </h1>
-    <button type="submit" name="submit">2019</button>
+    <button type="submit" name="submit">
+      <?php
+      print(date($year))
+      ?>
+    </button>
   </form>
   <hr />
   <ul class="date">
