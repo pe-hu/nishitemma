@@ -23,6 +23,7 @@ body {
   position: relative;
   padding: 2.5%;
   margin: 1%;
+  min-height: 12.5vw;
 }
 
 .date li:nth-child(7n+6) {
