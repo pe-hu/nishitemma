@@ -15,7 +15,7 @@ if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
 
-$source_file = "../" . $month . ".csv";
+$source_file = $month . ".csv";
 
 $fp = fopen($source_file, 'r');
 flock($fp, LOCK_SH);

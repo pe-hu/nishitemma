@@ -15,28 +15,9 @@ if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
 
-$source_file = $month . ".csv";
+$source_file = $year . "/" . $month . ".csv";
 
 $fp = fopen($source_file, 'r');
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  flock($fp, LOCK_EX);
-  fputcsv($fp, [
-    $open,
-    $date,
-    $cafe,
-    $kissa,
-    $shop,
-    $hour,
-    $show,
-    $time,
-    $title,
-    $event,
-    $info,
-    $name,
-    $more
-  ]);
-  rewind($fp);
-}
 flock($fp, LOCK_SH);
 while ($row = fgetcsv($fp)) {
   $rows[] = $row;
