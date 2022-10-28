@@ -59,7 +59,7 @@ fclose($fp);
 <body>
   <form id="collection" method="GET">
     <select id="calendar" name="month">
-      <option>∧° ┐</option>
+      <option>∧°┐</option>
       <option value="1">1月</option>
       <option value="2">2月</option>
       <option value="3">3月</option>
