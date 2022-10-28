@@ -12,7 +12,7 @@ open,6,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,8pm -,Discussion,Mem
 open,7,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,7pm -,合法C遊び/違法C遊び,
 open,8,none,none,shop,1 - 6pm,show,1 - 6pm,"LAST DAY",none,none,none,
 close,9
-open,10,cafe,12:00 - 6pm,none,none,none,none,none,none,none,none,
+open,10,cafe,12:00 - 6pm,none,none,none,none,none,event,8pm -,シャドーパフォーマンス/ワークショップ,
 open,11,cafe,12:00 - 6pm,none,none,none,none,none,event,8pm -,巨大植物調査,
 open,12,cafe,12:00 - 6pm,none,none,none,none,none,none,none,none,
 open,13,cafe,12:00 - 6pm,none,none,none,none,none,event,8pm -,Discussion,Members Only
