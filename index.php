@@ -84,7 +84,7 @@ fclose($fp);
       ?>
     </button>
   </form>
-  
+
   <ul class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
@@ -124,6 +124,7 @@ fclose($fp);
     <?php else : ?>
     <?php endif; ?>
   </ul>
+
   <div id="menu"></div>
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
