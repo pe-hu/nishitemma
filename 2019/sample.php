@@ -36,15 +36,22 @@ fclose($fp);
   <title>PHP Calendar</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="calendar.css" />
+  <link rel="stylesheet" href="https://vg.pe.hu/coding/sc-pro/source-code-pro.css">
+
   <style>
+    @font-face {
+      font-family: "Kevin Wild";
+      src: url("/wp-content/uploads/kevinwildfont.ttf");
+    }
+
     #index_form h1,
     #index_form #calendar,
     #index_form button[type="submit"] {
-      font-family: 'Fira Code', monospace;
+      font-family: "Kevin Wild", cursive;
     }
 
     .date {
-      font-family: 'Fira Code VF';
+      font-family: 'Source Code Pro VF', 'Source Code Pro', monospace;
     }
   </style>
 </head>
