@@ -129,6 +129,11 @@ hr {
   .date li {
     padding: 0.5vw;
     margin: 0.25vw;
+    max-width: 30vw;
     min-height: 30vw;
+  }
+
+  .none {
+    display: none;
   }
 }
