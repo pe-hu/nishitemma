@@ -30,11 +30,6 @@ ul {
   list-style-type: none;
 }
 
-b {
-  font-size: 3vw;
-  font-weight: normal;
-}
-
 .date {
   padding: 0;
   margin: 1%;
@@ -57,6 +52,11 @@ b {
 .date li:nth-child(7n+7),
 .holiday {
   color: red;
+}
+
+.date li b {
+  font-size: 250%;
+  font-weight: normal;
 }
 
 .date li p u {
@@ -113,4 +113,7 @@ b {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 550px) {
 }
