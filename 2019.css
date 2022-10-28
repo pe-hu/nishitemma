@@ -1,12 +1,12 @@
-#collection h1,
-#collection #calendar,
-#collection button[type="submit"],
+#index h1,
+#index #calendar,
+#index button[type="submit"],
 .date {
   font-family: "MS Mincho", serif;
 }
 
-#collection #calendar,
-#collection button[type="submit"] {
+#index #calendar,
+#index button[type="submit"] {
     font-size: 1rem;
     letter-spacing: 0.04rem;
 }
