@@ -9,12 +9,6 @@ body {
   display: none;
 }
 
-hr {
-  border: none;
-  padding: 1vw;
-  margin: 0;
-}
-
 .date {
   list-style-type: none;
   padding: 1%;
@@ -60,9 +54,15 @@ hr {
   font-size: 150%;
 }
 
+.date hr {
+  border: none;
+  padding: 1vw;
+  margin: 0;
+}
+
 @media screen and (max-width: 550px) {
 
-  hr {
+  .date hr {
     padding: 0.5vw
   }
 
