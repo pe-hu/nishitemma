@@ -131,7 +131,7 @@ hr {
   .date li {
     box-sizing: border-box;
     padding: 0.5vw;
-    margin: 0.25vw;
+    margin: 1.25%;
     max-width: 30vw;
     min-height: 30vw;
   }
