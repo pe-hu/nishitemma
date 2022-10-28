@@ -42,7 +42,7 @@ fclose($fp);
     #index_form h1,
     #index_form #calendar,
     #index_form button[type="submit"] {
-      font-family: "Fira Code", monospace;
+      font-family: 'Fira Code', monospace;
     }
 
     .date {
