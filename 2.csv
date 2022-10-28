@@ -12,7 +12,7 @@ open,7,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,8,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,6pm -,映画を見ます,
 open,9,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,10,none,none,none,none,none,none,none,event,5pm -,#10FEB19SUN,¥2000-,none
-open,11,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
+open holiday,11,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,12,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,13,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,14,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,8pm -,Discussion,Members Only

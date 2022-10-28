@@ -22,7 +22,7 @@ open,17,none,none,none,none,show,1 - 6pm,なかよしフェアー,event,,,"by Jo
 open,18,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,19,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,6pm -,翻訳の会,
 open,20,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,9pm -,夜の遠足,
-open,21,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
+open holiday,21,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 open,22,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,event,7pm -,使ってないもの使ってみる,
 open,23,cafe,12:00 - 6pm,shop,1 - 6pm,show,1 - 6pm,→,none,none,none,
 close,24,

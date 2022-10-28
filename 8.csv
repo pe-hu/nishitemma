@@ -12,7 +12,7 @@ open,8,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
 open,9,cafe,12:00 - 6pm,shop,3 - 8pm,show,3 - 8pm,→,none,none,none,
 open,10,none,none,shop,1 - 6pm,show,1 - 6pm,Last Day,none,none,none,
 open,11,none,none,none,none,none,none,none,event,,京丹後でキャンプ,
-open,12,none,none,none,none,none,none,none,event,,京丹後でキャンプ,
+open holiday,12,none,none,none,none,none,none,none,event,,京丹後でキャンプ,
 close,13
 close,14
 close,15
