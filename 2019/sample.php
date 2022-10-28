@@ -36,9 +36,7 @@ fclose($fp);
   <title>PHP Calendar</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="calendar.css" />
-  <link rel="stylesheet" href="fira_code.css">
   <style>
-    .date,
     #index_form h1,
     #index_form #calendar,
     #index_form button[type="submit"] {
@@ -49,19 +47,12 @@ fclose($fp);
       font-family: 'Fira Code VF';
     }
   </style>
-  <script type="text/javascript">
-    function onWeightChange(weight) {
-      // code_variable.style['font-weight'] = weight;
-      code_variable.style['font-variation-settings'] = "'wght' " + weight;
-      span_wght.innerText = weight;
-    }
-  </script>
 </head>
 
 <body>
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
-      <option disabled selected hidden>Select Month</option>
+      <option hidden>Select Month</option>
       <option value="1">1月</option>
       <option value="2">2月</option>
       <option value="3">3月</option>
@@ -71,9 +62,9 @@ fclose($fp);
       <option value="7">7月</option>
       <option value="8">8月</option>
       <option value="9">9月</option>
-      <option value="10">10月</option>
-      <option value="11">11月</option>
-      <option value="12">12月</option>
+      <option disabled value="10">10月</option>
+      <option disabled value="11">11月</option>
+      <option disabled value="12">12月</option>
     </select>
     <h1>
       <?php
