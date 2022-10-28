@@ -82,11 +82,11 @@ fclose($fp);
           <b class="day">
             <?= h($row[1]) ?>
           </b>
-          <p style="display:<?= h($row[2]) ?>;">
-            <i><?= h($row[3]) ?></i><br>
+          <p class="<?= h($row[2]) ?>">
             <u>
-              <?= h($row[4]) ?>
+              <?= h($row[3]) ?>
             </u>
+            <i><?= h($row[4]) ?></i><br>
             <span>
               <?= h($row[5]) ?>
             </span>
