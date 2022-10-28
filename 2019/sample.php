@@ -44,12 +44,12 @@ fclose($fp);
       src: url("/wp-content/uploads/kevinwildfont.ttf");
     }
 
-    #index_form h1,
     #index_form #calendar,
     #index_form button[type="submit"] {
       font-family: 'Source Code Pro VF', 'Source Code Pro', monospace;
     }
 
+    #index_form h1,
     .date {
       font-family: "Kevin Wild", cursive;
     }
