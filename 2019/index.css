@@ -1,4 +1,4 @@
-#index {
+#index_form {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -8,8 +8,8 @@
     z-index: 100;
 }
 
-#index #calendar,
-#index button[type="submit"] {
+#index_form #calendar,
+#index_form button[type="submit"] {
     color: #000;
     font-size: 1rem;
     margin: 0;
@@ -18,22 +18,22 @@
     background: #fff;
 }
 
-#index #calendar,
-#index button[type="submit"] {
+#index_form #calendar,
+#index_form button[type="submit"] {
     display: block;
 }
 
-#index h1 {
+#index_form h1 {
     margin: 0;
     font-size: 125%;
 }
 
-#index h1,
-#index #calendar {
+#index_form h1,
+#index_form #calendar {
     padding: 0.5rem;
 }
 
-#index button[type="submit"] {
+#index_form button[type="submit"] {
     background: transparent;
     border-radius: 2rem;
     cursor: pointer;
@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 550px) {
-    #index {
+    #index_form {
         padding: 1rem 0.5rem;
     }
 }
