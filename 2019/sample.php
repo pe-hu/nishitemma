@@ -45,12 +45,15 @@ fclose($fp);
     }
 
     #index_form #calendar,
-    #index_form button[type="submit"] {
+    #index_form button[type="submit"],
+    .date u,
+    .date span {
       font-family: 'Source Code Pro VF', 'Source Code Pro', monospace;
     }
 
     #index_form h1,
-    .date {
+    .date b,
+    .date i {
       font-family: "Kevin Wild", cursive;
     }
   </style>
