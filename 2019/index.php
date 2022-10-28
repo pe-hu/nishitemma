@@ -9,8 +9,8 @@ function h($str)
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-$year = "2019";
-$month = "9";
+$year = date("Y");
+$month = date("m");
 if (isset($_GET["month"])) {
   $month = $_GET["month"];
 }
@@ -18,25 +18,6 @@ if (isset($_GET["month"])) {
 $source_file = $month . ".csv";
 
 $fp = fopen($source_file, 'r');
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  flock($fp, LOCK_EX);
-  fputcsv($fp, [
-    $open,
-    $date,
-    $cafe,
-    $kissa,
-    $shop,
-    $hour,
-    $show,
-    $time,
-    $title,
-    $event,
-    $info,
-    $name,
-    $more
-  ]);
-  rewind($fp);
-}
 flock($fp, LOCK_SH);
 while ($row = fgetcsv($fp)) {
   $rows[] = $row;
@@ -52,16 +33,22 @@ fclose($fp);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <title>∧° ┐ | creative, community space</title>
-  <link rel="stylesheet" href="2019.css" />
-  <link rel="stylesheet" href="2019/index.css" />
-  <link rel="stylesheet" href="2019/calendar.css" />
+  <title>PHP Calendar</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="calendar.css" />
+  <style>
+    #index h1,
+    #index #calendar,
+    #index button[type="submit"] {
+      font-family: "MS Mincho", serif;
+    }
+  </style>
 </head>
 
 <body>
-  <form id="collection" method="GET">
+  <form id="index" method="GET">
     <select id="calendar" name="month">
-      <option disabled selected hidden>∧°┐</option>
+      <option disabled selected hidden>Select Month</option>
       <option value="1">1月</option>
       <option value="2">2月</option>
       <option value="3">3月</option>
@@ -71,16 +58,18 @@ fclose($fp);
       <option value="7">7月</option>
       <option value="8">8月</option>
       <option value="9">9月</option>
+      <option value="10">10月</option>
+      <option value="11">11月</option>
+      <option value="12">12月</option>
     </select>
-    <h1 class="month">
+    <h1>
       <?php
-      date_default_timezone_set('Asia/Tokyo');
       print(date($month) . "月")
       ?>
     </h1>
     <button type="submit" name="submit">
       <?php
-      print(date($year))
+      print($year)
       ?>
     </button>
   </form>
@@ -124,14 +113,6 @@ fclose($fp);
     <?php else : ?>
     <?php endif; ?>
   </ul>
-  <hr />
-  <div id="menu"></div>
-  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      $("#menu").load("menu.html");
-    })
-  </script>
 </body>
 
 </html>

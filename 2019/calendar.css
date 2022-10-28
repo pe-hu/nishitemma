@@ -1,7 +1,3 @@
-html {
-  height: -webkit-fill-available;
-}
-
 html,
 body {
   padding: 0;
@@ -20,7 +16,6 @@ hr {
 }
 
 .date {
-  font-family: "MS Mincho", serif;
   list-style-type: none;
   padding: 1%;
   margin: 0;
@@ -63,47 +58,6 @@ hr {
 .date li p span {
   display: block;
   font-size: 150%;
-}
-
-.date li .cafe i:after {
-  content: "1F Cafe";
-  color: #fff;
-  background-color: red;
-}
-
-.date li .shop i:after {
-  content: "2F Shop";
-  color: #000;
-  background-color: gold;
-}
-
-.date li .show,
-.date li .show u {
-  color: blue;
-}
-
-.date li .show span {
-  padding: 1vw 0 0;
-}
-
-.date li .show u {
-  text-decoration: none;
-}
-
-.date li .show i:after {
-  content: "2F Gallery";
-  color: #fff;
-  background-color: blue;
-}
-
-.date .close:after {
-  content: "CLOSE";
-  font-size: 200%;
-  font-weight: 900;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 550px) {
