@@ -86,10 +86,10 @@ fclose($fp);
             <u>
               <?= h($row[3]) ?>
             </u>
-            <i><?= h($row[4]) ?></i><br>
             <span>
-              <?= h($row[5]) ?>
+              <?= h($row[4]) ?>
             </span>
+            <i><?= h($row[5]) ?></i>
           </p>
         </li>
       <?php endforeach; ?>

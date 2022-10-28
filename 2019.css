@@ -11,6 +11,11 @@
     letter-spacing: 0.04rem;
 }
 
+.date li p i:not(.event i) {
+  font-size: 125%;
+  font-style: normal;
+}
+
 .date li .cafe i:after {
   content: "1F Cafe";
   color: #fff;
