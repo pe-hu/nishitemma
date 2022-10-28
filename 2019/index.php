@@ -74,7 +74,7 @@ fclose($fp);
       ?>
     </button>
   </form>
-  <hr />
+
   <ul class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
