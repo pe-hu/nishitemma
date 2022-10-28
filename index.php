@@ -59,7 +59,7 @@ fclose($fp);
 </head>
 
 <body>
-  <form id="index" method="GET">
+  <form id="index_form" method="GET">
     <select id="calendar" name="month">
       <option disabled selected hidden>∧°┐</option>
       <option value="1">1月</option>
