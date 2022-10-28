@@ -122,8 +122,6 @@ hr {
   }
 
   .date {
-    padding: 1%;
-    margin: 0.5%;
     font-size: 2vw;
     grid-template-columns: repeat(3, 1fr);
   }
