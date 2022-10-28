@@ -8,12 +8,6 @@ body {
   margin: 0;
 }
 
-hr {
-  border: none;
-  padding: 1vw;
-  margin: 0;
-}
-
 .none p,
 .date li .none {
   display: none;
@@ -30,9 +24,15 @@ ul {
   list-style-type: none;
 }
 
+hr {
+  border: none;
+  padding: 1vw;
+  margin: 0;
+}
+
 .date {
-  padding: 0;
-  margin: 1%;
+  padding: 1%;
+  margin: 0;
   font-size: 1.25vw;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -115,5 +115,20 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
+
+  hr {
+    padding: 0.25vw
+  }
+
+  .date {
+    font-size: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .date li {
+    padding: 0.5vw;
+    margin: 0.25vw;
+    min-height: 30vw;
+  }
 }
