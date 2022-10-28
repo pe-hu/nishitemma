@@ -78,7 +78,7 @@ fclose($fp);
     </h1>
     <button type="submit" name="submit">2019</button>
   </form>
-
+  <hr />
   <ul class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
