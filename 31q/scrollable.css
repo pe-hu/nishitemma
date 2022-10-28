@@ -53,7 +53,6 @@ body,
     text-decoration: none;
 }
 
-body::-webkit-scrollbar,
 .library::-webkit-scrollbar,
 .library li::-webkit-scrollbar {
     width: 4vh;

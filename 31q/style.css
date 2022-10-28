@@ -47,7 +47,6 @@
     color: red;
 }
 
-body::-webkit-scrollbar-thumb,
 .library::-webkit-scrollbar-thumb,
 .library li::-webkit-scrollbar-thumb {
     background: #000;
