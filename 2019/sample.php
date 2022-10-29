@@ -96,14 +96,14 @@ fclose($fp);
           <b class="day">
             <?= h($row[1]) ?>
           </b>
-          <p class="<?= h($row[2]) ?>">
+          <p>
             <u>
               <?= h($row[3]) ?>
             </u>
             <span>
-              <?= h($row[4]) ?>
+              <?= h($row[2]) ?>
             </span>
-            <i><?= h($row[5]) ?></i>
+            <i><?= h($row[4]) ?></i>
           </p>
         </li>
       <?php endforeach; ?>
