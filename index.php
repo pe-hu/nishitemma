@@ -52,6 +52,9 @@ fclose($fp);
       <option value="7">7月</option>
       <option value="8">8月</option>
       <option value="9">9月</option>
+      <option disabled value="10">10月</option>
+      <option disabled value="11">11月</option>
+      <option disabled value="12">12月</option>
     </select>
     <h1 class="month">
       <?php
