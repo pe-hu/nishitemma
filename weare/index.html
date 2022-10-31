@@ -6,17 +6,35 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>∧° ┐ | creative, community space</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="../floor.css">
   <style>
     #map h1 {
       display: none;
     }
+
+    #cafe,
+    .open #map {
+      display: none;
+    }
+
+    #map,
+    .open #cafe {
+      display: block;
+    }
+
+    #cafe {
+      height: 90vh;
+    }
+
+    #cafe iframe {
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 
-<body>
-  <div id="weare"></div>
+<body id="box">
   <main id="main">
     <h1>
       <b><a href="/jp/">∧°┐</a></b>
@@ -30,9 +48,9 @@
       <li>
         <p>
           <b>1階</b> には
-          <b><a href="#">喫茶スペース</a></b> とやりたいことをやるための
+          <b><a id="btn" href="#cafe">喫茶スペース</a></b> とやりたいことをやるための
           <b>フリースペース</b> があります。<br />
-          <b><a href="#">Cafe</a> and Rental space on the 1st floor,</b>
+          <b>Cafe and Rental space on the 1st floor,</b>
           this floor has a free space for various activities.
         </p>
         <p>
@@ -59,6 +77,9 @@
         </p>
       </li>
       <li id="map"></li>
+      <li id="cafe">
+        <iframe src="cafe.pdf"></iframe>
+      </li>
     </ul>
     <hr />
   </main>
@@ -104,9 +125,9 @@
     of creative challenges for everyone.</marquee>
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../menu.js"></script>
   <script type="text/javascript">
     $(function () {
-      $("#weare").load("menu.html");
       $("#map").load("../floor.html");
     })
   </script>

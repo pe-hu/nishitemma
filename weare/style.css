@@ -1,164 +1,97 @@
-body,
-#main ul,
-#main li:not(.floor li),
-footer ul,
-footer li {
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
+
+.info b {
+    font-size: 1.5em;
 }
 
-.pehu {
-    font-family: "Apple Chancery", cursive;
+.info p {
+    font-size: 1em;
+    line-height: 2.2em;
 }
 
-h1,
-#main,
-header section,
-footer {
-    letter-spacing: 0.04rem;
-    font-family: "MS Mincho", serif;
-}
-
-.en {
-    font-family: "Times New Roman";
-    padding-left: 0.5em;
-    letter-spacing: 0.05rem;
-}
-
-marquee {
-  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-a:hover {
-    font-style: oblique;
-}
-
-header h1,
-marquee {
-    font-size: 200%;
-}
-
-b {
-    font-size: 150%;
-}
-
-#main h1,
-.pehu,
-.red,
-header section a {
-    font-size: 125%;
-}
-
-header h1,
-#main h1,
-#main ul p,
-header section a {
-    line-height: 200%;
-}
-
-.pehu,
-.red {
-    color: red;
-}
-
-h1,
-b {
-    font-weight: normal;
-}
-
-hr {
-    clear: both;
-    border: 0 none;
-    padding-top: 1rem;
-}
-
-#main,
-header,
-footer {
-    padding: 2.5vw;
-}
-
-header section {
-    display: block;
-    padding-bottom: 1.5rem;
-}
-
-header section a {
-    padding: 0.25em;
-    margin: 0 1rem 1rem 0;
-}
-
-header section .topics {
-    background-color: #eee;
-}
-
-header section .flash {
-    color: #fff;
-    background-color: red;
-}
-
-header section .dm {
-    background-color: yellow;
-}
-
-header section .topics:hover,
-header section .flash:hover,
-header section .dm:hover {
-    color: #fff;
-    background-color: blue;
-}
-
-#main ul,
-footer ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#main ul a:not(.floor li a) {
-    display: inline-block;
-    box-sizing: border-box;
-    border: 1px solid red;
-    padding: 0 0.25rem;
-}
-
-#main ul a:hover {
-    color: #fff;
-    background-color: blue;
-    border: 2px solid #fff;
-}
-
-#main ul li:not(.floor li),
-footer ul li {
-    width: 45%;
-}
-
-#main ul .member {
+.member {
     text-align: center;
 }
 
+#newsletter {
+    margin: 3vw 3vw;
+    padding: 0 2vw;
+    border: 2px solid red;
+}
+
+.floor {
+    position: relative;
+    padding: 0 1vw;
+}
+
+.floor li {
+    font-size: 1.3em;
+    float: left;
+    width: 45%;
+    margin: 0 0 1%;
+}
+
+.floor li a {
+    float: left;
+    width: 100%;
+    padding: 25% 0;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.floor li a:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: red;
+    text-decoration: underline wavy red;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: normal;
+    letter-spacing: 0.04rem;
+}
+
+.pehu {
+    font-family: 'Apple Chancery', cursive;
+    color: red;
+    font-size: 1.25em;
+}
+
+#location {
+    padding: 4vw 4vw 0;
+    font-weight: normal;
+    font-family: "ＭＳ 明朝", "MS Mincho";
+    letter-spacing: 0.04rem;
+}
+
+bottom {
+    font-size: 1.25em;
+    width: 100%;
+}
+
+bottom p {
+    padding: 0 2vw;
+}
+
 marquee {
-    display: block;
     background-color: #000;
     color: #fff;
-    padding: 0;
-    margin: 0;
+    font-size: 2em;
+    padding: 1vw 1.5vw;
 }
 
 @media screen and (max-width: 750px) {
+
+    html,
     body {
-        font-size: 0.75rem;
+        font-size: 0.75em;
     }
 
-    header section a {
-        margin: 0 0.5rem 0.5rem 0;
+    u {
+        font-size: 1.5em;
     }
 
     #event {
@@ -175,10 +108,5 @@ marquee {
         font-size: 1.75em;
         width: auto;
         padding: 2vw;
-    }
-
-    #main ul li:not(.floor li),
-    footer ul li {
-        width: 100%;
     }
 }
