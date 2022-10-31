@@ -110,7 +110,7 @@ fclose($fp);
     <?php endif; ?>
   </ul>
 
-  <div id="menu"></div>
+  <div id="map"></div>
 
   <div id="screensaver" class="screensaver">
     <h1>
@@ -122,7 +122,7 @@ fclose($fp);
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $("#menu").load("nishitemma.html");
+      $("#map").load("nishitemma.html");
     })
 
     let timedelay = 0;
