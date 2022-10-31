@@ -113,13 +113,6 @@ fclose($fp);
 
   <div id="menu"></div>
 
-  <div id="screensaver" class="screensaver">
-    <h1>
-      We've moved to ↓<br />
-      <b>creative-community.space</b>
-    </h1>
-  </div>
-
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
