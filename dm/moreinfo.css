@@ -194,6 +194,7 @@
 @media print {
 	#are {
 		padding: 2rem;
+		height: 100vh;
 	}
 
 	.folder a {
