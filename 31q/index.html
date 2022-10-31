@@ -12,10 +12,25 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contents.css" />
     <link rel="stylesheet" href="scrollable.css" />
+    <style>
+        #floor,
+        #menu {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .open #daily {
+            display: none;
+        }
+    </style>
 </head>
 
 <body id="box">
     <div id="menu"></div>
+    <div id="floor"></div>
     <div id="daily">
         <script src="daily.js"></script>
     </div>
