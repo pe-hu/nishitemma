@@ -7,8 +7,7 @@
 }
 
 #floor,
-.open #index_form,
-.open ul.date {
+.open main {
     display: none;
 }
 
