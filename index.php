@@ -43,10 +43,6 @@ fclose($fp);
 
 <body id="box">
 
-  <a id="btn" href="#" target="_parent">
-    <span></span>
-  </a>
-
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
       <option disabled selected hidden>∧°┐</option>
@@ -128,7 +124,7 @@ fclose($fp);
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $("#menu").load("nishitemma.html");
+      $("#menu").load("menu.html");
     })
 
     let btn = document.querySelector('#btn');
