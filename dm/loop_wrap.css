@@ -2,7 +2,7 @@
 	--numOfList: 24;
 	--imgW: 240px;
 	--imgH: var(--imgH);
-	--BetweenImg: 0px;
+	--BetweenImg: 0;
 }
 
 #slideshow {
@@ -12,7 +12,6 @@
 
 .loop_wrap {
 	display: flex;
-	font-size: 0;
 	animation: slideshow 24s linear infinite;
 }
 
