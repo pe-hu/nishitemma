@@ -33,4 +33,7 @@ for (var i = 0; i < 2; i++) {
         img_element.src = img_src[count];
         images.appendChild(img_element);
     }
-}
+} 
+
+const box = document.querySelectorAll(".box");
+box.style.cssText = 'bule';
