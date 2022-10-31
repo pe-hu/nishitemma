@@ -6,7 +6,9 @@
     content: 'Close';
 }
 
-#menu {
+#menu,
+.open form,
+.open ul {
     display: none;
 }
 

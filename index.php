@@ -111,11 +111,11 @@ fclose($fp);
     <?php endif; ?>
   </ul>
 
-  <div id="menu"></div>
-
   <a id="btn" href="#" target="_parent">
     <span></span>
   </a>
+
+  <div id="menu"></div>
 
   <div id="screensaver" class="screensaver">
     <h1>
