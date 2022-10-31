@@ -11,26 +11,5 @@
   <li><a href="/jp/2019/">Special Gift Box</a></li>
 </ul>
 
-<script type="text/javascript">
-  let btn = document.querySelector('#btn');
-  let box = document.querySelector('#box');
-
-  let btnToggleclass = function (close) {
-    close.classList.toggle('open');
-  }
-
-  btn.addEventListener('click', function () {
-    btnToggleclass(box);
-  }, false);
-
-  $('a[href^="#"]').click(function () {
-    let speed = 500; //スクロールスピード
-    let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? 'html' : href);
-    let position = target.offset().top;
-    $("html, body").animate({
-      scrollTop: position
-    }, speed, "swing");
-    return false;
-  });
-</script>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="/jp/menu.js"></script>
