@@ -42,6 +42,11 @@ fclose($fp);
 </head>
 
 <body id="box">
+
+  <a id="btn" href="#" target="_parent">
+    <span></span>
+  </a>
+
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
       <option disabled selected hidden>∧°┐</option>
@@ -110,10 +115,6 @@ fclose($fp);
     <?php else : ?>
     <?php endif; ?>
   </ul>
-
-  <a id="btn" href="#" target="_parent">
-    <span></span>
-  </a>
 
   <div id="menu"></div>
 
