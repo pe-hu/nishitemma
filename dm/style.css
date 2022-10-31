@@ -1,8 +1,3 @@
-@font-face {
-	font-family: "MS Mincho", serif;
-	src: url("MSMincho.ttf");
-}
-
 .pehu,
 #moreinfo,
 #moreinfo h2,
@@ -93,6 +88,16 @@ a:hover {
 
 #we h2 {
 	color: red;
+}
+
+body,
+main {
+	padding: 0;
+	margin: 0;
+}
+
+#we {
+	box-sizing: border-box;
 }
 
 hr,
