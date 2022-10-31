@@ -7,8 +7,8 @@
 }
 
 #menu,
-.open form,
-.open ul {
+.open #index_form,
+.open ul.date {
     display: none;
 }
 
