@@ -50,7 +50,9 @@ fclose($fp);
 
 <body id="box">
   <div id="screensaver" class="screensaver">
-    <h1>screensaver.js</h1>
+    <h1>We've moved to<br />
+      <b>creative-community.space</b>
+    </h1>
   </div>
 
   <form id="index_form" method="GET">
