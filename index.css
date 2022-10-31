@@ -1,8 +1,8 @@
-#click span::after {
+#btn span::after {
     content: 'Open';
 }
 
-.open #click span::after {
+.open #btn span::after {
     content: 'Close';
 }
 
