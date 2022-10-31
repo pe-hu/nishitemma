@@ -43,7 +43,7 @@ fclose($fp);
   <link rel="stylesheet" href="screensaver.css" />
   <style>
     #index {
-      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
