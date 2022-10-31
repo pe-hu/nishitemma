@@ -65,6 +65,10 @@
     background-color: pink;
 }
 
+#main {
+    background-color: #fff;
+}
+
 #main .marquee {
     font-size: 5vw;
     padding: 0;
