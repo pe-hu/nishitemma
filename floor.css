@@ -63,7 +63,7 @@ a:hover {
 }
 
 .floor li a:hover {
-    color: red;
+    color: #fff;
     border: 1px solid red;
 }
 
