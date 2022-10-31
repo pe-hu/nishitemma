@@ -37,6 +37,7 @@ fclose($fp);
   <link rel="stylesheet" href="2019.css" />
   <link rel="stylesheet" href="2019/index.css" />
   <link rel="stylesheet" href="2019/calendar.css" />
+  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="screensaver.css" />
 </head>
 
@@ -110,11 +111,11 @@ fclose($fp);
     <?php endif; ?>
   </ul>
 
-  <a id="click" href="#" target="_parent">
-    <span class="cc"></span>
-  </a>
-
   <div id="menu"></div>
+
+  <a id="click" href="#" target="_parent">
+    <span></span>
+  </a>
 
   <div id="screensaver" class="screensaver">
     <h1>

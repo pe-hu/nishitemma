@@ -1,0 +1,15 @@
+#click span::after {
+    content: 'Open';
+}
+
+.open #click span::after {
+    content: 'Close';
+}
+
+#menu {
+    display: none;
+}
+
+.open #menu {
+    display: block;
+}
