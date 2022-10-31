@@ -42,6 +42,8 @@ fclose($fp);
 </head>
 
 <body id="box">
+  <div id="index"></div>
+
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
       <option disabled selected hidden>∧°┐</option>
@@ -112,12 +114,11 @@ fclose($fp);
   </ul>
 
   <div id="menu"></div>
-  <div id="map"></div>
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $("#map").load("menu.html");
+      $("#index").load("menu.html");
       $("#menu").load("nishitemma.html");
     })
   </script>
