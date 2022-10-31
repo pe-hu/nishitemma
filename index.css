@@ -6,19 +6,19 @@
 }
 
 #btn span::after {
-    content: 'Open';
+    content: 'Index';
 }
 
 .open #btn span::after {
     content: 'Close';
 }
 
-#menu,
+#map,
 .open #index_form,
 .open ul.date {
     display: none;
 }
 
-.open #menu {
+.open #map {
     display: block;
 }
