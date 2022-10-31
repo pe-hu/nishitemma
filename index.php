@@ -42,7 +42,6 @@ fclose($fp);
 </head>
 
 <body id="box">
-
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
       <option disabled selected hidden>∧°┐</option>
