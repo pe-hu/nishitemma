@@ -6,8 +6,8 @@
 }
 
 #slideshow {
-    width: 100%;
-    overflow: hidden;
+	width: 100%;
+	overflow: hidden;
 }
 
 #loop_wrap {
@@ -16,11 +16,15 @@
 	animation: slideshow 24s linear infinite;
 }
 
+.loop_wrap:hover {
+	animation-play-state: paused;
+}
+
 #loop_wrap img {
 	width: var(--imgW);
 	height: var(--imgH);
-    user-select: none;
-    pointer-events: none;
+	user-select: none;
+	pointer-events: none;
 }
 
 @keyframes slideshow {
@@ -31,14 +35,14 @@
 
 @media screen and (max-width: 750px) {
 	:root {
-        --imgW: 33.333vw;
-    }
+		--imgW: 33.333vw;
+	}
 }
 
 @media print {
 	:root {
-        --imgW: 37.5vw;
-    }
+		--imgW: 37.5vw;
+	}
 
 	#slideshow {
 		margin-top: 1.25rem;
