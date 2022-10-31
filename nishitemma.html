@@ -12,6 +12,28 @@
       src: url("MSMincho.ttf");
     }
 
+    h1 {
+      font-family: "MS Mincho", serif;
+      font-size: 1.25rem;
+      line-height: 150%;
+      letter-spacing: 0.05rem;
+    }
+
+    .pehu {
+      font-family: "Apple Chancery", cursive;
+      font-size: 125%;
+      color: red;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      font-style: oblique;
+    }
+
     #menu {
       position: relative;
       z-index: 1000;
@@ -67,6 +89,12 @@
 
     @media screen and (max-width: 750px) {
 
+      h1 {
+        font-size: 1rem;
+        line-height: 150%;
+        letter-spacing: 0.025rem;
+      }
+
       #menu {
         height: 100vw;
         min-height: 100vh;
@@ -90,6 +118,13 @@
 </head>
 
 <body>
+  <h1>
+    <b><a href="/jp/">∧°┐</a></b>
+    は、3階建てのビルで、各階には2つの部屋があります。
+    <br />
+    <b><a class="pehu" href="/jp/">pehu</a></b>
+    owns a whole building, 3 floors and total 6 rooms in it.
+  </h1>
   <ol class="floor">
     <li>3F
       <a onmouseover="this.innerText='Members Only'" onmouseout="this.innerText='Residence'">Residence</a>
