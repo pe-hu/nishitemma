@@ -41,7 +41,7 @@ fclose($fp);
   <link rel="stylesheet" href="screensaver.css" />
 </head>
 
-<body>
+<body id="box">
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
       <option disabled selected hidden>∧°┐</option>
@@ -113,7 +113,7 @@ fclose($fp);
 
   <div id="menu"></div>
 
-  <a id="click" href="#" target="_parent">
+  <a id="btn" href="#" target="_parent">
     <span></span>
   </a>
 
@@ -130,8 +130,8 @@ fclose($fp);
       $("#menu").load("menu.html");
     })
 
-    let btn = document.querySelector('#click');
-    let box = document.querySelector('#menu');
+    let btn = document.querySelector('#btn');
+    let box = document.querySelector('#box');
 
     let btnToggleclass = function(close) {
       close.classList.toggle('open');
