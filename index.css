@@ -6,12 +6,12 @@
     content: 'Close';
 }
 
-#map,
+#menu,
 .open #index_form,
 .open ul.date {
     display: none;
 }
 
-.open #map {
+.open #menu {
     display: block;
 }
