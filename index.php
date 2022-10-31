@@ -110,6 +110,10 @@ fclose($fp);
     <?php endif; ?>
   </ul>
 
+  <a id="click" href="#" target="_parent">
+    <span class="cc"></span>
+  </a>
+
   <div id="menu"></div>
 
   <div id="screensaver" class="screensaver">
@@ -122,8 +126,19 @@ fclose($fp);
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $("#menu").load("nishitemma.html");
+      $("#menu").load("menu.html");
     })
+
+    let btn = document.querySelector('#click');
+    let box = document.querySelector('#menu');
+
+    let btnToggleclass = function(close) {
+      close.classList.toggle('open');
+    }
+
+    btn.addEventListener('click', function() {
+      btnToggleclass(box);
+    }, false);
 
     let timedelay = 0;
 
