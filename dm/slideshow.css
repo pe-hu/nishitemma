@@ -37,7 +37,7 @@
 
 @media print {
 	:root {
-		--imgW: 37.5vw;
+		--imgW: 35.5vw;
 	}
 
 	#slideshow {
