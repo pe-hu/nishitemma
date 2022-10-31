@@ -16,31 +16,28 @@
         #floor {
             margin-top: 1rem;
         }
-
-        .open #daily,
-        .open .library {
-            display: none;
-        }
     </style>
 </head>
 
 <body id="box">
     <div id="menu"></div>
     <div id="floor"></div>
-    <div id="daily">
-        <script src="daily.js"></script>
-    </div>
-    <ul class="mousedragscrollable library">
-        <li class="cover"></li>
-        <li id="credit"></li>
-        <li class="a"></li>
-        <li class="b"></li>
-        <li class="c"></li>
-        <li class="back"></li>
-        <li class="end buy">
-            <a href="https://ichoose.pe.hu/" target="_blank">ichoose.pe.hu</a>
-        </li>
-    </ul>
+    <main>
+        <div id="daily">
+            <script src="daily.js"></script>
+        </div>
+        <ul class="mousedragscrollable library">
+            <li class="cover"></li>
+            <li id="credit"></li>
+            <li class="a"></li>
+            <li class="b"></li>
+            <li class="c"></li>
+            <li class="back"></li>
+            <li class="end buy">
+                <a href="https://ichoose.pe.hu/" target="_blank">ichoose.pe.hu</a>
+            </li>
+        </ul>
+    </main>
 
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="scrollable.js"></script>
