@@ -112,42 +112,14 @@ fclose($fp);
   </ul>
 
   <div id="menu"></div>
+  <div id="map"></div>
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
       $("#menu").load("menu.html");
+      $("#map").load("nishitemma.html");
     })
-
-    let btn = document.querySelector('#btn');
-    let box = document.querySelector('#box');
-
-    let btnToggleclass = function(close) {
-      close.classList.toggle('open');
-    }
-
-    btn.addEventListener('click', function() {
-      btnToggleclass(box);
-    }, false);
-
-    let timedelay = 0;
-
-    function delayCheck() {
-      if (timedelay == 25) {
-        $('.screensaver').fadeIn();
-        timedelay = 1;
-      }
-      timedelay = timedelay + 1;
-    }
-
-    $(document).mousemove(function() {
-      $('.screensaver').fadeOut();
-      timedelay = 5;
-      clearInterval(_delay);
-      _delay = setInterval(delayCheck, 500);
-    });
-
-    _delay = setInterval(delayCheck, 500)
   </script>
 </body>
 
