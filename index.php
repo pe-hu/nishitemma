@@ -113,7 +113,6 @@ fclose($fp);
   </ul>
 
   <div id="menu"></div>
-  <div id="map"></div>
 
   <div id="screensaver" class="screensaver">
     <h1>
@@ -126,7 +125,6 @@ fclose($fp);
   <script type="text/javascript">
     $(function() {
       $("#menu").load("menu.html");
-      $("#map").load("nishitemma.html");
     })
 
     let btn = document.querySelector('#btn');
