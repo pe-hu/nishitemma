@@ -50,11 +50,9 @@ fclose($fp);
 
 <body id="box">
   <main>
-    <div id="screensaver" class="screensaver">
-      <h1>We've moved to<br />
-        <b>creative-community.space</b>
-      </h1>
-    </div>
+
+    <div id="index"></div>
+    <div id="floor"></div>
 
     <form id="index_form" method="GET">
       <select id="calendar" name="month">
@@ -126,8 +124,11 @@ fclose($fp);
     </ul>
   </main>
 
-  <div id="floor"></div>
-  <div id="index"></div>
+  <div id="screensaver" class="screensaver">
+    <h1>We've moved to<br />
+      <b>creative-community.space</b>
+    </h1>
+  </div>
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="screensaver.js"></script>
