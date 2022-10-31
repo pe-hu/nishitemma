@@ -36,6 +36,7 @@ fclose($fp);
   <title>∧° ┐ | creative, community space</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="floor.css" />
   <link rel="stylesheet" href="2019.css" />
   <link rel="stylesheet" href="2019/index.css" />
   <link rel="stylesheet" href="2019/calendar.css" />
@@ -112,7 +113,7 @@ fclose($fp);
     <?php endif; ?>
   </ul>
 
-  <div id="menu"></div>
+  <div id="floor"></div>
 
   <div id="index"></div>
 
@@ -120,7 +121,7 @@ fclose($fp);
   <script type="text/javascript">
     $(function() {
       $("#index").load("menu.html");
-      $("#menu").load("nishitemma.html");
+      $("#floor").load("floor.html");
     })
   </script>
 </body>

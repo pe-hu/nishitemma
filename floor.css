@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "MS Mincho", serif;
+    src: url("MSMincho.ttf");
+}
+
+.floor h1 {
+    font-family: "MS Mincho", serif;
+    font-size: 1.25rem;
+    width: 100%;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+}
+
+.en {
+    font-family: "Apple Chancery", cursive;
+    font-size: 125%;
+    color: red;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: oblique;
+}
+
+.floor {
+    font-family: "MS Mincho", serif;
+    letter-spacing: 0.05rem;
+    font-size: 1.25rem;
+    list-style-type: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.floor li {
+    margin: 0.5rem 0;
+    width: 48.75%;
+}
+
+.floor li a {
+    display: block;
+    width: 100%;
+    padding: 5rem 0;
+    margin-top: 0.25rem;
+    border: 1px solid black;
+    color: #000;
+    font-size: 125%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.floor li a:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+#floor {
+    position: relative;
+    z-index: 500;
+    height: 50rem;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+#floor .floor {
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    padding: 2.5%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 750px) {
+
+    .floor h1 {
+        font-size: 1rem;
+        line-height: 150%;
+        letter-spacing: 0.025rem;
+    }
+
+    .floor {
+        letter-spacing: 0.1vw;
+        font-size: 2.5vw;
+    }
+
+    .floor li {
+        margin: 1.25vw 0;
+    }
+
+    .floor li a {
+        padding: 10vw 0;
+        margin-top: 1vw;
+    }
+
+    #menu {
+        height: 100vw;
+        min-height: 100vh;
+    }
+}
