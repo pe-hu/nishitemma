@@ -6,11 +6,30 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Beauty Spot in ∧°┐</title>
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="../menu.css" />
+  <link rel="stylesheet" href="../floor.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" type="text/css" href="index.css" />
+  <style>
+    #floor {
+      margin-top: 1rem;
+    }
+
+    .open #cover,
+    .open #logo,
+    .open #info,
+    .open #links,
+    .open #main {
+      display: none;
+    }
+  </style>
 </head>
 
-<body>
+<body id="box">
+  <div id="floor"></div>
+  <div id="menu"></div>
+
   <div id="cover"></div>
 
   <div id="logo">
@@ -67,15 +86,14 @@
       src="https://64.media.tumblr.com/e249a487bf8cfde927f89dbae7c1979b/7622c702447acdef-6a/s2048x3072/c5b2a115940525c60a299e8a7724f169a652c922.jpg">
     <img
       src="https://64.media.tumblr.com/8a17faf8ea07c14d3f9f3584ef99e932/7622c702447acdef-e8/s2048x3072/889c03d0b3eea85f9b094285a2efcd5f01bac509.jpg">
-
-    <div id="menu"></div>
   </main>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function () {
-      $("#menu").load("../nishitemma.html");
+      $("#menu").load("../menu.html");
+      $("#floor").load("../floor.html");
     })
   </script>
 
