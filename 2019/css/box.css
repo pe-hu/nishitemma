@@ -1,28 +1,28 @@
-#box {
+#sp {
     width: 100%;
     max-width: 450px;
     margin: 2.5rem auto;
 }
 
-#box img {
+#sp img {
     display: block;
 }
 
-#box .vol {
+#sp .vol {
     float: right;
     margin-top: 5%;
     margin-right: 5%;
     width: 30%
 }
 
-#box .logo {
+#sp .logo {
     float: left;
     width: 22.5%;
     margin-top: 12.5%;
     margin-left: 5%;
 }
 
-#box #info {
+#sp #info {
     font-family: "YuGothic", "Yu Gothic", "游ゴシック体", sans-serif;
     font-size: 0.75rem;
     display: block;
@@ -30,12 +30,12 @@
     padding: 7.5% 5% 0;
 }
 
-#box #contents {
+#sp #contents {
     padding: 2.5% 5% 5%;
     list-style-position: inside;
 }
 
-#box #contents li {
+#sp #contents li {
     position: relative;
     font-family: 'Noto Serif JP', serif;
     font-weight: 400;
@@ -45,7 +45,7 @@
     padding: 0.25rem 0.75rem 2rem;
 }
 
-#box #contents li b {
+#sp #contents li b {
     font-weight: 400;
     font-size: 1.5rem;
     top: 0.9rem;
@@ -54,37 +54,37 @@
     position: absolute;
 }
 
-#box #contents li:hover {
+#sp #contents li:hover {
     cursor: pointer;
     background-color: red;
     color: #fff;
 }
 
-#box #contents li::marker {
+#sp #contents li::marker {
     content: "[" counter(list-item) "]";
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
 }
 
 
-#box #contents .text p {
+#sp #contents .text p {
     font-size: 0.75rem;
     border: 2px dotted;
     padding: 0.5rem;
     margin: 0.25rem 0 1rem;
 }
 
-#box #contents .text img,
-#box #contents .text iframe {
+#sp #contents .text img,
+#sp #contents .text iframe {
     width: 100%;
     box-sizing: border-box;
 }
 
-#box #contents .text iframe {
+#sp #contents .text iframe {
     height: 230px;
 }
 
-#box #contents #special h3 {
+#sp #contents #special h3 {
     padding: 7.5rem 0;
     margin: 0 0 1rem;
     font-size: 1.5rem;
