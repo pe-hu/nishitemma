@@ -34,10 +34,11 @@ fclose($fp);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>∧° ┐ | creative, community space</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="2019.css" />
   <link rel="stylesheet" href="2019/index.css" />
   <link rel="stylesheet" href="2019/calendar.css" />
-  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="screensaver.css" />
 </head>
 
@@ -112,7 +113,7 @@ fclose($fp);
   </ul>
 
   <div id="menu"></div>
-  
+
   <div id="index"></div>
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>

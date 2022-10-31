@@ -1,100 +1,36 @@
-<!DOCTYPE html>
-<html lang="ja">
+<ul id="menu_links">
+  <li>
+    <a id="btn" href="#" target="_parent">
+      <span></span>
+    </a>
+  </li>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <title>∧° ┐ | creative, community space</title>
-  <style>
-    body,
-    #menu_links {
-      padding: 0;
-      margin: 0;
-    }
+  <li><a href="/jp/">2019</a></li>
+  <li><a href="/jp/31q/">31Q</a></li>
+  <li><a href="/jp/dm/">Digital Magazine</a></li>
+  <li><a href="/jp/2019/">Special Gift Box</a></li>
+</ul>
 
-    #menu_links {
-      width: 100%;
-      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-      list-style-type: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+<script type="text/javascript">
+  let btn = document.querySelector('#btn');
+  let box = document.querySelector('#box');
 
-    #menu_links li {
-      padding: 0;
-      margin: 0 1rem;
-    }
+  let btnToggleclass = function (close) {
+    close.classList.toggle('open');
+  }
 
-    #menu_links li a {
-      color: red;
-      font-size: 2rem;
-      text-decoration: none;
-      display: block;
-      padding: 0 0.25rem;
-      margin: 0.25rem 0;
-    }
+  btn.addEventListener('click', function () {
+    btnToggleclass(box);
+  }, false);
 
-    #menu_links a:hover {
-      color: #fff;
-      background-color: red;
-      font-style: oblique;
-    }
-
-    @media screen and (max-width: 750px) {
-
-      #menu_links li {
-        padding: 0;
-        margin: 0 1vw;
-      }
-
-      #menu_links li a {
-        font-size: 4.5vw;
-        padding: 0.5vw 1vw;
-        margin: 0.5vw 0;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <ul id="menu_links">
-    <li>
-      <a id="btn" href="#" target="_parent">
-        <span></span>
-      </a>
-    </li>
-
-    <li><a href="/jp/">2019</a></li>
-    <li><a href="/jp/31q/">31Q</a></li>
-    <li><a href="/jp/dm/">Digital Magazine</a></li>
-    <li><a href="/jp/2019/">Special Gift Box</a></li>
-  </ul>
-
-  <script type="text/javascript">
-    let btn = document.querySelector('#btn');
-    let box = document.querySelector('#box');
-
-    let btnToggleclass = function (close) {
-      close.classList.toggle('open');
-    }
-
-    btn.addEventListener('click', function () {
-      btnToggleclass(box);
-    }, false);
-
-    $('a[href^="#"]').click(function () {
-      var speed = 500; //スクロールスピード
-      var href = $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top;
-      $("html, body").animate({
-        scrollTop: position
-      }, speed, "swing");
-      return false;
-    });
-  </script>
-</body>
-
-</html>
+  $('a[href^="#"]').click(function () {
+    let speed = 500; //スクロールスピード
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    $("html, body").animate({
+      scrollTop: position
+    }, speed, "swing");
+    return false;
+  });
+</script>
