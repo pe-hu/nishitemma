@@ -49,11 +49,9 @@ fclose($fp);
 </head>
 
 <body id="box">
+  <div id="index"></div>
+  <div id="floor"></div>
   <main>
-
-    <div id="index"></div>
-    <div id="floor"></div>
-
     <form id="index_form" method="GET">
       <select id="calendar" name="month">
         <option disabled selected hidden>∧°┐</option>
