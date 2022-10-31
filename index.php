@@ -41,6 +41,11 @@ fclose($fp);
   <link rel="stylesheet" href="2019/index.css" />
   <link rel="stylesheet" href="2019/calendar.css" />
   <link rel="stylesheet" href="screensaver.css" />
+  <style>
+    #index {
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 
 <body id="box">
@@ -114,7 +119,6 @@ fclose($fp);
   </ul>
 
   <div id="floor"></div>
-
   <div id="index"></div>
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
