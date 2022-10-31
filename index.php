@@ -122,7 +122,7 @@ fclose($fp);
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $("#menu").load("menu.html");
+      $("#menu").load("nishitemma.html");
     })
 
     let timedelay = 0;
