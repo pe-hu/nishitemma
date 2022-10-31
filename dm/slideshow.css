@@ -2,7 +2,7 @@
 	--numOfList: 24;
 	--imgW: 240px;
 	--imgH: var(--imgH);
-	--BetweenImg: 0px;
+	--BetweenImg: 0;
 }
 
 #slideshow {
@@ -10,23 +10,17 @@
     overflow: hidden;
 }
 
-#slideshow div {
+#loop_wrap {
 	display: flex;
 	font-size: 0;
 	animation: slideshow 24s linear infinite;
 }
 
-#slideshow img {
+#loop_wrap img {
 	width: var(--imgW);
 	height: var(--imgH);
     user-select: none;
     pointer-events: none;
-}
-
-@keyframes slideshow {
-	100% {
-		transform: translateX(calc((var(--numOfList) * var(--imgW) + var(--BetweenImg) * var(--numOfList)) * -1));
-	}
 }
 
 @media screen and (max-width: 750px) {
@@ -42,5 +36,11 @@
 
 	#slideshow {
 		margin-top: 1.25rem;
+	}
+}
+
+@keyframes slideshow {
+	100% {
+		transform: translateX(calc((var(--numOfList) * var(--imgW) + var(--BetweenImg) * var(--numOfList)) * -1));
 	}
 }
