@@ -1,4 +1,4 @@
-const images = document.getElementById('images');
+const images = document.getElementById('loop_wrap');
 
 let img_src = [
     "img/000.jpg",
