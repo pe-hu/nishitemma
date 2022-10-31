@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <title>31 Questions for daily life</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../menu.css" />
+    <link rel="stylesheet" href="../floor.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contents.css" />
     <link rel="stylesheet" href="scrollable.css" />
@@ -29,10 +31,12 @@
         </li>
     </ul>
 
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="scrollable.js"></script>
     <script>
         $(function () {
             $("#menu").load("../menu.html");
+            $("#floor").load("../floor.html");
             $("#credit").load("contents.html");
         })
 
