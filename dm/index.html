@@ -9,17 +9,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="rotate.css">
     <link rel="stylesheet" type="text/css" href="loop_wrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#menu").load("../menu.html");
-            $("#main").load("moreinfo.html");
-        })
-    </script>
     <title>∧° ┐ | Digital Magazine 2019</title>
+    <style>
+        #floor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="floor"></div>
     <div id="menu"></div>
     <section id="we">
         <h1>
@@ -122,6 +125,15 @@
             <p>Grant by Chishima Foundation for Creative Osaka</p>
         </div>
     </section>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#main").load("moreinfo.html");
+            $("#menu").load("../menu.html");
+            $("#floor").load("../floor.html");
+        })
+    </script>
 </body>
 
 </html>
