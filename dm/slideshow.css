@@ -2,7 +2,7 @@
 	--numOfList: 24;
 	--imgW: 240px;
 	--imgH: var(--imgH);
-	--BetweenImg: 0;
+	--BetweenImg: 0px;
 }
 
 #slideshow {
@@ -23,6 +23,12 @@
     pointer-events: none;
 }
 
+@keyframes slideshow {
+	100% {
+		transform: translateX(calc((var(--numOfList) * var(--imgW) + var(--BetweenImg) * var(--numOfList)) * -1));
+	}
+}
+
 @media screen and (max-width: 750px) {
 	:root {
         --imgW: 33.333vw;
@@ -36,11 +42,5 @@
 
 	#slideshow {
 		margin-top: 1.25rem;
-	}
-}
-
-@keyframes slideshow {
-	100% {
-		transform: translateX(calc((var(--numOfList) * var(--imgW) + var(--BetweenImg) * var(--numOfList)) * -1));
 	}
 }
