@@ -37,6 +37,7 @@ fclose($fp);
   <link rel="stylesheet" href="2019.css" />
   <link rel="stylesheet" href="2019/index.css" />
   <link rel="stylesheet" href="2019/calendar.css" />
+  <link rel="stylesheet" href="screensaver.css" />
 </head>
 
 <body>
@@ -110,11 +111,38 @@ fclose($fp);
   </ul>
 
   <div id="menu"></div>
+
+  <div id="screensaver" class="screensaver">
+    <h1>
+      We've moved to ↓<br />
+      <b>creative-community.space</b>
+    </h1>
+  </div>
+
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
       $("#menu").load("menu.html");
     })
+
+    let timedelay = 0;
+
+    function delayCheck() {
+      if (timedelay == 25) {
+        $('.screensaver').fadeIn();
+        timedelay = 1;
+      }
+      timedelay = timedelay + 1;
+    }
+
+    $(document).mousemove(function() {
+      $('.screensaver').fadeOut();
+      timedelay = 5;
+      clearInterval(_delay);
+      _delay = setInterval(delayCheck, 500);
+    });
+
+    _delay = setInterval(delayCheck, 500)
   </script>
 </body>
 
