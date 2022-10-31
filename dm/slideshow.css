@@ -37,10 +37,10 @@
 
 @media print {
 	:root {
-		--imgW: 37vw;
+		--imgW: 35vw;
 	}
 
 	#slideshow {
-		margin-top: 1.25rem;
+		margin-top: 1.5rem;
 	}
 }
