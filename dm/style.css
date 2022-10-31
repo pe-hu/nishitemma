@@ -91,20 +91,29 @@ a:hover {
 }
 
 body,
-main {
+main,
+#main {
 	padding: 0;
 	margin: 0;
 }
 
-#we {
+main,
+#we,
+#main,
+#future {
 	box-sizing: border-box;
 }
 
 hr,
-#are,
+#main,
 #future {
 	clear: both;
 	border: none;
+}
+
+#are,
+#future {
+	min-height: 100vh;
 }
 
 #we #usbcard {
@@ -123,12 +132,6 @@ hr,
 
 .buy {
 	margin: 1.25rem;
-}
-
-#are,
-#future {
-	box-sizing: border-box;
-	min-height: 100vh;
 }
 
 #future {
