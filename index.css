@@ -12,6 +12,7 @@
 }
 
 .open #floor {
+    box-sizing: border-box;
     width: 100%;
     display: block;
 }
