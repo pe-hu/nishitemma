@@ -23,8 +23,6 @@
 #loop_wrap img {
 	width: var(--imgW);
 	height: var(--imgH);
-	user-select: none;
-	pointer-events: none;
 }
 
 @keyframes slideshow {
