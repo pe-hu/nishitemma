@@ -38,9 +38,18 @@
     #menu {
       position: relative;
       z-index: 500;
-      height: 45rem;
+      height: 55rem;
       min-height: 100vh;
       background-color: #fff;
+    }
+
+    #menu .floor {
+      position: absolute;
+      background-color: #fff;
+      top: 50%;
+      left: 50%;
+      padding: 2.5%;
+      transform: translate(-50%, -50%);
     }
 
     .floor {
@@ -55,15 +64,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-    }
-
-    #menu .floor {
-      position: absolute;
-      background-color: #fff;
-      top: 50%;
-      left: 50%;
-      padding: 2.5%;
-      transform: translate(-50%, -50%);
     }
 
     .floor li {
