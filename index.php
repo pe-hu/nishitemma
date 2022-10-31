@@ -49,6 +49,10 @@ fclose($fp);
 </head>
 
 <body id="box">
+  <div id="screensaver" class="screensaver">
+    <h1>screensaver.js</h1>
+  </div>
+
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
       <option disabled selected hidden>∧°┐</option>
@@ -122,6 +126,7 @@ fclose($fp);
   <div id="index"></div>
 
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="screensaver.js"></script>
   <script type="text/javascript">
     $(function() {
       $("#index").load("menu.html");
