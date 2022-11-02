@@ -7,34 +7,19 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>∧° ┐ | creative, community space</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="../floor.css">
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="../menu.css" />
+  <link rel="stylesheet" href="../floor.css" />
   <style>
-    #map h1 {
-      display: none;
-    }
-
-    #cafe,
-    .open #map {
-      display: none;
-    }
-
-    #map,
-    .open #cafe {
-      display: block;
-    }
-
-    #cafe {
-      height: 90vh;
-    }
-
-    #cafe iframe {
-      width: 100%;
-      height: 100%;
+    #index {
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 
 <body id="box">
+  <div id="index"></div>
+  <div id="floor"></div>
   <main id="main">
     <h1>
       <b><a href="/jp/">∧°┐</a></b>
@@ -48,22 +33,22 @@
       <li>
         <p>
           <b>1階</b> には
-          <b><a id="btn" href="#cafe">喫茶スペース</a></b> と やりたいことをやるための
-          <b>フリースペース</b> があります。<br />
+          <b><a href="cafe/" target="images">喫茶スペース</a></b> と やりたいことをやるための
+          <b><a href="images.html" target="images">フリースペース</a></b> があります。<br />
           <b>Cafe and Rental space on the 1st floor,</b>
           this floor has a free space for various activities.
         </p>
         <p>
           <b>2階</b> には私たちが企画した展覧会を開催する
-          <b><a href="/2f/">ギャラリー</a></b>
+          <b><a href="gallery/" target="images">ギャラリー</a></b>
           と、売りたいものを売るための
-          <b><a href="/jp/shop/">ショップ</a></b>
+          <b><a href="shop/" target="images">ショップ</a></b>
           があります。<br />
           On the
           <b>2nd floor</b> we have a
-          <b><a href="/2f/">gallery</a></b>
+          <b><a href="gallery/" target="images">gallery</a></b>
           to have exhibitions we organized and a
-          <b><a href="/jp/shop/">shop</a></b>
+          <b><a href="shop/" target="images">shop</a></b>
           to sell what our members want to sell. Now we are selling Books, CDs, Cassettes, Zines, used clothings and
           more.
         </p>
@@ -76,10 +61,7 @@
           <b>studio room</b> for works and meetings.
         </p>
       </li>
-      <li id="map"></li>
-      <li id="cafe">
-        <iframe src="cafe.pdf"></iframe>
-      </li>
+      <li id="map"><iframe name="images" src="images.html"></iframe></li>
     </ul>
     <hr />
   </main>
@@ -126,7 +108,8 @@
   <script src="../menu.js"></script>
   <script type="text/javascript">
     $(function () {
-      $("#map").load("../floor.html");
+      $("#index").load("../menu.html");
+      $("#floor").load("../floor.html");
     })
   </script>
 </body>
