@@ -35,6 +35,7 @@
 </head>
 
 <body id="box">
+  <div id="index"></div>
   <main id="main">
     <h1>
       <b><a href="/jp/">∧°┐</a></b>
@@ -128,6 +129,7 @@
   <script src="../menu.js"></script>
   <script type="text/javascript">
     $(function () {
+      $("#index").load("menu.html");
       $("#map").load("../floor.html");
     })
   </script>
