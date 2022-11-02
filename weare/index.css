@@ -8,28 +8,6 @@ footer li {
     margin: 0;
 }
 
-.pehu {
-    font-family: "Apple Chancery", cursive;
-}
-
-h1,
-#main,
-header section,
-footer {
-    letter-spacing: 0.04rem;
-    font-family: "MS Mincho", serif;
-}
-
-.en {
-    font-family: "Times New Roman";
-    padding-left: 0.5em;
-    letter-spacing: 0.05rem;
-}
-
-marquee {
-  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-}
-
 a {
     color: #000;
     text-decoration: none;
@@ -39,8 +17,18 @@ a:hover {
     font-style: oblique;
 }
 
-header h1,
-marquee {
+.en {
+    font-family: "Apple Chancery", cursive;
+}
+
+h1,
+#main,
+footer {
+    letter-spacing: 0.04rem;
+    font-family: "MS Mincho", serif;
+}
+
+header h1 {
     font-size: 200%;
 }
 
@@ -49,22 +37,14 @@ b {
 }
 
 #main h1,
-.pehu,
-.red,
-header section a {
+.en {
     font-size: 125%;
 }
 
-header h1,
 #main h1,
 #main ul p,
 header section a {
     line-height: 200%;
-}
-
-.pehu,
-.red {
-    color: red;
 }
 
 h1,
@@ -79,39 +59,8 @@ hr {
 }
 
 #main,
-header,
 footer {
     padding: 2.5vw;
-}
-
-header section {
-    display: block;
-    padding-bottom: 1.5rem;
-}
-
-header section a {
-    padding: 0.25em;
-    margin: 0 1rem 1rem 0;
-}
-
-header section .topics {
-    background-color: #eee;
-}
-
-header section .flash {
-    color: #fff;
-    background-color: red;
-}
-
-header section .dm {
-    background-color: yellow;
-}
-
-header section .topics:hover,
-header section .flash:hover,
-header section .dm:hover {
-    color: #fff;
-    background-color: blue;
 }
 
 #main ul,
@@ -144,14 +93,6 @@ footer ul li {
     text-align: center;
 }
 
-marquee {
-    display: block;
-    background-color: #000;
-    color: #fff;
-    padding: 0;
-    margin: 0;
-}
-
 @media screen and (max-width: 750px) {
     body {
         font-size: 0.75rem;
@@ -159,22 +100,6 @@ marquee {
 
     header section a {
         margin: 0 0.5rem 0.5rem 0;
-    }
-
-    #event {
-        font-size: 2em;
-        float: left;
-        line-height: 1.5em;
-        width: 74vw;
-        height: auto;
-        padding: 20px;
-        margin: 1em auto 0;
-    }
-
-    .text li {
-        font-size: 1.75em;
-        width: auto;
-        padding: 2vw;
     }
 
     #main ul li:not(.floor li),
