@@ -25,13 +25,22 @@ html {
     background-size: 75%;
 }
 
-.contents {
+#wakaba .contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 75%;
+}
+
+.library .contents {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    max-width: 750px;
+    max-height: 90%;
     overflow: auto;
 }
 

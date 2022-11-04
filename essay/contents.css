@@ -27,7 +27,11 @@
     bottom: 0;
 }
 
-.center {
+.library .contents {
+    font-size: 1rem;
+}
+
+.library .center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,6 +81,9 @@
 }
 
 .aha {
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 0.5rem 1rem;
     position: fixed;
     top: 0;
@@ -115,8 +122,8 @@
 
 .edition {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     padding: 0.5rem 0;
     margin: 1rem;
     -ms-writing-mode: tb-rl;
@@ -125,9 +132,9 @@
 
 .special {
     position: absolute;
-    bottom:0;
-    left:0;
-    right:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 90%;
     max-width: 500px;
     padding: 0;
@@ -140,8 +147,9 @@
 }
 
 @media screen and (max-width: 750px) {
-    .library li span {
-        font-size: 2.5vw;
+
+    .library .contents {
+        font-size: 2vw;
     }
 
     .contents a {
