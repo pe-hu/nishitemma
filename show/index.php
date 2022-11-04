@@ -245,6 +245,7 @@ fclose($fp);
       <?php endif; ?>
     </div>
   </main>
+  
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function() {
