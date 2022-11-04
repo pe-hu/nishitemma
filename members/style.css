@@ -1,8 +1,14 @@
-.library {
-    font-family: 'Noto Sans JP', sans-serif;
+html {
+    height: -webkit-fill-available;
+}
+
+.mousedragscrollable {
+    height: 100vh;
+    max-height: -webkit-fill-available;
 }
 
 .library li {
+    font-family: 'Noto Sans JP', sans-serif;
     background-size: 100%;
 }
 

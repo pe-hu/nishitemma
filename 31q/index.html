@@ -12,20 +12,18 @@
     <link rel="stylesheet" href="../menu.css" />
     <link rel="stylesheet" href="../floor.css" />
     <link rel="stylesheet" href="../scrollable.css" />
-    <style>
-        #floor {
-            margin-top: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="../screensaver.css" />
 </head>
 
 <body id="box">
     <div id="menu"></div>
     <div id="floor"></div>
+
+    <div id="screensaver" class="screensaver">
+        <script src="daily.js"></script>
+    </div>
+
     <main>
-        <div id="daily">
-            <script src="daily.js"></script>
-        </div>
         <ul class="mousedragscrollable library">
             <li class="cover"></li>
             <li id="credit"></li>
@@ -41,6 +39,7 @@
 
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../scrollable.js"></script>
+    <script src="../screensaver.js"></script>
     <script>
         $(function () {
             $("#menu").load("../menu.html");

@@ -1,3 +1,12 @@
+html {
+    height: -webkit-fill-available;
+}
+
+.mousedragscrollable {
+    height: 75vh;
+    max-height: -webkit-fill-available;
+}
+
 #wakaba,
 .library {
     font-family: 'Noto Sans JP', sans-serif;

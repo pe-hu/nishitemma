@@ -43,7 +43,7 @@
     width: 90%;
     max-width: 500px;
     padding: 5% 12.5%;
-    margin: 0 auto 12.5%;
+    margin: 4.5% auto 12.5%;
     box-sizing: border-box;
     border-radius: 50rem;
 }
@@ -62,7 +62,7 @@
 }
 
 .hint {
-    margin: 12.5% auto 0;
+    margin: 7.5% auto 0;
     width: 75%;
     max-width: 25rem;
 }

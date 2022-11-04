@@ -1,14 +1,26 @@
-.library {
-    font-family: 'Times New Roman', Times, serif;
+html {
+    height: -webkit-fill-available;
 }
 
-#daily {
-    position: relative;
-    width: 100%;
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.mousedragscrollable {
     height: 100vh;
-    max-height: 75vw;
-    user-select: none;
-    pointer-events: none;
+    max-height: -webkit-fill-available;
+}
+
+#floor {
+    margin-top: 1rem;
+}
+
+.library {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .library li {

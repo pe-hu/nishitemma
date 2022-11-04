@@ -1,7 +1,3 @@
-html {
-    height: -webkit-fill-available;
-}
-
 body,
 .mousedragscrollable,
 .library li {
@@ -14,8 +10,6 @@ body,
     list-style: none;
     white-space: nowrap;
     overflow: auto;
-    height: 100vh;
-    max-height: -webkit-fill-available;
     -webkit-overflow-scrolling: touch;
 }
 
