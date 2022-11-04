@@ -4,6 +4,10 @@ html {
 
 .mousedragscrollable {
     height: 75vh;
+}
+
+#wakaba,
+.mousedragscrollable {
     max-height: -webkit-fill-available;
 }
 
@@ -54,7 +58,7 @@ html {
 .hal {
     background-image: url(hal/000.JPG);
 }
-        
+
 .hal .edition,
 .hal .special {
     background: pink;
