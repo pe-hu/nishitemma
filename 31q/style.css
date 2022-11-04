@@ -4,22 +4,24 @@ html {
 
 #menu {
     position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
-}
-#screensaver,
-.mousedragscrollable {
-    height: 100vh;
-    max-height: -webkit-fill-available;
 }
 
 .mousedragscrollable {
     position: absolute;
+}
+
+#menu,
+.mousedragscrollable {
     top: 0;
     left: 0;
     right: 0;
+}
+
+#screensaver,
+.mousedragscrollable {
+    height: 100vh;
+    max-height: -webkit-fill-available;
 }
 
 #floor {
