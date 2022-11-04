@@ -7,6 +7,10 @@ html {
     max-height: -webkit-fill-available;
 }
 
+#menu {
+    margin-top: 1rem;
+}
+
 #wakaba,
 .library {
     font-family: 'Noto Sans JP', sans-serif;
