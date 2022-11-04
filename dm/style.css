@@ -126,7 +126,7 @@ hr,
 	position: relative;
 	margin: 0 auto 2.5rem;
 	max-width: 90%;
-	max-height: 90%;
+	max-height: 90vh;
 }
 
 hr,
