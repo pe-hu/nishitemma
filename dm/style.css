@@ -125,7 +125,7 @@ hr,
 #preview {
 	position: relative;
 	padding: 5vh 2.5vw;
-	margin: 0 auto;
+	margin: 0 auto 2.5vw;
 	max-width: 90vw;
 	max-height: 90vh;
 }
