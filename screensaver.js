@@ -11,7 +11,7 @@ $(document).mousemove(function () {
     $('.screensaver').fadeOut();
     timedelay = 5;
     clearInterval(_delay);
-    _delay = setInterval(delayCheck, 500);
+    _delay = setInterval(delayCheck, 1000);
 });
 
-_delay = setInterval(delayCheck, 500)
+_delay = setInterval(delayCheck, 1000)
