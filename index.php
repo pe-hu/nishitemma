@@ -52,6 +52,7 @@ fclose($fp);
 <body id="box">
   <div id="index"></div>
   <div id="floor"></div>
+  <section id="topic"></section>
   <main>
     <form id="index_form" method="GET">
       <select id="calendar" name="month">
@@ -121,8 +122,6 @@ fclose($fp);
       <?php else : ?>
       <?php endif; ?>
     </ul>
-
-    <section id="topic"></section>
   </main>
 
   <div id="screensaver" class="screensaver">
