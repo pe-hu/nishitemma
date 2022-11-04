@@ -1,8 +1,7 @@
 #wakaba {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    max-height: 75vw;
+    height: 100vh;
     user-select: none;
     pointer-events: none;
     background-position: center;
