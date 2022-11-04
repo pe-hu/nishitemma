@@ -104,6 +104,12 @@ footer ul li {
     height: 100%;
 }
 
+.nishitemma {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
 @media screen and (max-width: 750px) {
     body {
         font-size: 0.75rem;
