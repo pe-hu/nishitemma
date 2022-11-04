@@ -116,9 +116,17 @@ hr,
 	min-height: 100vh;
 }
 
-#we #usbcard {
+#we #usbcard,
+#preview {
 	padding: 0;
 	margin: 0;
+}
+
+#preview {
+	position: relative;
+	margin: 0 auto 2.5rem;
+	max-width: 90%;
+	max-height: 90%;
 }
 
 hr,
