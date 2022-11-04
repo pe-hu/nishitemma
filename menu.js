@@ -1,5 +1,5 @@
-let btn = document.getElementById('btn');
-let box = document.getElementById('box');
+const btn = document.getElementById('btn');
+const box = document.querySelector('body');
 
 let btnToggleclass = function (close) {
     close.classList.toggle('open');
