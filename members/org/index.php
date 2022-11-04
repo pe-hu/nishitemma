@@ -33,12 +33,46 @@ fclose($fp);
     <meta name="format-detection" content="telephone=no">
     <title> 言葉の強さと方向と感情 | creative-community.space </title>
 
-    <link rel="stylesheet" href="http://creative-community.space/coding/fontbook/css/font-family.css" />
     <link rel="stylesheet" href="org.css" />
     <link rel="stylesheet" href="submit.css" />
     <style type="text/css">
 
+        #form,
+        #index {
+            position: relative;
+            display: block;
+            padding: 0;
+            margin: 0;
+            border: none;
+            width: 50%;
+            height: 100vh;
+            max-height: -webkit-fill-available;
+        }
+
+        #form {
+            float: left;
+            overflow: auto;
+            z-index: 2;
+        }
+
+        #index {
+            float: right;
+            z-index: 1;
+        }
+
+        @media screen and (max-width: 750px) {
+
+            #form,
+            #index {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                clear: both;
+            }
+        }
     </style>
+    <link rel="stylesheet" href="http://creative-community.space/coding/fontbook/css/font-family.css" />
 </head>
 
 <body id="box">

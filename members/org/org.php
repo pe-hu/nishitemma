@@ -23,6 +23,7 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 ?>
+
 <ul class="random org">
     <?php if (!empty($rows)) : ?>
         <?php foreach ($rows as $row) : ?>
