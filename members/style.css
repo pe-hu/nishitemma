@@ -7,6 +7,10 @@ html {
     max-height: -webkit-fill-available;
 }
 
+#floor {
+    margin-top: 1rem;
+}
+
 .library li {
     font-family: 'Noto Sans JP', sans-serif;
     background-size: 100%;
