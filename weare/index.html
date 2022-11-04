@@ -7,6 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>∧° ┐ | creative, community space</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="topic.css" />
   <link rel="stylesheet" href="../index.css" />
   <link rel="stylesheet" href="../menu.css" />
   <link rel="stylesheet" href="../floor.css" />
@@ -20,6 +21,7 @@
 <body id="box">
   <div id="menu"></div>
   <div id="floor"></div>
+  <section id="topic"></section>
   <main id="main">
     <h1>
       <b><a href="/jp/">∧°┐</a></b>
@@ -107,6 +109,7 @@
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function () {
+      $("#topic").load("topic.html");
       $("#menu").load("../menu.html");
       $("#floor").load("../floor.html");
     })

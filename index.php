@@ -37,7 +37,6 @@ fclose($fp);
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="floor.css" />
-  <link rel="stylesheet" href="topic.css" />
   <link rel="stylesheet" href="2019.css" />
   <link rel="stylesheet" href="2019/index.css" />
   <link rel="stylesheet" href="2019/calendar.css" />
@@ -53,7 +52,6 @@ fclose($fp);
 <body id="box">
   <div id="index"></div>
   <div id="floor"></div>
-  <section id="topic"></section>
   <main>
     <form id="index_form" method="GET">
       <select id="calendar" name="month">
@@ -137,7 +135,6 @@ fclose($fp);
     $(function() {
       $("#index").load("menu.html");
       $("#floor").load("floor.html");
-      $("#topic").load("topic.html");
     })
   </script>
 </body>
