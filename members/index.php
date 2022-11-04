@@ -34,8 +34,6 @@ fclose($fp);
     <title>Think Note</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contents.css" />
-    <link rel="stylesheet" href="org.css" />
-    <link rel="stylesheet" href="submit.css" />
     <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../menu.css" />
     <link rel="stylesheet" href="../floor.css" />
@@ -50,9 +48,6 @@ fclose($fp);
     <div id="menu"></div>
     <div id="floor"></div>
     <main>
-        <section id="form"></section>
-        <section id="index" class="words"></section>
-
         <ul class="mousedragscrollable library">
             <li class="think"></li>
 
