@@ -2,10 +2,6 @@ html {
     height: -webkit-fill-available;
 }
 
-#org {
-    min-height: 100vh;
-}
-
 .mousedragscrollable {
     height: 100vh;
     max-height: -webkit-fill-available;
