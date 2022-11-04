@@ -42,6 +42,7 @@ fclose($fp);
   <link rel="stylesheet" href="2019/index.css" />
   <link rel="stylesheet" href="2019/calendar.css" />
   <link rel="stylesheet" href="screensaver.css" />
+  <link rel="icon" href="2019/pr/box.png">
   <style>
     #index {
       margin-bottom: 1rem;
