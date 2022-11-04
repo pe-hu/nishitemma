@@ -17,7 +17,9 @@
 }
 
 #floor,
-.open main {
+.open main,
+.open footer,
+.open .nishitemma {
     display: none;
 }
 
