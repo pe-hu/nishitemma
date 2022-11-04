@@ -1,7 +1,7 @@
 #topic {
     clear: both;
     border: none;
-    padding: 1rem 2.5% 0;
+    padding: 1rem 0;
     letter-spacing: 0.04rem;
     font-family: "MS Mincho", serif;
 }
@@ -38,7 +38,7 @@
 @media screen and (max-width: 750px) {
     #topic {
         font-size: 0.75rem;
-        padding: 0.75rem 0.5rem 0;
+        padding: 0.75rem 0;
     }
 
     #topic a {
