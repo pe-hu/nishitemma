@@ -53,7 +53,7 @@ hr {
 .words ul {
     height: 100vh;
     max-height: -webkit-fill-available;
-    overflow:scroll;
+    overflow: scroll;
     list-style: none;
     flex-wrap: wrap;
     display: -webkit-flex;
@@ -111,21 +111,4 @@ hr {
 .words .unknown {
     font-size: 75%;
     font-family: "pecita", fantasy;
-}
-
-#top_btn {
-    position: fixed;
-    bottom: 0;
-    z-index: 1000;
-    margin: 0 1rem;
-    font-size: 2.5rem;
-}
-
-#top_btn a {
-    display: block;
-    text-align: center;
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 1000ms ease;
 }
