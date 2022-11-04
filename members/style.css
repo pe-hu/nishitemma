@@ -38,6 +38,8 @@ html {
 }
 
 .mousedragscrollable {
+    position: relative;
+    top:100vh;
     height: 100vh;
     max-height: -webkit-fill-available;
 }

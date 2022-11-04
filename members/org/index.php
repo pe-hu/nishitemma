@@ -38,40 +38,6 @@ fclose($fp);
     <link rel="stylesheet" href="submit.css" />
     <style type="text/css">
 
-        #form,
-        #index {
-            position: relative;
-            display: block;
-            padding: 0;
-            margin: 0;
-            border: none;
-            width: 50%;
-            height: 100vh;
-            max-height: -webkit-fill-available;
-        }
-
-        #form {
-            float: left;
-            overflow: auto;
-            z-index: 2;
-        }
-
-        #index {
-            float: right;
-            z-index: 1;
-        }
-
-        @media screen and (max-width: 750px) {
-
-            #form,
-            #index {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: auto;
-                clear: both;
-            }
-        }
     </style>
 </head>
 
