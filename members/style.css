@@ -2,6 +2,10 @@ html {
     height: -webkit-fill-available;
 }
 
+#org {
+    min-height: 100vh;
+}
+
 .mousedragscrollable {
     height: 100vh;
     max-height: -webkit-fill-available;
@@ -22,7 +26,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 100%;
     overflow: auto;
 }

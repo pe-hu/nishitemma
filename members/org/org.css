@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border: none;
+}
+
+#submit {
+    font-family: "ipag", monospace;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 0 2.5rem;
+    margin: 2.5rem auto 5rem;
+    width: 30rem;
+    max-width: 100%;
+}
+
+#submit a {
+    border: solid 1px;
+    border-radius: 50%;
+    margin: 2.5rem 0;
+    transform: scale(0.75);
+}
+
+#submit a,
+.words a {
+    text-decoration: none;
+    color: #000;
+    padding: 1rem 2rem;
+    display: inline-block;
+}
+
+#submit a:hover {
+    color: #fff;
+    background: #000;
+}
+
+#submit h1 {
+    transform: scale(1, 1.5);
+    font-size: 150%;
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem #000;
+}
+
+.words ul,
+.words li {
+    padding: 0.25rem;
+    margin: 0;
+}
+
+.words ul {
+    height: 100vh;
+    max-height: -webkit-fill-available;
+    overflow:scroll;
+    list-style: none;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.words .must {
+    font-weight: 900;
+}
+
+.words .should {
+    font-weight: 700;
+}
+
+.words .can {
+    font-weight: 500;
+}
+
+.words .may {
+    font-weight: 300;
+}
+
+.words .could {
+    font-weight: 200;
+}
+
+.words .cant {
+    font-weight: 100;
+}
+
+.words .positive {
+    font-size: 250%;
+    font-family: "Hiragino Maru Gothic Pro", "Hiragino Kaku Gothic Pro", "HGMaruGothicMPRO", sans-serif;
+}
+
+.words .negative {
+    font-size: 50%;
+    font-family: YuMincho, "Hiragino Mincho ProN W3", "Hiragino Mincho ProN", "PMingLiU", serif;
+}
+
+.words .both {
+    font-size: 150%;
+    font-family: "Courier", monospace;
+}
+
+.words .neither {
+    font-size: 100%;
+    font-family: "Script", cursive;
+}
+
+.words .unknown {
+    font-size: 75%;
+    font-family: "pecita", fantasy;
+}
+
+#top_btn {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    margin: 0 1rem;
+    font-size: 2.5rem;
+}
+
+#top_btn a {
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 1000ms ease;
+}
