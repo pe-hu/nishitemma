@@ -38,8 +38,8 @@ fclose($fp);
     <link rel="stylesheet" href="submit.css" />
     <style type="text/css">
 
-        #index,
-        #form {
+        #form,
+        #index {
             position: relative;
             display: block;
             padding: 0;
@@ -50,21 +50,21 @@ fclose($fp);
             max-height: -webkit-fill-available;
         }
 
-        #index {
+        #form {
             float: left;
             overflow: auto;
             z-index: 2;
         }
 
-        #form {
+        #index {
             float: right;
             z-index: 1;
         }
 
         @media screen and (max-width: 750px) {
 
-            #index,
-            #form {
+            #form,
+            #index {
                 top: 0;
                 left: 0;
                 width: 100%;
@@ -76,17 +76,14 @@ fclose($fp);
 </head>
 
 <body id="box">
-    <div id="cc"></div>
-
-    <section id="index"></section>
     <section id="form"></section>
-
+    <section id="index"></section>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://creative-community.space/org/searchBox.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#index").load("submit.html");
-            $("#form").load("org.php");
+            $("#form").load("submit.html");
+            $("#index").load("org.php");
         })
     </script>
 </body>
