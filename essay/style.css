@@ -20,6 +20,10 @@ html {
     margin-top: 1rem;
 }
 
+.open #menu {
+    margin-top: 0;
+}
+
 #wakaba .contents {
     position: absolute;
     top: 50%;
