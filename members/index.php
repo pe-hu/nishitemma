@@ -88,7 +88,7 @@ fclose($fp);
             </div>
         </li>
 
-        <li class="note"></li>
+        <li class="book"></li>
 
         <li>
             <div class="contents">
