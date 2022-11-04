@@ -146,7 +146,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 550px) {
 
     .library .contents {
         font-size: 2.5vw;
