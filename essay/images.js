@@ -1,6 +1,5 @@
 img = new Array(
     "book/000.png",
-    "book/004.png",
     "book/002.png",
     "book/003.png",
     "hal/000.JPG",
