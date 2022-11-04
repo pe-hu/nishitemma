@@ -46,6 +46,9 @@ fclose($fp);
     #index {
       margin-bottom: 1rem;
     }
+    main {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 
