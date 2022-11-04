@@ -77,7 +77,7 @@ fclose($fp);
 
 <body id="box">
     <section id="form"></section>
-    <section id="index"></section>
+    <section id="index" class="words"></section>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://creative-community.space/org/searchBox.js"></script>
     <script type="text/javascript">
