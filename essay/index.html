@@ -20,7 +20,7 @@
 
 <body id="box">
     <main>
-        <section id="wakaba">
+        <section id="wakaba" class="screensaver">
             <p id="top">
                 <b>エッセイ集</b>
                 <b>わかば</b>
@@ -33,6 +33,7 @@
             <script src="images.js"></script>
         </section>
         <ul class="mousedragscrollable library">
+            <li class="cover"></li>
             <li>
                 <div class="contents">
                     <p id="symbol">
@@ -154,6 +155,7 @@
     <div id="floor"></div>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../scrollable.js"></script>
+    <script src="../screensaver.js"></script>
     <script>
         $(function () {
             $("#menu").load("../menu.html");

@@ -2,27 +2,38 @@ html {
     height: -webkit-fill-available;
 }
 
-.mousedragscrollable {
-    height: 75vh;
-}
-
 #wakaba,
 .mousedragscrollable {
     max-height: -webkit-fill-available;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+#menu {
+    position: relative;
+    z-index: 500;
+}
+
+.mousedragscrollable {
+    position: absolute;
+}
+
+#menu,
+.mousedragscrollable {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.mousedragscrollable {
+    height: 100vh;
+}
+
 .library li {
     background-size: 100%;
 }
 
-#menu,
 #floor {
     margin-top: 1rem;
-}
-
-.open #menu {
-    margin-top: 0;
 }
 
 #wakaba .contents {
@@ -42,6 +53,10 @@ html {
     width: 90%;
     max-height: 90%;
     overflow: auto;
+}
+
+.cover {
+    background-image: url(book/002.png);
 }
 
 .a {
