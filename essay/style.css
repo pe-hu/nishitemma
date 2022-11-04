@@ -16,13 +16,12 @@ html {
     background-size: 100%;
 }
 
-#menu,
 #floor {
     margin-top: 1rem;
 }
 
-.open #menu {
-    margin-top: 0;
+.mousedragscrollable {
+    margin-bottom: 0;
 }
 
 #wakaba .contents {
