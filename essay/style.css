@@ -1,0 +1,55 @@
+#wakaba,
+.library {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#wakaba,
+.library li {
+    background-size: 75%;
+}
+
+.contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 750px;
+    overflow: auto;
+}
+
+.a {
+    background-image: url(book/001.png);
+}
+
+.b {
+    background-image: url(book/005.png);
+}
+
+.c {
+    background-image: url(book/006.png);
+}
+
+.d {
+    background-image: url(book/007.png);
+}
+
+.e {
+    background-image: url(book/008.png);
+}
+
+.hal {
+    background-image: url(hal/000.JPG);
+}
+        
+.hal .edition,
+.hal .special {
+    background: pink;
+    color: #fff;
+}
+
+.library::-webkit-scrollbar-thumb,
+.library li::-webkit-scrollbar-thumb {
+    background: #43B149;
+    border-radius: 10vh;
+}

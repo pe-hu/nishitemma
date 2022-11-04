@@ -1,0 +1,153 @@
+#wakaba {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 75vw;
+    user-select: none;
+    pointer-events: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#top,
+#bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#symbol {
+    z-index: 100;
+    background: #43B149;
+    color: #fff;
+    font-size: 100%;
+    width: 90%;
+    max-width: 500px;
+    padding: 5% 12.5%;
+    margin: 0 auto 12.5%;
+    box-sizing: border-box;
+    border-radius: 50rem;
+}
+
+#symbol span {
+    margin: 0.5rem;
+    display: block;
+}
+
+.topic {
+    color: #fff;
+    background: #43B149;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hint {
+    margin: 12.5% auto 0;
+    width: 75%;
+    max-width: 25rem;
+}
+
+.hint span {
+    display: block;
+    padding: 0.5rem;
+}
+
+.hint span::before {
+    content: "🌱";
+    display: inline-block;
+}
+
+.aha {
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #43B149;
+    margin: 0;
+    color: #fff;
+    border-radius: 50vw;
+}
+
+.contents a {
+    background: #43B149;
+    color: #fff;
+    padding: 0.25rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: all 1500ms ease;
+    display: inline-block;
+}
+
+.contents a:hover {
+    color: #000;
+    background: #fffbe6 !important;
+}
+
+.by {
+    width: 5vw;
+    margin-right: 1vw;
+}
+
+.name,
+.as {
+    width: 15vw;
+    margin-right: 1vw;
+}
+
+.edition {
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0.5rem 0;
+    margin: 1rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+.special {
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 90%;
+    max-width: 500px;
+    padding: 0;
+    margin: 1rem auto 2.5rem;
+}
+
+.special p {
+    padding: 0.25rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .library li span {
+        font-size: 2.5vw;
+    }
+
+    .contents a {
+        line-height: 200%;
+        padding: 0.25vw;
+        margin-right: 1vw;
+    }
+}
