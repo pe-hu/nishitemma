@@ -17,106 +17,54 @@ body {
     font-family: "Apple Chancery", cursive;
 }
 
-h1,
-header section {
+#topic {
+    clear: both;
+    border: none;
+    padding: 1rem;
     letter-spacing: 0.04rem;
     font-family: "MS Mincho", serif;
 }
 
-.en {
-    font-family: "Times New Roman";
-    padding-left: 0.5em;
-    letter-spacing: 0.05rem;
-}
-
-a {
+#topic a {
     color: #000;
     text-decoration: none;
-}
-
-a:hover {
-    font-style: oblique;
-}
-
-header {
-    font-size: 1rem;
-}
-
-header h1,
-marquee {
-    font-size: 200%;
-}
-
-b {
-    font-size: 150%;
-}
-
-.red,
-header section a {
     font-size: 125%;
-}
-
-header h1,
-header section a {
     line-height: 200%;
-}
-
-.red {
-    color: red;
-}
-
-h1,
-b {
-    font-weight: normal;
-}
-
-hr,
-header section {
-    clear: both;
-    border: none;
-    padding-top: 1rem;
-}
-
-header {
-    padding: 2.5vw;
-}
-
-header section a {
     padding: 0.25em;
     margin: 0 1rem 1rem 0;
 }
 
-header section .topics {
+#topic .topics {
     background-color: #eee;
 }
 
-header section .flash {
+#topic .flash {
     color: #fff;
     background-color: red;
 }
 
-header section .dm {
+#topic .dm {
     background-color: yellow;
 }
 
-header section .topics:hover,
-header section .flash:hover,
-header section .dm:hover {
+#topic .topics:hover,
+#topic .flash:hover,
+#topic .dm:hover {
     color: #fff;
     background-color: blue;
 }
 
 @media screen and (max-width: 750px) {
-    header {
+    #topic {
         font-size: 0.75rem;
     }
 
-    header section a {
+    #topic a {
         margin: 0 0.5rem 0.5rem 0;
     }
 
-    hr,
-    header section {
+    #topic hr,
+    #topic section {
         padding-top: 0.75rem;
     }
 }

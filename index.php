@@ -52,11 +52,6 @@ fclose($fp);
   <div id="index"></div>
   <div id="floor"></div>
   <main>
-    <h1>* Hello こんにちは！
-      <br />This is the website of creative, community space
-      <b><a class="apple red" href="/jp/">pehu</a></b>
-      until September 15th 2019.
-    </h1>
     <form id="index_form" method="GET">
       <select id="calendar" name="month">
         <option disabled selected hidden>∧°┐</option>
@@ -125,6 +120,23 @@ fclose($fp);
       <?php else : ?>
       <?php endif; ?>
     </ul>
+    <section id="topic">
+      <p>
+        <b>お知らせ　TOPICS</b>　
+        <a class="topics" href="https://creative-community.space/">
+          ∧°┐ のウェブサイトは移転しました
+        </a>
+      </p>
+      <a class="flash" href="/jp/">
+        2019年9月15日を持って西天満のペフは閉館しました
+      </a>
+      <a class="dm" href="/jp/dm/">
+        2020年5月30日 This USB Card is The Digital Magazine を発売しました
+      </a>
+      <a class="topics" href="/jp/2019/">
+        2020年5月30日 ∧°┐ | Special Gift Box 2019 を発売しました
+      </a>
+    </section>
   </main>
 
   <div id="screensaver" class="screensaver">
