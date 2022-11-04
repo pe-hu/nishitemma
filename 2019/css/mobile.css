@@ -1,21 +1,21 @@
+#sp,
 #buynow,
-#box,
 #buynow h1,
 #buynow p {
     margin: 5vw auto;
 }
 
 #buynow,
-#box #info {
+#sp #info {
     font-size: 1.75vw;
 }
 
-#box #contents li {
+#sp #contents li {
     border: solid 0.125vw;
     padding: 0 1.5vw 5vw;
 }
 
-#box #contents li b {
+#sp #contents li b {
     font-size: 3.5vw;
     top: 25%;
     left: 5.5vw;
@@ -27,23 +27,23 @@
     font-size: 3.5vw;
 }
 
-#box #contents li::marker {
+#sp #contents li::marker {
     content: "[" counter(list-item) "]";
     font-size: 1.75vw;
     letter-spacing: 0.1vw;
 }
 
-#box #contents .text p {
+#sp #contents .text p {
     font-size: 2vw;
     padding: 2vw;
     margin: 1vw 0 4vw;
 }
 
-#box #contents .text iframe {
+#sp #contents .text iframe {
     height: 45vw;
 }
 
-#box #contents #special h3 {
+#sp #contents #special h3 {
     padding: 20vw 5vw;
     margin: 1vw 0 2vw;
     font-size: 4vw;
