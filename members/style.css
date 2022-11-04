@@ -1,0 +1,42 @@
+.library {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.library li {
+    background-size: 100%;
+}
+
+.contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    overflow: auto;
+}
+
+.think {
+    background-image: url(000.jpg);
+}
+
+.note {
+    background-image: url(open.jpg);
+}
+
+.aa {
+    background-image: url(001.jpg);
+}
+
+.bb {
+    background-image: url(002.jpg);
+}
+
+.cc {
+    background-image: url(003.jpg);
+}
+
+.library::-webkit-scrollbar-thumb,
+.library li::-webkit-scrollbar-thumb {
+    background: #000;
+}

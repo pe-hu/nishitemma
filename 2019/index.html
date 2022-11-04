@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../menu.css" />
     <link rel="stylesheet" href="../floor.css" />
+    <link rel="stylesheet" href="../screensaver.css" />
     <link rel="stylesheet" type="text/css" href="css/box.css" />
     <link rel="stylesheet" type="text/css" href="css/buy.css" />
     <link rel="stylesheet" type="text/css" href="css/cover.css" />
@@ -30,6 +31,19 @@
 
         .open #cover {
             display: none;
+        }
+
+        #screensaver img {
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            max-width: 95%;
+            max-height: 100%;
+            user-select: none;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -54,9 +68,15 @@
             </div>
         </section>
     </main>
+
+    <div id="screensaver" class="screensaver">
+        <img src="pr/inside.png">
+    </div>
+
     <div id="menu"></div>
 
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../screensaver.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#limited").load("box.html");
