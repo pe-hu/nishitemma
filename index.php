@@ -52,6 +52,11 @@ fclose($fp);
   <div id="index"></div>
   <div id="floor"></div>
   <main>
+    <h1>* Hello こんにちは！
+      <br />This is the website of creative, community space
+      <b><a class="apple red" href="/jp/">pehu</a></b>
+      until September 15th 2019.
+    </h1>
     <form id="index_form" method="GET">
       <select id="calendar" name="month">
         <option disabled selected hidden>∧°┐</option>
