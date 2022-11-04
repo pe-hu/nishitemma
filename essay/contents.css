@@ -30,6 +30,7 @@
 }
 
 .library .contents {
+    box-sizing: border-box;
     font-size: 1rem;
     padding: 4.5%;
 }
