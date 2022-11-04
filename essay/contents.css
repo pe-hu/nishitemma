@@ -81,13 +81,9 @@
 }
 
 .aha {
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: block;
+    float: right;
     padding: 0.5rem 1rem;
-    position: fixed;
-    top: 0;
-    right: 0;
     background: #43B149;
     margin: 0;
     color: #fff;
