@@ -45,6 +45,7 @@ fclose($fp);
     <?php endif; ?>
 </ul>
 
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
     function shuffleContent(container) {
         var content = container.find("> *");
