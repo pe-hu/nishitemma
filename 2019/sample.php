@@ -1,11 +1,9 @@
 <?php
-
 mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
-function h($str)
-{
+function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
@@ -22,13 +20,12 @@ flock($fp, LOCK_SH);
 while ($row = fgetcsv($fp)) {
   $rows[] = $row;
 }
+
 flock($fp, LOCK_UN);
 fclose($fp);
-
 ?>
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,33 +33,24 @@ fclose($fp);
   <title>PHP Calendar</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="calendar.css" />
-  <link rel="stylesheet" href="https://vg.pe.hu/coding/sc-pro/source-code-pro.css">
-
   <style>
-    @font-face {
-      font-family: "Kevin Wild";
-      src: url("/wp-content/uploads/kevinwildfont.ttf");
-    }
+  @font-face {
+    font-family: "Kevin Wild";
+    src: url("/wp-content/uploads/kevinwildfont.ttf");
+  }
 
-    #index_form #calendar,
-    #index_form button[type="submit"],
-    .date u,
-    .date span {
-      font-family: 'Source Code Pro VF', 'Source Code Pro', monospace;
-    }
-
-    #index_form h1,
-    .date b,
-    .date i {
-      font-family: "Kevin Wild", cursive;
-    }
+  #index_form h1,
+  .date b,
+  .date i {
+    font-family: "Kevin Wild", cursive;
+  }
   </style>
 </head>
 
 <body>
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
-      <option hidden>Select Month</option>
+      <option disabled selected hidden>∧°┐</option>
       <option value="1">1月</option>
       <option value="2">2月</option>
       <option value="3">3月</option>
@@ -76,33 +64,26 @@ fclose($fp);
       <option disabled value="11">11月</option>
       <option disabled value="12">12月</option>
     </select>
-    <h1>
+    <p class="month">>
       <?php
       date_default_timezone_set('Asia/Tokyo');
       print(date($month) . "月")
       ?>
-    </h1>
+    </p>
     <button type="submit" name="submit">
       <?php
       print($year)
       ?>
     </button>
   </form>
-
   <ul class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
         <li class="<?= h($row[0]) ?>">
-          <b class="day">
-            <?= h($row[1]) ?>
-          </b>
+          <b class="day"><?= h($row[1]) ?></b>
           <p>
-            <u>
-              <?= h($row[3]) ?>
-            </u>
-            <span>
-              <?= h($row[2]) ?>
-            </span>
+            <u><?= h($row[3]) ?></u>
+            <span><?= h($row[2]) ?></span>
             <i><?= h($row[4]) ?></i>
           </p>
         </li>
