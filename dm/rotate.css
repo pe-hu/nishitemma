@@ -34,7 +34,7 @@
 	}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
 	.css-animation {
 		animation: rotate 0s linear infinite;
 	}

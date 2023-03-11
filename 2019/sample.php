@@ -33,18 +33,6 @@ fclose($fp);
   <title>PHP Calendar</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="calendar.css" />
-  <style>
-  @font-face {
-    font-family: "Kevin Wild";
-    src: url("/wp-content/uploads/kevinwildfont.ttf");
-  }
-
-  #index_form h1,
-  .date b,
-  .date i {
-    font-family: "Kevin Wild", cursive;
-  }
-  </style>
 </head>
 
 <body>
