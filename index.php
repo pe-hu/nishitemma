@@ -1,5 +1,4 @@
 <?php
-
 mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
@@ -22,13 +21,12 @@ flock($fp, LOCK_SH);
 while ($row = fgetcsv($fp)) {
   $rows[] = $row;
 }
+
 flock($fp, LOCK_UN);
 fclose($fp);
-
 ?>
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +39,6 @@ fclose($fp);
   <link rel="stylesheet" href="2019/calendar.css" />
   <link rel="icon" href="2019/pr/2019.png">
 </head>
-
 <body id="box">
   <header id="index"></header>
   <div id="floor"></div>
@@ -74,7 +71,6 @@ fclose($fp);
         ?>
       </button>
     </form>
-
     <ul class="date">
       <?php if (!empty($rows)) : ?>
         <?php foreach ($rows as $row) : ?>

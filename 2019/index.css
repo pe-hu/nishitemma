@@ -9,6 +9,7 @@
 
 #index_form #calendar,
 #index_form button[type="submit"] {
+  font-family: "MS Mincho", serif;
   font-size: 100%;
   color: #000;
   margin: 0;
