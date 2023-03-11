@@ -17,6 +17,8 @@
   <meta name="twitter:title" content="∧° ┐ | Special Gift Box 2019">
   <meta name="twitter:description" content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス">
   <meta name="twitter:image" content="pr/inside.png">
+  <link rel="stylesheet" href="../menu.css" />
+  <link rel="stylesheet" href="../floor.css" />
   <link rel="stylesheet" type="text/css" href="css/box.css" />
   <link rel="stylesheet" type="text/css" href="css/buy.css" />
   <link rel="stylesheet" type="text/css" href="css/cover.css" />
@@ -47,9 +49,14 @@
 
   <h1 id="title">∧° ┐ | creative, community space</h1>
 
+  <header id="index"></header>
+  <div id="floor"></div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
   $(function () {
+    $("#index").load("../menu.html");
+    $("#floor").load("../floor.html");
     $("#sp").load("box.html");
   })
   </script>
