@@ -34,26 +34,16 @@ fclose($fp);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>∧° ┐ | creative, community space</title>
-  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="menu.css" />
   <link rel="stylesheet" href="floor.css" />
   <link rel="stylesheet" href="2019.css" />
   <link rel="stylesheet" href="2019/index.css" />
   <link rel="stylesheet" href="2019/calendar.css" />
-  <link rel="stylesheet" href="screensaver.css" />
-    <link rel="icon" href="2019/pr/2019.png">
-  <style>
-    #index {
-      margin-bottom: 1rem;
-    }
-    main {
-      margin-top: 1rem;
-    }
-  </style>
+  <link rel="icon" href="2019/pr/2019.png">
 </head>
 
 <body id="box">
-  <div id="index"></div>
+  <header id="index"></header>
   <div id="floor"></div>
   <main>
     <form id="index_form" method="GET">
@@ -72,12 +62,12 @@ fclose($fp);
         <option disabled value="11">11月</option>
         <option disabled value="12">12月</option>
       </select>
-      <h1 class="month">
+      <p class="month">
         <?php
         date_default_timezone_set('Asia/Tokyo');
         print(date($month) . "月")
         ?>
-      </h1>
+      </p>
       <button type="submit" name="submit">
         <?php
         print(date($year))
@@ -89,30 +79,19 @@ fclose($fp);
       <?php if (!empty($rows)) : ?>
         <?php foreach ($rows as $row) : ?>
           <li class="<?= h($row[0]) ?>">
-            <b class="day">
-              <?= h($row[1]) ?>
-            </b>
+            <b class="day"><?= h($row[1]) ?></b>
             <p class="<?= h($row[2]) ?>">
               <i></i><br>
-              <u>
-                <?= h($row[3]) ?>
-              </u>
+              <u><?= h($row[3]) ?></u>
             </p>
             <p class="<?= h($row[4]) ?>">
               <i></i><br>
-              <u>
-                <?= h($row[5]) ?>
-              </u>
+              <u><?= h($row[5]) ?></u>
             </p>
             <p class="<?= h($row[6]) ?>">
-              <i></i>
-              <br>
-              <u>
-                <?= h($row[7]) ?>
-              </u>
-              <span>
-                <?= h($row[8]) ?>
-              </span>
+              <i></i><br>
+              <u><?= h($row[7]) ?></u>
+              <span><?= h($row[8]) ?></span>
             </p>
             <p class="<?= h($row[9]) ?>">
               <u><?= h($row[10]) ?></u>
@@ -126,19 +105,12 @@ fclose($fp);
     </ul>
   </main>
 
-  <div id="screensaver" class="screensaver">
-    <h1>We've moved to<br />
-      <b>creative-community.space</b>
-    </h1>
-  </div>
-
-  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="screensaver.js"></script>
+  <script src="https:////code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
-    $(function() {
-      $("#index").load("menu.html");
-      $("#floor").load("floor.html");
-    })
+  $(function() {
+    $("#index").load("menu.html");
+    $("#floor").load("floor.html");
+  })
   </script>
 </body>
 

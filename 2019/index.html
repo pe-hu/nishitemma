@@ -2,92 +2,57 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title> ∧° ┐ | Special Gift Box 2019 </title>
-    <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="../menu.css" />
-    <link rel="stylesheet" href="../floor.css" />
-    <link rel="stylesheet" href="../screensaver.css" />
-    <link rel="stylesheet" type="text/css" href="css/box.css" />
-    <link rel="stylesheet" type="text/css" href="css/buy.css" />
-    <link rel="stylesheet" type="text/css" href="css/cover.css" />
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 750px)" />
-    <link rel="icon" href="pr/2019.png">
-    <style>
-        #menu {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-        }
-
-        .open #menu {
-            position: relative;
-            top: 0;
-        }
-
-        #floor {
-            width: 100%;
-            z-index: 500;
-        }
-
-        .open #cover {
-            display: none;
-        }
-
-        #screensaver img {
-            position: absolute;
-            display: block;
-            top: 50%;
-            left: 50%;
-            max-width: 95%;
-            max-height: 100%;
-            user-select: none;
-            pointer-events: none;
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ∧° ┐ | Special Gift Box 2019 </title>
+  <meta name="author" content="∧° ┐ | creative, community space">
+  <meta name="description" content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="vg.pe.hu/jp/">
+  <meta property="og:url" content="https://vg.pe.hu/jp/2019/">
+  <meta property="og:title" content="∧° ┐ | Special Gift Box 2019">
+  <meta property="og:description" content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス">
+  <meta property="og:image" content="pr/inside.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="∧° ┐ | Special Gift Box 2019">
+  <meta name="twitter:description" content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス">
+  <meta name="twitter:image" content="pr/inside.png">
+  <link rel="stylesheet" type="text/css" href="css/box.css" />
+  <link rel="stylesheet" type="text/css" href="css/buy.css" />
+  <link rel="stylesheet" type="text/css" href="css/cover.css" />
+  <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 750px)" />
+  <link rel="icon" href="pr/2019.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div id="menu"></div>
-    <div id="floor"></div>
-    <main id="cover">
-        <h1 id="title">∧° ┐ | creative, community space</h1>
-        <section id="left">
-            <div id="sp"></div>
-        </section>
-        <section id="right">
-            <div id="buynow">
-                <h1>This is All About Pehu.</h1>
-                <span>西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス</span>
-                <p>¥5,500-</p>
-                <p>Release on 5.30.2020<br />Limited Only 25 Editions</p>
-                <iframe src="https://www.youtube.com/embed/rhcUK2Ww-MQ" frameborder="0"></iframe>
-                <h2>
-                    <a href="#">Out of Stock</a>
-                </h2>
-            </div>
-        </section>
-    </main>
+<body id="cover">
+  <main id="left">
+    <article id="sp"></article>
+  </main>
+  <article id="right">
+    <section id="buynow">
+      <h2>This is All About Pehu.</h2>
+      <span>西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス</span>
+      <p>¥5,500-</p>
+      <p>Release on 5.30.2020<br />Limited Only 25 Editions</p>
+      <img src="pr/inside.png">
+      <details>
+        <summary>Out of Stock</summary>
+        <iframe src="https://www.youtube.com/embed/rhcUK2Ww-MQ" frameborder="0"></iframe>
+      </details>
+    </section>
+  </article>
 
-    <div id="screensaver" class="screensaver">
-        <img src="pr/inside.png">
-    </div>
+  <h1 id="title">∧° ┐ | creative, community space</h1>
 
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="../screensaver.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#sp").load("box.html");
-            $("#menu").load("../menu.html");
-            $("#floor").load("../floor.html");
-        })
-    </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+  $(function () {
+    $("#sp").load("box.html");
+  })
+  </script>
 </body>
 
 </html>

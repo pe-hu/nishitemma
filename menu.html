@@ -1,17 +1,33 @@
-<ul id="menu_links">
-  <li>
-    <a id="btn" href="#floor" target="_parent">
-      <span></span>
-    </a>
-  </li>
+<nav id="menu_links">
+  <a id="btn" href="#floor" target="_parent"></a>
+  <a href="/jp/">2019</a>
+  <a href="/jp/31q/">31Q</a>
+  <a href="/jp/essay/">Essay</a>
+  <a href="/jp/members/">Members Only</a>
+  <a href="/jp/dm/">Digital Magazine</a>
+  <a href="/jp/2019/">Special Gift Box</a>
 
-  <li><a href="/jp/">2019</a></li>
-  <li><a href="/jp/31q/">31Q</a></li>
-  <li><a href="/jp/essay/">Essay</a></li>
-  <li><a href="/jp/members/">Members Only</a></li>
-  <li><a href="/jp/dm/">Digital Magazine</a></li>
-  <li><a href="/jp/2019/">Special Gift Box</a></li>
-</ul>
+</nav>
+<script type="text/javascript">
+  const btn = document.querySelector('#btn');
+  const box = document.querySelector('body');
 
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="/jp/menu.js"></script>
+  let btnToggleclass = function (close) {
+    close.classList.toggle('open');
+  }
+
+  btn.addEventListener('click', function () {
+    btnToggleclass(box);
+  }, false);
+
+  $('a[href^="#"]').click(function () {
+    let speed = 500; //スクロールスピード
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    $("html, body").animate({
+      scrollTop: position
+    }, speed, "swing");
+    return false;
+  });
+</script>

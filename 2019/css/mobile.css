@@ -1,50 +1,67 @@
+/* Copyright (C) 2022 creative-community.space */
+
+#cover {
+  position: static;
+  width: 100%;
+  height: auto;
+  max-height: auto;
+}
+
+#left,
+#right {
+  clear: both;
+  float: none;
+  position: relative;
+  padding: 2.5% 10% 2.5% 5%;
+  width: 100%;
+  height: auto;
+  min-height: -webkit-fill-available;
+  -webkit-transform: rotate(0) skew(0, 0);
+  -moz-transform: rotate(0) skew(0, 0);
+  -ms-transform: rotate(0) skew(0, 0);
+  -o-transform: rotate(0) skew(0, 0);
+  transform: rotate(0) skew(0, 0);
+}
+
+h1#title {
+  font-size: 4vh;
+  position: fixed;
+  top: 2.5%;
+  right: 1.25%;
+  padding: 0;
+  height: 100%;
+}
+
 #sp,
-#buynow,
-#buynow h1,
-#buynow p {
-    margin: 5vw auto;
+#buynow {
+  margin: 0 auto;
 }
 
-#buynow,
-#sp #info {
-    font-size: 1.75vw;
+#buynow {
+  width: 100%;
+  max-width: 100%;
 }
 
-#sp #contents li {
-    border: solid 0.125vw;
-    padding: 0 1.5vw 4vw;
+#buynow iframe {
+  height: 50vw;
 }
 
-#sp #contents li b {
-    font-size: 3.5vw;
-    top: 25%;
-    left: 5.5vw;
-}
+@media screen and (max-width: 550px) {
+  #sp,
+  #buynow {
+    font-size: 3vw;
+  }
 
-#buynow h2 a {
-    border: solid 0.125vw;
-    padding: 1vw;
-    font-size: 3.5vw;
-}
-
-#sp #contents li::marker {
-    content: "[" counter(list-item) "]";
-    font-size: 1.75vw;
-    letter-spacing: 0.1vw;
-}
-
-#sp #contents .text p {
-    font-size: 2vw;
-    padding: 2vw;
-    margin: 1vw 0 4vw;
-}
-
-#sp #contents .text iframe {
+  #contents details iframe {
     height: 45vw;
-}
+  }
 
-#sp #contents #special h3 {
+  #contents details h3 {
     padding: 20vw 5vw;
-    margin: 1vw 0 2vw;
     font-size: 4vw;
+  }
+
+  h1#title {
+    font-size: 4.5vw;
+  }
 }

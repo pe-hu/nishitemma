@@ -7,8 +7,8 @@
 
 #index_form #calendar,
 #index_form button[type="submit"] {
-    font-size: 1rem;
-    letter-spacing: 0.04rem;
+  font-size: 1rem;
+  letter-spacing: 0.04rem;
 }
 
 .date li p i:not(.event i) {
