@@ -70,7 +70,7 @@ fclose($fp);
         ?>
       </button>
     </form>
-    <ul class="date">
+    <ol class="date">
       <?php if (!empty($rows)) : ?>
         <?php foreach ($rows as $row) : ?>
           <li class="<?= h($row[0]) ?>">
@@ -97,7 +97,7 @@ fclose($fp);
         <?php endforeach; ?>
       <?php else : ?>
       <?php endif; ?>
-    </ul>
+    </ol>
   </main>
 
   <script src="https:////code.jquery.com/jquery-3.2.1.min.js"></script>

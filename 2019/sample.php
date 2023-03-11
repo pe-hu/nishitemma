@@ -50,7 +50,7 @@ fclose($fp);
 <body>
   <form id="index_form" method="GET">
     <select id="calendar" name="month">
-      <option disabled selected hidden>∧°┐</option>
+      <option disabled selected hidden>Select Month</option>
       <option value="1">1月</option>
       <option value="2">2月</option>
       <option value="3">3月</option>
@@ -64,7 +64,7 @@ fclose($fp);
       <option disabled value="11">11月</option>
       <option disabled value="12">12月</option>
     </select>
-    <p class="month">>
+    <p class="month">
       <?php
       date_default_timezone_set('Asia/Tokyo');
       print(date($month) . "月")
@@ -76,21 +76,21 @@ fclose($fp);
       ?>
     </button>
   </form>
-  <ul class="date">
+  <ol class="date">
     <?php if (!empty($rows)) : ?>
       <?php foreach ($rows as $row) : ?>
-        <li class="<?= h($row[0]) ?>">
-          <b class="day"><?= h($row[1]) ?></b>
+        <li class="<?=h($row[0])?>">
+          <b class="day"><?=h($row[1])?></b>
           <p>
-            <u><?= h($row[3]) ?></u>
-            <span><?= h($row[2]) ?></span>
-            <i><?= h($row[4]) ?></i>
+            <u><?=h($row[3])?></u>
+            <span><?=h($row[2])?></span>
+            <i><?=h($row[4])?></i>
           </p>
         </li>
       <?php endforeach; ?>
     <?php else : ?>
     <?php endif; ?>
-  </ul>
+  </ol>
 </body>
 
 </html>
