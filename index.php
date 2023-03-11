@@ -32,11 +32,11 @@ fclose($fp);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>∧° ┐ | creative, community space</title>
-  <link rel="stylesheet" href="menu.css" />
-  <link rel="stylesheet" href="floor.css" />
-  <link rel="stylesheet" href="2019.css" />
-  <link rel="stylesheet" href="2019/index.css" />
-  <link rel="stylesheet" href="2019/calendar.css" />
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="floor.css">
+  <link rel="stylesheet" href="2019.css">
+  <link rel="stylesheet" href="2019/index.css">
+  <link rel="stylesheet" href="2019/calendar.css">
   <link rel="icon" href="2019/pr/2019.png">
 </head>
 <body id="box">
@@ -45,7 +45,7 @@ fclose($fp);
   <main>
     <form id="index_form" method="GET">
       <select id="calendar" name="month">
-        <option disabled selected hidden>∧° ┐</option>
+        <option disabled selected hidden>∧°┐</option>
         <option value="1">1月</option>
         <option value="2">2月</option>
         <option value="3">3月</option>

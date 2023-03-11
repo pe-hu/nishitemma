@@ -9,7 +9,8 @@
 }
 
 .pehu {
-  font-family: "MS Mincho", serif;
+  font-family: "MS Mincho", "SimSong", serif;
+  font-size: 110%;
 }
 
 body,

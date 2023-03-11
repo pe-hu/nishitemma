@@ -1,10 +1,5 @@
 /* Copyright (C) 2020 creative-community.space */
 
-@font-face {
-  font-family: "MS Mincho", serif;
-  src: url("../MSMincho.ttf");
-}
-
 html {
   height: -webkit-fill-available;
 }
@@ -82,7 +77,7 @@ h1#title {
 }
 
 h1#title {
-  font-family: "MS Mincho", serif;
+  font-family: "MS Mincho", "SimSong", serif;
   font-size: 4vh;
   font-weight: 500;
   padding: 10vh 0 0 3.33%;

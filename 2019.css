@@ -1,8 +1,8 @@
-#index_form h1,
+#index_form p,
 #index_form #calendar,
 #index_form button[type="submit"],
 .date {
-  font-family: "MS Mincho", serif;
+  font-family: "MS Mincho", "SimSong", serif;
 }
 
 #index_form #calendar,
