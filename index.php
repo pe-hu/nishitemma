@@ -3,8 +3,7 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
-function h($str)
-{
+function h($str) {
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
@@ -90,7 +89,7 @@ fclose($fp);
               <span><?= h($row[8]) ?></span>
             </p>
             <p class="<?= h($row[9]) ?>">
-              <u><?= h($row[10]) ?></u>
+              <u><?= h($row[10]) ?></u><br>
               <i><?= h($row[12]) ?></i>
               <span><?= h($row[11]) ?></span>
             </p>
