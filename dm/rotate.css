@@ -4,24 +4,17 @@
 	user-select: none;
 	pointer-events: none;
 	z-index: -1;
+	animation: rotate 5s linear infinite;
 }
 
 .css-front,
 .css-back {
 	position: absolute;
-	width: 100%;
+	backface-visibility: hidden;
 }
 
 .css-back {
 	transform: rotateY(180deg);
-}
-
-.css-hidden {
-	backface-visibility: hidden;
-}
-
-.css-animation {
-	animation: rotate 5s linear infinite;
 }
 
 @keyframes rotate {
@@ -35,7 +28,7 @@
 }
 
 @media screen and (max-width: 850px) {
-	.css-animation {
+	.css-rotate {
 		animation: rotate 0s linear infinite;
 	}
 }
