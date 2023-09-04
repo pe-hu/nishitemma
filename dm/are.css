@@ -9,7 +9,7 @@ body {
 }
 
 #are .center {
-	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
   font-size: 80%;
 	text-align: center;
 }

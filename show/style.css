@@ -1,0 +1,84 @@
+input[type="radio"],
+#contents li.hidden {
+    display: none;
+}
+
+input[type="radio"]+label {
+    color: #000;
+}
+
+input[type="radio"]:checked+label {
+    color: red;
+}
+
+input[type="radio"]+label {
+    font-family: "MS Mincho", "SimSong", serif;
+    font-size: 100%;
+    display: inline-block;
+    margin: 0 1rem 0.25rem 0;
+}
+
+input[type="radio"]+label::before {
+    content: "[　]";
+    margin-right: 0.5rem;
+}
+
+input[type="radio"]:checked+label::before {
+    content: "[✔]";
+    margin-right: 0.5rem;
+}
+
+#contents {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+#contents li {
+    box-sizing: border-box;
+    position: relative;
+    padding: 0.75rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+    width: calc(100% / 2 - 1rem);
+    height: calc(100vw / 2 - 1rem);
+    max-width: 300px;
+    max-height: 300px;
+    list-style: none;
+}
+
+#contents li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+[data-org="show"] a {
+    border: #000 0.1rem solid;
+}
+
+[data-org="live"] a {
+    border: blue 0.1rem solid;
+}
+
+[data-org="dj"] a {
+    border: gray 0.1rem solid;
+}
+
+[data-org="shop"] a {
+    border: gold 0.1rem solid;
+}
+
+[data-org="workshop"] a {
+    border: pink 0.1rem solid;
+}
+
+[data-org="community"] a {
+    border: green 0.1rem solid;
+}
+
+.residency a {
+    border: red 0.1rem solid;
+}

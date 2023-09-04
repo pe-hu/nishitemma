@@ -1,0 +1,90 @@
+#topic {
+    padding: 0;
+    margin: 0;
+}
+
+main,
+footerr {
+    padding: 1rem;
+}
+
+hr {
+    border: none;
+}
+
+h1,
+h2,
+main,
+footer {
+    letter-spacing: 0.04rem;
+    font-family: "MS Mincho", "SimSong", serif;
+}
+
+b {
+    font-size: 150%;
+}
+
+h1,
+u {
+    font-size: 125%;
+}
+
+#topic a,
+h2 {
+    font-size: 100%;
+}
+
+h1 {
+    line-height: 175%;
+}
+
+#topic {
+    line-height: 250%;
+}
+
+h1,
+h2,
+b {
+    font-weight: normal;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#topic a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.25em;
+    margin: 0 1rem 0 0;
+}
+
+#topic .topics {
+    background-color: #eee;
+}
+
+#topic .flash {
+    color: #fff;
+    background-color: red;
+}
+
+#topic .dm {
+    background-color: yellow;
+}
+
+#topic .topics:hover,
+#topic .flash:hover,
+#topic .dm:hover {
+    color: #fff;
+    background-color: blue;
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 2.5vw;
+    }
+
+    #topic a {
+        margin: 0 2vw 0 0;
+    }
+}

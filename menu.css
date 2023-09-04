@@ -1,16 +1,15 @@
 @font-face {
   font-family: "Apple Chancery", cursive;
-  src: url("https://vg.pe.hu/jp/apple-chancery.ttf");
+  src: url("https://vg.pe.hu/fonts/family/apple-chancery.ttf");
 }
 
 @font-face {
   font-family: "MS Mincho", serif;
-  src: url("https://vg.pe.hu/jp/MSMincho.ttf");
+  src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
 }
 
 .pehu {
   font-family: "MS Mincho", "SimSong", serif;
-  font-size: 110%;
 }
 
 body,
@@ -41,9 +40,9 @@ body,
 }
 
 #menu_links {
-  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
   padding: 0;
-  margin: 0 0.25rem;
+  margin: 0.25rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -51,29 +50,12 @@ body,
 
 #menu_links a {
   color: red;
-  font-size: 1.75rem;
-  text-decoration: none;
-  display: block;
-  padding: 0 0.5rem;
-  margin: 0.25rem 0;
+  font-size: 175%;
+  padding: 0 0.25rem;
+  margin: 0 0.5rem;
 }
 
 #menu_links a:hover {
   color: #fff;
   background-color: red;
-  font-style: italic;
-}
-
-@media screen and (max-width: 750px) {
-
-  #menu_links {
-    padding: 0;
-    margin: 0 0.5vw;
-  }
-
-  #menu_links a {
-    font-size: 4vw;
-    padding: 0 0.5vw;
-    margin: 0.5vw 0;
-  }
 }

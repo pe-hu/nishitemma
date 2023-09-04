@@ -24,9 +24,7 @@
   <link rel="stylesheet" type="text/css" href="css/cover.css" />
   <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 750px)" />
   <link rel="icon" href="pr/2019.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <script src="../index.js"></script>
 </head>
 
 <body id="cover">
@@ -50,15 +48,16 @@
   <h1 id="title">∧° ┐ | creative, community space</h1>
 
   <header id="index"></header>
-  <div id="floor"></div>
+  <nav id="floor"></nav>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
-  $(function () {
-    $("#index").load("../menu.html");
-    $("#floor").load("../floor.html");
-    $("#sp").load("box.html");
-  })
+    fetchHTML('../menu.html', '#index');
+    fetchHTML('../floor.html', '#floor');
+    fetchHTML('box.html', '#sp');
+  
+    let btnToggleclass = function (close) {
+      document.body.classList.toggle('open');
+    }
   </script>
 </body>
 

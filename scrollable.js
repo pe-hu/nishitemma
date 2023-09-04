@@ -21,6 +21,7 @@ jQuery.prototype.mousedragscrollable = function () {
             }
         });
     });
+    
     // list要素内/外でのevent
     $(document).mousemove(function (event) {
         if ($(target).data("down")) {
