@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "Apple Chancery", cursive;
-  src: url("https://vg.pe.hu/fonts/family/apple-chancery.ttf");
-}
-
-@font-face {
   font-family: "MS Mincho", serif;
   src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
 }
@@ -40,7 +35,7 @@ body,
 }
 
 #menu_links {
-  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+  font-family: "MS Mincho", "SimSong", serif;
   padding: 0;
   margin: 0.25rem 0;
   display: flex;

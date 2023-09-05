@@ -1,15 +1,16 @@
-#topic {
+#topic,
+h2 {
     padding: 0;
     margin: 0;
 }
 
-main,
-footerr {
+main {
     padding: 1rem;
 }
 
 hr {
     border: none;
+    padding: 0.25rem;
 }
 
 h1,
@@ -44,6 +45,7 @@ h1 {
 
 h1,
 h2,
+h3,
 b {
     font-weight: normal;
 }
@@ -81,7 +83,7 @@ h2 {
 
 @media screen and (max-width: 750px) {
     html {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     #topic a {
