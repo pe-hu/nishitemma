@@ -1,63 +1,123 @@
-"date": "4.3.2019 (Wen) 7:30pm-",
-"name": "FREE TIME",
-"description": "電子音楽昔話「聞け！電子音楽の夜明けを！」",
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" defer>
+        const thisDate = "4.3.2019 (Wen), START at 7:30pm-"
+        const thisDatetime = "2019/04/03 19:30:00"
+        const thisTitle = "電子音楽昔話「聞け！電子音楽の夜明けを！」"
+        const thisDescription = "1948年～50年代全般の電子音楽を回顧"
+        const thisDoor = "自由料金制 NAME YOUR PRICE"
+    </script>
+    <script src="js/index.js" async></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        nav {
+            font-family: "MS Mincho", "SimSong", monospace;
+        }
 
-内容：1948年～50年代全般の電子音楽を回顧
- 
-M01.
-ピエール・シェフェール：ノイズに関する5 つのエチュード(1948)
-Pierre Schaeffer:Cinq études de bruits
- 
-・ドナウエッシンゲン音楽祭(1953)
-　Donaueschinger Musiktage
- 
-M02.
-ピエール・シェフェール & ピエール・アンリ:オルフェ 53
-Pierre Schaeffer & Pierre Henry: Orphée 53
+        article {
+            font-family: "MS Gothic", sans-serif;
+        }
 
-M03.（比較として）
-ピエール・ブーレーズ:ピアノソナタ第2番
-Pierre Boulez:Piano Sonata no.2
- 
-・ケルン電子音楽スタジオ
-WDR Studio für Elektronische Musik
- 
-M03.
-カールハインツ・シュトックハウゼン:習作No1(1953)
-Karlheinz Stockhausen:Studie1
+        aside p {
+            font-size: 111%;
+        }
 
-M04.
-カールハインツ・シュトックハウゼン:少年の歌(1956-58)
-Karlheinz Stockhausen:Gesang der Junglinge
- 
+        @media (orientation: landscape) {
+            aside {
+                overflow: scroll;
+                height: calc(100vh - 10rem);
+            }
+        }
+    </style>
+</head>
 
- 
-・ブリュッセル万博(1958)
-Expo 58:Brussels World’s Fair
-
-M05.
-ヤニス・クセナキス: コンクレートPH
-Iannis Xenakis:CONCRET PH
-
-M06.
-エドガー・ヴァレーズ:ポエム・エレクトロニク
-Edgard Varèse:Poème électronique
- 
-M08.
-リュック・フェラーリ：偶発音のエチュード
-Luc Ferrari : Étude aux accidents
- 
-ブリュッセル万博と同時期の作品
- 
-M09.
-ヤニス・クセナキス:  ディアモルフォーズ(1958)
-Iannis Xenakis:Diamorphoses
-
-M10.
-ジョン・ケージ ：アリアとフォンタナミックス(1958)
-John Cage:Fontana Mix With Aria
- 
-M11.
-ルチアーノ・ベリオ:ジョイス賛(1958)
-Luciano Berio: Omaggio a Joyce
+<body>
+    <nav>
+        <time id="date"></time>
+        <span id="door"></span>
+    </nav>
+    <article>
+        <section>
+            <h1 id="title"></h1>
+            <h2 id="description"></h2>
+            <br>
+            <p>by ぽこぺん</p>
+        </section>
+        <aside>
+            <p>
+                M01.<br />
+                ピエール・シェフェール：ノイズに関する5 つのエチュード(1948)<br />
+                Pierre Schaeffer:Cinq études de bruits
+            </p>
+            <p>
+                ・ドナウエッシンゲン音楽祭(1953)<br />
+                　Donaueschinger Musiktage
+            </p>
+            <p>
+                M02.<br />
+                ピエール・シェフェール & ピエール・アンリ:オルフェ 53<br />
+                Pierre Schaeffer & Pierre Henry: Orphée 53
+            </p>
+            <p>
+                M03.（比較として）<br />
+                ピエール・ブーレーズ:ピアノソナタ第2番<br />
+                Pierre Boulez:Piano Sonata no.2
+            </p>
+            <p>
+                ・ケルン電子音楽スタジオ<br />
+                WDR Studio für Elektronische Musik
+            </p>
+            <p>
+                M03.<br />
+                カールハインツ・シュトックハウゼン:習作No1(1953)<br />
+                Karlheinz Stockhausen:Studie1
+            </p>
+            <p>
+                M04.<br />
+                カールハインツ・シュトックハウゼン:少年の歌(1956-58)<br />
+                Karlheinz Stockhausen:Gesang der Junglinge
+            </p>
+            <p>
+                ・ブリュッセル万博(1958)<br />
+                Expo 58:Brussels World’s Fair
+            </p>
+            <p>
+                M05.<br />
+                ヤニス・クセナキス: コンクレートPH<br />
+                Iannis Xenakis:CONCRET PH
+            </p>
+            <p>
+                M06.<br />
+                エドガー・ヴァレーズ:ポエム・エレクトロニク<br />
+                Edgard Varèse:Poème électronique
+            </p>
+            <p>
+                M08.<br />
+                リュック・フェラーリ：偶発音のエチュード<br />
+                Luc Ferrari : Étude aux accidents
+            </p>
+            <p>ブリュッセル万博と同時期の作品</p>
+            <p>
+                M09.<br />
+                ヤニス・クセナキス: ディアモルフォーズ(1958)<br />
+                Iannis Xenakis:Diamorphoses
+            </p>
+            <p>
+                M10.<br />
+                ジョン・ケージ ：アリアとフォンタナミックス(1958)<br />
+                John Cage:Fontana Mix With Aria
+            </p>
+            <p>
+                M11.<br />
+                ルチアーノ・ベリオ:ジョイス賛(1958)<br />
+                Luciano Berio: Omaggio a Joyce
+            </p>
+        </aside>
+    </article>
+    <nav id="footer"></nav>
+</body>

@@ -44,6 +44,14 @@
   
     "contents": [
       {
+        "org": "show",
+        "date": "9.1-9.16.2019",
+        "name": "A+A- AA CC K2 X W",
+        "description": "at BnA Alter Museum",
+        "link": "block",
+        "href": "/jp/show/aaacck2xw/"
+      },
+      {
         "org": "community",
         "date": "9.15.2019 (Sun)",
         "name": "贈り物を送る",
@@ -705,7 +713,7 @@
         "name": "SIGN",
         "description": "Grand Opening Party",
         "link": "block",
-        "href": "/jp/show/sign.html"
+        "href": "/jp/show/sign/"
       },
       {
         "org": "talk",
@@ -729,7 +737,7 @@
         "name": "全員リリパ",
         "description": "at ひかりのラウンジ",
         "link": "block",
-        "href": "/jp/show/relepa.html"
+        "href": "/jp/show/relepa/"
       },
       {
         "org": "shop",

@@ -1,76 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>#10FEB19SUN</title>
-<style>
-html, body {height: 100%; font-family: "ＭＳ 明朝","MS Mincho"; letter-spacing: 0.05rem;}
-a {color: blue; text-decoration: none;}
-a:hover {color: yellow;}
-.member {color: #000; padding: 5px; border: 1px solid #000;}
-#event {padding: 0 1vw;}
-ul {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap; /* Safari */
-  flex-wrap:         wrap;
-  -webkit-justify-content: space-evenly; /* Safari */
-  justify-content:         space-evenly;
-  -webkit-align-items: normal; /* Safari */
-  align-items: normal;
-margin: 0;
-padding: 0;
-list-style-type: none;}
-.xxxx li {float: left; width: 900px; margin: 2em;}
-.map li:first-of-type {float: left; width: 333px; margin: 2em;}
-.map li {float: left; width: 600px; margin: 2em;}
-h1 {font-size: 2vw;}
-h2 {font-size: 3vw; font-weight: normal;}
-h3 {font-size: 1.2vw; padding: 0.5em; margin: 0.5em; font-weight: normal; line-height: 2em;}
-h3 a {text-decoration: none; border: solid 1px blue; padding: 0.5vw;}
-h3 a:hover {color: #fff; background-color: blue;}
-hr {height: 2em; border:0; clear:both;}
-#red {color: red;}
-</style>
-</head>
-<body>
+<html lang="ja">
 
-<h3> 2.10.2019 (Sun), START at <u>5PM-</u> | <b>\2000 <a class="member">MEMBERS \1500</a></b></h3>
-<div id="event">
-<ul class="xxxx">
-<li>
-<h3><u>LIVE/PERFORMANCE</u></h3>
-<h2><b>#10FEB19SUN</b></h2>
-<h2>Gerard Lebik</h2>
-<h2>Takahiro Kawaguchi</h2>
-<h2>Yan Conk / New Smith + Shoji Funakawa</h2>
-<h2>KeitaroTamura</h2>
-</li>
-<li>
-<h2><u>出演:</u></h2>
-<p><a href="http://gerardlebik.net/">ゲラルド・レビック</a></p>
-<p><a href="http://takahirokawaguchi.tumblr.com/">川口貴大</a></p>
-<p>梁崑玖 / ニュースミス （岡村基紀、大橋満之）＋船川翔司</p>
-<p><a href="https://soundcloud.com/keitarotamura">ケイタロタムラ</a></p>
-<br/><h2><u>順番:</u></h2>
-<p>5:00PM- Open</p>
-<p>5:30PM- Yan Conk / New Smith + Shoji Funakawa [1]</p>
-<p>5:50PM- KeitaroTamura [1]</p>
-<p>6:10PM- Gerard Lebik [2]</p>
-<p>6:30PM- KeitaroTamura [2]</p>
-<p>6:50PM- Yan Conk / New Smith + Shoji Funakawa [2]</p>
-<p>7:10PM- Takahiro Kawaguchi [2]</p>
-<p>7:40PM- Gerard Lebik, Takahiro Kawaguchi DUO [2]</p>
-<p>8:00PM- end</p>
-<hr/>
-<p>[1] リハーサル兼演奏 | Open Rehearsal / Setup</p>
-<p>[2] インスタレーションを用いた演奏など | Performance</p>
-</li>
-</ul>
-<hr>
-<ul class="map">
-<li>
-<p><a href="/jp/">∧° ┐ </a>| creative, community space</p>
-</li>
-</ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <script type="text/javascript" defer>
+    const thisDate = "2.10.2019 (Sun), START at 5pm-"
+    const thisDatetime = "2019/02/10 17:00:00"
+    const thisTitle = "Gerard Lebik | Takahiro Kawaguchi | Yan Conk / New Smith + Shoji Funakawa | KeitaroTamura"
+    const thisDescription = "#10FEB19SUN"
+    const thisDoor = "¥2000"
+  </script>
+  <script src="js/index.js" async></script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    nav,
+    section {
+      font-family: "MS Mincho", "SimSong", monospace;
+    }
+
+    aside {
+      font-family: "MS Gothic", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <time id="date"></time>
+    <span id="door"></span>
+    <a id="members" href="/jp/members/">MEMBERS ¥1500</a>
+  </nav>
+  <article>
+    <section>
+      <h2 id="description"></h2>
+      <h1 id="title"></h1>
+      <br>
+      <p>企画：川口貴大</p>
+      <p>協力：船川翔司・🐴</p>
+    </section>
+    <aside>
+      <h2>
+        <u>出演</u><br />
+        <a href="http://gerardlebik.net/">ゲラルド・レビック</a><br />
+        <a href="http://takahirokawaguchi.tumblr.com/">川口貴大</a><br />
+        梁崑玖 / ニュースミス （岡村基紀、大橋満之）＋ 船川翔司<br />
+        <a href="https://soundcloud.com/keitarotamura">ケイタロタムラ</a>
+      </h2>
+    </aside>
+  </article>
+  <nav id="footer">
+    <p>
+      <u>順番:</u>
+    </p>
+    <p>
+      5:00PM- Open<br/>
+      5:30PM- Yan Conk / New Smith + Shoji Funakawa [1]<br/>
+      5:50PM- KeitaroTamura [1]<br/>
+      6:10PM- Gerard Lebik [2]<br/>
+      6:30PM- KeitaroTamura [2]<br/>
+      6:50PM- Yan Conk / New Smith + Shoji Funakawa [2]<br/>
+      7:10PM- Takahiro Kawaguchi [2]<br/>
+      7:40PM- Gerard Lebik, Takahiro Kawaguchi DUO [2]<br/>
+      8:00PM- end
+    </p>
+    <p>
+      <small>[1] リハーサル | Rehearsal / Setup</small><br/>
+      <small>[2] インスタレーション・演奏 | Performance</small>
+    </p>
+  </nav>
 </body>
-</html>
