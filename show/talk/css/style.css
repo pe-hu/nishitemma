@@ -132,11 +132,15 @@ ol li h3 {
         height: 100vh;
     }
 
+    ol,
+    ol li {
+        height: 100%;
+    }
+
     ol {
         gap: 2rem;
         overflow-x: auto;
         scroll-snap-type: x proximity;
-        height: 100%;
     }
 
     ol li {
@@ -163,12 +167,7 @@ ol li h3 {
         max-height: -webkit-fill-available;
     }
 
-    #cover li {
-        position: sticky;
-        top: 0;
-        min-height: -webkit-fill-available;
-    }
-
+    #cover li,
     #book li {
         min-height: -webkit-fill-available;
     }
