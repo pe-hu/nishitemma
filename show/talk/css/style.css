@@ -103,12 +103,6 @@ aside {
     left: 0;
 }
 
-article,
-ol li {
-    height: 100vh;
-    max-height: -webkit-fill-available;
-}
-
 ol {
     display: flex;
     width: 100%;
@@ -123,7 +117,6 @@ ol li {
     background: #fff;
     text-align: right;
     list-style-position: inside;
-    scroll-snap-align: start;
     width: 100%;
 }
 
@@ -136,16 +129,22 @@ ol li h3 {
 @media (orientation: landscape) {
 
     ol {
-        scroll-snap-type: x proximity;
         gap: 2rem;
         overflow-x: auto;
+        scroll-snap-type: x proximity;
         height: 100%;
+    }
+
+    article {
+        height: 100vh;
+        max-height: -webkit-fill-available;
     }
 
     ol li {
         flex: 0 0 auto;
         overflow: auto;
         max-width: 550px;
+        scroll-snap-align: start;
     }
 }
 
@@ -157,6 +156,17 @@ ol li h3 {
     ol {
         flex-direction: column;
         overflow: auto;
+    }
+
+    #book li {
+        min-height: 100vh;
+    }
+
+    #cover li {
+        position: static;
+        top: 0;
+        height: 100vh;
+        max-height: -webkit-fill-available;
     }
 }
 
