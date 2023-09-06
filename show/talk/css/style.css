@@ -31,12 +31,12 @@ ol li {
 
 h1,
 .en,
-#description,
-ol li::marker {
+#description {
     font-family: 'Instrument Serif', serif;
 }
 
-.ja {
+.ja,
+ol li::marker {
     font-family: "MS Mincho", "SimSong", monospace;
 }
 
