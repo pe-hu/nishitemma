@@ -153,7 +153,6 @@ ol li h3 {
 
 @media (orientation: portrait) {
     html {
-        font-size: 3.5vw;
         height: -webkit-fill-available;
     }
 
@@ -178,6 +177,10 @@ ol li h3 {
 }
 
 @media print {
+    
+    html {
+        font-size: 3.5vw;
+    }
 
     #cover {
         display: none;
