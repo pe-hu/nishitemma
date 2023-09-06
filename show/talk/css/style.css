@@ -162,12 +162,11 @@ ol li h3 {
         overflow: auto;
     }
 
-    #cover {
+    #cover li {
         height: 100vh;
         max-height: -webkit-fill-available;
     }
 
-    #cover li,
     #book li {
         min-height: -webkit-fill-available;
     }
