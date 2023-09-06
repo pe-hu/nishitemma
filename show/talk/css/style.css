@@ -14,8 +14,8 @@ ol {
 }
 
 h1,
-#footer h3,
-#footer p {
+aside h3,
+aside p {
     padding: 0;
     margin: 1rem;
 }
@@ -36,7 +36,8 @@ h1,
 }
 
 .ja,
-ol li::marker {
+ol li::marker,
+a {
     font-family: "MS Mincho", "SimSong", monospace;
 }
 
@@ -53,22 +54,44 @@ h2 {
     font-size: 175%;
 }
 
+#cover a {
+    font-size: 90%;
+}
+
+li p,
+li.ja u {
+    font-size: 70%;
+}
+
 h1,
 h2,
 h3 {
     font-weight: 500;
 }
 
-article {
+#cover a {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 0.25rem;
+    text-decoration: none;
+}
+
+article,
+#book li.ja {
     display: grid;
-    height: 100vh;
-    max-height: -webkit-fill-available;
 }
 
 h1,
-aside {
+#footer {
     position: fixed;
     z-index: 10;
+}
+
+#credit,
+li.ja nav {
+    position: absolute;
+    bottom: 0;
 }
 
 h1 {
@@ -83,25 +106,41 @@ aside {
 
 ol {
     display: flex;
-    scroll-snap-type: x proximity;
     width: 100%;
-    height: 100%;
+}
+
+#cover li {
+    list-style-type: decimal-leading-zero;
 }
 
 ol li {
+    position: relative;
     background: #fff;
     text-align: right;
-    list-style-type: decimal-leading-zero;
     list-style-position: inside;
     scroll-snap-align: start;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+ol li p,
+ol li h2,
+ol li h3 {
+    text-align: left;
 }
 
 @media (orientation: landscape) {
+    article {
+        height: 100vh;
+        max-height: -webkit-fill-available;
+    }
+
     ol {
+        scroll-snap-type: x proximity;
         gap: 2rem;
         overflow-x: auto;
+        height: 100%;
     }
 
     ol li {
@@ -115,7 +154,7 @@ ol li {
     html {
         font-size: 3.21vw;
     }
-    
+
     ol {
         flex-direction: column;
         overflow: auto;
@@ -124,11 +163,27 @@ ol li {
     ol li {
         position: sticky;
         top: 0;
-        min-height: 100vh;
     }
 }
 
-ol li h2,
-ol li h3 {
-    text-align: left;
+@media print {
+
+    h1,
+    #footer {
+        position: absolute;
+        z-index: 10;
+    }
+
+    ol li {
+        min-height: 100vh;
+        height: auto;
+        max-height: auto;
+        page-break-after: always;
+    }
+}
+
+ol li iframe {
+  width: 100%;
+  height: 52.5vw;
+  max-height: 300px;
 }
