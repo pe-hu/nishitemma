@@ -60,7 +60,7 @@ h2 {
 
 li p,
 li.ja u {
-    font-size: 70%;
+    font-size: 75%;
 }
 
 h1,
@@ -153,7 +153,7 @@ ol li h3 {
 
 @media (orientation: portrait) {
     html {
-        font-size: 3.21vw;
+        font-size: 3.5vw;
         height: -webkit-fill-available;
     }
 
@@ -162,25 +162,34 @@ ol li h3 {
         overflow: auto;
     }
 
+    #book li {
+        min-height: calc(100vh - 9.5rem);
+    }
+
     #cover li {
-        height: 100vh;
+        height: calc(100vh - 9.5rem);
         max-height: -webkit-fill-available;
     }
 
-    #book li {
-        min-height: -webkit-fill-available;
+    #footer {
+        position: relative;
+        padding-bottom: 0.5rem;
     }
 }
 
 @media print {
 
-    h1,
-    #footer {
-        position: absolute;
-        z-index: 10;
+    #cover {
+        display: none;
     }
 
-    ol li {
+    #footer {
+        position: fixed;
+    }
+
+    ol li,
+    #book li,
+    #cover li {
         min-height: 100vh;
         height: auto;
         max-height: auto;
