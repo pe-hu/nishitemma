@@ -113,9 +113,9 @@ ol {
 }
 
 ol li {
-    position: relative;
     background: #fff;
     text-align: right;
+    position: relative;
     list-style-position: inside;
     width: 100%;
 }
@@ -128,16 +128,16 @@ ol li h3 {
 
 @media (orientation: landscape) {
 
+    article {
+        height: 100vh;
+        max-height: -webkit-fill-available;
+    }
+
     ol {
         gap: 2rem;
         overflow-x: auto;
         scroll-snap-type: x proximity;
         height: 100%;
-    }
-
-    article {
-        height: 100vh;
-        max-height: -webkit-fill-available;
     }
 
     ol li {
@@ -159,11 +159,11 @@ ol li h3 {
     }
 
     #book li {
-        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
 
     #cover li {
-        position: static;
+        position: sticky;
         top: 0;
         height: 100vh;
         max-height: -webkit-fill-available;
