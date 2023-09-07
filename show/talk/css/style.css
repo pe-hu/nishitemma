@@ -108,6 +108,10 @@ ol {
     width: 100%;
 }
 
+ol li img {
+    max-width: 100%;
+}
+
 #cover li {
     list-style-type: decimal-leading-zero;
 }
