@@ -86,7 +86,7 @@ function indexORG(obj) {
         navORG.appendChild(labelORG);
     }
 
-    document.addEventListener("DOMContentLoaded", function () {
+    window.onload = function() {
       let targets = document.querySelectorAll("#contents li")
       let filter = document.querySelectorAll('#org input[type="radio"]')
       if (filter) { };
@@ -110,7 +110,7 @@ function indexORG(obj) {
           }
         })
       }
-    });
+    };
 }
 
 function indexItems(obj) {
