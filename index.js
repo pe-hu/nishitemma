@@ -74,32 +74,6 @@ function indexItems(obj) {
         `
     contents.appendChild(contentsLi);
   }
-
-  window.onload = function () {
-    let targets = document.querySelectorAll("#contents li")
-    let filter = document.querySelectorAll('#org input[type="radio"]')
-
-    //****** for all select ******
-    filter.forEach(i => {
-      i.addEventListener('change', () => {
-        let value = i.value
-        let name = i.getAttribute('name')
-        //*** for each target ***
-        targets.forEach(ii => {
-          //*** delete hidden class ***
-          ii.classList.remove('hidden')
-          ii.hidden = false
-          //*** check target every select ***
-          let thisData = ii.getAttribute('data-' + name)
-          //*** set hidden class ***
-          if (value && value !== 'all' && value !== item_data && !ii.classList.contains('hidden')) {
-            ii.classList.add('hidden')
-            ii.hidden = true
-          }
-        });
-      }, false);
-    });
-  };
 }
 
 async function fetchHTML(url = '', query = '') {
@@ -109,3 +83,29 @@ async function fetchHTML(url = '', query = '') {
       document.querySelector(query).innerHTML = innerHTML
     });
 }
+
+window.onload = function () {
+  let targets = document.querySelectorAll("#contents li")
+  let filter = document.querySelectorAll('#org input[type="radio"]')
+
+  //****** for all select ******
+  filter.forEach(i => {
+    i.addEventListener('change', () => {
+      let value = i.value
+      let name = i.getAttribute('name')
+      //*** for each target ***
+      targets.forEach(ii => {
+        //*** delete hidden class ***
+        ii.classList.remove('hidden')
+        ii.hidden = false
+        //*** check target every select ***
+        let thisData = ii.getAttribute('data-' + name)
+        //*** set hidden class ***
+        if (value && value !== 'all' && value !== item_data && !ii.classList.contains('hidden')) {
+          ii.classList.add('hidden')
+          ii.hidden = true
+        }
+      });
+    }, false);
+  });
+};
