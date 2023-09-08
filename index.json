@@ -37,6 +37,10 @@
       {
         "id": "members",
         "name": "MEMBERS ONLY"
+      },
+      {
+        "id": "all",
+        "name": "VIEW ALL"
       }
     ],
   
