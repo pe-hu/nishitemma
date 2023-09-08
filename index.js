@@ -101,7 +101,7 @@ window.onload = function () {
         //*** check target every select ***
         let thisData = ii.getAttribute('data-' + name)
         //*** set hidden class ***
-        if (value && value !== 'all' && value !== item_data && !ii.classList.contains('hidden')) {
+        if (value && value !== 'all' && value !== thisData && !ii.classList.contains('hidden')) {
           ii.classList.add('hidden')
           ii.hidden = true
         }
