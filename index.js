@@ -83,28 +83,3 @@ async function fetchHTML(url = '', query = '') {
       document.querySelector(query).innerHTML = innerHTML
     });
 }
-
-window.onload = function () {
-  let filter = document.querySelectorAll('#org label')
-  let targets = document.querySelectorAll("#contents li")
-
-  //****** for all select ******
-  filter.forEach(i => {
-    i.addEventListener('click', () => {
-      let value = i.getAttribute('for')
-      //*** for each target ***
-      targets.forEach(ii => {
-        //*** delete hidden class ***
-        ii.classList.remove('hidden')
-        ii.hidden = false
-        //*** check target every select ***
-        let thisData = ii.getAttribute('data-org')
-        //*** set hidden class ***
-        if (value !== 'all' && value !== thisData) {
-          ii.classList.add('hidden')
-          ii.hidden = true
-        }
-      });
-    }, false);
-  });
-};

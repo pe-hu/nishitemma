@@ -9,25 +9,21 @@
   <script>
     indexJSON('index.json')
   </script>
-  <link rel="stylesheet" href="menu.css" />
-  <link rel="stylesheet" href="floor.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="show/style.css" />
   <link rel="stylesheet" href="members/style.css" />
 </head>
 
 <body id="box">
-  <header id="index"></header>
-  <nav id="floor"></nav>
   <main id="main">
     <p id="topic">
       <u>お知らせ TOPICS</u>　
       <a class="topics" href="https://creative-community.space/">
-        ∧° ┐ のウェブサイトは移転しました
+        ∧°┐ のウェブサイトは移転しました
       </a>
       <br />
       <a class="flash" href="/jp/2019/">
-        2020年5月30日 ∧° ┐ | Special Gift Box 2019 を発売しました
+        2020年5月30日 ∧°┐ | Special Gift Box 2019 を発売しました
       </a>
       <a class="dm" href="/jp/dm/">
         2020年5月30日 This USB Card is The Digital Magazine を発売しました
@@ -35,7 +31,7 @@
     </p>
     <h1>
       誠に勝手ながら 2019年9月15日を持って
-      西天満の <b class="pehu">∧° ┐</b> は、完全閉館しました。<br />
+      西天満の <b class="pehu">∧°┐</b> は、完全閉館しました。<br />
       We are closed down Cafe, Shop and Gallery As of September 15th 2019.
     </h1>
     <hr />
@@ -48,13 +44,36 @@
   </main>
   <footer id="footer"></footer>
   <script type="text/javascript">
-    fetchHTML('menu.html', '#index');
-    fetchHTML('floor.html', '#floor');
     fetchHTML('members/list.html', '#footer');
 
     let btnToggleclass = function (close) {
       document.body.classList.toggle('open');
     }
+    
+    window.onload = function () {
+      let filter = document.querySelectorAll('#org label')
+      let targets = document.querySelectorAll("#contents li")
+
+      //****** for all select ******
+      filter.forEach(i => {
+        i.addEventListener('click', () => {
+          let value = i.getAttribute('for')
+          //*** for each target ***
+          targets.forEach(ii => {
+            //*** delete hidden class ***
+            ii.classList.remove('hidden')
+            ii.hidden = false
+            //*** check target every select ***
+            let thisData = ii.getAttribute('data-org')
+            //*** set hidden class ***
+            if (value !== 'all' && value !== thisData) {
+              ii.classList.add('hidden')
+              ii.hidden = true
+            }
+          });
+        }, false);
+      });
+    };
   </script>
 </body>
 

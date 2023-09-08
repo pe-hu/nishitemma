@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "MS Mincho";
+    src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
+}
+
+html {
+  font-size: 16px;
+}
+
+.pehu {
+  font-family: "MS Mincho", "SimSong", serif;
+}
+
 #topic,
 h2 {
     padding: 0;
@@ -84,7 +97,7 @@ h2 {
     html {
         font-size: 3vw;
     }
-
+    
     #topic a {
         margin: 0 2vw 0 0;
     }
