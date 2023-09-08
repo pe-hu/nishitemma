@@ -2,51 +2,75 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <script type="text/javascript" defer>
-        const thisDate = "1.20.2019 (Sun), START at 6pm-"
-        const thisDatetime = "2019/01/20 18:00:00"
-        const thisTitle = "れんれんの試食会"
-        const thisDescription = "ペフの料理長Doveことれんれんが新メニューの試食会を開催します。"
-        const thisDoor = "自由料金制 NAME YOUR PRICE (要ワンドリンクオーダー + 1 drink order)"
-    </script>
-    <script src="js/index.js" async></script>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-      nav {
-        font-family: "MS Mincho", "SimSong", monospace;
-      }
-  
-      article {
-        font-family: "MS Gothic", sans-serif;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <script type="text/javascript" async>
+    const thisDate = "1.20.2019 (Sun), START at 6pm-"
+    const thisDatetime = "2019/01/20 18:00:00"
+    const thisTitle = "れんれんの試食会"
+    const thisDescription = "ペフの料理長Dove(れんれん)が新メニューの試食会を開催します。"
+    const thisDoor = "自由料金制 NAME YOUR PRICE (要ワンドリンクオーダー + 1 drink order)"
+    const favicon = "../2019/pr/2019.png"
+  </script>
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Zen+Old+Mincho&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: crimson;
+    }
+
+    a {
+      color: gold;
+    }
+
+    article section * {
+      background: lemonchiffon;
+      display: inline-block;
+      padding: 0.5rem;
+    }
+
+    article section,
+    aside h2 {
+      font-family: 'Kosugi Maru', sans-serif;
+    }
+
+    @font-face {
+      font-family: "kouzansousho";
+      src: url("https://vg.pe.hu/fonts/family/musashi/kouzansousho.otf");
+    }
+
+    aside h3 {
+      color: lemonchiffon;
+      font-family: "kouzansousho", cursive;
+    }
+  </style>
 </head>
 
 <body>
-    <nav>
-        <time id="date"></time>
-        <span id="door"></span>
-    </nav>
-    <article>
-        <section>
-            <h1 id="title"></h1>
-            <h2 id="description"></h2>
-            <h3>もちろんすべて手作り！自家製！</h3>
-            <p>皆様のご意見やリクエスト・アドバイスをいただきながら、ゆっくりお食事をお楽しみいただけます。</p>
-        </section>
-        <aside>
-          <h2>新メニュー候補</h2>
-          <h3>
-            オイルサーディン<br/>
-            バーニャカウダー<br/>
-            鶏ハムと水菜のサンドイッチ<br/>
-            チーズフォンデュプレート<br/>
-            など
-          </h3>
-        </aside>
-    </article>
-    <nav id="footer"></nav>
+  <nav>
+    <time id="date"></time>
+    <span id="door"></span>
+  </nav>
+  <article>
+    <section>
+      <h1 id="title"></h1>
+      <h2 id="description"></h2>
+      <h3>もちろんすべて手作り！自家製！</h3>
+      <p>皆様のご意見やリクエスト・アドバイスをいただきながら、ゆっくりお食事をお楽しみいただけます。</p>
+    </section>
+    <aside>
+      <h2>新メニュー候補</h2>
+      <h3>
+        オイルサーディン<br />
+        バーニャカウダー<br />
+        鶏ハムと水菜のサンドイッチ<br />
+        チーズフォンデュプレート<br />
+        など
+      </h3>
+    </aside>
+  </article>
+  <nav id="footer"></nav>
 </body>

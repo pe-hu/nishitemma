@@ -5,25 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" defer>
+  <script type="text/javascript" async>
     const thisDate = "2.10.2019 (Sun), START at 5pm-"
     const thisDatetime = "2019/02/10 17:00:00"
     const thisTitle = "Gerard Lebik | Takahiro Kawaguchi | Yan Conk / New Smith + Shoji Funakawa | KeitaroTamura"
-    const thisDescription = "#10FEB19SUN"
+    const thisDescription = "企画：川口貴大"
     const thisDoor = "¥2000"
+    const favicon = "../2019/pr/2019.png"
   </script>
-  <script src="js/index.js" async></script>
+  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    nav,
-    section {
+    article,
+    aside {
       font-family: "MS Mincho", "SimSong", monospace;
     }
 
-    aside {
-      font-family: "MS Gothic", sans-serif;
+    @font-face {
+      font-family: "WAX MELT";
+      src: url("https://vg.pe.hu/fonts/family/WaxMelt/WaxMelt-Regular.otf"),
+        url("https://vg.pe.hu/fonts/family/WaxMelt/WaxMelt-Regular.woff"),
+        url("https://vg.pe.hu/fonts/family/WaxMelt/WaxMelt_EULA.rtf");
+    }
+
+    h1 {
+      font-family: "WAX MELT", fantasy;
+    }
+
+    body,
+    a {
+      color: #333;
+    }
+
+    aside h2 {
+      font-size: 175%;
     }
   </style>
+  <base target="_blank" rel="noopener noreferrer" />
 </head>
 
 <body>
@@ -34,20 +52,24 @@
   </nav>
   <article>
     <section>
-      <h2 id="description"></h2>
       <h1 id="title"></h1>
-      <br>
-      <p>企画：川口貴大</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7UbuwKfDIsI?si=uRjwSPYtJ8HpV2PS"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <h2 id="description"></h2>
       <p>協力：船川翔司・🐴</p>
     </section>
     <aside>
       <h2>
-        <u>出演</u><br />
+        <small>出演</small><br />
         <a href="http://gerardlebik.net/">ゲラルド・レビック</a><br />
-        <a href="http://takahirokawaguchi.tumblr.com/">川口貴大</a><br />
+        <a href="http://takahirokawaguchi.tumblr.com/">川口貴大</a>
+      </h2>
+      <h3>
         梁崑玖 / ニュースミス （岡村基紀、大橋満之）＋ 船川翔司<br />
         <a href="https://soundcloud.com/keitarotamura">ケイタロタムラ</a>
-      </h2>
+      </h3>
     </aside>
   </article>
   <nav id="footer">
@@ -55,18 +77,18 @@
       <u>順番:</u>
     </p>
     <p>
-      5:00PM- Open<br/>
-      5:30PM- Yan Conk / New Smith + Shoji Funakawa [1]<br/>
-      5:50PM- KeitaroTamura [1]<br/>
-      6:10PM- Gerard Lebik [2]<br/>
-      6:30PM- KeitaroTamura [2]<br/>
-      6:50PM- Yan Conk / New Smith + Shoji Funakawa [2]<br/>
-      7:10PM- Takahiro Kawaguchi [2]<br/>
-      7:40PM- Gerard Lebik, Takahiro Kawaguchi DUO [2]<br/>
+      5:00PM- Open<br />
+      5:30PM- Yan Conk / New Smith + Shoji Funakawa [1]<br />
+      5:50PM- KeitaroTamura [1]<br />
+      6:10PM- Gerard Lebik [2]<br />
+      6:30PM- KeitaroTamura [2]<br />
+      6:50PM- Yan Conk / New Smith + Shoji Funakawa [2]<br />
+      7:10PM- Takahiro Kawaguchi [2]<br />
+      7:40PM- Gerard Lebik, Takahiro Kawaguchi DUO [2]<br />
       8:00PM- end
     </p>
     <p>
-      <small>[1] リハーサル | Rehearsal / Setup</small><br/>
+      <small>[1] リハーサル | Rehearsal / Setup</small><br />
       <small>[2] インスタレーション・演奏 | Performance</small>
     </p>
   </nav>

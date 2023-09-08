@@ -5,19 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" defer>
+  <script type="text/javascript" async>
     const thisDate = "Archives"
     const thisDatetime = "2018/09/28 18:00:00"
     const thisTitle = "pe hu talk"
     const thisDescription = "by Masamichi Furukawa"
     const thisDoor = "September 2018 - March 2019"
+    const favicon = "../../members/img/fm.jpg"
   </script>
-  <script src="../js/index.js" async></script>
+  <script src="../js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Open+Sans:wght@500&display=swap"
     rel="stylesheet">
+  <style>
+    @media print {
+      #title {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -68,11 +76,6 @@
       </li>
       <li>
         <h2 class="en">SNS in China</h2>
-        <h3 class="en">
-          百度 Baidu<br>
-          阿里巴巴 Alibaba<br>
-          腾讯 Tencent<br>
-        </h3>
         <h3 class="en">
           <small>Guest</small><br />
           mihiro

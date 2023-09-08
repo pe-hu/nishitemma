@@ -8,11 +8,6 @@ html {
 }
 
 @font-face {
-    font-family: "MS Gothic";
-    src: url("https://vg.pe.hu/fonts/family/MSGothic.ttf");
-}
-
-@font-face {
     font-family: "Apple Chancery";
     src: url("https://vg.pe.hu/fonts/family/apple-chancery.ttf");
 }
@@ -49,6 +44,10 @@ nav {
     font-size: 90%;
 }
 
+nav {
+    font-family: "MS Mincho", "SimSong", monospace;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -57,8 +56,20 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    filter: invert();
+}
+
 u {
     text-decoration: underline wavy;
+}
+
+article section iframe {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 800px;
+    height: 52.5vw;
+    max-height: 450px;
 }
 
 aside a {
@@ -102,6 +113,18 @@ nav {
     content: " | ";
 }
 
+#backBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#date:hover,
+#backBtn:hover {
+    cursor: pointer;
+    color: red;
+}
+
 @media (orientation: landscape) {
     section {
         float: left;
@@ -121,5 +144,23 @@ nav {
     aside {
         width: 100%;
         clear: both;
+    }
+}
+
+#footer::after {
+    content: "∧° ┐ | creative, community space";
+    font-family: "MS Mincho", "SimSong", monospace;
+    font-size: 111%;
+    display: block;
+    padding: 0.5rem;
+    margin: 1.5rem 0 0;
+    text-align: center;
+}
+
+@media print {
+    #backBtn,
+    #footer *,
+    article section iframe {
+        display: none;
     }
 }

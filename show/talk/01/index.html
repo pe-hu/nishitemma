@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" defer>
+  <script type="text/javascript" async>
     const thisDate = "2018.9.29(土) Start 18:00"
     const thisDatetime = "2018/09/29 18:00:00"
     const thisTitle = "Age Of"
     const thisDescription = "by Masamichi Furukawa"
     const thisDoor = "自由料金制 Name Your Price"
+    const favicon = "../../../members/img/fm.jpg"
   </script>
-  <script src="../../js/index.js" async></script>
+  <script src="../../js/index.js"></script>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,18 +23,31 @@
     ol li {
       list-style: none;
     }
+
+    @media print {
+      #title {
+        position: absolute;
+      }
+    }
   </style>
 </head>
 
 <body>
   <article>
     <h1 id="title"></h1>
-    <ol>
+    <ol id="book">
       <li>
         <time id="date" class="en"></time>
         <h2>
           <small class="en">by Oneohtrix Point Never</small>
         </h2>
+        <img src="https://www.pointnever.com/meta/safari-pinned-tab.svg" alt="Oneohtrix Point Never">
+        <nav id="credit">
+          <p id="door" class="ja"></p>
+          <h3 id="description"></h3>
+        </nav>
+      </li>
+      <li>
         <p class="ja">
           Oneohtrix Point Neverの最新作『Age Of』の解読を行います。ロック史には例えばデヴィッド・ボウイの『ジギー・スターダスト』のような物語が付随するコンセプト・アルバムというものがありますが、この『Age Of』は久々に現れた骨太のコンセプト・アルバムだと思っています。
         </p>
@@ -41,14 +55,8 @@
           その内容は過去のそうしたアルバムと比べてもかなり多層的ですが、現行のメディアの紹介では話が断片的で捉えにくいため、全てまとめてみる事にしました。織り込まれた幾つものアイデアは新しい思想やAI論、芸術にもリンクしているので作品理解とともに何か別の事を考える時にも繋がるものがあるかも知れません。
         </p>
       </li>
-      <li>
-      </li>
     </ol>
   </article>
-  <aside id="footer">
-    <p id="door" class="ja"></p>
-    <h3 id="description"></h3>
-  </aside>
 </body>
 
 </html>

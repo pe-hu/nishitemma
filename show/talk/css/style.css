@@ -41,6 +41,11 @@ a {
     font-family: "MS Mincho", "SimSong", monospace;
 }
 
+#cover li::-webkit-details-marker {
+    display: block;
+    font-family: "MS Mincho", "SimSong", monospace;
+}
+
 #cover li::marker {
     font-size: 200%;
 }
@@ -69,12 +74,25 @@ h3 {
     font-weight: 500;
 }
 
+body,
+ol,
+ol li {
+    background: #fff;
+}
+
 #cover a {
     background: #000;
     color: #fff;
     display: inline-block;
     padding: 0.25rem;
     text-decoration: none;
+}
+
+h1,
+#footer,
+#credit {
+    color: #fff;
+    mix-blend-mode: difference;
 }
 
 #book li.ja {
@@ -87,8 +105,7 @@ h1,
     z-index: 10;
 }
 
-#credit,
-li.ja nav {
+#credit {
     position: absolute;
     bottom: 0;
 }
@@ -117,7 +134,6 @@ ol li img {
 }
 
 ol li {
-    background: #fff;
     text-align: right;
     position: relative;
     list-style-position: inside;
@@ -128,6 +144,18 @@ ol li p,
 ol li h2,
 ol li h3 {
     text-align: left;
+}
+
+#backBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#date:hover,
+#backBtn:hover {
+    cursor: pointer;
+    color: red;
 }
 
 @media (orientation: landscape) {
@@ -160,6 +188,11 @@ ol li h3 {
         height: -webkit-fill-available;
     }
 
+    h1 {
+        position: sticky;
+        top: 1rem;
+    }
+
     ol {
         flex-direction: column;
         overflow: auto;
@@ -181,7 +214,7 @@ ol li h3 {
 }
 
 @media print {
-    
+
     html {
         font-size: 3.5vw;
     }
@@ -202,10 +235,22 @@ ol li h3 {
         max-height: auto;
         page-break-after: always;
     }
+
+    article::after {
+        content: "pe hu talk";
+        font-family: 'Instrument Serif', serif;
+        font-size: 300%;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .noprint {
+        display: none;
+    }
 }
 
 ol li iframe {
-  width: 100%;
-  height: 52.5vw;
-  max-height: 300px;
+    width: 100%;
+    height: 52.5vw;
+    max-height: 300px;
 }
