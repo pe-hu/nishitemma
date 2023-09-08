@@ -76,6 +76,35 @@ function indexItems(obj) {
   }
 }
 
+window.onload = function () {
+  let filterAll = document.querySelectorAll('#org label')
+  let targetAll = document.querySelectorAll("#contents li")
+
+  //****** for all select ******
+  filterAll.forEach(filterEach => {
+    filterEach.addEventListener('click', () => {
+      let value = filterEach.getAttribute('for')
+
+      //*** for each target ***
+      targetAll.forEach(targetEach => {
+        targetEach.style.display = "none"
+        targetEach.hidden = true
+        let thisData = targetEach.getAttribute('data-org')
+        if (value == thisData) {
+          let thisAll = document.querySelectorAll(`[data-org="${value}"]`)
+          thisAll.forEach(thisEach => {
+            thisEach.style.display = "block"
+            thisEach.hidden = false
+          }, false);
+        } else if (value == 'all') {
+          targetEach.style.display = "block"
+          targetEach.hidden = false
+        }
+      });
+    }, false);
+  });
+};
+
 async function fetchHTML(url = '', query = '') {
   fetch(url)
     .then(response => response.text())
