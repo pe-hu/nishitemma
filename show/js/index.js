@@ -66,4 +66,24 @@ document.addEventListener("DOMContentLoaded", function () {
     backBtn.addEventListener('click', function () {
         history.back(-1);
     });
+
+    function randomHEX() {
+        let code = '0123456789ABCDEF';
+        let str = '#';
+        for (let i = 0; i < 6; i++) {
+            str += code[Math.floor(Math.random() * code.length)];
+        }
+        return str;
+    }
+    
+    const hoverHEX = document.querySelectorAll('#backBtn, #date');
+    hoverHEX.forEach(hoverEach => {
+        hoverEach.addEventListener('mouseover', (event) => {
+            hoverEach.style.color = randomHEX()
+        }, false);
+    
+        hoverEach.addEventListener('mouseleave', (event) => {
+            hoverEach.style.color = "#000"
+        }, false);
+    });
 });

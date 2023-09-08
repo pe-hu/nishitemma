@@ -5,119 +5,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <script type="text/javascript" defer>
+    <script type="text/javascript" async>
         const thisDate = "4.3.2019 (Wen), START at 7:30pm-"
         const thisDatetime = "2019/04/03 19:30:00"
         const thisTitle = "電子音楽昔話「聞け！電子音楽の夜明けを！」"
         const thisDescription = "1948年～50年代全般の電子音楽を回顧"
         const thisDoor = "自由料金制 NAME YOUR PRICE"
+        const favicon = "../2019/pr/2019.png"
     </script>
-    <script src="js/index.js" async></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="talk/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet">
     <style>
-        nav {
-            font-family: "MS Mincho", "SimSong", monospace;
+        h3 small {
+            font-size: 55%;
         }
 
-        article {
-            font-family: "MS Gothic", sans-serif;
+        ol li {
+            list-style: none;
         }
 
-        aside p {
-            font-size: 111%;
+        ol li audio {
+            width: 100%;
         }
 
-        @media (orientation: landscape) {
-            aside {
-                overflow: scroll;
-                height: calc(100vh - 10rem);
+        @media print {
+            #title {
+                position: absolute;
             }
         }
     </style>
+    <base target="_blank" rel="noopener noreferrer" />
 </head>
 
 <body>
-    <nav>
-        <time id="date"></time>
-        <span id="door"></span>
-    </nav>
     <article>
-        <section>
-            <h1 id="title"></h1>
-            <h2 id="description"></h2>
-            <br>
-            <p>by ぽこぺん</p>
-        </section>
-        <aside>
-            <p>
-                M01.<br />
-                ピエール・シェフェール：ノイズに関する5 つのエチュード(1948)<br />
-                Pierre Schaeffer:Cinq études de bruits
-            </p>
-            <p>
-                ・ドナウエッシンゲン音楽祭(1953)<br />
-                　Donaueschinger Musiktage
-            </p>
-            <p>
-                M02.<br />
-                ピエール・シェフェール & ピエール・アンリ:オルフェ 53<br />
-                Pierre Schaeffer & Pierre Henry: Orphée 53
-            </p>
-            <p>
-                M03.（比較として）<br />
-                ピエール・ブーレーズ:ピアノソナタ第2番<br />
-                Pierre Boulez:Piano Sonata no.2
-            </p>
-            <p>
-                ・ケルン電子音楽スタジオ<br />
-                WDR Studio für Elektronische Musik
-            </p>
-            <p>
-                M03.<br />
-                カールハインツ・シュトックハウゼン:習作No1(1953)<br />
-                Karlheinz Stockhausen:Studie1
-            </p>
-            <p>
-                M04.<br />
-                カールハインツ・シュトックハウゼン:少年の歌(1956-58)<br />
-                Karlheinz Stockhausen:Gesang der Junglinge
-            </p>
-            <p>
-                ・ブリュッセル万博(1958)<br />
-                Expo 58:Brussels World’s Fair
-            </p>
-            <p>
-                M05.<br />
-                ヤニス・クセナキス: コンクレートPH<br />
-                Iannis Xenakis:CONCRET PH
-            </p>
-            <p>
-                M06.<br />
-                エドガー・ヴァレーズ:ポエム・エレクトロニク<br />
-                Edgard Varèse:Poème électronique
-            </p>
-            <p>
-                M08.<br />
-                リュック・フェラーリ：偶発音のエチュード<br />
-                Luc Ferrari : Étude aux accidents
-            </p>
-            <p>ブリュッセル万博と同時期の作品</p>
-            <p>
-                M09.<br />
-                ヤニス・クセナキス: ディアモルフォーズ(1958)<br />
-                Iannis Xenakis:Diamorphoses
-            </p>
-            <p>
-                M10.<br />
-                ジョン・ケージ ：アリアとフォンタナミックス(1958)<br />
-                John Cage:Fontana Mix With Aria
-            </p>
-            <p>
-                M11.<br />
-                ルチアーノ・ベリオ:ジョイス賛(1958)<br />
-                Luciano Berio: Omaggio a Joyce
-            </p>
-        </aside>
+        <h1 id="title"></h1>
+        <ol id="book">
+            <li>
+                <br>
+                <h2>
+                    <small class="en" id="date"></small>
+                </h2>
+                <p id="door" class="ja"></p>
+                <nav id="credit">
+                    <h3 id="description" class="ja"></h3>
+                    <h3 class="ja">by ぽこぺん</h3>
+                </nav>
+            </li>
+            <li class="ja">
+                <u>M01.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">ピエール・シェフェール : ノイズに関する5つのエチュード (1948)</small><br />
+                        Pierre Schaeffer : Cinq études de bruits
+                    </h3>
+                    <audio src="https://ia802708.us.archive.org/23/items/PierreSchaffertudeAuxCheminsDeFer/schaf.mp3" controls></audio>
+                    <p>
+                        <a class="en" href="https://en.wikipedia.org/wiki/Cinq_%C3%A9tudes_de_bruits">Wikipedia</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M02.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">ピエール・シェフェール & ピエール・アンリ : オルフェ 53 (1953)</small><br />
+                        Pierre Schaeffer & Pierre Henry : Orphée 53
+                    </h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XJq3jItducg?si=ZHcHdp8fBI_sXlnG"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div>
+                    <p>
+                        ドナウエッシンゲン音楽祭<br />
+                        <small>ドイツのバーデン＝ヴュルテンベルク州「黒い森」にあるドナウエッシンゲンで開催される音楽祭。演目作品は原則として世界初演となる現代音楽である。</small><br />
+                    </p>
+                    <p>
+                        <a class="en" href="https://www.swr.de/swrclassic/donaueschinger-musiktage/archiv/dmt-archiv-frontmod-detail-100~_dmt-festivaljahrgang@2fdmt1953_-72fb72a2a503777ee70b702f3fa55ebc99cf4954.html">Donaueschinger Musiktage (1953)</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M03.（比較として）</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">ピエール・ブーレーズ : ピアノソナタ第2番 (1950)</small><br />
+                        Pierre Boulez : Piano Sonata no.2
+                    </h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZpNlxoXpQg?si=o89yo0HxIl8oMTMD"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                    <p>
+                        <a class="en" href="https://ja.wikipedia.org/wiki/%E3%83%94%E3%82%A2%E3%83%8E%E3%82%BD%E3%83%8A%E3%82%BF%E7%AC%AC2%E7%95%AA_(%E3%83%96%E3%83%BC%E3%83%AC%E3%83%BC%E3%82%BA)">Wikipedia</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M03.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">カールハインツ・シュトックハウゼン : 習作No1 (1953)</small><br />
+                        Karlheinz Stockhausen : Studie I
+                    </h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H4QaMwpVXVM?si=aEY_3qCBXjQ0uQoU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div>
+                    <p>
+                        ケルン電子音楽スタジオ<br />
+                        WDR Studio für Elektronische Musik
+                    </p>
+                    <p>
+                        <a class="en" href="https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%AB%E3%83%B3%E9%9B%BB%E5%AD%90%E9%9F%B3%E6%A5%BD%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA">Wikipedia</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M04.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">カールハインツ・シュトックハウゼン : 少年の歌 (1956-58)</small><br />
+                        Karlheinz Stockhausen : Gesang der Jünlinge
+                    </h3>
+                    <audio src="http://www.medienkunstnetz.de/mp4content/audio_9_QTLAN.mp4" controls></audio>
+                    <p>
+                        <a class="en" href="https://en.wikipedia.org/wiki/Gesang_der_J%C3%BCnglinge">Wikipedia</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M05.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">ヤニス・クセナキス : コンクレートPH (1958)</small><br />
+                        Iannis Xenakis : CONCRET PH
+                    </h3>
+                    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=602786264/size=small/bgcol=ffffff/linkcol=0687f5/track=3202454093/transparent=true/" seamless><a href="https://recollectiongrm.bandcamp.com/album/grm-works-1957-1962">GRM Works 1957-1962 Iannis Xenakis</a></iframe>
+                </div>
+                <div>
+                    <p>
+                        ブリュッセル万博<br />
+                        Expo 58: Brussels World’s Fair
+                    </p>
+                    <p>
+                        <a class="en" href="https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AA%E3%83%A5%E3%83%83%E3%82%BB%E3%83%AB%E4%B8%87%E5%9B%BD%E5%8D%9A%E8%A6%A7%E4%BC%9A_(1958%E5%B9%B4)">Wikipedia</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M06.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">エドガー・ヴァレーズ : ポエム・エレクトロニク (1957 -1958)</small><br />
+                        Edgard Varèse: Poème électronique
+                    </h3>
+                    <p>
+                        <img src="http://www.medienkunstnetz.de/assets/img/data/1956/bild.jpg" alt="Le Corbusier; Iannis Xenakis; Edgard Varèse, «Poème électronique» Philips Pavilion, 1958">
+                    </p>
+                    <audio src="http://www.medienkunstnetz.de/mp4content/audio_7_QTLAN.mp4" controls></audio>
+                    <p>
+                        <a class="en" href="https://ja.wikipedia.org/wiki/%E3%83%9D%E3%82%A8%E3%83%A0%E3%83%BB%E3%82%A8%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AD%E3%83%8B%E3%82%AF">Wikipedia</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M06.</u>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QBQsym_G82Q?si=31PKWVOdKuKH3bcF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>
+                        <a class="en" href="https://www.cirma.unito.it/vep/">Virtual Electronic Poem Project</a>
+                    </h3>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M07.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">リュック・フェラーリ : 偶発音のエチュード (1958)</small><br />
+                        Luc Ferrari : Étude Aux Accidents
+                    </h3>
+                    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1994884979/size=small/bgcol=ffffff/linkcol=0687f5/track=3732269305/transparent=true/" seamless><a href="https://lucferrari.bandcamp.com/album/tautologos-and-other-early-electronic-works">Tautologos and Other Early Electronic Works Luc Ferrari</a></iframe>
+                    <p>
+                        <a class="en" href="http://lucferrari.com/analyses-reflexion/etude-aux-accidents/">Etude aux Accidents - Luc Ferrari</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M08.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">ヤニス・クセナキス : ディアモルフォーズ (1958)</small><br />
+                        Iannis Xenakis : Diamorphoses
+                    </h3>
+                    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=602786264/size=small/bgcol=ffffff/linkcol=0687f5/track=1060796695/transparent=true/" seamless><a href="https://recollectiongrm.bandcamp.com/album/grm-works-1957-1962">GRM Works 1957-1962 Iannis Xenakis</a></iframe>
+                    <p>
+                        <a class="en" href="https://en.wikipedia.org/wiki/Diamorphoses">Wikipedia</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M9.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">ジョン・ケージ : アリアとフォンタナミックス (1958)</small><br />
+                        John Cage : Fontana Mix With Aria
+                    </h3>
+                    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1932205670/size=small/bgcol=ffffff/linkcol=0687f5/track=1831855819/transparent=true/" seamless><a href="https://johncage2.bandcamp.com/album/early-electronic-tape-music">Early Electronic &amp; Tape Music John Cage</a></iframe>
+                    <p>
+                        <a class="en" href="https://www.johncage.org/pp/John-Cage-Work-Detail.cfm?work_ID=79">John Cage Complete Works</a>
+                    </p>
+                </div>
+            </li>
+            <li class="ja">
+                <u>M10.</u>
+                <div>
+                    <h3 class="en">
+                        <small class="ja">ルチアーノ・ベリオ : ジョイス賛 (1958)</small><br />
+                        Luciano Berio : Thema (Omaggio a Joyce)
+                    </h3>
+                    <audio src="https://a358e5.p3cdn1.secureserver.net/wp-content/uploads/Berio-Thema-1958.mp3" controls></audio>
+                    <p>
+                        <a class="en" href="https://en.wikipedia.org/wiki/Thema_(Omaggio_a_Joyce)">Wikipedia</a>
+                    </p>
+                </div>
+            </li>
+        </ol>
     </article>
-    <nav id="footer"></nav>
 </body>

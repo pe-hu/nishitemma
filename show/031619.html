@@ -5,22 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" defer>
+  <script type="text/javascript" async>
     const thisDate = "3.16.2019 (Sat), START at 7pm-"
     const thisDatetime = "2019/03/16 19:00:00"
     const thisTitle = "春の嵐の夜のBOWIEまつり"
     const thisDescription = "DAVID BOWIE BOOTLEG VIEWING VOL.1 : BERLIN 2002 + TALK SESSION"
     const thisDoor = "¥1000"
+    const favicon = "../2019/pr/2019.png"
   </script>
-  <script src="js/index.js" async></script>
+  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Open+Sans:wght@500&display=swap"
+    rel="stylesheet">
   <style>
-    nav {
+    article,
+    aside {
       font-family: "MS Mincho", "SimSong", monospace;
     }
 
-    article {
-      font-family: "MS Gothic", sans-serif;
+    li::marker,
+    h2,
+    aside a {
+      font-family: 'Instrument Serif', serif;
     }
 
     h1 {
@@ -42,11 +50,11 @@
     }
 
     li::marker {
-      background: gray;
       color: gray;
       font-size: 150%;
     }
   </style>
+  <base target="_blank" rel="noopener noreferrer" />
 </head>
 
 <body>
@@ -59,6 +67,7 @@
     <section>
       <h1 id="title"></h1>
       <h2 id="description"></h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WLAprGJbmJM?si=NhyRLVfYL6oWRt6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <ol>
         <li>V&A回顧展図録、ポスターなど展示</li>
         <li>ゲストトーク:BOWIEとドイツ表現主義(仮)</li>
@@ -66,17 +75,16 @@
       </ol>
     </section>
     <aside>
+      <p>
+        ゲストによる講義やライヴ映像の上映など、いまこの時代にBOWIEを聴く、その意味を体験できる一夜になりそう。とはいえみんなでペンラ振ってHeroes観ましょう！みたいな気軽な雰囲気も、ボウイファンにかぎらず200km圏内の音楽好きはぜひ
+      </p>
       <h3>
-        主宰:
-        <a href="https://twitter.com/nycghosts">sailor@紐育春秋</a>
-      </h3>
-      <h3>
-        ゲスト:
+        <small>主宰:</small>
+        <a href="https://twitter.com/nycghosts">sailor@紐育春秋</a><br/>
+        <small>ゲスト:</small>
         <a href="/jp/show/talk/">Masamichi Furukawa</a>
       </h3>
     </aside>
   </article>
-  <nav id="footer">
-    <p>ゲストによる講義やライヴ映像の上映など、いまこの時代にBOWIEを聴く、その意味を体験できる一夜になりそう。とはいえみんなでペンラ振ってHeroes観ましょう！みたいな気軽な雰囲気も、ボウイファンにかぎらず200km圏内の音楽好きはぜひ</p>
-  </nav>
+  <nav id="footer"></nav>
 </body>

@@ -17,6 +17,11 @@ body {
     margin: 0;
 }
 
+hr {
+    clear: both;
+    border: none;
+}
+
 h1,
 h2,
 h3 {
@@ -36,7 +41,7 @@ section h3 {
     font-size: 125%;
 }
 
-article aside {
+aside {
     font-size: 95%;
 }
 
@@ -77,9 +82,9 @@ aside a {
     font-size: 95%;
 }
 
-nav,
+nav:not(#footer),
 article section,
-article aside {
+aside {
     padding: 1rem;
     margin: 0;
 }
@@ -140,6 +145,7 @@ nav {
 }
 
 @media (orientation: portrait) {
+
     section,
     aside {
         width: 100%;
@@ -151,13 +157,17 @@ nav {
     content: "∧° ┐ | creative, community space";
     font-family: "MS Mincho", "SimSong", monospace;
     font-size: 111%;
+    clear: both;
     display: block;
     padding: 0.5rem;
     margin: 1.5rem 0 0;
     text-align: center;
 }
 
+@page { size:landscape; }
+
 @media print {
+
     #backBtn,
     #footer *,
     article section iframe {

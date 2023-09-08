@@ -78,5 +78,25 @@
       この日の記録を、録音技師を目指す"千種葉月"に録音いただき、音楽作品として発表することを予定しています。
     </p>
   </nav>
-  <script src="js/randomHEX.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function randomHEX() {
+        let code = '0123456789ABCDEF';
+        let str = '#';
+        for (let i = 0; i < 6; i++) {
+          str += code[Math.floor(Math.random() * code.length)];
+        }
+        return str;
+      }
+
+      const hexAll = document.querySelectorAll('.hexColor');
+      hexAll.forEach(hexEach => {
+        hexEach.style.color = randomHEX()
+
+        hexEach.addEventListener('mouseover', (event) => {
+          hexEach.style.color = randomHEX()
+        }, false);
+      });
+    });
+  </script>
 </body>

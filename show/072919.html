@@ -5,22 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" defer>
+  <script type="text/javascript" async>
     const thisDate = "7.29.2019 (Mon), START at 7:30pm-"
     const thisDatetime = "2019/07/29 19:30:00"
     const thisTitle = "癲狂科学実験"
     const thisDescription = "講師：斎藤誠"
     const thisDoor = "自由料金制 NAME YOUR PRICE"
+    const favicon = "../2019/pr/2019.png"
   </script>
-  <script src="js/index.js" async></script>
+  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    nav {
+    article,
+    aside {
       font-family: "MS Mincho", "SimSong", monospace;
-    }
-
-    article {
-      font-family: "MS Gothic", sans-serif;
     }
   </style>
 </head>
@@ -29,17 +27,13 @@
   <nav>
     <time id="date"></time>
     <span id="door"></span>
-    <!--
-        <a id="members" href="/jp/members/"></a>
-        -->
   </nav>
   <article>
     <section>
       <h1 id="title"></h1>
       <h2 id="description"></h2>
     </section>
-    <aside>
-    </aside>
+    <aside></aside>
   </article>
   <nav id="footer"></nav>
 </body>
