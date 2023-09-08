@@ -61,7 +61,15 @@
         "org": "members",
         "date": "9.10.2019 (Tue)",
         "name": "We will eat dinner at the rooftop",
-        "description": "屋上で花火。あと、あっちに50の質問。",
+        "description": "",
+        "link": "none",
+        "href": "/jp/members/"
+      },
+      {
+        "org": "talk",
+        "date": "9.10.2019 (Tue) 8pm-",
+        "name": "あっちに聞きたい50のこと",
+        "description": "喫茶スタッフ・イラスト担当、あっちに質問をします。",
         "link": "block",
         "href": "/jp/members/"
       },

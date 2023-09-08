@@ -85,23 +85,22 @@ async function fetchHTML(url = '', query = '') {
 }
 
 window.onload = function () {
+  let filter = document.querySelectorAll('#org label')
   let targets = document.querySelectorAll("#contents li")
-  let filter = document.querySelectorAll('#org input[type="radio"]')
 
   //****** for all select ******
   filter.forEach(i => {
-    i.addEventListener('change', () => {
-      let value = i.value
-      let name = i.getAttribute('name')
+    i.addEventListener('click', () => {
+      let value = i.getAttribute('for')
       //*** for each target ***
       targets.forEach(ii => {
         //*** delete hidden class ***
         ii.classList.remove('hidden')
         ii.hidden = false
         //*** check target every select ***
-        let thisData = ii.getAttribute('data-' + name)
+        let thisData = ii.getAttribute('data-org')
         //*** set hidden class ***
-        if (value && value !== 'all' && value !== thisData && !ii.classList.contains('hidden')) {
+        if (value !== 'all' && value !== thisData && !ii.classList.contains('hidden')) {
           ii.classList.add('hidden')
           ii.hidden = true
         }
