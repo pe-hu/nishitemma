@@ -18,15 +18,14 @@ h2,
 main,
 footer {
     letter-spacing: 0.04rem;
-    font-family: "MS Mincho", "SimSong", serif;
+    font-family: "MS Mincho", "SimSong", monospace;
 }
 
 b {
     font-size: 150%;
 }
 
-h1,
-u {
+h1 {
     font-size: 125%;
 }
 

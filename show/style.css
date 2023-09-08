@@ -8,7 +8,7 @@
 
 #contents,
 input[type="radio"]+label {
-    font-family: "MS Mincho", "SimSong", serif;
+    font-family: "MS Mincho", "SimSong", monospace;
 }
 
 input[type="radio"],
@@ -21,6 +21,11 @@ input[type="radio"]+label {
     font-size: 111%;
 }
 
+input[type="radio"]+label:hover {
+    cursor: pointer;
+}
+
+input[type="radio"]+label:hover,
 input[type="radio"]:checked+label {
     color: red;
 }

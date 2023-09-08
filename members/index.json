@@ -1,0 +1,53 @@
+{
+    "title": "∧° ┐ | creative, community space",
+    "description": "We are closed down Cafe, Shop and Gallery As of September 15th 2019.",
+    "author": "∧° ┐",
+    "email": "we.are.pe.hu@gmail.com",
+    "icon": "2019/pr/2019.png",
+    
+    "org": [
+      {
+        "id": "community",
+        "name": "COMMUNITY EVENT"
+      },
+      {
+        "id": "live",
+        "name": "LIVE/PERFORMANCE"
+      },
+      {
+        "id": "talk",
+        "name": "TALK/DISCUSSION"
+      },
+      {
+        "id": "show",
+        "name": "EXHIBITION"
+      },
+      {
+        "id": "shop",
+        "name": "POP UP SHOP"
+      },
+      {
+        "id": "workshop",
+        "name": "WORKSHOP"
+      },
+      {
+        "id": "residency",
+        "name": "RESIDENCY"
+      },
+      {
+        "id": "members",
+        "name": "MEMBERS ONLY"
+      }
+    ],
+  
+    "contents": [
+      {
+        "org": "show",
+        "date": "9.1-9.16.2019",
+        "name": "A+A- AA CC K2 X W",
+        "description": "at BnA Alter Museum",
+        "link": "block",
+        "href": "/jp/show/aaacck2xw/"
+      }
+    ]
+  }

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="floor.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="show/style.css" />
+  <link rel="stylesheet" href="members/style.css" />
 </head>
 
 <body id="box">
@@ -45,10 +46,11 @@
     </nav>
     <ul id="contents"></ul>
   </main>
-  <footer></footer>
+  <footer id="footer"></footer>
   <script type="text/javascript">
     fetchHTML('menu.html', '#index');
     fetchHTML('floor.html', '#floor');
+    fetchHTML('members/list.html', '#footer');
 
     let btnToggleclass = function (close) {
       document.body.classList.toggle('open');

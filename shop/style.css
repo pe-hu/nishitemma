@@ -37,7 +37,7 @@ img {
 
 #cover {
     z-index: 0;
-    background-image: url(bg.jpeg);
+    background-image: url(img/bg.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

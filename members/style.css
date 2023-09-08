@@ -1,69 +1,21 @@
-html {
-    height: -webkit-fill-available;
+#footer,
+#footer ul,
+#footer ul li {
+    padding: 0;
+    margin: 0;
 }
 
-#menu {
-    position: relative;
-    z-index: 1000;
+#footer p {
+    padding: 1rem;
+    margin: 0;
 }
 
-.mousedragscrollable {
-    position: absolute;
+#footer ul {
+    list-style: none;
+    list-style-position: inside;
 }
 
-#menu,
-.mousedragscrollable {
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.mousedragscrollable {
-    height: 100vh;
-    max-height: -webkit-fill-available;
-}
-
-#floor {
-    margin-top: 1rem;
-}
-
-.library li {
-    font-family: 'Noto Sans JP', sans-serif;
-    background-size: 100%;
-}
-
-.contents {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    max-width: 400px;
-    max-height: 100%;
-    overflow: auto;
-}
-
-.think {
-    background-image: url(000.jpg);
-}
-
-.book {
-    background-image: url(open.jpg);
-}
-
-.aa {
-    background-image: url(001.jpg);
-}
-
-.bb {
-    background-image: url(002.jpg);
-}
-
-.cc {
-    background-image: url(003.jpg);
-}
-
-.library::-webkit-scrollbar-thumb,
-.library li::-webkit-scrollbar-thumb {
-    background: #000;
+#footer ul li {
+    float: left;
+    width: 50%;
 }

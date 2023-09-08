@@ -1,23 +1,13 @@
 @font-face {
     font-family: 'Shasta';
-    src: url('Fetamont-I2H77s3TbG.eot');
-    src: url('Fetamont-I2H77s3TbG.woff') format('woff'),
-        url('Fetamont-I2H77s3TbG.ttf') format('truetype'),
-        url('Fetamont-I2H77s3TbG.svg#Fetamont-I2H77s3TbG') format('svg');
+    src: url('shasta/Fetamont-I2H77s3TbG.eot'),
+        url('shasta/Fetamont-I2H77s3TbG.woff') format('woff'),
+        url('shasta/Fetamont-I2H77s3TbG.ttf') format('truetype'),
+        url('shasta/Fetamont-I2H77s3TbG.svg#Fetamont-I2H77s3TbG') format('svg');
 }
 
 .Shasta {
     font-family: 'Shasta';
-}
-
-@font-face {
-    font-family: "MS Mincho", serif;
-    src: url("MSMincho.ttf");
-}
-
-.pehu {
-    letter-spacing: 0.04rem;
-    font-family: "MS Mincho", serif;
 }
 
 #info {
