@@ -49,7 +49,7 @@
     let btnToggleclass = function (close) {
       document.body.classList.toggle('open');
     }
-    
+
     window.onload = function () {
       let filter = document.querySelectorAll('#org label')
       let targets = document.querySelectorAll("#contents li")
@@ -58,17 +58,21 @@
       filter.forEach(i => {
         i.addEventListener('click', () => {
           let value = i.getAttribute('for')
+
           //*** for each target ***
           targets.forEach(ii => {
-            //*** delete hidden class ***
-            ii.classList.remove('hidden')
-            ii.hidden = false
-            //*** check target every select ***
+            ii.classList.add('hidden')
+            ii.hidden = true
             let thisData = ii.getAttribute('data-org')
-            //*** set hidden class ***
-            if (value !== 'all' && value !== thisData) {
-              ii.classList.add('hidden')
-              ii.hidden = true
+            if (value == thisData) {
+              let thisAll = document.querySelectorAll(`[data-org="${value}"]`)
+              thisAll.forEach(iii => {
+                iii.classList.remove('hidden')
+                iii.hidden = false
+              }, false);
+            } else if (value == 'all') {
+              ii.classList.remove('hidden')
+              ii.hidden = false
             }
           });
         }, false);
