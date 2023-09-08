@@ -40,7 +40,7 @@ body,
 }
 
 #menu_links {
-  font-family: "MS Mincho", "SimSong", monospace;
+  font-family: "MS Mincho", "SimSong", serif;
   padding: 0;
   margin: 0.25rem 0;
   display: flex;

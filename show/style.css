@@ -8,7 +8,7 @@
 
 #contents,
 input[type="radio"]+label {
-    font-family: "MS Mincho", "SimSong", monospace;
+    font-family: "MS Mincho", "SimSong", serif;
 }
 
 input[type="radio"],
