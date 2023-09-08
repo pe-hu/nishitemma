@@ -76,7 +76,7 @@ function indexItems(obj) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = function () {
   let filterAll = document.querySelectorAll('#org label')
   let targetAll = document.querySelectorAll("#contents li")
 
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }, false);
   });
-});
+};
 
 async function fetchHTML(url = '', query = '') {
   fetch(url)
