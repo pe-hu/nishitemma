@@ -100,7 +100,7 @@ window.onload = function () {
         //*** check target every select ***
         let thisData = ii.getAttribute('data-org')
         //*** set hidden class ***
-        if (value !== 'all' && value !== thisData && !ii.classList.contains('hidden')) {
+        if (value !== 'all' && value !== thisData) {
           ii.classList.add('hidden')
           ii.hidden = true
         }
