@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return str;
     }
     
-    const hoverHEX = document.querySelectorAll('#backBtn, #date');
+    const hoverHEX = document.querySelectorAll('#backBtn');
     hoverHEX.forEach(hoverEach => {
         hoverEach.addEventListener('mouseover', (event) => {
             hoverEach.style.color = randomHEX()
