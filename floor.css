@@ -1,6 +1,6 @@
 .floor {
   font-family: "MS Mincho", "SimSong", serif;
-  font-size: 1.25rem;
+  font-size: 100%;
   letter-spacing: 0.05rem;
 }
 
@@ -13,15 +13,9 @@ a:hover {
   font-style: oblique;
 }
 
-.en {
-  font-family: "Apple Chancery", cursive;
-  font-size: 125%;
-  color: red;
-}
-
 .floor {
   list-style-type: none;
-  padding: 1.25rem;
+  padding: 1rem;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +32,7 @@ a:hover {
 .floor li {
   padding: 0;
   margin: 1rem 0 0;
-  width: 49.5%;
+  width: calc(50% - 0.5rem);
 }
 
 .floor li a {
@@ -63,7 +57,6 @@ a:hover {
 
 @media screen and (max-width: 750px) {
   .floor {
-    padding: 2.5vw;
     letter-spacing: 0.1vw;
     font-size: 2.5vw;
   }

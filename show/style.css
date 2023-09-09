@@ -54,9 +54,8 @@ input[type="radio"]:checked+label::before {
 }
 
 #contents li {
-    background: #fff7;
-    color: #000;
     box-sizing: border-box;
+    font-size: 111%;
     position: relative;
     padding: 0.75rem;
     margin: 0.5rem 1rem 0.5rem 0;
@@ -86,30 +85,58 @@ input[type="radio"]:checked+label::before {
     border: #000 0.1rem solid;
 }
 
+[data-org="live"] {
+    color: blue;
+}
+
 [data-org="live"] a {
     border: blue 0.1rem solid;
+}
+
+[data-org="talk"] {
+    color: green;
 }
 
 [data-org="talk"] a {
     border: green 0.1rem solid;
 }
 
+[data-org="show"] {
+    color: red;
+}
+
 [data-org="show"] a {
     border: red 0.1rem solid;
 }
 
+[data-org="shop"] {
+    color: gold;
+}
+
 [data-org="shop"] a {
-    border: yellow 0.1rem solid;
+    border: gold 0.1rem solid;
+}
+
+[data-org="workshop"] {
+    color: orange;
 }
 
 [data-org="workshop"] a {
     border: orange 0.1rem solid;
 }
 
+[data-org="residency"] {
+    color: purple;
+}
+
 [data-org="residency"] a {
     border: purple 0.1rem solid;
 }
 
+[data-org="members"] {
+    color: silver;
+}
+
 [data-org="members"] a {
-    border: gray 0.1rem solid;
+    border: silver 0.1rem solid;
 }
