@@ -1,109 +1,77 @@
 'use strict'
 
-async function indexJSON(requestURL) {
-  const request = new Request(requestURL);
-  const response = await fetch(request);
-  const jsonIndex = await response.text();
-  const index = JSON.parse(jsonIndex);
-  indexHead(index);
-  indexORG(index);
-  indexItems(index);
-}
-
-function indexHead(obj) {
+function indexHead() {
   const head = document.querySelector('head');
   const indexTitle = document.createElement('title');
-  indexTitle.textContent = obj['title'];
+  indexTitle.textContent = thisTitle;
   head.appendChild(indexTitle);
 
   const indexDescription = document.createElement('meta');
   indexDescription.setAttribute("name", "description");
-  indexDescription.setAttribute("content", obj['description']);
+  indexDescription.setAttribute("content", thisDescription);
   head.appendChild(indexDescription);
 
-  const indexAuthor = document.createElement("meta");
+  const indexAuthor = document.createElement('meta');
   indexAuthor.setAttribute("name", "author");
-  indexAuthor.setAttribute("content", obj['author']);
+  indexAuthor.setAttribute("content", "∧° ┐ | creative, community space");
   head.appendChild(indexAuthor);
 
-  const indexEmail = document.createElement("meta");
+  const indexEmail = document.createElement('meta');
   indexEmail.setAttribute("name", "reply-to");
-  indexEmail.setAttribute("content", obj['email']);
+  indexEmail.setAttribute("content", "we.are.pe.hu@gmail.com");
   head.appendChild(indexEmail);
 
-  const iconCC = document.createElement("link");
-  iconCC.rel = "icon";
-  iconCC.type = "image/png";
-  iconCC.href = obj['icon'];
-  head.appendChild(iconCC);
+  const indexIcon = document.createElement("link");
+  indexIcon.rel = "icon";
+  indexIcon.href = favicon;
+  head.appendChild(indexIcon);
 }
 
-function indexORG(obj) {
-  const navORG = document.querySelector('#org');
-  const orgAll = obj.org;
+function indexBody() {
+  const dataTime = document.querySelector('#date');
+  dataTime.textContent = thisDate;
+  dataTime.setAttribute("data-time", thisDatetime);
+  document.querySelector('#title').textContent = thisTitle;
+  document.querySelector('#description').textContent = thisDescription;
+  document.querySelector('#door').textContent = thisDoor;
 
-  for (const orgEach of orgAll) {
-    const inputORG = document.createElement('input');
-    const labelORG = document.createElement('label');
+  dataTime.addEventListener('click', function (event) {
+      let ago = new Date(thisDatetime);
+      let diff = new Date().getTime() - ago.getTime();
 
-    inputORG.setAttribute("type", "radio");
-    inputORG.setAttribute("name", "org");
-    inputORG.id = orgEach.id;
-    inputORG.value = orgEach.id;
-    labelORG.setAttribute("for", orgEach.id);
-    labelORG.classList.add(orgEach.id);
-    labelORG.innerHTML = orgEach.name;
-
-    navORG.appendChild(inputORG);
-    navORG.appendChild(labelORG);
-  }
-}
-
-function indexItems(obj) {
-  const contents = document.querySelector('#contents');
-  const contentsAll = obj.contents;
-
-  for (const content of contentsAll) {
-    const contentsLi = document.createElement('li');
-    contentsLi.setAttribute("data-org", content.org);
-    contentsLi.innerHTML = `
-        <time>${content.date}</time>
-        <h3>${content.name}</h3>
-        <small>${content.description}</small>
-        <a style="display:${content.link};" href="${content.href}"></a>
-        `
-    contents.appendChild(contentsLi);
-  }
-}
-
-window.onload = function () {
-  let filterAll = document.querySelectorAll('#org label')
-  let targetAll = document.querySelectorAll("#contents li")
-
-  //****** for all select ******
-  filterAll.forEach(filterEach => {
-    filterEach.addEventListener('click', () => {
-      let value = filterEach.getAttribute('for')
-
-      //*** for each target ***
-      targetAll.forEach(targetEach => {
-        targetEach.style.display = "none"
-        targetEach.hidden = true
-        let thisData = targetEach.getAttribute('data-org')
-        if (value == thisData) {
-          let thisAll = document.querySelectorAll(`[data-org="${value}"]`)
-          thisAll.forEach(thisEach => {
-            thisEach.style.display = "block"
-            thisEach.hidden = false
-          }, false);
-        } else if (value == 'all') {
-          targetEach.style.display = "block"
-          targetEach.hidden = false
-        }
-      });
-    }, false);
+      let progress = new Date(diff);
+      if (progress.getUTCFullYear() - 1970) {
+          event.target.textContent = progress.getUTCFullYear() - 1970 + '年前';
+      } else if (progress.getUTCMonth()) {
+          event.target.textContent = progress.getUTCMonth() + 'ヶ月前';
+      } else if (progress.getUTCDate() - 1) {
+          event.target.textContent = progress.getUTCDate() - 1 + '日前';
+      } else if (progress.getUTCHours()) {
+          event.target.textContent = progress.getUTCHours() + '時間前';
+      } else if (progress.getUTCMinutes()) {
+          event.target.textContent = progress.getUTCMinutes() + '分前';
+      } else {
+          event.target.textContent = 'たった今';
+      }
   });
-};
+
+  const backBtn = document.createElement('button');
+  backBtn.id = "backBtn"
+  backBtn.className = "noprint"
+  backBtn.textContent = "↵"
+  backBtn.type = "button"
+  backBtn.style.position = "fixed"
+  backBtn.style.bottom = "0.5rem"
+  backBtn.style.right = "0.5rem"
+  backBtn.style.fontSize = "200%"
+  backBtn.style.width = "2.5rem"
+  backBtn.style.height = "2.5rem"
+  document.body.appendChild(backBtn);
+
+  backBtn.addEventListener('click', function () {
+      history.back(-1);
+  });
+}
 
 async function fetchHTML(url = '', query = '') {
   fetch(url)

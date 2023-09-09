@@ -5,9 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script src="index.js"></script>
+
+  <script src="index.js" async></script>
+  <script src="show/index.js"></script>
   <script>
-    indexJSON('index.json')
+    const thisDate = "誠に勝手ながら 2019年9月15日を持って 西天満の ∧°┐ は、完全閉館しました。"
+    const thisDatetime = "2019/09/16 00:00:00"
+    const thisTitle = "∧° ┐ | creative, community space"
+    const thisDescription = "We are closed down Cafe, Shop and Gallery As of September 15th 2019."
+    const thisDoor = "西天満のペフで開催したすべての催し"
+    const favicon = "2019/pr/2019.png"
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexHead()
+        indexBody()
+
+        indexJSON('show/index.json')
+        fetchHTML('members/list.html', '#footer')
+      } else if (event.target.readyState === 'complete') {
+        let filterAll = document.querySelectorAll('#org label')
+        let targetAll = document.querySelectorAll("#contents li")
+        
+        filterAll.forEach(filterEach => {
+          filterEach.addEventListener('click', () => {
+            let value = filterEach.getAttribute('for')
+            
+            targetAll.forEach(targetEach => {
+              targetEach.style.display = "none"
+              targetEach.hidden = true
+              let thisData = targetEach.getAttribute('data-org')
+              if (value == thisData) {
+                let thisAll = document.querySelectorAll(`[data-org="${value}"]`)
+                thisAll.forEach(thisEach => {
+                  thisEach.style.display = "block"
+                  thisEach.hidden = false
+                }, false);
+              } else if (value == 'all') {
+                targetEach.style.display = "block"
+                targetEach.hidden = false
+              }
+            });
+          }, false);
+        });
+      }
+    });
   </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="show/style.css" />
@@ -15,38 +59,30 @@
 </head>
 
 <body id="box">
-  <main id="main">
-    <p id="topic">
-      <u>お知らせ TOPICS</u>　
-      <a class="topics" href="https://creative-community.space/">
-        ∧°┐ のウェブサイトは移転しました
-      </a>
-      <br />
-      <a class="flash" href="/jp/2019/">
-        2020年5月30日 ∧°┐ | Special Gift Box 2019 を発売しました
-      </a>
-      <a class="dm" href="/jp/dm/">
-        2020年5月30日 This USB Card is The Digital Magazine を発売しました
-      </a>
-    </p>
+  <header id="topic">
+    <u>お知らせ TOPICS</u>
+    <a class="topics" href="https://creative-community.space/" target="_blank">
+      <span id="title"></span> の ウェブサイトは移転しました
+    </a>
+    <br />
+    <a class="flash" href="/jp/2019/">
+      2020年5月30日 ∧°┐ | Special Gift Box 2019 を発売しました
+    </a>
+    <a class="dm" href="/jp/dm/">
+      2020年5月30日 This USB Card is The Digital Magazine を発売しました
+    </a>
+  </header>
+  <main>
     <h1>
-      誠に勝手ながら 2019年9月15日を持って
-      西天満の <b class="pehu">∧°┐</b> は、完全閉館しました。<br />
-      We are closed down Cafe, Shop and Gallery As of September 15th 2019.
+      <time id="date"></time><br />
+      <span id="description"></span>
     </h1>
     <hr />
-    <h2>西天満のペフで開催したすべての催し</h2>
+    <h2 id="door"></h2>
     <nav id="org"></nav>
     <ul id="contents"></ul>
   </main>
   <footer id="footer"></footer>
-  <script type="text/javascript">
-    fetchHTML('members/list.html', '#footer');
-
-    let btnToggleclass = function (close) {
-      document.body.classList.toggle('open');
-    }
-  </script>
 </body>
 
 </html>

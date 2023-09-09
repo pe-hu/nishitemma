@@ -4,20 +4,17 @@
 }
 
 html {
+  font-family: "MS Mincho", "SimSong", serif;
   font-size: 16px;
 }
 
-.pehu {
-  font-family: "MS Mincho", "SimSong", serif;
-}
-
-#topic,
 h2 {
     padding: 0;
     margin: 0;
 }
 
-main {
+main,
+header {
     padding: 1rem;
 }
 
@@ -40,15 +37,12 @@ b {
 
 h1 {
     font-size: 125%;
+    line-height: 175%;
 }
 
 #topic a,
 h2 {
     font-size: 100%;
-}
-
-h1 {
-    line-height: 175%;
 }
 
 #topic {
@@ -66,11 +60,15 @@ h2 {
     text-decoration: underline;
 }
 
+#topic a,
+#topic u {
+    padding: 0.25em;
+    margin: 0 1rem 0 0;
+}
+
 #topic a {
     color: #000;
     text-decoration: none;
-    padding: 0.25em;
-    margin: 0 1rem 0 0;
 }
 
 #topic .topics {
@@ -98,7 +96,12 @@ h2 {
         font-size: 3vw;
     }
     
-    #topic a {
+    #topic a,
+    #topic u {
         margin: 0 2vw 0 0;
     }
+}
+
+#backBtn {
+    display: none;
 }

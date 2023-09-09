@@ -1,10 +1,4 @@
 {
-    "title": "∧° ┐ | creative, community space",
-    "description": "We are closed down Cafe, Shop and Gallery As of September 15th 2019.",
-    "author": "∧° ┐",
-    "email": "we.are.pe.hu@gmail.com",
-    "icon": "2019/pr/2019.png",
-    
     "org": [
       {
         "id": "community",
@@ -427,7 +421,7 @@
         "name": "創造的場づくり助成",
         "description": "今年度より3年間、おおさか創造千島財団からの助成を受けることが決定しました。",
         "link": "block",
-        "href": "/jp/otobuilding/"
+        "href": "/jp/2019-2021/"
       },
       {
         "org": "live",
