@@ -5,15 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" async>
+  <script src="../index.js"></script>
+  <script>
     const thisDate = "2.2.2019 (Sat), START at 7pm-"
     const thisDatetime = "2019/02/02 19:00:00"
     const thisTitle = "サウンドチェック"
     const thisDescription = "🎤 🎸 🔊"
     const thisDoor = "¥1500"
     const favicon = "../2019/pr/2019.png"
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexHead()
+      } else if (event.target.readyState === 'complete') {
+        indexBody()
+      }
+    });
   </script>
-  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <style>
     article,

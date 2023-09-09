@@ -5,15 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" async>
+  <script src="../index.js"></script>
+  <script>
     const thisDate = "11.2.2018 (Fri), START at 3pm-"
     const thisDatetime = "2018/11/02 15:00:00"
     const thisTitle = "仙台での4日間と最近のめりすのこと"
     const thisDescription = "by Shaisuke Dinami"
     const thisDoor = "自由料金制 NAME YOUR PRICE"
     const favicon = "https://pbs.twimg.com/profile_images/588180131518136320/8jt61xpE_400x400.jpg"
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexHead()
+      } else if (event.target.readyState === 'complete') {
+        indexBody()
+      }
+    });
   </script>
-  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <style>
     article,

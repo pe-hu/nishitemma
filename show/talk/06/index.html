@@ -5,16 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" async>
+  <script src="../../../index.js"></script>
+  <script>
     const thisDate = "2019.2.24(日) Start 15:00"
     const thisDatetime = "2019/02/24 15:00:00"
     const thisTitle = "ナイスショップスー"
     const thisDescription = "by Masamichi Furukawa"
     const thisDoor = "自由料金制 Name Your Price"
-    const favicon = "../../../members/img/fm.jpg"
+    const favicon = "../../../weare/img/fm.jpg"
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexHead()
+      } else if (event.target.readyState === 'complete') {
+        indexBody()
+      }
+    });
   </script>
-  <script src="../../js/index.js"></script>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../../css/book.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Open+Sans:wght@500&display=swap" rel="stylesheet">

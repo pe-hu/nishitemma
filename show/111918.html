@@ -5,15 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" async>
+  <script src="../index.js"></script>
+  <script>
     const thisDate = "11.19.2018 (Mon), START at 7:30pm"
     const thisDatetime = "2018/11/19 19:00:00"
     const thisTitle = "John Chantler / 米子匡司"
     const thisDescription = "企画 : Yakata (Saya + Shoji Funakawa)"
     const thisDoor = "自由料金制 NAME YOUR PRICE"
     const favicon = "https://inventingzero.net/home/wp-content/uploads/2019/09/john-chantler-2019-smaller-768x512.jpg"
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexHead()
+      } else if (event.target.readyState === 'complete') {
+        indexBody()
+      }
+    });
   </script>
-  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <style>
     article,
@@ -39,18 +49,19 @@
         スウェーデン、ストックホルム在住の音楽家・オーガナイザー。シンセサイザーや電気、パイプオルガンを用いた作品を制作。<br />
         最新のLP “Which Way To Leave?” (ROOM40) は、幾層もの歪んだ音と簡素ですっきりとした一節の異質美によって予測不能なダイナミクスを表現した作品である。
       </p>
-      <p>これは前作 “Still Light, Outside (1703 Skivbolaget)”
-        を拡張した組曲で、パイプオルガンの両極端のレジスターを中心とした侵略的で荒涼としたミニマルな一節と、激しいディストーションと無作為に作動する電気が織り込まれたカラフルな多重のコード群を組み合わせたものだ。</p>
-      <p>オーストラリアに生まれ、10年間をロンドンで過ごした後スウェーデンに移住。そこで ”other music” のための小さな音楽祭、”Edition” をストックホルムで毎年２月に開催。４回目となる”Fourth
-        Edition”は来年を予定されている。</p>
+      <p>
+        これは前作 “Still Light, Outside (1703 Skivbolaget)” を拡張した組曲で、パイプオルガンの両極端のレジスターを中心とした侵略的で荒涼としたミニマルな一節と、激しいディストーションと無作為に作動する電気が織り込まれたカラフルな多重のコード群を組み合わせたものだ。</p>
+      <p>
+        オーストラリアに生まれ、10年間をロンドンで過ごした後スウェーデンに移住。そこで ”other music” のための小さな音楽祭、”Edition” をストックホルムで毎2月に開催。4回目となる”Fourth Edition”は来年を予定されている。
+      </p>
       <small class="note">翻訳 Haruka Numoto</small>
     </aside>
     <aside>
       <h3>米子匡司 | Tadashi Yonago</h3>
       <p>音楽家．トロンボーン，ピアノ奏者．プログラマ．</p>
       <p>
-        楽器／電気／コンピュータなどを使って，ライヴ・イヴェントでの音楽演奏，展覧会などの形で音を含む環境の制作や展示，音を扱う道具の制作などを行なう．音楽以外の最近の活動としては，自分や誰かの作ったCDや服や本やその他いろいろな物品をストリートで販売するための自動販売機の製作と設置．人が見聞きした事とそれについて考えた事を書くための紙とウェブの雑誌「余所見」の発刊．シェアハウス，お店，上映室などの複合建物「PORT」の運営．住居兼オープン・スペース「FLOAT」の運営など．グループ・ワークとしては，SjQ（cubicmusic/HEADZ），およびSjQ++のメンバーとして活動．同グループにて2013年アルス・エレクトロニカ・フェスティヴァル
-        デジタルミュージック部門優秀賞を受賞．</p>
+        楽器／電気／コンピュータなどを使って，ライヴ・イヴェントでの音楽演奏，展覧会などの形で音を含む環境の制作や展示，音を扱う道具の制作などを行なう．音楽以外の最近の活動としては，自分や誰かの作ったCDや服や本やその他いろいろな物品をストリートで販売するための自動販売機の製作と設置．人が見聞きした事とそれについて考えた事を書くための紙とウェブの雑誌「余所見」の発刊．シェアハウス，お店，上映室などの複合建物「PORT」の運営．住居兼オープン・スペース「FLOAT」の運営など．グループ・ワークとしては，SjQ（cubicmusic/HEADZ），およびSjQ++のメンバーとして活動．同グループにて2013年アルス・エレクトロニカ・フェスティヴァル・デジタルミュージック部門優秀賞を受賞
+      </p>
     </aside>
   </article>
   <nav id="footer">

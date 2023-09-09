@@ -5,15 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" async>
+  <script src="../index.js"></script>
+  <script>
     const thisDate = "8.31.2019 (Sat), START at 7pm-"
     const thisDatetime = "2019/08/31 19:00:00"
     const thisTitle = "村山政二朗2019関西ツアー 大阪編"
     const thisDescription = "村山政二朗 × 江崎將史 | 米子匡司 × 天気 a.k.a 船川翔司"
     const thisDoor = "自由料金制 NAME YOUR PRICE"
     const favicon = "../2019/pr/2019.png"
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexHead()
+      } else if (event.target.readyState === 'complete') {
+        indexBody()
+      }
+    });
   </script>
-  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <style>
     article,
@@ -63,7 +73,9 @@
       <p>音楽家．トロンボーン，ピアノ奏者．プログラマ．</p>
       <p>
         楽器／電気／コンピュータなどを使って，ライヴ・イヴェントでの音楽演奏，展覧会などの形で音を含む環境の制作や展示，音を扱う道具の制作などを行なう．音楽以外の最近の活動としては，自分や誰かの作ったCDや服や本やその他いろいろな物品をストリートで販売するための自動販売機の製作と設置．人が見聞きした事とそれについて考えた事を書くための紙とウェブの雑誌「余所見」の発刊．シェアハウス，お店，上映室などの複合建物「PORT」の運営．住居兼オープン・スペース「FLOAT」の運営など．グループ・ワークとしては，SjQ（cubicmusic/HEADZ），およびSjQ++のメンバーとして活動．同グループにて2013年アルス・エレクトロニカ・フェスティヴァル
-        デジタルミュージック部門優秀賞を受賞．</p>
+        デジタルミュージック部門優秀賞を受賞．
+      </p>
+      <a href="https://floating.jp/">floating.jp</a>
     </aside>
     <aside>
       <h3>天気 a.k.a 船川翔司</h3>

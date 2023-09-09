@@ -148,7 +148,6 @@ nav {
 }
 
 @media (orientation: portrait) {
-
     section,
     aside {
         width: 100%;
@@ -167,10 +166,11 @@ nav {
     text-align: center;
 }
 
-@page { size:landscape; }
+@page {
+    size:landscape;
+}
 
 @media print {
-
     #backBtn,
     #footer *,
     article section iframe {
@@ -178,6 +178,6 @@ nav {
     }
 
     hr {
-        page-break-before: always;
+        page-break-after: always;
     }
 }

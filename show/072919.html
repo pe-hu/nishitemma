@@ -5,15 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <script type="text/javascript" async>
+  <script src="../index.js"></script>
+  <script>
     const thisDate = "7.29.2019 (Mon), START at 7:30pm-"
     const thisDatetime = "2019/07/29 19:30:00"
     const thisTitle = "癲狂科学実験"
     const thisDescription = "講師：斎藤誠"
     const thisDoor = "自由料金制 NAME YOUR PRICE"
     const favicon = "../2019/pr/2019.png"
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexHead()
+      } else if (event.target.readyState === 'complete') {
+        indexBody()
+      }
+    });
   </script>
-  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <style>
     article,
