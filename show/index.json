@@ -53,7 +53,7 @@
         "name": "贈り物を送る",
         "description": "お世話になった人や、大切な人に贈り物を送る。連絡できてない人に連絡する。",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "members",
@@ -61,7 +61,7 @@
         "name": "We will eat dinner at the rooftop",
         "description": "",
         "link": "none",
-        "href": "/jp/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "talk",
@@ -69,7 +69,7 @@
         "name": "あっちに聞きたい50のこと",
         "description": "喫茶スタッフ・イラスト担当、あっちに質問をします。",
         "link": "block",
-        "href": "/jp/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "shop",
@@ -101,7 +101,7 @@
         "name": "Bon Dance",
         "description": "*盆おどりに行きます。",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "residency",
@@ -117,7 +117,7 @@
         "name": "遠足",
         "description": "*京丹後へキャンプに行きます。",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "workshop",
@@ -133,7 +133,7 @@
         "name": "Bon Dance",
         "description": "*盆おどりに行きます。",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "show",
@@ -189,7 +189,7 @@
         "name": "Fancy Hotel Tour",
         "description": "*午後8時に、ペフ出発",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "shop",
@@ -205,7 +205,7 @@
         "name": "靴下ハギレの会",
         "description": "by sarakona_at_last",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "live",
@@ -229,7 +229,7 @@
         "name": "世界中の言葉を使う",
         "description": "中学英語を勉強する会",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "live",
@@ -245,7 +245,7 @@
         "name": "あくちゃんに聞きたい50のこと",
         "description": "abiのオーナー、sarakona at lastに質問をします。",
         "link": "block",
-        "href": "/jp/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "show",
@@ -261,7 +261,7 @@
         "name": "巨大植物調査",
         "description": "*午後8時、新大阪駅集合",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "workshop",
@@ -277,7 +277,7 @@
         "name": "遠足",
         "description": "*午前10時、鶴見緑地公園に集合",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "live",
@@ -325,7 +325,7 @@
         "name": "靴下ハギレの会",
         "description": "by sarakona_at_last",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "live",
@@ -341,7 +341,7 @@
         "name": "ふなに聞きたい50のこと",
         "description": "ペフのクリエイティブメンバー船川翔司さんに質問をします。",
         "link": "block",
-        "href": "/jp/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "shop",
@@ -357,7 +357,7 @@
         "name": "FREE TIME",
         "description": "大暴れします。",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "members",
@@ -365,7 +365,7 @@
         "name": "遠足",
         "description": "海に行きます",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "shop",
@@ -397,7 +397,7 @@
         "name": "FREE TIME",
         "description": "着物を着て、書道と陶芸をします",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "show",
@@ -413,7 +413,7 @@
         "name": "れんれんに聞きたい50のこと",
         "description": "ペフ喫茶の料理長 れんれん に質問をします。",
         "link": "block",
-        "href": "/jp/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "members",
@@ -421,7 +421,7 @@
         "name": "創造的場づくり助成",
         "description": "今年度より3年間、おおさか創造千島財団からの助成を受けることが決定しました。",
         "link": "block",
-        "href": "/jp/2019-2021/"
+        "href": "/jp/otobuilding/"
       },
       {
         "org": "live",
@@ -429,7 +429,7 @@
         "name": "20 min: continuously",
         "description": "by Le makeup",
         "link": "none",
-        "href": "/up/20-min/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -437,7 +437,7 @@
         "name": "FREE TIME",
         "description": "彫刻刀で銃作る",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "members",
@@ -445,7 +445,7 @@
         "name": "遠足",
         "description": "養老天命反転地へ行きます",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -453,7 +453,7 @@
         "name": "夜のお花見",
         "description": "近くでお花見を行います。",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "shop",
@@ -485,7 +485,7 @@
         "name": "アンビエントお茶会①",
         "description": "pe hu talk 07",
         "link": "block",
-        "href": "/jp/show/talk/"
+        "href": "/jp/show/talk/07/"
       },
       {
         "org": "workshop",
@@ -493,7 +493,7 @@
         "name": "靴下ハギレの会",
         "description": "by sarakona_at_last",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -501,7 +501,7 @@
         "name": "FREE TIME",
         "description": "使ってないもの使ってみる",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -509,7 +509,7 @@
         "name": "夜の遠足",
         "description": "午後9時に ペフ を出発",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -517,7 +517,7 @@
         "name": "夜の遠足",
         "description": "午後9時に 12sodomy 集合",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "shop",
@@ -549,7 +549,7 @@
         "name": "靴下ハギレの会",
         "description": "by sarakona_at_last",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "workshop",
@@ -557,7 +557,7 @@
         "name": "船川工務店",
         "description": "by Shoji Funakawa",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "talk",
@@ -565,7 +565,7 @@
         "name": "かおちょに聞きたい50のこと",
         "description": "ペフのメンバーのことをもっと知る会",
         "link": "block",
-        "href": "/jp/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "community",
@@ -573,7 +573,7 @@
         "name": "世界中の言葉を使う",
         "description": "英語だけで会話しながらトランプで遊ぶ会",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -581,7 +581,7 @@
         "name": "夜の遠足",
         "description": "環状線ぐるぐるまわる",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -589,7 +589,7 @@
         "name": "FREE TIME",
         "description": "凧上げをしよう",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -597,7 +597,7 @@
         "name": "FREE TIME",
         "description": "白湯をゆっくり飲む",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "community",
@@ -605,7 +605,7 @@
         "name": "昼の散歩",
         "description": "午後2時に、地下鉄四つ橋線 北加賀屋駅４番出口集合",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "live",
@@ -621,7 +621,7 @@
         "name": "Nice Shop Su",
         "description": "pe hu talk 06",
         "link": "block",
-        "href": "/jp/show/talk/"
+        "href": "/jp/show/talk/06/"
       },
       {
         "org": "show",
@@ -637,7 +637,7 @@
         "name": "夜の散歩",
         "description": "午後8時に ペフ を出発",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "live",
@@ -653,7 +653,7 @@
         "name": "FREE TIME",
         "description": "映画を見ます",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "show",
@@ -677,7 +677,7 @@
         "name": "千沙子と純太の謎",
         "description": "pe hu talk 05",
         "link": "block",
-        "href": "/jp/show/talk/"
+        "href": "/jp/show/talk/05/"
       },
       {
         "org": "show",
@@ -725,7 +725,7 @@
         "name": "OPEN TALK",
         "description": "pe hu talk 04",
         "link": "block",
-        "href": "/jp/show/talk/"
+        "href": "/jp/show/talk/04/"
       },
       {
         "org": "community",
@@ -765,7 +765,7 @@
         "name": "SNS in China",
         "description": "pe hu talk 03",
         "link": "block",
-        "href": "/jp/show/talk/"
+        "href": "/jp/show/talk/03/"
       },
       {
         "org": "live",
@@ -813,7 +813,7 @@
         "name": "GAFA",
         "description": "pe hu talk 02",
         "link": "block",
-        "href": "/jp/show/talk/"
+        "href": "/jp/show/talk/02/"
       },
       {
         "org": "members",
@@ -821,7 +821,7 @@
         "name": "secret show",
         "description": "MEMBERS ONLY",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "#"
       },
       {
         "org": "live",
@@ -843,7 +843,7 @@
         "org": "shop",
         "date": "10.13-10.14.2018 (Sat/Sun)",
         "name": "老松古美術祭",
-        "description": "by 琥珀 | Kohaku, モアレ | Moire, and more",
+        "description": "w/ 琥珀 Kohaku | モアレ Moire",
         "link": "block",
         "href": "http://www4.famille.ne.jp/~soeki/new.htm"
       },
@@ -853,7 +853,7 @@
         "name": "バスケしよう",
         "description": "会場：八幡屋公園多目的広場",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "talk",
@@ -861,7 +861,7 @@
         "name": "Age of",
         "description": "pe hu talk 01",
         "link": "block",
-        "href": "/jp/show/talk/"
+        "href": "/jp/show/talk/01/"
       },
       {
         "org": "community",
@@ -877,7 +877,7 @@
         "name": "バスケしよう",
         "description": "会場：八幡屋公園多目的広場",
         "link": "none",
-        "href": "https://creative-community.space/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "members",
@@ -885,7 +885,7 @@
         "name": "平成最後のナス",
         "description": "Dinner at the rooftop",
         "link": "none",
-        "href": "/jp/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "members",
@@ -893,7 +893,7 @@
         "name": "Meeting",
         "description": "we will restart pehu with great friends",
         "link": "none",
-        "href": "/jp/members/"
+        "href": "/jp/weare/"
       },
       {
         "org": "live",
@@ -948,8 +948,8 @@
         "date": "3.21.2018 (Wed)",
         "name": "chotto crazy <3",
         "description": "by Nice shop su",
-        "link": "none",
-        "href": "https://chottocrazy.github.io/"
+        "link": "block",
+        "href": "/1f/00/print.pdf"
       },
       {
         "org": "show",
@@ -964,8 +964,8 @@
         "date": "3.18.2018 (Sun) 5pm-9pm",
         "name": "chotto crazy 2 B",
         "description": "by Woopheadclrms, KeitaroTamura, zeki, ดบ『Dove, さえ",
-        "link": "none",
-        "href": "https://chottocrazy.github.io/"
+        "link": "block",
+        "href": "/1f/05/print.pdf"
       },
       {
         "org": "live",
@@ -1005,7 +1005,7 @@
         "name": "open studio",
         "description": "by Woopheadclrms | Guest: 天空戦記シェニト",
         "link": "block",
-        "href": "/1f/05/"
+        "href": "/1f/05/print.pdf"
       },
       {
         "org": "shop",
@@ -1020,8 +1020,8 @@
         "date": "2.25.2018 (Sun) 3pm-9pm",
         "name": "chotto crazy",
         "description": "by shaisuke, zeki, haruka, kaori, kazuma",
-        "link": "none",
-        "href": "https://chottocrazy.github.io/"
+        "link": "block",
+        "href": "/1f/04/print.pdf"
       },
       {
         "org": "community",
@@ -1045,7 +1045,7 @@
         "name": "talk session",
         "description": "by Takamitsu Ohta | Ootsusan | Sasajima",
         "link": "block",
-        "href": "/1f/03/"
+        "href": "/1f/03/print.pdf"
       },
       {
         "org": "live",
@@ -1053,7 +1053,7 @@
         "name": "special event",
         "description": "by saya (tenniscoats)",
         "link": "block",
-        "href": "/1f/03/"
+        "href": "/1f/03/print.pdf"
       },
       {
         "org": "workshop",
@@ -1061,7 +1061,7 @@
         "name": "Nissed / 温める",
         "description": "by Soshi Matsunobe | Muku Kobayashi",
         "link": "block",
-        "href": "/1f/03/"
+        "href": "/1f/03/print.pdf"
       },
       {
         "org": "live",
@@ -1069,7 +1069,7 @@
         "name": "pseudo world tour",
         "description": "by Shoji Funakawa",
         "link": "block",
-        "href": "/1f/03/"
+        "href": "/1f/03/print.pdf"
       },
       {
         "org": "show",
@@ -1101,7 +1101,7 @@
         "name": "水に石を落としたり、撮影したり",
         "description": "by ดบ『Dove with Natalia's favorite drinks.",
         "link": "block",
-        "href": "/1f/02/"
+        "href": "/1f/02/print.pdf"
       },
       {
         "org": "community",
@@ -1109,7 +1109,7 @@
         "name": "何かを壊したり、粘土で四角を作ったり",
         "description": "by 6.7.r.n | one other person",
         "link": "block",
-        "href": "/1f/02/"
+        "href": "/1f/02/print.pdf"
       },
       {
         "org": "community",
@@ -1117,7 +1117,7 @@
         "name": "湯気を眺めたり、ユーフォニアムの演奏を聞いたり",
         "description": "by ootsusan | мкт∵",
         "link": "block",
-        "href": "/1f/02/"
+        "href": "/1f/02/print.pdf"
       },
       {
         "org": "live",
@@ -1125,7 +1125,7 @@
         "name": "朗読会",
         "description": "by chika4ngel | 5ft46 | one other person",
         "link": "block",
-        "href": "/1f/02/"
+        "href": "/1f/02/print.pdf"
       },
       {
         "org": "show",
@@ -1137,11 +1137,11 @@
       },
       {
         "org": "community",
-        "date": "12.29.2018 (Fri) 3pm-8pm",
+        "date": "12.29.2017 (Fri) 3pm-8pm",
         "name": "〜當たる戌歳〜",
         "description": "ディナミ座年末顔見世興行2017",
         "link": "block",
-        "href": "https://pbs.twimg.com/media/DR7VfnXUQAYPhdm?format=jpg&name=large"
+        "href": "/jp/show/122917.html"
       },
       {
         "org": "community",
@@ -1157,7 +1157,7 @@
         "name": "concert",
         "description": "by 江崎將史 | Theodore Cale Schafer | aoosya",
         "link": "block",
-        "href": "/1f/01/"
+        "href": "/1f/01/print.pdf"
       },
       {
         "org": "talk",
@@ -1165,7 +1165,7 @@
         "name": "talk session",
         "description": "Special guest : 服部峻",
         "link": "block",
-        "href": "/1f/01/"
+        "href": "/1f/01/print.pdf"
       },
       {
         "org": "show",
