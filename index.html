@@ -5,26 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-
-  <script src="index.js" async></script>
+  <script src="index.js"></script>
   <script src="show/index.js"></script>
-  <script type="text/javascript" async>
+  <script type="text/javascript">
     const thisDate = "誠に勝手ながら 2019年9月15日を持って 西天満の ∧°┐ は、完全閉館しました。"
     const thisDatetime = "2019/09/16 00:00:00"
     const thisTitle = "∧° ┐ | creative, community space"
     const thisDescription = "We are closed down Cafe, Shop and Gallery As of September 15th 2019."
     const thisDoor = "西天満のペフで開催したすべての催し"
     const favicon = "2019/pr/2019.png"
+    
+    indexHead()
 
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'loading') {
         // loading
       } else if (event.target.readyState === 'interactive') {
-        indexHead()
         indexBody()
-
         indexJSON('show/index.json')
-        fetchHTML('members/list.html', '#footer')
       } else if (event.target.readyState === 'complete') {
         let filterAll = document.querySelectorAll('#org label')
         let targetAll = document.querySelectorAll("#contents li")
@@ -50,6 +48,8 @@
             });
           }, false);
         });
+
+        fetchHTML('members/list.html', '#footer')
       }
     });
   </script>
@@ -62,7 +62,7 @@
   <header id="topic">
     <u>お知らせ TOPICS</u>
     <a class="topics" href="https://creative-community.space/" target="_blank">
-      <span id="title"></span> の ウェブサイトは移転しました
+      <span id="title">∧°┐</span> の ウェブサイトは移転しました
     </a>
     <br />
     <a class="flash" href="/jp/2019/">
