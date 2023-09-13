@@ -5,34 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
+  <title>サウンドチェック</title>
+  <meta content="🎤 🎸 🔊" name="description">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="../icon.png" type="image/png">
   <script src="../index.js"></script>
   <script>
     const thisDate = "2.2.2019 (Sat), START at 7pm-"
     const thisDatetime = "2019/02/02 19:00:00"
-    const thisTitle = "サウンドチェック"
-    const thisDescription = "🎤 🎸 🔊"
     const thisDoor = "¥1500"
-    const favicon = "../2019/pr/2019.png"
 
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'loading') {
         // loading
       } else if (event.target.readyState === 'interactive') {
-        indexHead()
-      } else if (event.target.readyState === 'complete') {
         indexBody()
       }
     });
   </script>
-  <link rel="stylesheet" href="css/style.css">
   <style>
-    article,
-    aside {
-      font-family: "MS Mincho", "SimSong", monospace;
-    }
-
     aside h2 {
       font-size: 175%;
+    }
+
+    #footer {
+      padding: 0 1rem;
     }
   </style>
   <base target="_blank" rel="noopener noreferrer" />
@@ -88,25 +85,4 @@
       この日の記録を、録音技師を目指す"千種葉月"に録音いただき、音楽作品として発表することを予定しています。
     </p>
   </nav>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      function randomHEX() {
-        let code = '0123456789ABCDEF';
-        let str = '#';
-        for (let i = 0; i < 6; i++) {
-          str += code[Math.floor(Math.random() * code.length)];
-        }
-        return str;
-      }
-
-      const hexAll = document.querySelectorAll('.hexColor');
-      hexAll.forEach(hexEach => {
-        hexEach.style.color = randomHEX()
-
-        hexEach.addEventListener('mouseover', (event) => {
-          hexEach.style.color = randomHEX()
-        }, false);
-      });
-    });
-  </script>
 </body>

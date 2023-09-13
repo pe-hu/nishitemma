@@ -5,21 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
+  <title>アンビエントお茶会</title>
+  <meta content="Hosted by Masamichi Furukawa" name="description">
+  <link rel="icon" href="../../../weare/img/fm.jpg" type="image/png">
   <script src="../../../index.js"></script>
   <script>
     const thisDate = "2019.3.31(日) Start 15:00"
     const thisDatetime = "2019/03/31 15:00:00"
-    const thisTitle = "アンビエントお茶会"
-    const thisDescription = "Hosted by Masamichi Furukawa"
     const thisDoor = "自由料金制 Name Your Price"
-    const favicon = "../../../weare/img/fm.jpg"
 
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'loading') {
         // loading
       } else if (event.target.readyState === 'interactive') {
-        indexHead()
-      } else if (event.target.readyState === 'complete') {
         indexBody()
       }
     });

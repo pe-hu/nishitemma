@@ -5,21 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
+  <title>リアル・オーガナイザーが消える未来</title>
+  <meta content="by Masamichi Furukawa" name="description">
+  <link rel="icon" href="../../../weare/img/fm.jpg" type="image/png">
   <script src="../../../index.js"></script>
   <script>
     const thisDate = "2019.3.31(日) Start 15:00"
     const thisDatetime = "2019/03/31 15:00:00"
-    const thisTitle = "リアル・オーガナイザーが消える未来"
-    const thisDescription = "by Masamichi Furukawa"
     const thisDoor = "アンビエントお茶会 番外編"
-    const favicon = "../../../weare/img/fm.jpg"
 
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'loading') {
         // loading
       } else if (event.target.readyState === 'interactive') {
-        indexHead()
-      } else if (event.target.readyState === 'complete') {
         indexBody()
       }
     });

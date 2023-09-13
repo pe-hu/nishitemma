@@ -36,7 +36,7 @@ function indexItems(obj) {
 
   for (const content of contentsAll) {
     const contentsLi = document.createElement('li');
-    contentsLi.setAttribute("data-org", content.org);
+    contentsLi.setAttribute("class", content.org);
     contentsLi.innerHTML = `
         <time>${content.date}</time>
         <h3>${content.name}</h3>

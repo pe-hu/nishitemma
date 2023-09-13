@@ -1,38 +1,15 @@
 'use strict'
 
-function indexHead() {
-  const head = document.querySelector('head');
-  const indexTitle = document.createElement('title');
-  indexTitle.textContent = thisTitle;
-  head.appendChild(indexTitle);
-
-  const indexDescription = document.createElement('meta');
-  indexDescription.setAttribute("name", "description");
-  indexDescription.setAttribute("content", thisDescription);
-  head.appendChild(indexDescription);
-
-  const indexAuthor = document.createElement('meta');
-  indexAuthor.setAttribute("name", "author");
-  indexAuthor.setAttribute("content", "∧° ┐ | creative, community space");
-  head.appendChild(indexAuthor);
-
-  const indexEmail = document.createElement('meta');
-  indexEmail.setAttribute("name", "reply-to");
-  indexEmail.setAttribute("content", "we.are.pe.hu@gmail.com");
-  head.appendChild(indexEmail);
-
-  const indexIcon = document.createElement("link");
-  indexIcon.rel = "icon";
-  indexIcon.href = favicon;
-  head.appendChild(indexIcon);
-}
-
 function indexBody() {
+  const thisTitle = document.querySelector('title').textContent
+  document.querySelector('#title').textContent = thisTitle;
+
+  const thisDescription = document.querySelector('meta[name="description"]').content;
+  document.querySelector('#description').textContent = thisDescription;
+
   const dataTime = document.querySelector('#date');
   dataTime.textContent = thisDate;
   dataTime.setAttribute("data-time", thisDatetime);
-  document.querySelector('#title').textContent = thisTitle;
-  document.querySelector('#description').textContent = thisDescription;
   document.querySelector('#door').textContent = thisDoor;
 
   dataTime.addEventListener('click', function (event) {

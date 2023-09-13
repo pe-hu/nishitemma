@@ -81,62 +81,62 @@ input[type="radio"]:checked+label::before {
     z-index: 1;
 }
 
-[data-org="community"] a {
+.community a {
     border: #000 0.1rem solid;
 }
 
-[data-org="live"] {
+.live {
     color: blue;
 }
 
-[data-org="live"] a {
+.live a {
     border: blue 0.1rem solid;
 }
 
-[data-org="talk"] {
+.talk {
     color: green;
 }
 
-[data-org="talk"] a {
+.talk a {
     border: green 0.1rem solid;
 }
 
-[data-org="show"] {
+.show {
     color: red;
 }
 
-[data-org="show"] a {
+.show a {
     border: red 0.1rem solid;
 }
 
-[data-org="shop"] {
+.shop {
     color: gold;
 }
 
-[data-org="shop"] a {
+.shop a {
     border: gold 0.1rem solid;
 }
 
-[data-org="workshop"] {
+.workshop {
     color: orange;
 }
 
-[data-org="workshop"] a {
+.workshop a {
     border: orange 0.1rem solid;
 }
 
-[data-org="residency"] {
+.residency {
     color: purple;
 }
 
-[data-org="residency"] a {
+.residency a {
     border: purple 0.1rem solid;
 }
 
-[data-org="members"] {
+.members {
     color: silver;
 }
 
-[data-org="members"] a {
+.members a {
     border: silver 0.1rem solid;
 }

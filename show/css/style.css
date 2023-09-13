@@ -2,6 +2,11 @@ html {
     font-size: 16px;
 }
 
+body,
+a {
+    color: #333;
+}
+
 @font-face {
     font-family: "MS Mincho";
     src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
@@ -10,6 +15,11 @@ html {
 @font-face {
     font-family: "Apple Chancery";
     src: url("https://vg.pe.hu/fonts/family/apple-chancery.ttf");
+}
+
+article,
+aside {
+    font-family: "MS Mincho", "SimSong", monospace;
 }
 
 body {
@@ -148,6 +158,7 @@ nav {
 }
 
 @media (orientation: portrait) {
+
     section,
     aside {
         width: 100%;
@@ -167,10 +178,11 @@ nav {
 }
 
 @page {
-    size:landscape;
+    size: landscape;
 }
 
 @media print {
+
     #backBtn,
     #footer *,
     article section iframe {

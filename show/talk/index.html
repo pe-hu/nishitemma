@@ -5,21 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
+  <title>pe hu talk</title>
+  <meta content="by Masamichi Furukawa" name="description">
+  <link rel="icon" href="../../weare/img/fm.jpg" type="image/png">
   <script src="../../index.js"></script>
   <script>
-        const thisDate = "12.2.2018 Sunday"
-        const thisDatetime = "2018/12/02 16:00:00"
-        const thisTitle = "全員リリパ"
-        const thisDescription = "会場 ひかりのラウンジ"
-        const thisDoor = "自由料金制 NAME YOUR PRICE"
-        const favicon = "icon.jpg"
+    const thisDate = "9.29.2018 - 3.31.2019"
+    const thisDatetime = "2018/09/29 18:00:00"
+    const thisDoor = "Archive of"
 
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'loading') {
         // loading
       } else if (event.target.readyState === 'interactive') {
-        indexHead()
-      } else if (event.target.readyState === 'complete') {
         indexBody()
       }
     });
@@ -110,8 +108,8 @@
     </ol>
   </article>
   <aside id="footer">
-    <h3 id="date" class="en"></h3>
-    <p id="door" class="ja"></p>
+    <h3 id="door" class="en"></h3>
+    <p id="date" class="ja"></p>
     <h3 id="description"></h3>
   </aside>
 </body>

@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <title>電子音楽昔話「聞け！電子音楽の夜明けを！」</title>
+    <meta content="1948年～50年代全般の電子音楽を回顧" name="description">
+    <link rel="icon" href="../icon.png" type="image/png">
     <script src="../index.js"></script>
     <script>
         const thisDate = "4.3.2019 (Wen), START at 7:30pm-"
         const thisDatetime = "2019/04/03 19:30:00"
-        const thisTitle = "電子音楽昔話「聞け！電子音楽の夜明けを！」"
-        const thisDescription = "1948年～50年代全般の電子音楽を回顧"
         const thisDoor = "自由料金制 NAME YOUR PRICE"
-        const favicon = "../2019/pr/2019.png"
 
         document.addEventListener('readystatechange', event => {
             if (event.target.readyState === 'loading') {
                 // loading
             } else if (event.target.readyState === 'interactive') {
-                indexHead()
-            } else if (event.target.readyState === 'complete') {
                 indexBody()
             }
         });
