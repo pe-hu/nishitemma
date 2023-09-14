@@ -1,0 +1,158 @@
+#index {
+    background: #eee;
+    font-size: 95%;
+    display: grid;
+    padding: 2rem;
+    margin: 0;
+    min-height: 100vh;
+    page-break-before: always;
+}
+
+p.center {
+    padding: 0;
+    margin: 0;
+    line-height: 200%;
+}
+
+p.center i {
+    color: #fff;
+    font-size: 175%;
+}
+
+p.center small {
+    font-size: 75%;
+}
+
+#folder {
+    font-family: "MS Mincho", "SimSong", serif;
+    letter-spacing: 0.04rem;
+}
+
+#folder {
+    background-color: #fff;
+    border-radius: 1.5rem;
+    max-width: 1111px;
+    margin: 1.5rem auto;
+}
+
+#folder h3 {
+    font-size: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#folder h3 {
+    padding: 1.25rem;
+    margin: 0;
+}
+
+#folder details {
+    padding: 0.25rem;
+    margin: 0 1rem;
+}
+
+#folder summary {
+    cursor: pointer;
+    display: block;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+#folder summary::marker,
+#folder summary::-webkit-details-marker {
+    display: none;
+}
+
+#folder summary::before,
+#folder summary::after {
+    content: "";
+    position: absolute;
+    border-radius: 0.25rem;
+    background-color: #39a9d6;
+}
+
+#folder summary::before {
+    top: 0.1rem;
+    left: 0.1rem;
+    width: 1rem;
+    height: 1.7rem;
+    filter: brightness(0.75);
+}
+
+#folder summary::after {
+    top: 0.4rem;
+    left: 0.1rem;
+    width: 2rem;
+    height: 1.5rem;
+    transform-origin: bottom left;
+    transition: transform 0.25s;
+}
+
+#folder[close] summary::after {
+    transform: skew(0);
+}
+
+#folder[open] summary::after {
+    transform: skew(-12.5deg);
+}
+
+#folder summary b {
+    display: block;
+    font-size: 111%;
+    font-weight: 500;
+    line-height: 200%;
+    padding-left: 3rem;
+    width: 100%;
+}
+
+#folder summary ul {
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+#folder summary ul li {
+    padding: 0.25rem;
+    margin: 0;
+    list-style: none;
+    list-style-position: inside;
+    font-size: 95%;
+}
+
+#folder summary img {
+    display: block;
+    float: left;
+    margin: 0 0.5rem 0 0;
+    height: 2.5rem;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 750px) {
+    #index {
+        font-size: 90%;
+        padding: 1rem;
+    }
+}
+
+@media print {
+    #index {
+        font-size: 90%;
+        padding: 1rem;
+    }
+
+    p.center i {
+        font-size: 140%;
+    }
+    
+    p.center small {
+        font-size: 70%;
+    }
+
+    #folder {
+        width: 95%;
+    }
+}

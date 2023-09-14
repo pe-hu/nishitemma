@@ -5,6 +5,13 @@
 	--BetweenImg: 0px;
 }
 
+#slideshow,
+#loop_wrap,
+#loop_wrap img {
+	padding: 0;
+	margin: 0;
+}
+
 #slideshow {
 	width: 100%;
 	overflow: hidden;
@@ -37,10 +44,16 @@
 
 @media print {
 	:root {
-		--imgW: 35vw;
+		--imgW: calc(100% / 6);
 	}
 
-	#slideshow {
-		margin-top: 2.45rem;
+    #loop_wrap {
+        flex-flow: wrap;
+        animation: slideshow 0s linear infinite;
+    }
+
+	#loop_wrap img:nth-child(6),
+	#loop_wrap img:nth-child(n+20) {
+		display: none;
 	}
 }

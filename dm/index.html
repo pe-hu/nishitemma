@@ -4,92 +4,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width">
-  <link rel="icon" href="../2019/pr/2019.png">
-  <link rel="stylesheet" href="../menu.css" />
-  <link rel="stylesheet" href="../floor.css" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="are.css">
-  <link rel="stylesheet" type="text/css" href="rotate.css">
-  <link rel="stylesheet" type="text/css" href="slideshow.css">
-  <title>∧° ┐ | Digital Magazine 2019</title>
+  <title>This USB Card is The Digital Magazine</title>
+  <meta content="This USB Card is The Digital Magazine" property="og:title">
+  <meta content="これが、2019年9月に閉館した西天満のペフの全てです。" name="description">
+  <meta content="これが、2019年9月に閉館した西天満のペフの全てです。" property="og:description">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/jp/dm/" property="og:url">
+  <meta content="https://vg.pe.hu/jp/dm/index.png" property="og:image">
+  <meta content="https://vg.pe.hu/jp/dm/this.png" name="twitter:image:src">
+  <link rel="icon" href="../icon.png">
+  <script src="../index.js"></script>
+  <script>
+    let btnToggleclass = function () {
+      document.body.classList.toggle('open');
+    }
+
+    const thisDate = "5.30.2020"
+    const thisDatetime = "2020/05/30 11:00:00"
+    const thisDoor = "New Publication"
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexBody();
+        fetchHTML('../menu.html', '#menu');
+        fetchHTML('../floor.html', '#floor');
+        fetchHTML('credit.html', '#index');
+      } else if (event.target.readyState === 'complete') {
+        //
+      }
+    });
+  </script>
+  <link rel="stylesheet" href="../menu.css">
+  <link rel="stylesheet" href="../floor.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rotate.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="img/slideshow.css">
 </head>
 
 <body>
-  <div id="menu"></div>
-  <div id="floor"></div>
-  <article>
-    <section id="we">
+  <header id="menu"></header>
+  <main>
+    <article id="we">
       <h1>
-        <u>New Publication</u> by creative, community space
+        <u id="door"></u>
+        by creative, community space
         <span class="pehu">∧°┐</span>
       </h1>
-      <div id="usbcard" class="css-rotate">
-        <img class="css-back" src="this.png" width="100%">
-        <img class="css-front" src="index.png" width="100%">
-      </div>
-      <div class="buy">
+      <section>
         <h2>
           This <i>USB Card</i> is<br />
           The <i>Digital Magazine</i>
         </h2>
-        <p>¥3,500<br />Release on 5.30.2020</p>
-        <h3>
-          <a href="#preview" onclick="obj=document.getElementById('preview').style; obj.display=(obj.display=='none')?'block':'none';">Preview</a>
-        </h3>
-      </div>
-      <hr />
-      <h3>これが、2019年9月に閉館した西天満のペフの全てです。</h3>
-    </section>
-    <video id="preview" style="display:none;" src="pr/sample.mov" loop muted autoplay playsinline></video>
-
-    <section id="slideshow">
-      <div id="loop_wrap"></div>
-      <script src="slideshow.js"></script>
-    </section>
-
-    <article id="are"></article>
-
-    <section id="future">
-      <h2>List of Participants</h2>
-      <h3>
-        Ana Martinez Fernandez | Ayami Konishi | Ayumi Akutagawa (abi) | BIOMAN | Dove (Pure Voyage) | Elliott
-        Cost | Emilio Algo | Ferran Pla | Fumio Kohama | Gaku Kurokawa | Hamaji (KK manga) | Haruka Numoto |
-        INDGMSK | Isshuumawattetsurai | Jean-Philippe Bretin | Josefina Valdés (Scent) | Joseph Torres | Kaori
-        Nakao | Kazutaka Tsutsui | Kazuma Sasajima | Laurel Schwulst | Le makeup (Pure Voyage) | Masami Baba |
-        Masamichi Furukawa | Mizuho Kuki | Moire | Nicholas Strobelt | Nobuto Okawahara | Ray Washio | Rina Cho
-        | Sammy Stein | seaketa | Séverine Bascouert | Stefan Alexander | Shintaro Matsuo | Shoji Funakawa |
-        thaithefish | Yuu Takamizawa (4649) | Vanessa Dziuba
-      </h3>
-      <h3><a href="#">BUY NOW</a></h3>
-      <div class="credit">
-        <span class="as">Editor In Chief</span> Kazuma Sasajima<br />
-        <span class="as">Designed by</span> Ayumi Akutagawa<br />
-        <span class="as">Translated by</span> Haruka Numoto<br />
-        <p>by creative, community space <span class="pehu">∧°┐</span></p>
-        <p>Grant by Chishima Foundation for Creative Osaka</p>
-      </div>
-    </section>
-  </article>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript">
-  $(function () {
-    $("#are").load("are.html");
-    $("#menu").load("../menu.html");
-    $("#floor").load("../floor.html");
-  })
-
-  $('a[href^="#"]').click(function () {
-    var speed = 500;　 //スクロールスピード
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({
-      scrollTop: position
-    }, speed, "swing");
-    return false;
-  });
-  </script>
+        <p>
+          ¥3,500<br />
+          Release on
+          <time id="date">5.30.2020</time>
+        </p>
+        <button type="button">Preview</button>
+        <p id="title" hidden></p>
+      </section>
+      <figure id="usbcard" class="css-rotate">
+        <img class="css-back" src="this.png">
+        <img class="css-front" src="index.png">
+      </figure>
+      <h3 class="red center" id="description"></h3>
+    </article>
+    <div id="slideshow">
+      <figure id="loop_wrap"></figure>
+      <script src="img/slideshow.js"></script>
+    </div>
+    <article id="index"></article>
+  </main>
+  <footer id="floor"></footer>
 </body>
 
 </html>

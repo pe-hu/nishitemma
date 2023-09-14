@@ -15,37 +15,40 @@
   <meta content="https://vg.pe.hu/jp/weare/" name="twitter:image:src">
   <link rel="icon" href="../icon.png" type="image/png">
   <script src="../index.js"></script>
-  <script src="../show/index.js"></script>
+  <script src="members.js"></script>
   <script>
+    let btnToggleclass = function (close) {
+      document.body.classList.toggle('open');
+    }
+
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'loading') {
         // loading
       } else if (event.target.readyState === 'interactive') {
-        indexJSON('index.json')
+        indexJSON('members.json');
+        fetchHTML('../menu.html', '#menu');
+        fetchHTML('../floor.html', '#floor');
+      } else if (event.target.readyState === 'complete') {
+        //
       }
     });
   </script>
   <link rel="stylesheet" href="../menu.css" />
   <link rel="stylesheet" href="../floor.css" />
   <link rel="stylesheet" href="style.css" />
+
 </html>
 
 <body id="box">
-  <header id="index"></header>
-  <main>
-    <nav id="org"></nav>
-    <ul id="contents"></ul>
+  <header id="menu"></header>
+  <main hidden>
+    <div>
+      <h1 id="weare">Alumni and Alumnae</h1>
+      <p id="description"></p>
+    </div>
+    <div id="members"></div>
   </main>
   <footer id="floor"></footer>
-
-  <script type="text/javascript">
-    fetchHTML('../menu.html', '#index');
-    fetchHTML('../floor.html', '#floor');
-
-    let btnToggleclass = function (close) {
-      document.body.classList.toggle('open');
-    }
-  </script>
 </body>
 
 </html>

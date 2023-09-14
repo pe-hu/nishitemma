@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+#backBtn {
+    display: none;
+}
+
+h1,
+#usbcard {
+    padding: 0;
+    margin: 0;
+}
+
+#we {
+    font-size: 100%;
+    padding: 2.5vw;
+}
+
+#we,
+#future h3 {
+    font-family: Arial, sans-serif;
+}
+
+i {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+.red {
+    color: red;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 200%;
+    line-height: 150%;
+}
+
+#we h2 {
+    font-size: 155%;
+}
+
+#we p {
+    font-size: 125%;
+}
+
+i {
+    font-size: 111%;
+    font-style: italic;
+    font-weight: 555;
+    padding-right: 0.25rem;
+}
+
+.center {
+    text-align: center;
+}
+
+#usbcard {
+    width: 65%;
+    height: 40vw;
+    max-width: 500px;
+    max-height: 333px;
+}
+
+#we section {
+    padding: 1.25rem;
+    float: right;
+}
+
+#we h3 {
+    clear: both;
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    #we h1 u::after {
+        content: "";
+        display: block;
+        clear: both;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 175%;
+    }
+
+    #we h2 {
+        font-size: 150%;
+    }
+
+    #we p {
+        font-size: 111%;
+    }
+}
+
+@page {
+    size: portrait;
+}
+
+@media print {
+    html {
+        font-size: 2vw;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #we {
+        padding: 2.5rem;
+        margin-bottom: 0.9rem;
+    }
+
+    #we h1 u::after {
+        content: "";
+        display: block;
+        clear: both;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 175%;
+    }
+
+    #we h2 {
+        font-size: 150%;
+    }
+
+    #we p {
+        font-size: 111%;
+    }
+}
