@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>GAFA</title>
+  <meta content="by Masamichi Furukawa" name="description">
+  <link rel="icon" href="../../../weare/img/fm.jpg" type="image/png">
+  <script src="../index.js"></script>
+  <script>
+    const thisDate = "2018.10.28(日) Start 15:00"
+    const thisDatetime = "2018/10/28 15:00:00"
+    const thisDoor = "自由料金制 Name Your Price"
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexBody()
+      }
+    });
+  </script>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Open+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    ol li {
+      list-style: none;
+    }
+
+    @media print {
+      #title {
+        position: absolute;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h1 id="title"></h1>
+    <ol id="book">
+      <li>
+        <time id="date" class="en"></time>
+        <h2 class="en">
+          Google<br>
+          Amazon<br>
+          Facebook<br>
+          Apple
+        </h2>
+        <nav id="credit">
+          <p id="door" class="ja"></p>
+          <h3 id="description"></h3>
+        </nav>
+      </li>
+      <li class="ja">
+        <u>導入</u>
+        <div>
+          <p>
+            今回はスコット・ギャロウェイ（世界最高のビジネススクール教授50人の一人。ニューヨーク大学スターン経営大学院教授であり、起業家、ニューヨーク・タイムズ取締役なども歴任）の著書『the four GAFA
+            四騎士が創り変えた世界』をもとにお話をしていきたいと思います。
+          </p>
+          <p>
+            本書では、Google、Amazon、Facebook、Apple（GAFA）の4つの企業を「ヨハネの黙示録」の四騎士になぞらえています。
+            四騎士とは、それぞれが「地上の四分の一の支配」そして「剣と飢饉と死・獣により、地上の人間を殺す権威」を与えられているとされるもので、その支配力についての本です。
+          </p>
+          <p>
+            また、この話は前回のOPNの『Age Of』で触れた貧富差が拡大して中産階級が崩壊し、共和党を支持せざるを得ない今の米国の人たちの話の続きでもあります。
+          </p>
+        </div>
+        <p>
+          GAFAにIT企業の老舗であるMicrosoftを加えた5社の株式時価総額は、4兆1579億ドル（約461兆円）にも達しています（2018年8月）。
+          日本の2017年の名目GDPが4兆8721億ドル（約541兆円）ですので、この5社だけで世界第3位の経済大国である日本の85％の経済規模で、第4位のドイツをも上回っています。圧倒的規模感です。
+          ここまで世界の経済構造を変えてしまったGAFAとは何か？そして、その後待ち受ける世界とは？では、はじめてみたいと思います。
+        </p>
+      </li>
+      <li class="ja">
+        <u></u>
+        <p>
+          <img src="000.png" alt="GAFA">
+          <img src="001.png" alt="Google Amazon Facebook Apple">
+        </p>
+        <h3 class="noprint">
+          <a href="GAFA.pdf" class="en">GAFA.pdf</a>
+        </h3>
+      </li>
+      <li id="print">
+        <p>
+          <a href="GAFA.pdf" class="en">GAFA.pdf</a>
+        </p>
+        <h3 class="en"></h3>
+        <script>
+          document.querySelector('#print h3').textContent = location.href
+        </script>
+      </li>
+    </ol>
+  </article>
+</body>
+
+</html>
