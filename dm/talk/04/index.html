@@ -195,9 +195,12 @@
           <u>2018年のイベントBEST</u><br/>
           <a href="2018Best.pdf" class="en">2018Best.pdf</a>
         </p>
-        <h3 class="en"></h3>
+        <h3 class="en">
+          <a class="en"></a>
+        </h3>
         <script>
-          document.querySelector('#print h3').textContent = location.href
+          document.querySelector('#print h3 a').textContent = location.href
+          document.querySelector('#print h3 a').href = location.href
         </script>
       </li>
     </ol>

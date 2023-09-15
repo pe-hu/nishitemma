@@ -273,9 +273,12 @@
           <u>中国AIアナウンサーから考える今後の世界</u><br/>
           <a href="extra.pdf" class="en">extra.pdf</a>
         </p>
-        <h3 class="en"></h3>
+        <h3 class="en">
+          <a class="en"></a>
+        </h3>
         <script>
-          document.querySelector('#print h3').textContent = location.href
+          document.querySelector('#print h3 a').textContent = location.href
+          document.querySelector('#print h3 a').href = location.href
         </script>
       </li>
     </ol>
