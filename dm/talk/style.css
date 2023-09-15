@@ -146,16 +146,25 @@ ol li {
     width: 100%;
 }
 
-ol li#print {
+#print {
+    display: grid;
+    height: 100%;
+}
+
+ol li#print h3 {
     display: none;
 }
 
 ol li#print h3::before {
     content: 'Printed on';
-    display: block;
+    display: none;
     font-size: 75%;
-
 }
+
+ol li#print #cart {
+    place-self: center;
+}
+
 ol li#print h3 {
     place-self: end start;
 }
@@ -249,17 +258,20 @@ ol li iframe {
         font-size: 3.5vw;
     }
 
+    .noprint,
     #cover,
-    iframe {
+    iframe,
+    ol li#print #cart {
         display: none;
+    }
+
+    ol li#print h3,
+    ol li#print h3::before {
+        display: block;
     }
 
     #footer {
         position: fixed;
-    }
-
-    ol li#print {
-        display: grid;
     }
 
     ol li,
@@ -277,9 +289,5 @@ ol li iframe {
     
     ol li:nth-child(2n) u {
         text-align: left;
-    }
-
-    .noprint {
-        display: none;
     }
 }
