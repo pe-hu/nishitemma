@@ -13,6 +13,11 @@ ol {
     margin: 0;
 }
 
+a {
+    background-color: #000;
+    color: #fff;
+}
+
 h1,
 aside h3,
 aside p {
