@@ -1,51 +1,12 @@
 {
-    "org": [
-      {
-        "id": "community",
-        "name": "COMMUNITY EVENT"
-      },
-      {
-        "id": "live",
-        "name": "LIVE/PERFORMANCE"
-      },
-      {
-        "id": "talk",
-        "name": "TALK/DISCUSSION"
-      },
-      {
-        "id": "show",
-        "name": "EXHIBITION"
-      },
-      {
-        "id": "shop",
-        "name": "POP UP SHOP"
-      },
-      {
-        "id": "workshop",
-        "name": "WORKSHOP"
-      },
-      {
-        "id": "residency",
-        "name": "RESIDENCY"
-      },
-      {
-        "id": "members",
-        "name": "MEMBERS ONLY"
-      },
-      {
-        "id": "all",
-        "name": "VIEW ALL"
-      }
-    ],
-  
     "contents": [
       {
         "org": "show",
         "date": "9.1-9.16.2019",
         "name": "A+A- AA CC K2 X W",
         "description": "at BnA Alter Museum",
-        "link": "block",
-        "href": "/jp/show/aaacck2xw/"
+        "link": "none",
+        "href": "#"
       },
       {
         "org": "community",
@@ -717,7 +678,7 @@
         "name": "SIGN",
         "description": "Grand Opening Party",
         "link": "block",
-        "href": "/jp/show/sign/"
+        "href": "/2f/sign.html"
       },
       {
         "org": "talk",

@@ -9,10 +9,12 @@
   <meta content="∧° ┐ | creative, community space" property="og:title">
   <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." name="description">
   <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." property="og:description">
+
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://vg.pe.hu/jp/" property="og:url">
   <meta content="https://vg.pe.hu/jp/2019/nishitemma.png" property="og:image">
   <meta content="https://vg.pe.hu/jp/2019/nishitemma.png" name="twitter:image:src">
+
   <link rel="icon" href="icon.png" type="image/png">
   <script src="index.js"></script>
   <script src="show/index.js"></script>
@@ -28,31 +30,6 @@
         indexBody()
         indexJSON('show/index.json')
       } else if (event.target.readyState === 'complete') {
-        let filterAll = document.querySelectorAll('#org label')
-        let targetAll = document.querySelectorAll("#contents li")
-        
-        filterAll.forEach(filterEach => {
-          filterEach.addEventListener('click', () => {
-            let value = filterEach.getAttribute('for')
-            
-            targetAll.forEach(targetEach => {
-              targetEach.style.display = "none"
-              targetEach.hidden = true
-              let thisData = targetEach.getAttribute('class')
-              if (value == 'all') {
-                targetEach.style.display = "block"
-                targetEach.hidden = false
-              } else  {
-                let thisAll = document.querySelectorAll(`#contents .${value}`)
-                thisAll.forEach(thisEach => {
-                  thisEach.style.display = "block"
-                  thisEach.hidden = false
-                }, false);
-              }
-            });
-          }, false);
-        });
-
         fetchHTML('floor.html', '#floor')
       }
     });
@@ -84,7 +61,28 @@
     </h1>
     <hr />
     <h2 id="door"></h2>
-    <nav id="org"></nav>
+
+    <nav id="org">
+      <input type="radio" name="org" id="community" value="community">
+      <label for="community" class="community">COMMUNITY EVENT</label>
+      <input type="radio" name="org" id="live" value="live">
+      <label for="live" class="live">LIVE/PERFORMANCE</label>
+      <input type="radio" name="org" id="talk" value="talk">
+      <label for="talk" class="talk">TALK/DISCUSSION</label>
+      <input type="radio" name="org" id="show" value="show">
+      <label for="show" class="show">EXHIBITION</label>
+      <input type="radio" name="org" id="shop" value="shop">
+      <label for="shop" class="shop">POP UP SHOP</label>
+      <input type="radio" name="org" id="workshop" value="workshop">
+      <label for="workshop" class="workshop">WORKSHOP</label>
+      <input type="radio" name="org" id="residency" value="residency">
+      <label for="residency" class="residency">RESIDENCY</label>
+      <input type="radio" name="org" id="members" value="members">
+      <label for="members" class="members">MEMBERS ONLY</label>
+      <input type="radio" name="org" id="all" value="all" checked>
+      <label for="all" class="all">VIEW ALL</label>
+    </nav>
+
     <ul id="contents"></ul>
   </main>
   <footer id="floor"></footer>

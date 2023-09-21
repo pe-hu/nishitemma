@@ -5,29 +5,7 @@ async function indexJSON(requestURL) {
   const response = await fetch(request);
   const jsonIndex = await response.text();
   const index = JSON.parse(jsonIndex);
-  indexORG(index);
   indexItems(index);
-}
-
-function indexORG(obj) {
-  const navORG = document.querySelector('#org');
-  const orgAll = obj.org;
-
-  for (const orgEach of orgAll) {
-    const inputORG = document.createElement('input');
-    const labelORG = document.createElement('label');
-
-    inputORG.setAttribute("type", "radio");
-    inputORG.setAttribute("name", "org");
-    inputORG.id = orgEach.id;
-    inputORG.value = orgEach.id;
-    labelORG.setAttribute("for", orgEach.id);
-    labelORG.classList.add(orgEach.id);
-    labelORG.innerHTML = orgEach.name;
-
-    navORG.appendChild(inputORG);
-    navORG.appendChild(labelORG);
-  }
 }
 
 function indexItems(obj) {
@@ -46,3 +24,30 @@ function indexItems(obj) {
     contents.appendChild(contentsLi);
   }
 }
+
+window.addEventListener("load", () => {
+  let filterAll = document.querySelectorAll('#org input[type="radio"]')
+  let targetAll = document.querySelectorAll("#contents li")
+
+  filterAll.forEach(filterEach => {
+    filterEach.addEventListener('change', () => {
+      let value = filterEach.value
+
+      targetAll.forEach(targetEach => {
+        targetEach.style.display = "none"
+        targetEach.hidden = true
+        let thisData = targetEach.getAttribute('class')
+        if (value == 'all') {
+          targetEach.style.display = "block"
+          targetEach.hidden = false
+        } else {
+          let thisAll = document.querySelectorAll(`#contents .${value}`)
+          thisAll.forEach(thisEach => {
+            thisEach.style.display = "block"
+            thisEach.hidden = false
+          }, false);
+        }
+      });
+    }, false);
+  });
+});
