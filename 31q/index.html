@@ -25,11 +25,47 @@
             if (event.target.readyState === 'loading') {
                 // loading
             } else if (event.target.readyState === 'interactive') {
-                indexBody()
-            } else if (event.target.readyState === 'complete') {
                 fetchHTML('../menu.html', '#menu');
                 fetchHTML('../floor.html', '#floor');
                 fetchHTML('contents.html', '#index');
+            } else if (event.target.readyState === 'complete') {
+                document.addEventListener('click', () => {
+                    document.querySelector('main ul').style.opacity = 1
+                });
+
+                (function () {
+                    const sec = 31;
+                    const events = ['keydown', 'mousemove', 'scroll', 'wheel', 'click'];
+                    const screensaver = document.querySelector('#screensaver')
+                    let timeoutId;
+
+                    // タイマー設定
+                    function setTimer() {
+                        timeoutId = setTimeout(start, sec * 1000);
+                    }
+                    
+                    function reset() {
+                        clearTimeout(timeoutId);
+                        setTimer();
+                        screensaver.style.opacity = 0
+                    }
+
+                    // イベント設定
+                    function setEvents(func) {
+                        let len = events.length;
+                        while (len--) {
+                            addEventListener(events[len], func, false);
+                        }
+                    }
+
+                    // ログアウト
+                    function start() {
+                        screensaver.style.opacity = 1
+                    }
+
+                    setTimer();
+                    setEvents(reset);
+                })();
             }
         });
     </script>
@@ -37,18 +73,24 @@
     <link rel="stylesheet" href="../floor.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contents.css" />
+    <link rel="stylesheet" href="pr/style.css" />
 </head>
 
 <body>
     <header id="menu"></header>
-    <main hidden>
-        <p id="img">
-            <script src="img/daily.js"></script>
-        </p>
-    </main>
     <main>
+        <div id="screensaver">
+            <p id="cover"></p>
+        </div>
+        <script src="img/daily.js"></script>
         <ul>
+            <li id="book"></li>
             <li id="index"></li>
+            <li id="one"></li>
+            <li id="ten"></li>
+            <li id="seventeen"></li>
+            <li id="twenty"></li>
+            <li id="back"></li>
         </ul>
     </main>
     <footer id="floor"></footer>

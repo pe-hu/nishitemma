@@ -3,5 +3,5 @@ daily();
 function daily() {
     mydate = new Date();
     num = mydate.getDate();
-    document.write('<img src="img/' + num + '.jpg">');
+    document.querySelector('#cover').style.backgroundImage = 'url(img/' + num + '.jpg)';
 }

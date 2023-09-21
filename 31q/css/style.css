@@ -16,59 +16,81 @@ main ul {
 
 main {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     height: 100vh;
     max-height: -webkit-fill-available;
 }
 
-main ul {
-    display: flex;
-    flex-flow: column;
+#screensaver {
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    transition: 1s;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
 }
 
-main ul li {
-    list-style: none inside;
+main,
+#screensaver {
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-#img,
-#index {
-    display: grid;
-    place-items: center;
-}
-
-#img {
+main ul,
+#screensaver {
     width: 100%;
     height: 100%;
 }
 
-#img img {
-    width: 80%;
-    max-width: 550px;
+main ul {
+    background: #fff;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
 }
 
-#screensaver img {
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
+main ul li,
+#cover {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main ul li {
+    background-size: 75%;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    list-style: none inside;
+    scroll-snap-align: center;
     width: 75%;
-    max-width: 500px;
-    max-height: 90%;
-    user-select: none;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    max-width: 750px;
+    height: 100%;
 }
 
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 750px;
-    max-height: 100%;
+#index,
+#screensaver {
+    display: grid;
+    place-items: center;
+}
+
+#cover {
+    background-size: contain;
+    width: 75%;
+    max-width: 550px;
+    height: 75%;
+    max-height: 250px;
+}
+
+@media (orientation: portrait) {
+    main ul {
+        flex-flow: column;
+        scroll-snap-type: y proximity;
+    }
+
+    main ul li {
+        width: 100%;
+        max-width: 100%;
+        height: 70vw;
+    }
 }
