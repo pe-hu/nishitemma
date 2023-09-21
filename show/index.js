@@ -36,7 +36,6 @@ window.addEventListener("load", () => {
       targetAll.forEach(targetEach => {
         targetEach.style.display = "none"
         targetEach.hidden = true
-        let thisData = targetEach.getAttribute('class')
         if (value == 'all') {
           targetEach.style.display = "block"
           targetEach.hidden = false
