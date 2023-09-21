@@ -15,6 +15,7 @@ function indexItems(obj) {
   for (const content of contentsAll) {
     const contentsLi = document.createElement('li');
     contentsLi.setAttribute("class", content.org);
+    contentsLi.setAttribute("data-org", content.org);
     contentsLi.innerHTML = `
         <time>${content.date}</time>
         <h3>${content.name}</h3>
@@ -26,26 +27,3 @@ function indexItems(obj) {
 }
 
 indexJSON('show/index.json')
-
-window.addEventListener("load", () => {
-  let filter = document.querySelectorAll('#org input[type="radio"]')
-  let target = document.querySelectorAll("#contents li")
-
-  filter.forEach(i => {
-    i.addEventListener('change', () => {
-      let value = i.value
-
-      target.forEach(ii => {
-        ii.hidden = true
-        if (value == 'all') {
-          ii.hidden = false
-        } else {
-          let thisAll = document.querySelectorAll(`#contents li.${value}`)
-          thisAll.forEach(iii => {
-            iii.hidden = false
-          }, false)
-        }
-      })
-    }, false)
-  })
-})
