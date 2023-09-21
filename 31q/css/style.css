@@ -66,6 +66,7 @@ main ul li {
     width: 75%;
     max-width: 750px;
     height: 100%;
+    overflow: auto;
 }
 
 #index,
