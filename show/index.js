@@ -25,28 +25,27 @@ function indexItems(obj) {
   }
 }
 
+indexJSON('show/index.json')
+
 window.addEventListener("load", () => {
-  let filterAll = document.querySelectorAll('#org input[type="radio"]')
-  let targetAll = document.querySelectorAll("#contents li")
+  let filter = document.querySelectorAll('#org input[type="radio"]')
+  let target = document.querySelectorAll("#contents li")
 
-  filterAll.forEach(filterEach => {
-    filterEach.addEventListener('change', () => {
-      let value = filterEach.value
+  filter.forEach(i => {
+    i.addEventListener('change', () => {
+      let value = i.value
 
-      targetAll.forEach(targetEach => {
-        targetEach.style.display = "none"
-        targetEach.hidden = true
+      target.forEach(ii => {
+        ii.hidden = true
         if (value == 'all') {
-          targetEach.style.display = "block"
-          targetEach.hidden = false
+          ii.hidden = false
         } else {
-          let thisAll = document.querySelectorAll(`#contents .${value}`)
-          thisAll.forEach(thisEach => {
-            thisEach.style.display = "block"
-            thisEach.hidden = false
-          }, false);
+          let thisAll = document.querySelectorAll(`#contents li.${value}`)
+          thisAll.forEach(iii => {
+            iii.hidden = false
+          }, false)
         }
-      });
-    }, false);
-  });
-});
+      })
+    }, false)
+  })
+})

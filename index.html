@@ -28,7 +28,6 @@
         // loading
       } else if (event.target.readyState === 'interactive') {
         indexBody()
-        indexJSON('show/index.json')
       } else if (event.target.readyState === 'complete') {
         fetchHTML('floor.html', '#floor')
       }
@@ -37,7 +36,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="floor.css" />
   <link rel="stylesheet" href="show/style.css" />
-  <link rel="stylesheet" href="members/style.css" />
 </head>
 
 <body id="box">
