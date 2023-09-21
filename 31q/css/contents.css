@@ -1,0 +1,45 @@
+html {
+    font-size: 16px;
+}
+
+@font-face {
+  font-family: "Times Dot";
+  src: url("https://vg.pe.hu/fonts/family/times-dot/TimesDotRom.otf"),
+    url("https://vg.pe.hu/fonts/family/times-dot/TimesDotBol.otf"),
+    url("https://vg.pe.hu/fonts/family/times-dot/TimesDot-Italic.otf");
+}
+
+#contents {
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    font-family: 'Times Dot', 'Times New Roman', Times, serif;
+    padding: 2rem 5.5rem;
+    width: 750px;
+}
+
+#contents .title .name {
+    font-size: 125%;
+    padding-right: 17.5%;
+}
+
+#contents span {
+    display: inline-block;
+}
+
+#contents .by {
+    width: 5%;
+    padding-right: 3.5%;
+}
+
+#contents .as {
+    width: 17.5%;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 750px) {
+    #contents {
+        font-size: 2.5vw;
+        width: 100%;
+        padding: 5% 12.5%;
+    }
+}

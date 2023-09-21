@@ -2,56 +2,56 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>31 Questions for daily life</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="contents.css" />
-    <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="../menu.css" />
-    <link rel="stylesheet" href="../floor.css" />
-    <link rel="stylesheet" href="../scrollable.css" />
-    <link rel="stylesheet" href="../screensaver.css" />
-    <link rel="icon" href="../dm/img/ichoose.png" />
+    <meta content="31 Questions for daily life" property="og:title">
+    <meta content="First Edition | March 29th 2020 | 100 copies" name="description">
+    <meta content="First Edition | March 29th 2020 | 100 copies" property="og:description">
+
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://vg.pe.hu/jp/31q/" property="og:url">
+    <meta content="https://vg.pe.hu/jp/31q/pr/000.jpg" property="og:image">
+    <meta content="https://vg.pe.hu/jp/31q/pr/000.jpg" name="twitter:image:src">
+
+    <link rel="icon" href="../icon.png" type="image/png">
+    <script src="../index.js"></script>
+    <script type="text/javascript">
+        let btnToggleclass = function () {
+            document.body.classList.toggle('open');
+        }
+        document.addEventListener('readystatechange', event => {
+            if (event.target.readyState === 'loading') {
+                // loading
+            } else if (event.target.readyState === 'interactive') {
+                indexBody()
+            } else if (event.target.readyState === 'complete') {
+                fetchHTML('../menu.html', '#menu');
+                fetchHTML('../floor.html', '#floor');
+                fetchHTML('contents.html', '#index');
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="../floor.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contents.css" />
 </head>
 
-<body id="box">
-    <div id="menu"></div>
-    <div id="floor"></div>
-
-    <div id="screensaver" class="screensaver">
-        <script src="daily.js"></script>
-    </div>
-
+<body>
+    <header id="menu"></header>
+    <main hidden>
+        <p id="img">
+            <script src="img/daily.js"></script>
+        </p>
+    </main>
     <main>
-        <ul class="mousedragscrollable library">
-            <li class="cover"></li>
-            <li id="credit"></li>
-            <li class="a"></li>
-            <li class="b"></li>
-            <li class="c"></li>
-            <li class="d"></li>
-            <li class="back"></li>
-            <li class="end buy">
-                <a href="https://ichoose.pe.hu/" target="_blank">ichoose.pe.hu</a>
-            </li>
+        <ul>
+            <li id="index"></li>
         </ul>
     </main>
-
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="../scrollable.js"></script>
-    <script src="../screensaver.js"></script>
-    <script>
-        $(function () {
-            $("#menu").load("../menu.html");
-            $("#floor").load("../floor.html");
-            $("#credit").load("contents.html");
-        })
-
-        $(".mousedragscrollable").mousedragscrollable();
-    </script>
-
+    <footer id="floor"></footer>
 </body>
 
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>31 Questions for daily life</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contents.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../menu.css" />
+    <link rel="stylesheet" href="../floor.css" />
+    <link rel="stylesheet" href="../scrollable.css" />
+    <link rel="stylesheet" href="../screensaver.css" />
+    <link rel="icon" href="../dm/img/ichoose.png" />
+</head>
+
+<body id="box">
+    <div id="menu"></div>
+    <div id="floor"></div>
+
+    <div id="screensaver" class="screensaver">
+        <script src="daily.js"></script>
+    </div>
+
+    <main>
+        <ul class="mousedragscrollable library">
+            <li class="cover"></li>
+            <li id="credit"></li>
+            <li class="a"></li>
+            <li class="b"></li>
+            <li class="c"></li>
+            <li class="d"></li>
+            <li class="back"></li>
+            <li class="end buy">
+                <a href="https://ichoose.pe.hu/" target="_blank">ichoose.pe.hu</a>
+            </li>
+        </ul>
+    </main>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../scrollable.js"></script>
+    <script src="../screensaver.js"></script>
+    <script>
+        $(function () {
+            $("#menu").load("../menu.html");
+            $("#floor").load("../floor.html");
+            $("#credit").load("contents.html");
+        })
+
+        $(".mousedragscrollable").mousedragscrollable();
+    </script>
+
+</body>
+
+</html>
