@@ -63,7 +63,7 @@ main ul li {
     flex: 0 0 auto;
     list-style: none inside;
     scroll-snap-align: center;
-    width: 75%;
+    width: 90%;
     max-width: 750px;
     height: 100%;
     overflow: auto;
