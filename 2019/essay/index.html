@@ -35,6 +35,9 @@
             <b>エッセイ集</b>
             <b>わかば</b>
         </h1>
+        <div id="screensaver">
+            <p id="cover"></p>
+        </div>
         <ul>
             <li id="d"></li>
             <li>
@@ -115,10 +118,10 @@
             </li>
             <li id="b"></li>
             <li id="c"></li>
-            <li>
-                <p>
-                    <b class="by">Distribute</b>
-                </p>
+            <li class="full">
+                <h2>
+                    <b>Distribute</b>
+                </h2>
                 <p class="links">
                     <a href="https://bnaaltermuseum.com/" target="_blank">BnA Alter Museum</a>
                     <a href="https://aohatabooks.com/" target="_blank">本屋青旗</a>
@@ -126,27 +129,9 @@
                 </p>
                 <p class="wakaba"><u></u></p>
             </li>
-            <li id="h"></li>
         </ul>
     </main>
-    <script>
-        const backBtn = document.createElement('button');
-        backBtn.id = "backBtn"
-        backBtn.className = "noprint"
-        backBtn.textContent = "↵"
-        backBtn.type = "button"
-        backBtn.style.position = "fixed"
-        backBtn.style.bottom = "0.5rem"
-        backBtn.style.right = "0.5rem"
-        backBtn.style.fontSize = "200%"
-        backBtn.style.width = "2.5rem"
-        backBtn.style.height = "2.5rem"
-        document.body.appendChild(backBtn);
-
-        backBtn.addEventListener('click', function () {
-            history.back(-1);
-        });
-    </script>
+    <script src="../screensaver.js"></script>
 </body>
 
 </html>
