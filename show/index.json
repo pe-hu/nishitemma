@@ -14,7 +14,7 @@
         "name": "贈り物を送る",
         "description": "お世話になった人や、大切な人に贈り物を送る。連絡できてない人に連絡する。",
         "link": "none",
-        "href": "/jp/weare/"
+        "href": "#"
       },
       {
         "org": "members",
@@ -22,7 +22,7 @@
         "name": "We will eat dinner at the rooftop",
         "description": "",
         "link": "none",
-        "href": "/jp/weare/"
+        "href": "#"
       },
       {
         "org": "talk",
@@ -30,7 +30,7 @@
         "name": "あっちに聞きたい50のこと",
         "description": "喫茶スタッフ・イラスト担当、あっちに質問をします。",
         "link": "block",
-        "href": "/jp/weare/"
+        "href": "/jp/dm/"
       },
       {
         "org": "shop",
@@ -206,7 +206,7 @@
         "name": "あくちゃんに聞きたい50のこと",
         "description": "abiのオーナー、sarakona at lastに質問をします。",
         "link": "block",
-        "href": "/jp/weare/"
+        "href": "/jp/dm/"
       },
       {
         "org": "show",
@@ -302,7 +302,7 @@
         "name": "ふなに聞きたい50のこと",
         "description": "ペフのクリエイティブメンバー船川翔司さんに質問をします。",
         "link": "block",
-        "href": "/jp/weare/"
+        "href": "/jp/dm/"
       },
       {
         "org": "shop",
@@ -374,7 +374,7 @@
         "name": "れんれんに聞きたい50のこと",
         "description": "ペフ喫茶の料理長 れんれん に質問をします。",
         "link": "block",
-        "href": "/jp/weare/"
+        "href": "/jp/dm/"
       },
       {
         "org": "members",
@@ -526,7 +526,7 @@
         "name": "かおちょに聞きたい50のこと",
         "description": "ペフのメンバーのことをもっと知る会",
         "link": "block",
-        "href": "/jp/weare/"
+        "href": "/jp/dm/"
       },
       {
         "org": "community",
@@ -814,7 +814,7 @@
         "name": "バスケしよう",
         "description": "会場：八幡屋公園多目的広場",
         "link": "none",
-        "href": "/jp/weare/"
+        "href": "#"
       },
       {
         "org": "talk",
@@ -829,8 +829,8 @@
         "date": "9.22-24.2018",
         "name": "壁を壊す",
         "description": "I became an instrument.",
-        "link": "block",
-        "href": "/up/img/break-the-wall/"
+        "link": "none",
+        "href": "#"
       },
       {
         "org": "community",
@@ -838,7 +838,7 @@
         "name": "バスケしよう",
         "description": "会場：八幡屋公園多目的広場",
         "link": "none",
-        "href": "/jp/weare/"
+        "href": "#"
       },
       {
         "org": "members",
@@ -846,7 +846,7 @@
         "name": "平成最後のナス",
         "description": "Dinner at the rooftop",
         "link": "none",
-        "href": "/jp/weare/"
+        "href": "#"
       },
       {
         "org": "members",
@@ -949,8 +949,8 @@
         "date": "3.5.2018 (Mon)",
         "name": "haiku",
         "description": "The theme is Today",
-        "link": "block",
-        "href": "/up/reading/haiku/"
+        "link": "none",
+        "href": "#"
       },
       {
         "org": "show",
