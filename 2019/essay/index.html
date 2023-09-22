@@ -35,15 +35,6 @@
             <b>エッセイ集</b>
             <b>わかば</b>
         </h1>
-        <h2 id="bottom">
-            <b>17 Essay</b>
-            <b>5 Aha</b>
-        </h2>
-        <div id="screensaver">
-            <p id="cover" class="wakaba">
-                <u></u>
-            </p>
-        </div>
         <ul>
             <li id="d"></li>
             <li>
@@ -124,20 +115,38 @@
             </li>
             <li id="b"></li>
             <li id="c"></li>
-            <li id="a">
+            <li>
                 <p>
                     <b class="by">Distribute</b>
                 </p>
-                <p>
+                <p class="links">
                     <a href="https://bnaaltermuseum.com/" target="_blank">BnA Alter Museum</a>
                     <a href="https://aohatabooks.com/" target="_blank">本屋青旗</a>
                     <a href="https://dottodot.today/" target="_blank">dot to dot today</a>
                 </p>
+                <p class="wakaba"><u></u></p>
             </li>
             <li id="h"></li>
         </ul>
     </main>
-    <script src="../screensaver.js"></script>
+    <script>
+        const backBtn = document.createElement('button');
+        backBtn.id = "backBtn"
+        backBtn.className = "noprint"
+        backBtn.textContent = "↵"
+        backBtn.type = "button"
+        backBtn.style.position = "fixed"
+        backBtn.style.bottom = "0.5rem"
+        backBtn.style.right = "0.5rem"
+        backBtn.style.fontSize = "200%"
+        backBtn.style.width = "2.5rem"
+        backBtn.style.height = "2.5rem"
+        document.body.appendChild(backBtn);
+
+        backBtn.addEventListener('click', function () {
+            history.back(-1);
+        });
+    </script>
 </body>
 
 </html>

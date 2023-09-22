@@ -6,8 +6,7 @@ main {
     box-sizing: border-box;
 }
 
-#top,
-#bottom {
+#top {
     font-size: 100%;
     font-weight: 500;
 }
@@ -26,7 +25,6 @@ ul li p span,
     letter-spacing: 0.25rem;
 }
 
-#bottom,
 ul li p b {
     letter-spacing: 0.05rem;
 }
@@ -35,8 +33,7 @@ ul li p a {
     text-decoration: none;
 }
 
-#top,
-#bottom {
+#top {
     padding: 0.5rem;
     margin: 0.5rem;
 }
@@ -53,7 +50,6 @@ main ul li,
 }
 
 #top,
-#bottom,
 .flex {
     display: flex;
     justify-content: space-between;
@@ -70,8 +66,7 @@ main ul li,
     border-radius: 50%;
 }
 
-#top,
-#bottom {
+#top {
     position: fixed;
     left: 0;
     right: 0;
@@ -80,10 +75,6 @@ main ul li,
 
 #top {
     top: 0;
-}
-
-#bottom {
-    bottom: 0;
 }
 
 .symbol,
@@ -119,10 +110,9 @@ ul li p b {
     margin-right: 1rem;
 }
 
-.library::-webkit-scrollbar-thumb,
-.library li::-webkit-scrollbar-thumb {
-    background: #43B149;
-    border-radius: 10vh;
+.links {
+    position: relative;
+    z-index: 2;
 }
 
 .hal .edition,

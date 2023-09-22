@@ -38,6 +38,7 @@ main ul {
 }
 
 main ul li {
+    position: relative;
     box-sizing: border-box;
     flex: 0 0 auto;
     list-style: none inside;
@@ -99,4 +100,12 @@ main ul li {
     max-width: 550px;
     height: 75%;
     max-height: 400px;
+}
+
+#backBtn {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: #000;
+    opacity: none;
 }
