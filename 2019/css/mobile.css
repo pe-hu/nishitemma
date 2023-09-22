@@ -36,7 +36,7 @@ h1#title {
   height: 100%;
 }
 
-#sp,
+#box,
 #buynow {
   margin: 0 auto;
 }
@@ -50,22 +50,20 @@ h1#title {
   height: 50vw;
 }
 
-@media screen and (max-width: 550px) {
-  #sp,
-  #buynow {
-    font-size: 3vw;
-  }
+#box,
+#buynow {
+  font-size: 3vw;
+}
 
-  #contents details iframe {
-    height: 45vw;
-  }
+#contents details iframe {
+  height: 45vw;
+}
 
-  #contents details h3 {
-    padding: 20vw 5vw;
-    font-size: 4vw;
-  }
+#contents details h3 {
+  padding: 20vw 5vw;
+  font-size: 4vw;
+}
 
-  h1#title {
-    font-size: 4.5vw;
-  }
+h1#title {
+  font-size: 4.5vw;
 }

@@ -1,0 +1,78 @@
+.wakaba::before,
+.wakaba::after {
+    content: '';
+    background: #43B149;
+    width: 50%;
+    height: 50%;
+    border-radius: 10rem;
+}
+
+.wakaba::before,
+.wakaba::after,
+.wakaba u {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.wakaba::before {
+    animation: 50s infinite alternate wakabaL;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.wakaba::after {
+    animation: 50s infinite alternate wakabaR;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.wakaba u {
+    display: block;
+    animation: 50s infinite alternate wakaba;
+    z-index: 0;
+}
+
+@-webkit-keyframes wakabaL {
+    from {
+        width: 50%;
+        height: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        width: 35%;
+        height: 30%;
+        transform: translate(-100%, -50%);
+    }
+}
+
+@-webkit-keyframes wakabaR {
+    from {
+        width: 50%;
+        height: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        width: 35%;
+        height: 30%;
+        transform: translate(-0%, -50%);
+    }
+}
+
+@-webkit-keyframes wakaba {
+    from {
+        background: linear-gradient(#000, #000);
+        transform: translate(50%, 50%) skewX(-55deg);
+        width: 15%;
+        height: 15%;
+    }
+
+    to {
+        background: linear-gradient(#43B149 75%, transparent);
+        transform: translate(-50%, -5%);
+        width: 1.5%;
+        height: 20%;
+    }
+}

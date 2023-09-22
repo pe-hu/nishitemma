@@ -2,10 +2,9 @@
 
 #buynow {
   font-family: "YuGothic", "Yu Gothic", "游ゴシック体", sans-serif;
-  font-size: 0.75rem;
-  margin: 2.5rem auto 2.5rem 1rem;
-  width: 75%;
-  max-width: 250px;
+  font-size: 75%;
+  margin: 2.5rem auto 1rem;
+  width: 90%;
 }
 
 #buynow h2 {
@@ -27,7 +26,7 @@
 }
 
 #buynow iframe {
-  height: 150px;
+  height: 20vw;
 }
 
 #buynow details summary {

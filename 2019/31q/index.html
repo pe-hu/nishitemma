@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../../index.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('readystatechange', event => {
+            if (event.target.readyState === 'loading') {
+                // loading
+            } else if (event.target.readyState === 'interactive') {
+                fetchHTML('contents.html', '#index');
+            } else if (event.target.readyState === 'complete') {
+                ///
+            }
+        });
+    </script>
+
+    <!--og:meta-->
+    <meta content="product" property="og:type">
+    <title>31 Questions for daily life</title>
+    <meta content="31 Questions for daily life" property="og:title">
+    <meta content="First Edition | March 29th 2020 | 100 copies" name="description">
+    <meta content="First Edition | March 29th 2020 | 100 copies" property="og:description">
+
+    <!--for Twitter-->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://vg.pe.hu/jp/2019/31q/" property="og:url">
+    <meta content="https://vg.pe.hu/jp/2019/31q/pr/000.jpg" property="og:image">
+    <meta content="https://vg.pe.hu/jp/2019/31q/pr/000.jpg" name="twitter:image:src">
+
+    <link rel="icon" href="../icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/publication.css" />
+    <link rel="stylesheet" href="css/contents.css" />
+    <link rel="stylesheet" href="pr/style.css" />
+</head>
+
+<body>
+    <main>
+        <h1 id="top">ichoose.pe.hu</h1>
+        <div id="screensaver">
+            <p id="cover"></p>
+        </div>
+        <script src="img/daily.js"></script>
+        <ul>
+            <li id="book"></li>
+            <li id="index"></li>
+            <li id="one"></li>
+            <li id="ten"></li>
+            <li id="seventeen"></li>
+            <li id="twenty"></li>
+            <li id="back"></li>
+        </ul>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="jquery.arctext.js"></script>
+    <script src="../screensaver.js"></script>
+    <script>
+        $('#top').arctext({ radius: 75 });
+    </script>
+</body>
+
+</html>

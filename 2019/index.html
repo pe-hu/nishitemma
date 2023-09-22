@@ -4,40 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> ∧° ┐ | Special Gift Box 2019 </title>
-  <meta name="author" content="∧° ┐ | creative, community space">
-  <meta name="description" content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス">
-  <meta property="og:type" content="product">
-  <meta property="og:site_name" content="vg.pe.hu/jp/">
-  <meta property="og:url" content="https://vg.pe.hu/jp/2019/">
-  <meta property="og:title" content="∧° ┐ | Special Gift Box 2019">
-  <meta property="og:description" content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス">
-  <meta property="og:image" content="pr/inside.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="∧° ┐ | Special Gift Box 2019">
-  <meta name="twitter:description" content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス">
-  <meta name="twitter:image" content="pr/inside.png">
-  <link rel="stylesheet" href="../menu.css" />
-  <link rel="stylesheet" href="../floor.css" />
+  <meta name="format-detection" content="telephone=no">
+  <script src="../index.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        fetchHTML('box.html', '#left')
+      } else if (event.target.readyState === 'complete') {
+        ///
+      }
+    });
+  </script>
+
+  <!--og:meta-->
+  <meta content="product" property="og:type">
+  <title>∧° ┐ | Special Gift Box 2019</title>
+  <meta content="∧° ┐ | Special Gift Box 2019" property="og:title">
+  <meta content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス" name="description">
+  <meta content="西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス" property="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/jp/2019/" property="og:url">
+  <meta content="https://vg.pe.hu/jp/2019/img/inside.png" property="og:image">
+  <meta content="https://vg.pe.hu/jp/2019/img/inside.png" name="twitter:image:src">
+
+  <link rel="icon" href="../icon.png">
   <link rel="stylesheet" type="text/css" href="css/box.css" />
   <link rel="stylesheet" type="text/css" href="css/buy.css" />
   <link rel="stylesheet" type="text/css" href="css/cover.css" />
   <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 750px)" />
-  <link rel="icon" href="pr/2019.png">
-  <script src="../index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body id="cover">
-  <main id="left">
-    <article id="sp"></article>
-  </main>
+  <main id="left"></main>
   <article id="right">
     <section id="buynow">
       <h2>This is All About Pehu.</h2>
-      <span>西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス</span>
+      <span id="discription">西天満のペフで行った活動の記録をまとめたデジタルコンテンツ・書籍などを詰め込んだ、限定25部のスペシャルギフトボックス</span>
       <p>¥5,500-</p>
       <p>Release on 5.30.2020<br />Limited Only 25 Editions</p>
-      <img src="pr/inside.png">
+      <img src="img/inside.png">
       <details>
         <summary>Out of Stock</summary>
         <iframe src="https://www.youtube.com/embed/rhcUK2Ww-MQ" frameborder="0"></iframe>
@@ -46,19 +58,6 @@
   </article>
 
   <h1 id="title">∧° ┐ | creative, community space</h1>
-
-  <header id="index"></header>
-  <nav id="floor"></nav>
-
-  <script type="text/javascript">
-    fetchHTML('../menu.html', '#index');
-    fetchHTML('../floor.html', '#floor');
-    fetchHTML('box.html', '#sp');
-  
-    let btnToggleclass = function (close) {
-      document.body.classList.toggle('open');
-    }
-  </script>
 </body>
 
 </html>

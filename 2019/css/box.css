@@ -1,31 +1,28 @@
 /* Copyright (C) 2020 creative-community.space */
 
-#sp {
-  font-size: 1rem;
-  width: 100%;
-  max-width: 450px;
-  margin: 2rem 0 2.5rem auto;
+#box {
+  margin: 2rem auto 0;
 }
 
-#sp img {
+#box img {
   display: block;
 }
 
-#sp .vol {
+#box .vol {
   float: right;
   margin-top: 5%;
   margin-right: 5%;
   width: 30%
 }
 
-#sp .logo {
+#box .logo {
   float: left;
   width: 22.5%;
   margin-top: 12.5%;
   margin-left: 5%;
 }
 
-#sp #info {
+#box #info {
   font-family: "YuGothic", "Yu Gothic", "游ゴシック体", sans-serif;
   font-size: 75%;
   display: block;
@@ -104,7 +101,7 @@ details summary:hover,
 }
 
 details iframe {
-  height: 230px;
+  height: 30vw;
 }
 
 #contents details h3 {

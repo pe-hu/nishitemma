@@ -1,0 +1,138 @@
+main {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#top,
+#bottom {
+    font-size: 100%;
+    font-weight: 500;
+}
+
+ul li p b {
+    font-size: 95%;
+    font-weight: 400;
+}
+
+ul li p span,
+.double {
+    line-height: 200%;
+}
+
+#top {
+    letter-spacing: 0.25rem;
+}
+
+#bottom,
+ul li p b {
+    letter-spacing: 0.05rem;
+}
+
+ul li p a {
+    text-decoration: none;
+}
+
+#top,
+#bottom {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+ul li p a,
+ul li p b {
+    padding: 0.125rem;
+}
+
+main ul li,
+.aha {
+    display: grid;
+    place-items: center;
+}
+
+#top,
+#bottom,
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.flex {
+    width: 90%;
+}
+
+.aha {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+#top,
+#bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+.symbol,
+ul li p a,
+ul li p b {
+    background: #43B149;
+    color: #fff;
+}
+
+.symbol {
+    width: 75%;
+    max-width: 550px;
+    padding: 1rem 4.5rem;
+    margin: 1rem auto;
+    border-radius: 10rem;
+}
+
+.hint p::before {
+    content: "🌱";
+    font-size: 111%;
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+.by {
+    width: 10rem;
+    margin-right: 1rem;
+}
+
+.name,
+.as {
+    width: 25rem;
+    margin-right: 1rem;
+}
+
+.library::-webkit-scrollbar-thumb,
+.library li::-webkit-scrollbar-thumb {
+    background: #43B149;
+    border-radius: 10vh;
+}
+
+.hal .edition,
+.hal .special {
+    background: pink;
+    color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 3vw;
+    }
+}

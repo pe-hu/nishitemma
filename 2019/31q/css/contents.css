@@ -5,12 +5,25 @@
     url("https://vg.pe.hu/fonts/family/times-dot/TimesDot-Italic.otf");
 }
 
+#top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Times Dot', 'Times New Roman', Times, serif;
+    font-size: 125%;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.025rem;
+    z-index: 10;
+}
+
 #contents {
     box-sizing: border-box;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: 'Times Dot', 'Times New Roman', Times, serif;
-    padding: 2rem 5.5rem;
-    width: 750px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 550px;
 }
 
 #contents .title .name {
@@ -33,9 +46,19 @@
 }
 
 @media screen and (max-width: 750px) {
+    #top {
+        font-size: 3.5vw;
+        letter-spacing: 0.1vw;
+    }
+
     #contents {
         font-size: 2.5vw;
-        width: 100%;
-        padding: 5% 10%;
+        padding: 0 10%;
+    }
+}
+
+@media (orientation: portrait) {
+    #book {
+        min-height: -webkit-fill-available;
     }
 }
