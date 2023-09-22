@@ -24,20 +24,21 @@
 }
 
 .wakaba::before {
-    animation: 50s infinite alternate wakabaL;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 .wakaba::after {
-    animation: 50s infinite alternate wakabaR;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 .wakaba u {
     display: block;
-    animation: 50s infinite alternate wakaba;
+    background: linear-gradient(#000, #000);
+    transform: translate(50%, 50%) skewX(-55deg);
+    width: 15%;
+    height: 15%;
     z-index: 0;
 }
 
@@ -82,5 +83,33 @@
         transform: translate(-50%, -5%);
         width: 1.5%;
         height: 20%;
+    }
+}
+
+@media (orientation: landscape) {
+    .wakaba::before {
+        animation: 100s infinite alternate wakabaL;
+    }
+    
+    .wakaba::after {
+        animation: 100s infinite alternate wakabaR;
+    }
+    
+    .wakaba u {
+        animation: 100s infinite alternate wakaba;
+    }
+}
+
+@media (orientation: portrait) {
+    .wakaba::before {
+        animation: 0 infinite alternate wakabaL;
+    }
+    
+    .wakaba::after {
+        animation: 0 infinite alternate wakabaR;
+    }
+    
+    .wakaba u {
+        animation: 0 infinite alternate wakaba;
     }
 }

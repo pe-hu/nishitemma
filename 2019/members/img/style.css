@@ -1,0 +1,39 @@
+#cover {
+    background-image: url(side.png);
+    background-size: 100%;
+}
+
+#a {
+    background-image: url(001.jpg);
+    background-size: cover;
+}
+
+#b {
+    background-image: url(002.jpg);
+    background-size: cover;
+}
+
+#c {
+    background-image: url(003.jpg);
+    background-size: cover;
+}
+
+#d {
+    background-image: url(open.jpg);
+    background-size: cover;
+}
+
+#top {
+    background-image: url(000.jpg);
+    background-size: cover;
+}
+
+@media (orientation: portrait) {
+    #a,
+    #b,
+    #c,
+    #d,
+    #top {
+        height: -webkit-fill-available;
+    }
+}

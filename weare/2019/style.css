@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "MS Mincho";
+  src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
+}
+
 #index_form p,
 #index_form #calendar,
 #index_form button[type="submit"],
