@@ -133,7 +133,7 @@ h2 {
     top: 0;
     width: 4rem;
     height: 100%;
-    letter-spacing: 1dvh;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
     writing-mode: vertical-lr;
 }
