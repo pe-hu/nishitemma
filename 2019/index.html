@@ -12,6 +12,7 @@
         // loading
       } else if (event.target.readyState === 'interactive') {
         fetchHTML('box.html', '#left')
+        fetchHTML('../menu.html', '#menu')
       } else if (event.target.readyState === 'complete') {
         ///
       }
@@ -32,6 +33,7 @@
   <meta content="https://vg.pe.hu/jp/2019/img/inside.png" name="twitter:image:src">
 
   <link rel="icon" href="../icon.png">
+  <link rel="stylesheet" type="text/css" href="../menu.css" />
   <link rel="stylesheet" type="text/css" href="css/box.css" />
   <link rel="stylesheet" type="text/css" href="css/buy.css" />
   <link rel="stylesheet" type="text/css" href="css/cover.css" />
@@ -56,6 +58,7 @@
       </details>
     </section>
   </article>
+  <footer id="menu"></footer>
 
   <h1 id="title">∧° ┐ | creative, community space</h1>
 </body>

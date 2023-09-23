@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <script src="../../index.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('readystatechange', event => {
+            if (event.target.readyState === 'loading') {
+                // loading
+            } else if (event.target.readyState === 'interactive') {
+                fetchHTML('../../menu.html', '#menu');
+            } else if (event.target.readyState === 'complete') {
+                ////
+            }
+        });
+    </script>
 
     <!--og:meta-->
     <meta content="product" property="og:type">
@@ -20,6 +32,7 @@
     <meta content="https://vg.pe.hu/jp/2019/members/img/000.jpg" name="twitter:image:src">
 
     <link rel="icon" href="../../icon.png" type="image/png">
+    <link rel="stylesheet" href="../../menu.css" />
     <link rel="stylesheet" href="../css/publication.css" />
     <link rel="stylesheet" href="img/style.css" />
 </head>
@@ -37,6 +50,7 @@
             <li id="d"></li>
         </ul>
     </main>
+    <footer id="menu"></footer>
     <script src="../screensaver.js"></script>
 </body>
 

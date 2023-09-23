@@ -13,14 +13,23 @@ main ul {
     margin: 0;
 }
 
-main {
+main,
+#menu {
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;
     width: 100%;
+}
+
+main {
+    top: 0;
     height: 100vh;
     max-height: -webkit-fill-available;
+}
+
+#menu {
+    bottom: 0;
+    z-index: 100;
 }
 
 main ul li,

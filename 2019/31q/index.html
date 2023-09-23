@@ -12,6 +12,7 @@
                 // loading
             } else if (event.target.readyState === 'interactive') {
                 fetchHTML('contents.html', '#index');
+                fetchHTML('../../menu.html', '#menu');
             } else if (event.target.readyState === 'complete') {
                 ////
             }
@@ -32,6 +33,7 @@
     <meta content="https://vg.pe.hu/jp/2019/31q/pr/000.jpg" name="twitter:image:src">
 
     <link rel="icon" href="../../icon.png" type="image/png">
+    <link rel="stylesheet" href="../../menu.css" />
     <link rel="stylesheet" href="../css/publication.css" />
     <link rel="stylesheet" href="css/contents.css" />
     <link rel="stylesheet" href="pr/style.css" />
@@ -54,6 +56,7 @@
             <li id="back"></li>
         </ul>
     </main>
+    <footer id="menu"></footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="jquery.arctext.js"></script>
     <script src="../screensaver.js"></script>

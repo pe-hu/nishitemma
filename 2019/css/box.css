@@ -56,20 +56,11 @@ details summary::-webkit-details-marker {
 }
 
 details summary:hover,
-#box a:hover,
 #contents details h3 {
   color: #fff;
   background: linear-gradient(-90deg, #eee, #FFC778, #b3cbf6);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
-}
-
-#box a {
-  color: #000;
-  display: block;
-  font-size: 150%;
-  text-align: center;
-  text-decoration: none;
 }
 
 @keyframes gradientBG {
