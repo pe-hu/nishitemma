@@ -30,7 +30,7 @@
         "name": "あっちに聞きたい50のこと",
         "description": "喫茶スタッフ・イラスト担当、あっちに質問をします。",
         "link": "block",
-        "href": "/jp/dm/"
+        "href": "dm/"
       },
       {
         "org": "shop",
@@ -46,7 +46,7 @@
         "name": "村山政二朗2019関西ツアー 大阪編",
         "description": "by 村山政二朗 × 江崎將史 | 米子匡司 × 天気 a.k.a 船川翔司",
         "link": "block",
-        "href": "/jp/show/083119.html"
+        "href": "show/083119.html"
       },
       {
         "org": "show",
@@ -54,7 +54,7 @@
         "name": "Tongue finishes back at the root of itself",
         "description": "by Ferran Pla | Ana Martinez Fernandez",
         "link": "block",
-        "href": "/2f/finishes.html"
+        "href": "https://vg.pe.hu/2f/finishes.html"
       },
       {
         "org": "community",
@@ -70,7 +70,7 @@
         "name": "Airbnb Flight Simulator Room",
         "description": "by Laurel Schwulst",
         "link": "block",
-        "href": "/2f/greenpeople.html"
+        "href": "https://vg.pe.hu/2f/greenpeople.html"
       },
       {
         "org": "members",
@@ -86,7 +86,7 @@
         "name": "ローレルさんとお料理会",
         "description": "優雅で素敵な時間を過ごしたい。ウォーターテイスティングもやる予定。",
         "link": "block",
-        "href": "/jp/show/080619.html"
+        "href": "show/080619.html"
       },
       {
         "org": "community",
@@ -102,7 +102,7 @@
         "name": "Green People",
         "description": "by Laurel Schwulst | Elliott Cost",
         "link": "block",
-        "href": "/2f/greenpeople.html"
+        "href": "https://vg.pe.hu/2f/greenpeople.html"
       },
       {
         "org": "workshop",
@@ -110,7 +110,7 @@
         "name": "癲狂科学実験",
         "description": "講師：斎藤誠",
         "link": "block",
-        "href": "/jp/show/072919.html"
+        "href": "show/072919.html"
       },
       {
         "org": "residency",
@@ -118,7 +118,7 @@
         "name": "residency for Green People",
         "description": "by Elliott Cost",
         "link": "none",
-        "href": "/2f/greenpeople.html"
+        "href": "https://vg.pe.hu/2f/greenpeople.html"
       },
       {
         "org": "show",
@@ -126,7 +126,7 @@
         "name": "さくら",
         "description": "by 籠本 真一",
         "link": "block",
-        "href": "/2f/sakura.html"
+        "href": "https://vg.pe.hu/2f/sakura.html"
       },
       {
         "org": "show",
@@ -134,7 +134,7 @@
         "name": "造り物 Tsukurimono",
         "description": "この展覧会では、造り物という文化と、その文化を絶やさず守る彼の想いを紹介します。",
         "link": "block",
-        "href": "/2f/tsukurimono.html"
+        "href": "https://vg.pe.hu/2f/tsukurimono.html"
       },
       {
         "org": "residency",
@@ -142,7 +142,7 @@
         "name": "residency for Green People",
         "description": "by Laurel Schwulst",
         "link": "none",
-        "href": "/2f/greenpeople.html"
+        "href": "https://vg.pe.hu/2f/greenpeople.html"
       },
       {
         "org": "members",
@@ -158,7 +158,7 @@
         "name": "古着詰め放題 夏",
         "description": "by Beauty spot (Pure Voyage, abi, tbpj)",
         "link": "none",
-        "href": "/jp/shop/"
+        "href": "shop/"
       },
       {
         "org": "workshop",
@@ -174,7 +174,7 @@
         "name": "#9JUL19TUE",
         "description": "by Luminous Kudler | Jero Route 66",
         "link": "block",
-        "href": "/2f/luminous_66.html"
+        "href": "https://vg.pe.hu/2f/luminous_66.html"
       },
       {
         "org": "workshop",
@@ -182,7 +182,7 @@
         "name": "one day trip for the field recordings",
         "description": "by Luminous Kudler | Jero Route 66",
         "link": "block",
-        "href": "/2f/luminous_66.html"
+        "href": "https://vg.pe.hu/2f/luminous_66.html"
       },
       {
         "org": "community",
@@ -198,7 +198,7 @@
         "name": "#22JUN19SAT",
         "description": "川口貴大 | 古池寿浩 | 船川翔司 | 江崎將史",
         "link": "block",
-        "href": "/jp/show/062219.html"
+        "href": "show/062219.html"
       },
       {
         "org": "talk",
@@ -206,7 +206,7 @@
         "name": "あくちゃんに聞きたい50のこと",
         "description": "abiのオーナー、sarakona at lastに質問をします。",
         "link": "block",
-        "href": "/jp/dm/"
+        "href": "dm/"
       },
       {
         "org": "show",
@@ -214,7 +214,7 @@
         "name": "FS1",
         "description": "by 天気 | 🐴",
         "link": "block",
-        "href": "/2f/fs1.html"
+        "href": "https://vg.pe.hu/2f/fs1.html"
       },
       {
         "org": "community",
@@ -230,7 +230,7 @@
         "name": "シャドーパフォーマンス/ワークショップ",
         "description": "by Nicholas Strobelt",
         "link": "block",
-        "href": "/jp/show/061019.html"
+        "href": "show/061019.html"
       },
       {
         "org": "members",
@@ -246,7 +246,7 @@
         "name": "同じことを繰り返す",
         "description": "by 船川翔司と梁崑玖",
         "link": "block",
-        "href": "/jp/show/052819.html"
+        "href": "show/052819.html"
       },
       {
         "org": "show",
@@ -254,7 +254,7 @@
         "name": "NS1",
         "description": "by Nicholas Strobelt | Joseph Torres | Yuu Takamizawa",
         "link": "block",
-        "href": "/2f/ns1.html"
+        "href": "https://vg.pe.hu/2f/ns1.html"
       },
       {
         "org": "residency",
@@ -262,7 +262,7 @@
         "name": "residency for NS1",
         "description": "by Nicholas Strobelt",
         "link": "none",
-        "href": "/2f/ns1.html"
+        "href": "https://vg.pe.hu/2f/ns1.html"
       },
       {
         "org": "residency",
@@ -270,7 +270,7 @@
         "name": "residency for NS1",
         "description": "by Joseph Torres",
         "link": "none",
-        "href": "/2f/ns1.html"
+        "href": "https://vg.pe.hu/2f/ns1.html"
       },
       {
         "org": "community",
@@ -294,7 +294,7 @@
         "name": "#19MAY19SUN",
         "description": "by Tom White | Takamitsu Ohta | Seaketa",
         "link": "block",
-        "href": "/jp/show/051919.html"
+        "href": "show/051919.html"
       },
       {
         "org": "talk",
@@ -302,7 +302,7 @@
         "name": "ふなに聞きたい50のこと",
         "description": "ペフのクリエイティブメンバー船川翔司さんに質問をします。",
         "link": "block",
-        "href": "/jp/dm/"
+        "href": "dm/"
       },
       {
         "org": "shop",
@@ -342,7 +342,7 @@
         "name": "#26APR19FRI",
         "description": "by Vid Edda | Soft Items | Kayu Nakada | Tadashi Yonago | Soshi Matsunobe | Satoshi Kanda | Chigusa Hazuki",
         "link": "block",
-        "href": "/show/26APR19FRI/"
+        "href": "https://vg.pe.hu/show/26APR19FRI/"
       },
       {
         "org": "show",
@@ -350,7 +350,7 @@
         "name": "フランスのカード",
         "description": "by Sammy Stein | Séverine Bascouert (L'Institut Sérigraphique)",
         "link": "block",
-        "href": "/2f/bff.html"
+        "href": "https://vg.pe.hu/2f/bff.html"
       },
       {
         "org": "community",
@@ -366,7 +366,7 @@
         "name": "Signed Curtain",
         "description": "by Jean-Philippe Bretin | Vanessa Dziuba",
         "link": "block",
-        "href": "/2f/bff.html"
+        "href": "https://vg.pe.hu/2f/bff.html"
       },
       {
         "org": "talk",
@@ -374,7 +374,7 @@
         "name": "れんれんに聞きたい50のこと",
         "description": "ペフ喫茶の料理長 れんれん に質問をします。",
         "link": "block",
-        "href": "/jp/dm/"
+        "href": "dm/"
       },
       {
         "org": "members",
@@ -382,7 +382,7 @@
         "name": "創造的場づくり助成",
         "description": "今年度より3年間、おおさか創造千島財団からの助成を受けることが決定しました。",
         "link": "block",
-        "href": "/jp/2019-2021/"
+        "href": "2019-2021/"
       },
       {
         "org": "live",
@@ -422,7 +422,7 @@
         "name": "LAGON with Friends",
         "description": "Featured [1F / 2F SHOP]",
         "link": "block",
-        "href": "/2f/bff.html"
+        "href": "https://vg.pe.hu/2f/bff.html"
       },
       {
         "org": "residency",
@@ -430,7 +430,7 @@
         "name": "Best friends from france 2019",
         "description": "by Jean-Philippe Bretin | Vanessa Dziuba | Sammy Stein | Séverine Bascouert",
         "link": "none",
-        "href": "/2f/bff.html"
+        "href": "https://vg.pe.hu/2f/bff.html"
       },
       {
         "org": "talk",
@@ -438,7 +438,7 @@
         "name": "FREE TIME",
         "description": "電子音楽昔話「聞け！電子音楽の夜明けを！」",
         "link": "block",
-        "href": "/jp/show/040319.html"
+        "href": "show/040319.html"
       },
       {
         "org": "talk",
@@ -446,7 +446,7 @@
         "name": "アンビエントお茶会①",
         "description": "pe hu talk 07",
         "link": "block",
-        "href": "/jp/dm/talk/07/"
+        "href": "dm/talk/07/"
       },
       {
         "org": "talk",
@@ -454,7 +454,7 @@
         "name": "るに聞きたい50のこと",
         "description": "ペフのメンバーのことをもっと知る会",
         "link": "block",
-        "href": "/jp/dm/"
+        "href": "dm/"
       },
       {
         "org": "workshop",
@@ -494,7 +494,7 @@
         "name": "なかよしフェアー",
         "description": "by Scent | Pure Voyage | tbpj | abi",
         "link": "block",
-        "href": "/2f/nakayoshi_fair.html"
+        "href": "https://vg.pe.hu/2f/nakayoshi_fair.html"
       },
       {
         "org": "residency",
@@ -502,7 +502,7 @@
         "name": "residency for なかよしフェアー",
         "description": "by Josefina Valman | Emilio Algo",
         "link": "none",
-        "href": "/2f/nakayoshi_fair.html"
+        "href": "https://vg.pe.hu/2f/nakayoshi_fair.html"
       },
       {
         "org": "talk",
@@ -510,7 +510,7 @@
         "name": "DAVID BOWIE BOOTLEG VIEWING VOL.1 : BERLIN 2002 +",
         "description": "by sailor@紐育春秋",
         "link": "block",
-        "href": "/jp/show/031619.html"
+        "href": "show/031619.html"
       },
       {
         "org": "workshop",
@@ -534,7 +534,7 @@
         "name": "かおちょに聞きたい50のこと",
         "description": "ペフのメンバーのことをもっと知る会",
         "link": "block",
-        "href": "/jp/dm/"
+        "href": "dm/"
       },
       {
         "org": "community",
@@ -582,7 +582,7 @@
         "name": "VAMPIRE✞HUNTER™ one man gig",
         "description": "DJ: sarakona_at_last",
         "link": "block",
-        "href": "/jp/show/022519.html"
+        "href": "show/022519.html"
       },
       {
         "org": "talk",
@@ -590,7 +590,7 @@
         "name": "Nice Shop Su",
         "description": "pe hu talk 06",
         "link": "block",
-        "href": "/jp/dm/talk/06/"
+        "href": "dm/talk/06/"
       },
       {
         "org": "show",
@@ -598,7 +598,7 @@
         "name": "NS5",
         "description": "Nice shop su 5th anniversary exhibition",
         "link": "block",
-        "href": "/2f/ns5.html"
+        "href": "https://vg.pe.hu/2f/ns5.html"
       },
       {
         "org": "community",
@@ -614,7 +614,7 @@
         "name": "#10FEB19SUN",
         "description": "by Gerard Lebik | Takahiro Kawaguchi | Yan Conk / New Smith + Shoji Funakawa | KeitaroTamura",
         "link": "block",
-        "href": "/jp/show/021019.html"
+        "href": "show/021019.html"
       },
       {
         "org": "community",
@@ -630,7 +630,7 @@
         "name": "MS1",
         "description": "by Isshuumawattetsurai | Mizuho Kuki | Rina Cho",
         "link": "block",
-        "href": "/2f/ms1.html"
+        "href": "https://vg.pe.hu/2f/ms1.html"
       },
       {
         "org": "live",
@@ -638,7 +638,7 @@
         "name": "サウンドチェック",
         "description": "by DJ方 | PULASEI | dinamishaisuke | ハマジ(KK manga)",
         "link": "block",
-        "href": "/jp/show/020219.html"
+        "href": "show/020219.html"
       },
       {
         "org": "talk",
@@ -646,7 +646,7 @@
         "name": "千沙子と純太の謎",
         "description": "pe hu talk 05",
         "link": "block",
-        "href": "/jp/dm/talk/05/"
+        "href": "dm/talk/05/"
       },
       {
         "org": "show",
@@ -654,7 +654,7 @@
         "name": "HF+S1",
         "description": "by Masami Baba | Nobuto Okawahara | Gaku Kurokawa | Shoji Funakawa",
         "link": "block",
-        "href": "/2f/hf1.html"
+        "href": "https://vg.pe.hu/2f/hf1.html"
       },
       {
         "org": "workshop",
@@ -662,7 +662,7 @@
         "name": "れんれんの試食会",
         "description": "by Dove | sarakona at last | Kaori Nakao",
         "link": "block",
-        "href": "/jp/show/012019.html"
+        "href": "show/012019.html"
       },
       {
         "org": "live",
@@ -670,7 +670,7 @@
         "name": "Concert",
         "description": "by Sami Elu",
         "link": "block",
-        "href": "/jp/show/011819.html"
+        "href": "show/011819.html"
       },
       {
         "org": "show",
@@ -678,7 +678,7 @@
         "name": "TWS 1",
         "description": "by Fumio Kohama | Stefan Alexander | Shintaro Matsuo",
         "link": "block",
-        "href": "/2f/tws1.html"
+        "href": "https://vg.pe.hu/2f/tws1.html"
       },
       {
         "org": "community",
@@ -686,7 +686,7 @@
         "name": "SIGN",
         "description": "Grand Opening Party",
         "link": "block",
-        "href": "/2f/sign.html"
+        "href": "https://vg.pe.hu/2f/sign.html"
       },
       {
         "org": "talk",
@@ -694,7 +694,7 @@
         "name": "OPEN TALK",
         "description": "pe hu talk 04",
         "link": "block",
-        "href": "/jp/dm/talk/04/"
+        "href": "dm/talk/04/"
       },
       {
         "org": "community",
@@ -702,7 +702,7 @@
         "name": "woopheadclrmsと遊ぼう",
         "description": "遊び相手:seaketa",
         "link": "block",
-        "href": "/jp/show/122818.html"
+        "href": "show/122818.html"
       },
       {
         "org": "community",
@@ -710,7 +710,7 @@
         "name": "全員リリパ",
         "description": "at ひかりのラウンジ",
         "link": "block",
-        "href": "/jp/show/relepa/"
+        "href": "show/relepa/"
       },
       {
         "org": "shop",
@@ -726,7 +726,7 @@
         "name": "The Great Tokyo Summit",
         "description": "by Newell Walther, emamouse, しー没, Aisha Mizuno, Haretsu, 星川あさ子",
         "link": "block",
-        "href": "/show/the-great-tokyo-summit/"
+        "href": "https://vg.pe.hu/show/the-great-tokyo-summit/"
       },
       {
         "org": "talk",
@@ -734,7 +734,7 @@
         "name": "SNS in China",
         "description": "pe hu talk 03",
         "link": "block",
-        "href": "/jp/dm/talk/03/"
+        "href": "dm/talk/03/"
       },
       {
         "org": "live",
@@ -742,7 +742,7 @@
         "name": "別冊0",
         "description": "特集其の一 木下和重のセグメンツ第二回「セグメンツワークショップ」 | 特集其の二 ソロパフォーマンスの世界 古池寿浩／船川翔司／黒川岳",
         "link": "block",
-        "href": "/jp/show/112418.html"
+        "href": "show/112418.html"
       },
       {
         "org": "live",
@@ -750,7 +750,7 @@
         "name": "John Chantler | 米子匡司",
         "description": "by Saya | Shoji Funakawa",
         "link": "block",
-        "href": "/jp/show/111918.html"
+        "href": "show/111918.html"
       },
       {
         "org": "live",
@@ -758,7 +758,7 @@
         "name": "Lucie Vítková | Sand Circles",
         "description": "by Kazumichi Komatsu",
         "link": "block",
-        "href": "/jp/show/111218.html"
+        "href": "show/111218.html"
       },
       {
         "org": "live",
@@ -766,7 +766,7 @@
         "name": "NEO GAIA PHANTASY",
         "description": "Equip | R23X | Death's Dynamic Shroud",
         "link": "block",
-        "href": "/show/neogaiaphantasy/"
+        "href": "https://vg.pe.hu/show/neogaiaphantasy/"
       },
       {
         "org": "talk",
@@ -774,7 +774,7 @@
         "name": "仙台での4日間と最近のめりすのこと",
         "description": "by Shaisuke Dinami",
         "link": "block",
-        "href": "/jp/show/110218.html"
+        "href": "show/110218.html"
       },
       {
         "org": "talk",
@@ -782,7 +782,7 @@
         "name": "GAFA",
         "description": "pe hu talk 02",
         "link": "block",
-        "href": "/jp/dm/talk/02/"
+        "href": "dm/talk/02/"
       },
       {
         "org": "members",
@@ -798,7 +798,7 @@
         "name": "Galaxy Express 555 Japan 2018",
         "description": "by Galaxy Express 555 / アキツユコ",
         "link": "block",
-        "href": "/show/555aki/"
+        "href": "https://vg.pe.hu/show/555aki/"
       },
       {
         "org": "shop",
@@ -830,7 +830,7 @@
         "name": "Age of",
         "description": "pe hu talk 01",
         "link": "block",
-        "href": "/jp/dm/talk/01/"
+        "href": "dm/talk/01/"
       },
       {
         "org": "community",
@@ -862,7 +862,7 @@
         "name": "Meeting",
         "description": "we will restart pehu with great friends",
         "link": "none",
-        "href": "/jp/weare/"
+        "href": "#"
       },
       {
         "org": "live",
@@ -870,7 +870,7 @@
         "name": "die Reihe «Gemini Season» June in Japan 2018",
         "description": "Public Recording of Kerri Chandler Chords for Strings Quartet and more",
         "link": "block",
-        "href": "/show/agaveexpressionism/"
+        "href": "https://vg.pe.hu/show/agaveexpressionism/"
       },
       {
         "org": "shop",
@@ -886,7 +886,7 @@
         "name": "Estienne",
         "description": "by Marina Mardas | V VIII | ⁵ᶠᵗ⁴⁶",
         "link": "block",
-        "href": "/jp/show/041818.html"
+        "href": "show/041818.html"
       },
       {
         "org": "show",
@@ -894,7 +894,7 @@
         "name": "快晴後期",
         "description": "by 16 young japanese artists",
         "link": "block",
-        "href": "/1f/kaisei/"
+        "href": "https://vg.pe.hu/1f/kaisei/"
       },
       {
         "org": "show",
@@ -902,7 +902,7 @@
         "name": "快晴前期",
         "description": "by 16 young japanese artists",
         "link": "block",
-        "href": "/1f/kaisei/"
+        "href": "https://vg.pe.hu/1f/kaisei/"
       },
       {
         "org": "live",
@@ -910,7 +910,7 @@
         "name": "#1APR18SUN",
         "description": "by shoji funakawa | gaku kurokawa | KeitaroTamura | aoi hatsushiba",
         "link": "block",
-        "href": "/show/1APR18SUN/"
+        "href": "https://vg.pe.hu/show/1APR18SUN/"
       },
       {
         "org": "community",
@@ -918,7 +918,7 @@
         "name": "chotto crazy <3",
         "description": "by Nice shop su",
         "link": "block",
-        "href": "/1f/00/print.pdf"
+        "href": "https://vg.pe.hu/1f/00/print.pdf"
       },
       {
         "org": "show",
@@ -926,7 +926,7 @@
         "name": "00",
         "description": "by Nice shop su",
         "link": "block",
-        "href": "/1f/00/"
+        "href": "https://vg.pe.hu/1f/00/"
       },
       {
         "org": "community",
@@ -934,7 +934,7 @@
         "name": "chotto crazy 2 B",
         "description": "by Woopheadclrms, KeitaroTamura, zeki, ดบ『Dove, さえ",
         "link": "block",
-        "href": "/1f/05/print.pdf"
+        "href": "https://vg.pe.hu/1f/05/print.pdf"
       },
       {
         "org": "live",
@@ -942,7 +942,7 @@
         "name": "Masahiro Takahashi Tour",
         "description": "by Masahiro Takahashi | Yousei Suzuki | miyuki",
         "link": "block",
-        "href": "/jp/show/031718.html"
+        "href": "show/031718.html"
       },
       {
         "org": "community",
@@ -966,7 +966,7 @@
         "name": "05",
         "description": "by Laurel Schwulst | Woopheadclrms",
         "link": "block",
-        "href": "/1f/05/"
+        "href": "https://vg.pe.hu/1f/05/"
       },
       {
         "org": "community",
@@ -974,7 +974,7 @@
         "name": "open studio",
         "description": "by Woopheadclrms | Guest: 天空戦記シェニト",
         "link": "block",
-        "href": "/1f/05/print.pdf"
+        "href": "https://vg.pe.hu/1f/05/print.pdf"
       },
       {
         "org": "shop",
@@ -982,7 +982,7 @@
         "name": "tbpj",
         "description": "by haruka & kaho",
         "link": "none",
-        "href": "/jp/shop/"
+        "href": "shop/"
       },
       {
         "org": "community",
@@ -990,7 +990,7 @@
         "name": "chotto crazy",
         "description": "by shaisuke, zeki, haruka, kaori, kazuma",
         "link": "block",
-        "href": "/1f/04/print.pdf"
+        "href": "https://vg.pe.hu/1f/04/print.pdf"
       },
       {
         "org": "community",
@@ -998,7 +998,7 @@
         "name": "keta fes",
         "description": "by seaketa",
         "link": "none",
-        "href": "https://chottocrazy.github.io/"
+        "href": "#"
       },
       {
         "org": "show",
@@ -1006,7 +1006,7 @@
         "name": "04",
         "description": "by emeraldclitoris",
         "link": "block",
-        "href": "/1f/04/"
+        "href": "https://vg.pe.hu/1f/04/"
       },
       {
         "org": "talk",
@@ -1014,7 +1014,7 @@
         "name": "talk session",
         "description": "by Takamitsu Ohta | Ootsusan | Sasajima",
         "link": "block",
-        "href": "/1f/03/print.pdf"
+        "href": "https://vg.pe.hu/1f/03/print.pdf"
       },
       {
         "org": "live",
@@ -1022,7 +1022,7 @@
         "name": "special event",
         "description": "by saya (tenniscoats)",
         "link": "block",
-        "href": "/1f/03/print.pdf"
+        "href": "https://vg.pe.hu/1f/03/print.pdf"
       },
       {
         "org": "workshop",
@@ -1030,7 +1030,7 @@
         "name": "Nissed / 温める",
         "description": "by Soshi Matsunobe | Muku Kobayashi",
         "link": "block",
-        "href": "/1f/03/print.pdf"
+        "href": "https://vg.pe.hu/1f/03/print.pdf"
       },
       {
         "org": "live",
@@ -1038,7 +1038,7 @@
         "name": "pseudo world tour",
         "description": "by Shoji Funakawa",
         "link": "block",
-        "href": "/1f/03/print.pdf"
+        "href": "https://vg.pe.hu/1f/03/print.pdf"
       },
       {
         "org": "show",
@@ -1046,7 +1046,7 @@
         "name": "03",
         "description": "by Takamitsu Ohta | Muku Kobayashi | Shoji Funakawa | Soshi Matsunobe",
         "link": "block",
-        "href": "/1f/03/"
+        "href": "https://vg.pe.hu/1f/03/"
       },
       {
         "org": "shop",
@@ -1054,7 +1054,7 @@
         "name": "Pure Voyage",
         "description": "by Keisuke Iiri",
         "link": "none",
-        "href": "/jp/shop/"
+        "href": "shop/"
       },
       {
         "org": "workshop",
@@ -1070,7 +1070,7 @@
         "name": "水に石を落としたり、撮影したり",
         "description": "by ดบ『Dove with Natalia's favorite drinks.",
         "link": "block",
-        "href": "/1f/02/print.pdf"
+        "href": "https://vg.pe.hu/1f/02/print.pdf"
       },
       {
         "org": "community",
@@ -1078,7 +1078,7 @@
         "name": "何かを壊したり、粘土で四角を作ったり",
         "description": "by 6.7.r.n | one other person",
         "link": "block",
-        "href": "/1f/02/print.pdf"
+        "href": "https://vg.pe.hu/1f/02/print.pdf"
       },
       {
         "org": "community",
@@ -1086,7 +1086,7 @@
         "name": "湯気を眺めたり、ユーフォニアムの演奏を聞いたり",
         "description": "by ootsusan | мкт∵",
         "link": "block",
-        "href": "/1f/02/print.pdf"
+        "href": "https://vg.pe.hu/1f/02/print.pdf"
       },
       {
         "org": "live",
@@ -1094,7 +1094,7 @@
         "name": "朗読会",
         "description": "by chika4ngel | 5ft46 | one other person",
         "link": "block",
-        "href": "/1f/02/print.pdf"
+        "href": "https://vg.pe.hu/1f/02/print.pdf"
       },
       {
         "org": "show",
@@ -1102,7 +1102,7 @@
         "name": "02",
         "description": "by Sarah Marshall | Natalia Panzer",
         "link": "block",
-        "href": "/1f/02/"
+        "href": "https://vg.pe.hu/1f/02/"
       },
       {
         "org": "community",
@@ -1110,7 +1110,7 @@
         "name": "〜當たる戌歳〜",
         "description": "ディナミ座年末顔見世興行2017",
         "link": "block",
-        "href": "/jp/show/122917.html"
+        "href": "show/122917.html"
       },
       {
         "org": "community",
@@ -1126,7 +1126,7 @@
         "name": "concert",
         "description": "by 江崎將史 | Theodore Cale Schafer | aoosya",
         "link": "block",
-        "href": "/1f/01/print.pdf"
+        "href": "https://vg.pe.hu/1f/01/print.pdf"
       },
       {
         "org": "talk",
@@ -1134,7 +1134,7 @@
         "name": "talk session",
         "description": "Special guest : 服部峻",
         "link": "block",
-        "href": "/1f/01/print.pdf"
+        "href": "https://vg.pe.hu/1f/01/print.pdf"
       },
       {
         "org": "show",
@@ -1142,7 +1142,7 @@
         "name": "01",
         "description": "by 斎藤玲児 | 0100011110001",
         "link": "block",
-        "href": "/1f/01/"
+        "href": "https://vg.pe.hu/1f/01/"
       }
     ]
   }
