@@ -59,6 +59,6 @@
 
 @media (orientation: portrait) {
     #book {
-        min-height: -webkit-fill-available;
+        min-height: 70vh;
     }
 }
