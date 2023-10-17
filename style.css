@@ -78,12 +78,12 @@ h2 {
 }
 
 #topic .flash {
-    color: #fff;
-    background-color: red;
+    background-color: yellow;
 }
 
 #topic .dm {
-    background-color: yellow;
+    color: #fff;
+    background-color: red;
 }
 
 #topic .topics:hover,
