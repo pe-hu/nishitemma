@@ -6,18 +6,12 @@
   <meta name="viewport" content="width=device-width">
   <script src="../index.js"></script>
   <script>
-    let btnToggleclass = function () {
-      document.body.classList.toggle('open');
-    }
-
     const thisDate = "5.30.2020"
     const thisDatetime = "2020/05/30 11:00:00"
     const thisDoor = "New Publication"
 
     document.addEventListener('readystatechange', event => {
-      if (event.target.readyState === 'loading') {
-        // loading
-      } else if (event.target.readyState === 'interactive') {
+      if (event.target.readyState === 'interactive') {
         indexBody();
         fetchHTML('../menu.html', '#menu');
         fetchHTML('credit.html', '#index');
@@ -39,7 +33,7 @@
   <meta content="https://vg.pe.hu/jp/dm/" property="og:url">
   <meta content="https://vg.pe.hu/jp/dm/pr/000.jpg" property="og:image">
   <meta content="https://vg.pe.hu/jp/dm/pr/000.jpg" name="twitter:image:src">
-  
+
   <link rel="icon" href="../icon.png">
   <link rel="stylesheet" href="../menu.css">
   <link rel="stylesheet" href="pr/style.css">
@@ -67,20 +61,50 @@
           Release on
           <time id="date">5.30.2020</time>
         </p>
-        <button type="button">Preview</button>
+        <a class="button" href="#" onclick="preview()">Preview</a>
         <p id="title" hidden></p>
       </section>
       <figure id="usbcard" class="css-rotate">
         <img class="css-back" src="this.png">
         <img class="css-front" src="index.png">
       </figure>
-      <h3 class="red center" id="description"></h3>
+      <h3 class="red center" id="description" onclick="preview()"></h3>
     </article>
-    <section id="slideshow">
+    <section id="slideshow" onclick="preview()">
       <figure id="loop_wrap"></figure>
       <script src="img/slideshow.js"></script>
     </section>
     <article id="index"></article>
+
+    <dialog id="dialog">
+      <button type="button" onclick="closeDialog()">×</button>
+      <video id="video" preload="auto" playsinline>
+        <source src="pr/sample.mp4" type="video/mp4" />
+      </video>
+    </dialog>
+
+    <script>
+      const dialog = document.querySelector("#dialog"),
+        video = document.querySelector('#video');
+
+      function playMP4() {
+        video.load();
+        video.play();
+        video.addEventListener("ended", function () {
+          video.play();
+        }, false);
+      }
+
+      function preview() {
+        dialog.showModal()
+        playMP4()
+      }
+
+      function closeDialog() {
+        video.pause()
+        dialog.close()
+      }
+    </script>
   </main>
 </body>
 
