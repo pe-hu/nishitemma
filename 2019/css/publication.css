@@ -2,10 +2,6 @@ html {
     height: -webkit-fill-available;
 }
 
-#cover {
-    position: relative;
-}
-
 body,
 main,
 main ul {
@@ -19,6 +15,11 @@ main,
     left: 0;
     right: 0;
     width: 100%;
+}
+
+#cover,
+main ul li {
+    position: relative;
 }
 
 main {
@@ -47,19 +48,13 @@ main ul {
 }
 
 main ul li {
-    position: relative;
     box-sizing: border-box;
     flex: 0 0 auto;
     list-style: none inside;
-    scroll-snap-align: center;
     overflow: auto;
 }
 
 @media (orientation: landscape) {
-    main ul {
-        scroll-snap-type: x proximity;
-    }
-
     main ul li {
         background-size: 75%;
         width: 75%;
@@ -76,6 +71,7 @@ main ul li {
 
     main ul li {
         background-size: auto 80%;
+        scroll-snap-align: center;
         width: 100%;
         max-width: 100%;
         min-height: 70vw;

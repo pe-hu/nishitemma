@@ -1,0 +1,27 @@
+#book {
+    background-image: url(../pr/cover.png);
+}
+
+#one {
+    background-image: url(../pr/001.jpg);
+}
+
+#ten {
+    background-image: url(../pr/002.jpg);
+}
+
+#seventeen {
+    background-image: url(../pr/003.jpg);
+}
+
+#twenty {
+    background-image: url(../pr/004.jpg);
+}
+
+#back {
+    background-image: url(../pr/000.jpg);
+}
+
+#end {
+    background-image: url(../pr/logo.jpeg);
+}

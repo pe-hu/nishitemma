@@ -5,18 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <script src="../../index.js"></script>
+    <script src="../screensaver.js"></script>
     <script type="text/javascript">
-        document.addEventListener('readystatechange', event => {
-            if (event.target.readyState === 'loading') {
-                // loading
-            } else if (event.target.readyState === 'interactive') {
-                fetchHTML('contents.html', '#index');
-                fetchHTML('../../menu.html', '#menu');
-            } else if (event.target.readyState === 'complete') {
-                ////
-            }
-        });
+        fetchHTML('contents.html', '#index');
     </script>
 
     <!--og:meta-->
@@ -36,16 +27,16 @@
     <link rel="stylesheet" href="../../menu.css" />
     <link rel="stylesheet" href="../css/publication.css" />
     <link rel="stylesheet" href="css/contents.css" />
-    <link rel="stylesheet" href="pr/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <main>
-        <h1 id="top">ichoose.pe.hu</h1>
+        <a id="top" href="https://ichoose.pe.hu/" target="_blank">ichoose.pe.hu</a>
         <div id="screensaver">
             <p id="cover"></p>
+            <script src="img/daily.js"></script>
         </div>
-        <script src="img/daily.js"></script>
         <ul>
             <li id="book"></li>
             <li id="index"></li>
@@ -59,7 +50,6 @@
     <footer id="menu"></footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="jquery.arctext.js"></script>
-    <script src="../screensaver.js"></script>
     <script>
         $('#top').arctext({ radius: 75 });
     </script>
