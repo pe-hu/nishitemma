@@ -56,13 +56,18 @@
           This <i>USB Card</i> is<br />
           The <i>Digital Magazine</i>
         </h2>
+        <p id="title" hidden></p>
         <p>
           ¥3,500<br />
           Release on
           <time id="date">5.30.2020</time>
         </p>
-        <a class="button" href="https://buy.stripe.com/test_6oEaEMaQYgoEeIgfYY">Buy Now</a>
-        <p id="title" hidden></p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="NRNV2U9NELQDJ" />
+          <input type="hidden" name="currency_code" value="JPY" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+        </form>
       </section>
       <figure id="usbcard" class="css-rotate">
         <img class="css-back" src="this.png">
