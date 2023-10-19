@@ -72,7 +72,7 @@ main ul li {
         width: 100%;
         height: auto;
         max-width: 100%;
-        min-height: 70vw;
+        min-height: 100vw;
     }
 }
 
