@@ -54,16 +54,14 @@ main ul li {
     overflow: auto;
 }
 
-@media (orientation: landscape) {
-    main ul li {
-        background-size: 75%;
-        width: 75%;
-        max-width: 750px;
-        height: 100%;
-    }
+main ul li {
+    background-size: 75%;
+    width: 75%;
+    max-width: 750px;
+    height: 100%;
 }
 
-@media (orientation: portrait) {
+@media screen and (max-width: 750px) {
     main ul {
         flex-flow: column;
         scroll-snap-type: y proximity;
