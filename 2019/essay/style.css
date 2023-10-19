@@ -148,7 +148,7 @@ h2 b {
     }
 }
 
-@media (orientation: portrait) {
+@media screen and (max-width: 750px) {
     .full {
         min-height: 100vw;
     }
