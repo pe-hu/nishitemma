@@ -68,7 +68,6 @@ main ul li {
     }
 
     main ul li {
-        background-size: auto 80%;
         scroll-snap-align: center;
         width: 100%;
         max-width: 100%;
