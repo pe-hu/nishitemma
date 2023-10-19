@@ -27,13 +27,3 @@
     background-image: url(000.jpg);
     background-size: cover;
 }
-
-@media (orientation: portrait) {
-    #a,
-    #b,
-    #c,
-    #d,
-    #top {
-        height: -webkit-fill-available;
-    }
-}
