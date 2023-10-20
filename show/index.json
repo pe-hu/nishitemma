@@ -30,7 +30,7 @@
         "name": "あっちに聞きたい50のこと",
         "description": "喫茶スタッフ・イラスト担当、あっちに質問をします。",
         "link": "block",
-        "href": "dm/"
+        "href": "dm/weare/"
       },
       {
         "org": "shop",
@@ -206,7 +206,7 @@
         "name": "あくちゃんに聞きたい50のこと",
         "description": "abiのオーナー、sarakona at lastに質問をします。",
         "link": "block",
-        "href": "dm/"
+        "href": "dm/weare/"
       },
       {
         "org": "show",
@@ -302,7 +302,7 @@
         "name": "ふなに聞きたい50のこと",
         "description": "ペフのクリエイティブメンバー船川翔司さんに質問をします。",
         "link": "block",
-        "href": "dm/"
+        "href": "dm/weare/"
       },
       {
         "org": "shop",
@@ -374,7 +374,7 @@
         "name": "れんれんに聞きたい50のこと",
         "description": "ペフ喫茶の料理長 れんれん に質問をします。",
         "link": "block",
-        "href": "dm/"
+        "href": "dm/weare/"
       },
       {
         "org": "members",
@@ -438,7 +438,7 @@
         "name": "FREE TIME",
         "description": "電子音楽昔話「聞け！電子音楽の夜明けを！」",
         "link": "block",
-        "href": "show/040319.html"
+        "href": "https://vv-vv-vv.pages.dev/talk/040319.html"
       },
       {
         "org": "talk",
@@ -446,7 +446,7 @@
         "name": "アンビエントお茶会①",
         "description": "pe hu talk 07",
         "link": "block",
-        "href": "dm/talk/07/"
+        "href": "https://vv-vv-vv.pages.dev/talk/07/"
       },
       {
         "org": "talk",
@@ -454,7 +454,7 @@
         "name": "るに聞きたい50のこと",
         "description": "ペフのメンバーのことをもっと知る会",
         "link": "block",
-        "href": "dm/"
+        "href": "dm/weare/"
       },
       {
         "org": "workshop",
@@ -534,7 +534,7 @@
         "name": "かおちょに聞きたい50のこと",
         "description": "ペフのメンバーのことをもっと知る会",
         "link": "block",
-        "href": "dm/"
+        "href": "dm/weare/"
       },
       {
         "org": "community",
@@ -590,7 +590,7 @@
         "name": "Nice Shop Su",
         "description": "pe hu talk 06",
         "link": "block",
-        "href": "dm/talk/06/"
+        "href": "https://vv-vv-vv.pages.dev/talk/06/"
       },
       {
         "org": "show",
@@ -646,7 +646,7 @@
         "name": "千沙子と純太の謎",
         "description": "pe hu talk 05",
         "link": "block",
-        "href": "dm/talk/05/"
+        "href": "https://vv-vv-vv.pages.dev/talk/05/"
       },
       {
         "org": "show",
@@ -694,7 +694,7 @@
         "name": "OPEN TALK",
         "description": "pe hu talk 04",
         "link": "block",
-        "href": "dm/talk/04/"
+        "href": "https://vv-vv-vv.pages.dev/talk/04/"
       },
       {
         "org": "community",
@@ -734,7 +734,7 @@
         "name": "SNS in China",
         "description": "pe hu talk 03",
         "link": "block",
-        "href": "dm/talk/03/"
+        "href": "https://vv-vv-vv.pages.dev/talk/03/"
       },
       {
         "org": "live",
@@ -782,7 +782,7 @@
         "name": "GAFA",
         "description": "pe hu talk 02",
         "link": "block",
-        "href": "dm/talk/02/"
+        "href": "https://vv-vv-vv.pages.dev/talk/02/"
       },
       {
         "org": "members",
@@ -830,7 +830,7 @@
         "name": "Age of",
         "description": "pe hu talk 01",
         "link": "block",
-        "href": "dm/talk/01/"
+        "href": "https://vv-vv-vv.pages.dev/talk/01/"
       },
       {
         "org": "community",

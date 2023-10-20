@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>∧° ┐ | creative, community space</title>
+  <meta content="∧° ┐ | creative, community space" property="og:title">
+  <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." name="description">
+  <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." property="og:description">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/jp/weare/" property="og:url">
+  <meta content="https://vg.pe.hu/jp/weare/" property="og:image">
+  <meta content="https://vg.pe.hu/jp/weare/" name="twitter:image:src">
+  <link rel="icon" href="../icon.png" type="image/png">
+  <script src="members.js"></script>
+  <script>
+
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        indexJSON('members.json');
+      } else if (event.target.readyState === 'complete') {
+        //
+      }
+    });
+  </script>
+  <link rel="stylesheet" href="style.css" />
+
+</html>
+
+<body id="box">
+  <main>
+    <div>
+      <h1 id="weare">Alumni and Alumnae</h1>
+      <p id="description"></p>
+    </div>
+    <div id="members"></div>
+  </main>
+</body>
+
+</html>
