@@ -164,7 +164,10 @@ hr,
 
 @media print {
 	#menu,
-	#floor {
+	#floor,
+	form,
+	#dialog,
+	#backBtn {
 		display: none;
 	}
 

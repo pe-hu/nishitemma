@@ -1,0 +1,9 @@
+body {
+    background: 50% 50% / contain;
+    background-image: url("renren/cover.jpeg");
+    background-attachment: fixed;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}

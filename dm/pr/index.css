@@ -160,6 +160,10 @@ p.center small {
     float: right;
 }
 
+#backBtn {
+    display: none;
+}
+
 @media screen and (max-width: 750px) {
     #index {
         font-size: 90%;
@@ -172,13 +176,19 @@ p.center small {
         font-size: 90%;
         padding: 1rem;
     }
+    
+	form,
+	#dialog,
+	footer {
+		display: none;
+	}
 
     p.center i {
         font-size: 140%;
     }
     
     p.center small {
-        font-size: 70%;
+        font-size: 95%;
     }
 
     #folder {
