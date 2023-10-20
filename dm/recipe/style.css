@@ -2,6 +2,12 @@ html {
     height: -webkit-fill-available;
 }
 
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 3vw;
+    }
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -36,7 +42,7 @@ main h1 {
     font-weight: 500;
     width: 80%;
     max-width: 700px;
-    margin: 2.5vh auto;
+    margin: 0.5rem auto;
     place-self: start;
     text-align: center;
 }
