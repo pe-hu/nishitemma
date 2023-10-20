@@ -5,89 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <title>おめでとうございます！</title>
-  <meta name="description" content="2018年9月19日、れんれんは食品衛生責任者育成講習会を修了しました！">
+
+  <title>ペフ喫茶のレシピ</title>
+  <meta name="description" content="レンレン料理長が考えた、ペフ喫茶で提供していた料理のレシピ">
   <link rel="icon" href="../../icon.png">
-  <link rel="stylesheet" href="style.css">
-  <style type="text/css">
-    #content {
-      font-family: "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
-      font-size: 1rem;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 95vw;
-      max-width: 550px;
-    }
+  <link rel="stylesheet" href="style.css" />
 
-    button {
-      background: #fff;
-      border: 1px solid #000;
-      border-radius: 50%;
-      color: #000;
-      font-family: inherit;
-      font-size: 111%;
-      padding: 0 1rem;
-      outline: none;
-    }
-
-    @media screen and (max-width: 550px) {
-      #content {
-        font-size: 3vw;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Zen+Maru+Gothic&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <button type="button" onclick="collection();">2018年9月19日</button>
-  <button type="button" onclick="hoshizaki()">2018年10月9日</button>
-  <article id="content">
-    <h1>おめでとうございます！</h1>
-    <button type="button">2018年10月9日</button>
-    <p>
-      れんれんはホシザキの冷蔵庫を落札しました！<br />
-      <img src="renren/000.jpg" alt="れんれんはホシザキの冷蔵庫を落札しました！" width="90%">
-    </p>
-  </article>
-  <script type="text/javascript">
-    let imeages = [
-      'renren/001.jpg',
-      'renren/002.jpg',
-      'renren/003.jpg',
-      'renren/004.jpg'
-    ];
+  <main>
+    <h1>  
+      <strong>RECIPE</strong><br>
+      <small>SPECIAL HOME-MADE DELICIOUS FOODS AND DRINKS FOR YOU, OUR FRIENDS.</small>
+    </h1>
+    <ul>
+      <li id="lemon"></li>
+      <li id="ginger"></li>
+      <li id="croque"></li>
+      <li id="tacos"></li>
+      <li id="banhmi"></li>
+      <li id="france"></li>
+      <li id="summer"></li>
+      <li id="water"></li>
+    </ul>
+  </main>
+  <script>
+    const scrollElement = document.querySelector('main ul');
+    scrollElement.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
+      const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth;
+      if (
+        (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
+        (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
+      )
+        return;
 
-    let body = document.querySelector('body');
-    let num = 0;
-    let image;
-    image = imeages[num];
-
-    function collection() {
-      const renren = setInterval(function() {
-        if (num >= imeages.length - 1) {
-          num = 0;
-        } else {
-          num++;
-        }
-        image = imeages[num];
-        document.querySelector('#content button').innerText = "2018年9月19日"
-        document.querySelector('#content p').innerText = "れんれんは食品衛生責任者育成講習会を修了しました！";
-        body.style.backgroundImage = 'url(' + image + ')';
-      }, 222);
-    }
-
-    function hoshizaki() {
-      document.querySelector('#content button').innerText = "2018年10月9日"
-      document.querySelector('#content p').innerHTML = `
-      れんれんはホシザキの冷蔵庫を落札しました！<br/>
-      <img src="renren/000.jpg" alt="れんれんはホシザキの冷蔵庫を落札しました！" width="90%">
-      `
-      body.style.backgroundImage = 'url(renren/cover.jpeg)';
-      clearInterval(renren)
-    }
+      e.preventDefault();
+      scrollElement.scrollLeft += e.deltaY;
+    });
   </script>
 </body>
 
