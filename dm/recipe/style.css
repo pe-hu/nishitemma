@@ -195,16 +195,6 @@ main ul li.about {
     content: '2018年9月19日、れんれんは食品衛生責任者育成講習会を修了しました！';
 }
 
-#hoshizaki {
-    background-image: url(renren/000.jpg);
-    background-size: contain;
-    background-position: bottom;
-}
-
-#hoshizaki:hover::after {
-    content: '2018年10月9日、れんれんはホシザキの冷蔵庫を落札しました！';
-}
-
 #water {
     position: relative;
     background-image: url(water.jpg);
