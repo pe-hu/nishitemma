@@ -5,6 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'interactive') {
+        indexJSON('www.json')
+
+        const scrollElement = document.querySelector('main ul');
+        scrollElement.addEventListener('wheel', (e) => {
+          if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
+          const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth;
+          if (
+            (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
+            (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
+          )
+            return;
+
+          e.preventDefault();
+          scrollElement.scrollLeft += e.deltaY;
+        });
+      } else if (event.target.readyState === 'complete') {
+        let imeages = [
+          'renren/001.jpg',
+          'renren/002.jpg',
+          'renren/003.jpg',
+          'renren/004.jpg'
+        ];
+
+        let renren = document.querySelector('#renren');
+        let num = 0;
+        let image;
+        image = imeages[num];
+
+        setInterval(function () {
+          if (num >= imeages.length - 1) {
+            num = 0;
+          } else {
+            num++;
+          }
+          image = imeages[num];
+          renren.style.backgroundImage = 'url(' + image + ')';
+        }, 400);
+      }
+    });
+  </script>
 
   <title>ペフ喫茶のレシピ</title>
   <meta name="description" content="レンレン料理長が考えた、ペフ喫茶で提供していた料理のレシピ">
@@ -18,11 +62,14 @@
 </head>
 
 <body>
-  <main>
+  <header>
     <h1>
-      <strong>RECIPE</strong><br>
+      <strong>RECIPES</strong><br>
       <small>SPECIAL HOME-MADE DELICIOUS FOODS AND DRINKS FOR YOU, OUR FRIENDS.</small>
     </h1>
+    <a href="https://paypal.me/niceshopsu?country.x=JP&locale.x=ja_JP" target="_blank">Name Your Price</a>
+  </header>
+  <main>
     <ul>
       <li id="lemon" class="img"></li>
       <li class="about lemon">
@@ -53,42 +100,17 @@
       <li id="renren" class="img"></li>
     </ul>
   </main>
+
+  <dialog id="dialog">
+    <button type="button" onclick="closeDialog()">×</button>
+    <iframe id="pdf"></iframe>
+  </dialog>
+
   <script>
-    const scrollElement = document.querySelector('main ul');
-    scrollElement.addEventListener('wheel', (e) => {
-      if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
-      const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth;
-      if (
-        (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
-        (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
-      )
-        return;
-
-      e.preventDefault();
-      scrollElement.scrollLeft += e.deltaY;
-    });
-
-    let imeages = [
-      'renren/001.jpg',
-      'renren/002.jpg',
-      'renren/003.jpg',
-      'renren/004.jpg'
-    ];
-
-    let renren = document.querySelector('#renren');
-    let num = 0;
-    let image;
-    image = imeages[num];
-
-    setInterval(function () {
-      if (num >= imeages.length - 1) {
-        num = 0;
-      } else {
-        num++;
-      }
-      image = imeages[num];
-      renren.style.backgroundImage = 'url(' + image + ')';
-    }, 250);
+    const dialog = document.querySelector("#dialog")
+    function closeDialog() {
+      dialog.close()
+    }
   </script>
 </body>
 

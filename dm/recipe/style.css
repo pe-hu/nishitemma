@@ -12,7 +12,8 @@ html {
     }
 }
 
-body {
+body,
+#pdf {
     padding: 0;
     margin: 0;
 }
@@ -30,37 +31,51 @@ body {
 main {
     display: grid;
     position: fixed;
+    height: 100%;
 }
 
-main h1 {
+header {
     position: absolute;
+    text-align: center;
+    z-index: 100;
+}
+
+a {
+    font-family: 'Abril Fatface', serif;
+    font-size: x-large;
+    color: #222;
+    border: #222 solid 0.2rem;
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+h1 {
     font-size: 222%;
     font-weight: 500;
     width: 80%;
     max-width: 700px;
     margin: 0.5rem auto;
-    text-align: center;
+    pointer-events: none;
+    user-select: none;
 }
 
 main,
-main h1 {
+header {
     top: 0;
     left: 0;
     right: 0;
-}
-
-main {
     width: 100%;
-    height: 100%;
 }
 
-main h1 strong {
+h1 strong {
     font-size: 150%;
     font-weight: 500;
     font-family: 'Abril Fatface', serif;
 }
 
-main h1 small {
+h1 small {
     display: block;
     font-size: 75%;
     font-family: 'Zen Maru Gothic', serif;
@@ -91,6 +106,12 @@ main ul li.img {
     height: 75vw;
     max-height: 500px;
     z-index: 1;
+    transition: 1s;
+}
+
+main ul li.img:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
 }
 
 main ul li strong {
@@ -161,7 +182,7 @@ main ul li.about {
     background-position: right;
 }
 
-main ul li.img:hover::after {
+#renren:hover::after {
     background: #fff;
     border: 2px solid #000;
     border-radius: 0.5rem;
@@ -185,7 +206,37 @@ main ul li.img:hover::after {
 }
 
 #water {
+    position: relative;
     background-image: url(water.jpg);
     background-size: cover;
-    border-radius: 1rem;
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 200%;
+    padding: 0.5rem;
+    margin: 0;
+    outline: none;
+}
+
+#dialog {
+    position: fixed;
+    width: 90%;
+    max-width: 750px;
+    height: 90%;
+}
+
+#pdf {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+#dialog button {
+    position: absolute;
+    right: 0;
+    top: 0;
 }

@@ -20,7 +20,10 @@ p.center i {
 }
 
 p.center small {
+    display: block;
     font-size: 75%;
+    margin: 0.5rem 0 0;
+    line-height: 200%;
 }
 
 #folder {
@@ -168,6 +171,14 @@ p.center small {
     #index {
         font-size: 90%;
         padding: 1rem;
+    }
+    
+    #we h3 {
+        font-size: 100%;
+    }
+    
+    p.center {
+        font-size: 75%;
     }
 }
 
