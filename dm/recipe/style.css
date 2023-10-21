@@ -86,7 +86,7 @@ h1 small {
 main ul {
     display: flex;
     gap: 10%;
-    padding: 2.5rem;
+    padding: 2.5rem 5%;
     margin: 0;
     place-self: end;
     overflow-x: auto;
