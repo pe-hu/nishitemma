@@ -7,11 +7,28 @@
   <meta name="format-detection" content="telephone=no" />
   <title>おめでとうございます！</title>
   <meta name="description" content="2018年9月19日、れんれんは食品衛生責任者育成講習会を修了しました！">
-  <link rel="icon" href="../../icon.png">
+  <link rel="icon" href="../../../icon.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Zen+Maru+Gothic&display=swap"
+    rel="stylesheet">
   <style type="text/css">
+    html {
+      height: -webkit-fill-available;
+    }
+
+    body {
+      margin: 0;
+      background-image: url(cover.jpeg);
+      background-size: contain;
+      width: 100%;
+      height: 100vh;
+      max-height: -webkit-fill-available;
+    }
+
     #content {
-      font-family: "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+      font-family: 'Zen Maru Gothic', serif;
       font-size: 1rem;
       text-align: center;
       position: absolute;
@@ -42,53 +59,14 @@
 </head>
 
 <body>
-  <button type="button" onclick="collection();">2018年9月19日</button>
-  <button type="button" onclick="hoshizaki()">2018年10月9日</button>
   <article id="content">
     <h1>おめでとうございます！</h1>
     <button type="button">2018年10月9日</button>
     <p>
       れんれんはホシザキの冷蔵庫を落札しました！<br />
-      <img src="renren/000.jpg" alt="れんれんはホシザキの冷蔵庫を落札しました！" width="90%">
+      <img src="000.jpg" alt="れんれんはホシザキの冷蔵庫を落札しました！" width="90%">
     </p>
   </article>
-  <script type="text/javascript">
-    let imeages = [
-      'renren/001.jpg',
-      'renren/002.jpg',
-      'renren/003.jpg',
-      'renren/004.jpg'
-    ];
-
-    let body = document.querySelector('body');
-    let num = 0;
-    let image;
-    image = imeages[num];
-
-    function collection() {
-      const renren = setInterval(function() {
-        if (num >= imeages.length - 1) {
-          num = 0;
-        } else {
-          num++;
-        }
-        image = imeages[num];
-        document.querySelector('#content button').innerText = "2018年9月19日"
-        document.querySelector('#content p').innerText = "れんれんは食品衛生責任者育成講習会を修了しました！";
-        body.style.backgroundImage = 'url(' + image + ')';
-      }, 222);
-    }
-
-    function hoshizaki() {
-      document.querySelector('#content button').innerText = "2018年10月9日"
-      document.querySelector('#content p').innerHTML = `
-      れんれんはホシザキの冷蔵庫を落札しました！<br/>
-      <img src="renren/000.jpg" alt="れんれんはホシザキの冷蔵庫を落札しました！" width="90%">
-      `
-      body.style.backgroundImage = 'url(renren/cover.jpeg)';
-      clearInterval(renren)
-    }
-  </script>
 </body>
 
 </html>

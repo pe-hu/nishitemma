@@ -19,6 +19,11 @@
       "id": "water",
       "name": "白湯",
       "www": "https://arena-attachments.s3.amazonaws.com/24259972/af2b39dac580ad375b8fe0ebcfbd2fef.pdf"
+    },
+    {
+      "id": "renren",
+      "name": "ホシザキ",
+      "www": "renren/"
     }
   ]
 }
