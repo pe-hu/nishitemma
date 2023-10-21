@@ -19,7 +19,7 @@
 
 <body>
   <main>
-    <h1>  
+    <h1>
       <strong>RECIPE</strong><br>
       <small>SPECIAL HOME-MADE DELICIOUS FOODS AND DRINKS FOR YOU, OUR FRIENDS.</small>
     </h1>
@@ -30,6 +30,7 @@
         ホットレモネード用<br>
         <strong>レモンシロップ</strong>
       </li>
+
       <li class="about ginger">
         ジンジャーエール<br>
         バタージンジャートースト用<br>
@@ -42,7 +43,14 @@
         クロックムッシュ用<br>
         <strong>ベシャメルソース</strong>
       </li>
+
       <li id="water" class="img"></li>
+
+      <li class="about renren">
+        料理長<br>
+        <strong>れんれん</strong>
+      </li>
+      <li id="renren" class="img"></li>
     </ul>
   </main>
   <script>
@@ -59,6 +67,28 @@
       e.preventDefault();
       scrollElement.scrollLeft += e.deltaY;
     });
+
+    let imeages = [
+      'renren/001.jpg',
+      'renren/002.jpg',
+      'renren/003.jpg',
+      'renren/004.jpg'
+    ];
+
+    let renren = document.querySelector('#renren');
+    let num = 0;
+    let image;
+    image = imeages[num];
+
+    setInterval(function () {
+      if (num >= imeages.length - 1) {
+        num = 0;
+      } else {
+        num++;
+      }
+      image = imeages[num];
+      renren.style.backgroundImage = 'url(' + image + ')';
+    }, 250);
   </script>
 </body>
 
