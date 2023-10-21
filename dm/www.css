@@ -1,0 +1,122 @@
+html {
+    height: -webkit-fill-available;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 2.5vw;
+    }
+}
+
+body,
+#pdf {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+header {
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+}
+
+main {
+    display: grid;
+    position: fixed;
+    height: 100%;
+}
+
+main,
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 222%;
+    font-weight: 500;
+    max-width: 700px;
+    margin: 1rem auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+h1 strong {
+    font-size: 150%;
+    font-weight: 500;
+}
+
+h1 small {
+    display: block;
+    font-size: 75%;
+    line-height: 125%;
+}
+
+main ul {
+    display: flex;
+    margin: 0;
+    place-items: end;
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+}
+
+main ul li {
+    background-repeat: no-repeat;
+    flex: 0 0 auto;
+    list-style: none inside;
+}
+
+main ul li.img:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    text-shadow: 0.25rem 0.25rem 0 #fff;
+    font-size: 400%;
+    padding: 0.5rem;
+    margin: 0;
+    outline: none;
+    filter: invert();
+    mix-blend-mode: difference;
+}
+
+#dialog {
+    border: solid #fff;
+    padding: 0;
+    position: fixed;
+    width: 90%;
+    max-width: 750px;
+    height: 90%;
+}
+
+#dialog {
+    border: solid #fff;
+    padding: 0;
+    position: fixed;
+    width: 90%;
+    max-width: 750px;
+    height: 90%;
+}
+
+#dialog button {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+}

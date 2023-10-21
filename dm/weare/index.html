@@ -5,39 +5,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <title>∧° ┐ | creative, community space</title>
-  <meta content="∧° ┐ | creative, community space" property="og:title">
-  <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." name="description">
-  <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." property="og:description">
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="https://vg.pe.hu/jp/weare/" property="og:url">
-  <meta content="https://vg.pe.hu/jp/weare/" property="og:image">
-  <meta content="https://vg.pe.hu/jp/weare/" name="twitter:image:src">
-  <link rel="icon" href="../icon.png" type="image/png">
-  <script src="members.js"></script>
-  <script>
+  <title>〇〇に聞きたい50のこと</title>
+  <meta content="〇〇に聞きたい50のこと" property="og:title">
+  <meta content="ペフメンバーによるペフメンバーのインタビュー集" name="description">
+  <meta content="ペフメンバーによるペフメンバーのインタビュー集" property="og:description">
 
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/jp/dm/weare/" property="og:url">
+  <meta content="https://vg.pe.hu/dm/jp/weare/" property="og:image">
+  <meta content="https://vg.pe.hu/dm/jp/weare/" name="twitter:image:src">
+  <link rel="icon" href="../../icon.png" type="image/png">
+  <link rel="stylesheet" href="../www.css">
+
+  <style>
+    @font-face {
+      font-family: 'CheekFont';
+      src: url('font/CheekFont-Regular.ttf');
+    }
+
+    @font-face {
+      font-family: 'S2G';
+      src: url('font/love.ttf');
+    }
+
+    h1 {
+      width: 100%;
+    }
+
+    h1 strong {
+      font-family: 'S2G', cursive;
+    }
+
+    h1 small {
+      font-family: 'CheekFont', cursive;
+    }
+
+    main ul {
+      gap: 2.5rem;
+      padding: 1rem;
+    }
+
+    main ul li.img {
+      background-size: contain;
+      background-position: center;
+      width: 70vw;
+      max-width: 300px;
+      height: 450px;
+      max-height: 100%;
+      z-index: 1;
+      transition: 1s;
+    }
+  </style>
+
+  <script src="www.js"></script>
+  <script>
     document.addEventListener('readystatechange', event => {
       if (event.target.readyState === 'loading') {
-        // loading
-      } else if (event.target.readyState === 'interactive') {
-        indexJSON('members.json');
-      } else if (event.target.readyState === 'complete') {
         //
+      } else if (event.target.readyState === 'interactive') {
+        indexJSON('www.json')
+
+        const scrollElement = document.querySelector('main ul');
+        scrollElement.addEventListener('wheel', (e) => {
+          if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return;
+          const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth;
+          if (
+            (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
+            (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
+          )
+            return;
+
+          e.preventDefault();
+          scrollElement.scrollLeft += e.deltaY;
+        });
+      } else if (event.target.readyState === 'complete') {
+        const backBtn = document.createElement('button');
+        backBtn.id = "backBtn"
+        backBtn.className = "noprint"
+        backBtn.textContent = "↵"
+        backBtn.type = "button"
+        backBtn.style.position = "fixed"
+        backBtn.style.bottom = "0.5rem"
+        backBtn.style.right = "0.5rem"
+        document.body.appendChild(backBtn);
+
+        backBtn.addEventListener('click', function () {
+          history.back(-1);
+        });
       }
     });
   </script>
-  <link rel="stylesheet" href="style.css" />
 
 </html>
 
-<body id="box">
+<body>
+  <header>
+    <h1>
+      <strong>〇〇に聞きたい50のこと</strong><br>
+      <small>ペフメンバーによるペフメンバーへのインタビュー集</small>
+    </h1>
+  </header>
   <main>
-    <div>
-      <h1 id="weare">Alumni and Alumnae</h1>
-      <p id="description"></p>
-    </div>
-    <div id="members"></div>
+    <ul></ul>
   </main>
 </body>
 

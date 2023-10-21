@@ -1,43 +1,6 @@
-html {
-    height: -webkit-fill-available;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-@media screen and (max-width: 700px) {
-    html {
-        font-size: 3vw;
-    }
-}
-
-body,
-#pdf {
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    background: 50% 50% / contain;
     background-color: bisque;
-    background-attachment: fixed;
     color: #222;
-    width: 100%;
-    height: 100vh;
-    max-height: -webkit-fill-available;
-}
-
-main {
-    display: grid;
-    position: fixed;
-    height: 100%;
-}
-
-header {
-    position: absolute;
-    text-align: center;
-    z-index: 100;
 }
 
 a {
@@ -52,66 +15,32 @@ a {
 }
 
 h1 {
-    font-size: 222%;
-    font-weight: 500;
     width: 80%;
-    max-width: 700px;
-    margin: 0.5rem auto;
-    pointer-events: none;
-    user-select: none;
-}
-
-main,
-header {
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
 }
 
 h1 strong {
-    font-size: 150%;
-    font-weight: 500;
     font-family: 'Abril Fatface', serif;
 }
 
-h1 small {
-    display: block;
-    font-size: 75%;
+h1 small,
+main ul li.about {
     font-family: 'Zen Maru Gothic', serif;
-    font-weight: 500;
-    line-height: 125%;
 }
 
 main ul {
-    display: flex;
     gap: 10%;
     padding: 2.5rem 5%;
-    margin: 0;
     place-self: end;
-    overflow-x: auto;
-    width: 100%;
-}
-
-main ul li {
-    background-repeat: no-repeat;
-    font-family: 'Zen Maru Gothic', serif;
-    flex: 0 0 auto;
-    list-style: none inside;
+    max-height: 100vw;
 }
 
 main ul li.img {
     width: 75vw;
-    max-width: 500px;
+    max-width: 90vh;
     height: 75vw;
-    max-height: 500px;
+    max-height: 100%;
     z-index: 1;
     transition: 1s;
-}
-
-main ul li.img:hover {
-    cursor: pointer;
-    filter: brightness(1.5);
 }
 
 main ul li strong {
@@ -199,39 +128,4 @@ main ul li.about {
     position: relative;
     background-image: url(water.jpg);
     background-size: cover;
-}
-
-button {
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    text-shadow: 0.25rem 0.25rem 0 #fff;
-    font-size: 400%;
-    padding: 0.5rem;
-    margin: 0;
-    outline: none;
-    filter: invert();
-    mix-blend-mode: difference;
-}
-
-#dialog {
-    border: solid #fff;
-    padding: 0;
-    position: fixed;
-    width: 90%;
-    max-width: 750px;
-    height: 90%;
-}
-
-#pdf {
-    display: block;
-    border: none;
-    width: 100%;
-    height: 100%;
-}
-
-#dialog button {
-    position: absolute;
-    right: 1rem;
-    bottom: 0;
 }

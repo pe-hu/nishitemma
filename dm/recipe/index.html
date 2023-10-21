@@ -19,7 +19,7 @@
             (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
             (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
           )
-            return;
+          return;
 
           e.preventDefault();
           scrollElement.scrollLeft += e.deltaY;
@@ -67,6 +67,7 @@
   <title>ペフ喫茶のレシピ</title>
   <meta name="description" content="レンレン料理長が考えた、ペフ喫茶で提供していた料理のレシピ">
   <link rel="icon" href="../../icon.png">
+  <link rel="stylesheet" href="../www.css" />
   <link rel="stylesheet" href="style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
