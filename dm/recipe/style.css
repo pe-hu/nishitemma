@@ -3,15 +3,6 @@ body {
     color: #222;
 }
 
-a {
-    font-size: 150%;
-    color: #222;
-    border: #222 solid 0.2rem;
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    text-decoration: none;
-}
-
 header a {
     margin-top: 1rem;
 }
@@ -20,8 +11,21 @@ h1 {
     width: 80%;
 }
 
+h2,
+a {
+    font-size: 150%;
+    color: #222;
+}
+
+a {
+    border: #222 solid 0.2rem;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+}
+
 h1 strong,
-header a {
+h2 {
     font-family: 'Abril Fatface', serif;
 }
 
