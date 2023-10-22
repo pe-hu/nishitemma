@@ -34,6 +34,23 @@ function indexMembers(obj) {
             <img src="${content.id}/009.png">
             `
             dialog.showModal()
+
+            // URLのアンカー（#以降の部分）を取得
+            const urlHash = location.hash;
+            const www = document.querySelector("#dialog a")
+            if (!urlHash) {
+                www.textContent = "Sample"
+            } else {
+                // URLにアンカーがある場合
+                let id = urlHash.replace('#', '')
+                if (id === 'download') {
+                    www.href = content.www
+                    www.textContent = "Download"
+                    www.setAttribute("target", "_blank")
+                } else {
+                    www.textContent = "Sample"
+                }
+            }
         }, false);
     }
 }

@@ -13,10 +13,11 @@ function json(obj) {
     for (const recipe of recipeAll) {
         const thisRecipe = document.querySelector(`#${recipe.id}`)
         const dialog = document.querySelector("#dialog")
-        const pdf = document.querySelector("#pdf")
+        const a = document.querySelector("#dialog a")
         thisRecipe.addEventListener('click', () => {
             dialog.showModal()
-            pdf.src = recipe.www
+            a.href = recipe.www
+            a.innerHTML = recipe.name
         }, false);
     }
 }

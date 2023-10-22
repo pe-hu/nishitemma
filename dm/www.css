@@ -12,8 +12,7 @@ html {
     }
 }
 
-body,
-#pdf {
+body {
     padding: 0;
     margin: 0;
 }
@@ -49,7 +48,8 @@ header {
     user-select: none;
 }
 
-header a {
+header a,
+header input {
     pointer-events: auto;
     user-select: auto;
 }
@@ -101,12 +101,11 @@ button {
     padding: 0.5rem;
     margin: 0;
     outline: none;
-    filter: invert();
     mix-blend-mode: difference;
 }
 
 #dialog {
-    border: solid #fff;
+    border: none;
     padding: 0;
     position: fixed;
 }
@@ -116,11 +115,4 @@ button {
     left: 1rem;
     top: 0;
     z-index: 100;
-}
-
-#pdf {
-    border: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
 }

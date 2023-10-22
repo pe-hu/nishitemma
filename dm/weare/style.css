@@ -16,7 +16,8 @@ h1 strong {
     font-family: 'S2G', cursive;
 }
 
-h1 small {
+h1 small,
+#dialog a {
     font-family: 'CheekFont', cursive;
 }
 
@@ -42,9 +43,22 @@ main ul li.img {
     user-select: none;
 }
 
+#dialog a {
+    font-size: 500%;
+    background: #fff;
+    color: #000;
+    padding: 0 0.25rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
 #dialog section img {
     padding: 0;
     margin: 0;
+    filter: blur(0.1rem);
 }
 
 #dialog section#kn {
