@@ -47,6 +47,12 @@ function indexMembers(obj) {
                     www.href = content.www
                     www.textContent = "Download"
                     www.setAttribute("target", "_blank")
+
+                    const h2 = document.querySelector("header h2")
+                    const form = document.querySelector("header form")
+                    h2.textContent = "Download"
+                    form.remove()
+
                 } else {
                     www.textContent = "Sample"
                 }
