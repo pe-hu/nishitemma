@@ -19,11 +19,22 @@
             (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
             (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
           )
-          return;
+            return;
 
           e.preventDefault();
           scrollElement.scrollLeft += e.deltaY;
         });
+
+        // URLのアンカー（#以降の部分）を取得
+        const urlHash = location.hash;
+        if (urlHash) {
+          // URLにアンカーがある場合
+          let id = urlHash.replace('#', '')
+          if (id === 'download') {
+            const header = document.querySelector("header a")
+            header.remove()
+          }
+        }
       } else if (event.target.readyState === 'complete') {
         let imeages = [
           'renren/001.jpg',

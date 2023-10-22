@@ -14,10 +14,25 @@ function json(obj) {
         const thisRecipe = document.querySelector(`#${recipe.id}`)
         const dialog = document.querySelector("#dialog")
         const a = document.querySelector("#dialog a")
-        thisRecipe.addEventListener('click', () => {
-            dialog.showModal()
-            a.href = recipe.www
-            a.innerHTML = recipe.name
-        }, false);
+
+        // URLのアンカー（#以降の部分）を取得
+        const urlHash = location.hash;
+        if (!urlHash) {
+            thisRecipe.style.pointerEvents = "none"
+            thisRecipe.style.userSelect = "none"
+        } else {
+            // URLにアンカーがある場合
+            let id = urlHash.replace('#', '')
+            if (id === 'download') {
+                thisRecipe.addEventListener('click', () => {
+                    dialog.showModal()
+                    a.href = recipe.www
+                    a.innerHTML = recipe.name
+                }, false);
+            } else {
+                thisRecipe.style.pointerEvents = "none"
+                thisRecipe.style.userSelect = "none"
+            }
+        }
     }
 }
