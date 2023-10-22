@@ -9,12 +9,31 @@ async function indexJSON(requestURL) {
 }
 
 function indexMembers(obj) {
-    const main = document.querySelector('main ul');
+    const main = document.querySelector('main ul')
     const contentsAll = obj.contents;
+    const dialog = document.querySelector("#dialog")
+    const section = document.querySelector("#dialog section")
+
     for (const content of contentsAll) {
-        const li = document.createElement('li');
+        const li = document.createElement('li')
         li.className = "img"
-        li.style.backgroundImage = `url(${content.img})`;
+        li.style.backgroundImage = `url(${content.img})`
         main.appendChild(li);
+        li.addEventListener('click', () => {
+            section.id = content.id
+            section.innerHTML = `
+            <img src="${content.img}">
+            <img src="${content.id}/001.png">
+            <img src="${content.id}/002.png">
+            <img src="${content.id}/003.png">
+            <img src="${content.id}/004.png">
+            <img src="${content.id}/005.png">
+            <img src="${content.id}/006.png">
+            <img src="${content.id}/007.png">
+            <img src="${content.id}/008.png">
+            <img src="${content.id}/009.png">
+            `
+            dialog.showModal()
+        }, false);
     }
 }

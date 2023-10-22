@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'CheekFont';
+    src: url('font/CheekFont-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'S2G';
+    src: url('font/love.ttf');
+}
+
+h1 {
+    width: 100%;
+}
+
+h1 strong {
+    font-family: 'S2G', cursive;
+}
+
+h1 small {
+    font-family: 'CheekFont', cursive;
+}
+
+main ul {
+    gap: 2.5rem;
+    padding: 1rem;
+}
+
+main ul li.img {
+    background-size: contain;
+    background-position: center;
+    width: 70vw;
+    max-width: 300px;
+    height: 450px;
+    max-height: 100%;
+    z-index: 1;
+    transition: 1s;
+}
+
+#dialog section {
+    display: flex;
+    pointer-events: none;
+    user-select: none;
+}
+
+#dialog section img {
+    padding: 0;
+    margin: 0;
+}
+
+#dialog section#kn {
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+
+#dialog section#kn img:first-of-type {
+    display: none;
+}
+
+#dialog section#kn img:nth-of-type(2) {
+    order: -3;
+}
+
+#dialog section#kn img:nth-of-type(3) {
+    order: -2;
+}
+
+#dialog section#kn img:last-of-type {
+    order: -1;
+}
+
+#dialog section#kn img {
+    max-width: 200px;
+    width: calc(100%/3);
+}
+
+
+#dialog section#le img,
+#dialog section#renren img {
+    max-width: 200px;
+    width: calc(100%/3);
+}
+
+#dialog section#aa,
+#dialog section#pal,
+#dialog section#acchi {
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+#dialog section#aa img,
+#dialog section#pal img,
+#dialog section#acchi img {
+    max-width: 200px;
+    width: calc(100%/5);
+}
+
+#dialog section#pal img:first-of-type {
+    order: 1;
+}
+
+#dialog section#funa {
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+
+#dialog section#funa img {
+    max-width: 200px;
+    width: calc(100%/2);
+}
+
+#dialog section#funa img:first-of-type,
+#dialog section#funa img:last-of-type {
+    display: none;
+}
+
+#dialog section#tk {
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+#dialog section#tk img {
+    max-width: 200px;
+    width: calc(100%/1);
+}

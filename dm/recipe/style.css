@@ -53,6 +53,12 @@ main ul li.about {
     z-index: 5;
 }
 
+#dialog {
+    width: 90%;
+    height: 90%;
+    max-width: 750px;
+}
+
 .lemon {
     border-radius: 0.5rem;
     padding: 0.5rem;
