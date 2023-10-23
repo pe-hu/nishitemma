@@ -7,7 +7,15 @@
     <meta name="format-detection" content="telephone=no">
     <script src="../screensaver.js"></script>
     <script type="text/javascript">
-        fetchHTML('contents.html', '#index');
+        document.addEventListener('readystatechange', event => {
+            if (event.target.readyState === 'loading') {
+                // loading
+            } else if (event.target.readyState === 'interactive') {
+                // 
+            } else if (event.target.readyState === 'complete') {
+                fetchHTML('contents.html', '#index');
+            }
+        });
     </script>
 
     <!--og:meta-->
@@ -26,15 +34,15 @@
     <link rel="icon" href="../../icon.png" type="image/png">
     <link rel="stylesheet" href="../../menu.css" />
     <link rel="stylesheet" href="../css/publication.css" />
-    <link rel="stylesheet" href="css/contents.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="contents.css" />
+    <link rel="stylesheet" href="pr/style.css" />
     <style>
         main ul li {
             font-family: 'Times Dot', 'Times New Roman', Times, serif;
             display: grid;
             place-items: center;
         }
-        
+
         main ul li form p {
             font-size: 200%;
             text-align: center;
@@ -62,7 +70,8 @@
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="CQYKPGTPTA5P4" />
                     <input type="hidden" name="currency_code" value="JPY" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+                        name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
                 </form>
             </li>
         </ul>
