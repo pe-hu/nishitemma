@@ -5,8 +5,8 @@
         "date": "9.1-9.16.2019",
         "name": "A+A- AA CC K2 X W",
         "description": "at BnA Alter Museum",
-        "link": "none",
-        "href": "#"
+        "link": "block",
+        "href": "https://the-answers-are-always-inside-of-you.github.io/"
       },
       {
         "org": "community",
@@ -23,14 +23,6 @@
         "description": "",
         "link": "none",
         "href": "#"
-      },
-      {
-        "org": "talk",
-        "date": "9.10.2019 (Tue) 8pm-",
-        "name": "あっちに聞きたい50のこと",
-        "description": "喫茶スタッフ・イラスト担当、あっちに質問をします。",
-        "link": "block",
-        "href": "dm/weare/"
       },
       {
         "org": "shop",
@@ -115,8 +107,8 @@
       {
         "org": "residency",
         "date": "7.24-7.31.2019",
-        "name": "residency for Green People",
-        "description": "by Elliott Cost",
+        "name": "Elliott Cost",
+        "description": "resident for Green People",
         "link": "none",
         "href": "https://vg.pe.hu/2f/greenpeople.html"
       },
@@ -139,8 +131,8 @@
       {
         "org": "residency",
         "date": "7.19-8.13.2019",
-        "name": "residency for Green People",
-        "description": "by Laurel Schwulst",
+        "name": "Laurel Schwulst",
+        "description": "resident for Green People",
         "link": "none",
         "href": "https://vg.pe.hu/2f/greenpeople.html"
       },
@@ -259,16 +251,16 @@
       {
         "org": "residency",
         "date": "5.27-6.15.2019",
-        "name": "residency for NS1",
-        "description": "by Nicholas Strobelt",
+        "name": "Nicholas Strobelt",
+        "description": "resident for NS1",
         "link": "none",
         "href": "https://vg.pe.hu/2f/ns1.html"
       },
       {
         "org": "residency",
         "date": "5.27-5.30.2019",
-        "name": "residency for NS1",
-        "description": "by Joseph Torres",
+        "name": "Joseph Torres",
+        "description": "resident for NS1",
         "link": "none",
         "href": "https://vg.pe.hu/2f/ns1.html"
       },
@@ -427,8 +419,8 @@
       {
         "org": "residency",
         "date": "4.4-30.2019",
-        "name": "Best friends from france 2019",
-        "description": "by Jean-Philippe Bretin | Vanessa Dziuba | Sammy Stein | Séverine Bascouert",
+        "name": "Jean-Philippe Bretin | Vanessa Dziuba | Sammy Stein | Séverine Bascouert",
+        "description": "resident for Best friends from france 2019",
         "link": "none",
         "href": "https://vg.pe.hu/2f/bff.html"
       },
@@ -499,8 +491,8 @@
       {
         "org": "residency",
         "date": "3.17-3.30.2019",
-        "name": "residency for なかよしフェアー",
-        "description": "by Josefina Valman | Emilio Algo",
+        "name": "Josefina Valman | Emilio Algo",
+        "description": "resident for なかよしフェアー",
         "link": "none",
         "href": "https://vg.pe.hu/2f/nakayoshi_fair.html"
       },
