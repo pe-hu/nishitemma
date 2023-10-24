@@ -1,20 +1,63 @@
-<section id="future">
-  <h2>List of Participants</h2>
-  <h3>
-    Ana Martinez Fernandez | Ayami Konishi | Ayumi Akutagawa (abi) | BIOMAN | Dove (Pure Voyage) | Elliott
-    Cost | Emilio Algo | Ferran Pla | Fumio Kohama | Gaku Kurokawa | Hamaji (KK manga) | Haruka Numoto |
-    INDGMSK | Isshuumawattetsurai | Jean-Philippe Bretin | Josefina Valdés (Scent) | Joseph Torres | Kaori
-    Nakao | Kazutaka Tsutsui | Kazuma Sasajima | Laurel Schwulst | Le makeup (Pure Voyage) | Masami Baba |
-    Masamichi Furukawa | Mizuho Kuki | Moire | Nicholas Strobelt | Nobuto Okawahara | Ray Washio | Rina Cho
-    | Sammy Stein | seaketa | Séverine Bascouert | Stefan Alexander | Shintaro Matsuo | Shoji Funakawa |
-    thaithefish | Yuu Takamizawa (4649) | Vanessa Dziuba
-  </h3>
-  <h3><a href="#">BUY NOW</a></h3>
-  <div class="credit">
-    <span class="as">Editor In Chief</span> Kazuma Sasajima<br />
-    <span class="as">Designed by</span> Ayumi Akutagawa<br />
-    <span class="as">Translated by</span> Haruka Numoto<br />
-    <p>by creative, community space <span class="pehu">∧°┐</span></p>
-    <p>Grant by Chishima Foundation for Creative Osaka</p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <script src="../index.js"></script>
+  <script>
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'loading') {
+        // loading
+      } else if (event.target.readyState === 'interactive') {
+        //
+      } else if (event.target.readyState === 'complete') {
+        fetchHTML('../menu.html', '#menu');
+      }
+    });
+  </script>
+
+  <title>∧° ┐ | creative, community space</title>
+  <meta content="∧° ┐ | creative, community space" property="og:title">
+  <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." name="description">
+  <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." property="og:description">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/jp/cm/" property="og:url">
+  <meta content="https://vg.pe.hu/jp/cm/" property="og:image">
+  <meta content="https://vg.pe.hu/jp/cm/" name="twitter:image:src">
+  <link rel="icon" href="../icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../menu.css">
+</head>
+
+<body>
+  <article id="credit">
+    <h1>List of Participants</h1>
+    <h2>
+      Ana Martinez Fernandez | Ayami Konishi | Ayumi Akutagawa (abi) | BIOMAN | Dove (Pure Voyage) | Elliott
+      Cost | Emilio Algo | Ferran Pla | Fumio Kohama | Gaku Kurokawa | Hamaji (KK manga) | Haruka Numoto |
+      INDGMSK | Isshuumawattetsurai | Jean-Philippe Bretin | Josefina Valdés (Scent) | Joseph Torres | Kaori
+      Nakao | Kazutaka Tsutsui | Kazuma Sasajima | Laurel Schwulst | Le makeup (Pure Voyage) | Masami Baba |
+      Masamichi Furukawa | Mizuho Kuki | Moire | Nicholas Strobelt | Nobuto Okawahara | Ray Washio | Rina Cho
+      | Sammy Stein | seaketa | Séverine Bascouert | Stefan Alexander | Shintaro Matsuo | Shoji Funakawa |
+      thaithefish | Yuu Takamizawa (4649) | Vanessa Dziuba
+    </h2>
+    <section>
+      <h3>
+        <span class="as">Editor In Chief</span>
+        <strong>Kazuma Sasajima</strong><br />
+        <span class="as">Designed by</span>
+        <strong>Ayumi Akutagawa</strong><br />
+        <span class="as">Translated by</span>
+        <strong>Haruka Numoto</strong><br />
+      </h3>
+      <p>
+        by creative, community space
+        <span class="pehu">∧°┐</span>
+      </p>
+      <p>Grant by Chishima Foundation for Creative Osaka</p>
+    </section>
+    <footer id="menu"></footer>
+  </article>
+</body>

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Times New Roman";
+  src: url("https://pe-hu.github.io/ver/font/times.ttf");
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("https://pe-hu.github.io/ver/font/Arial.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&subset=japanese');
+
+html {
+	height: -webkit-fill-available;
+}
+
+body {
+	height: 100vh;
+	max-height: -webkit-fill-available;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2 {
+	padding: 0;
+	margin: 1rem;
+}
+
+#credit section {
+	margin: 2.5rem;
+}
+
+article {
+	background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
+	display: grid;
+	place-content: space-between space-between;
+	height: 100%;
+	overflow: scroll;
+}
+
+h1,
+h2,
+h3,
+strong {
+	font-weight: 500;
+}
+
+.pehu {
+	font-family: "MS Mincho", "SimSong", serif;
+	letter-spacing: 0.04rem;
+}
+
+#credit h1 {
+	color: #fff;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 250%;
+	font-style: italic;
+}
+
+#credit h2 {
+	font-family: Arial, sans-serif;
+	font-size: 175%;
+	line-height: 150%;
+}
+
+#credit h3 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 125%;
+	margin: 2.22rem auto;
+	width: 22.22rem;
+}
+
+#credit h3 strong,
+#credit section p {
+	font-size: 111%;
+}
+
+#credit section p {
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+}
+
+.as {
+	display: inline-block;
+	width: 10rem;
+}
