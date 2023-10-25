@@ -12,7 +12,7 @@ input[type="radio"]+label {
 }
 
 input[type="radio"],
-#contents li.hidden {
+.hidden {
     display: none;
 }
 
