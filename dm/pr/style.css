@@ -146,22 +146,37 @@ footer {
 }
 
 #video {
-    margin: 0 0 1rem;
-    width: 100%;
-    height: 100%;
     pointer-events: none;
     user-select: none;
+}
+
+hr {
+    clear: both;
+    border: none;
+    margin: 1rem;
+    width: 100%;
 }
 
 @media (orientation: landscape) {
     #dialog {
         width: 75vh;
     }
+
+    #video {
+        float: left;
+        margin: 0 1rem 0 0;
+        width: 50%;
+    }
 }
 
 @media (orientation: portrait) {
     #dialog {
         width: 90vw;
+    }
+
+    #video {
+        margin: 0 0 1rem 0;
+        width: 100%;
     }
 }
 

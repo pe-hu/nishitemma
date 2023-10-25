@@ -1,143 +1,72 @@
 @font-face {
-    font-family: 'CheekFont';
-    src: url('font/CheekFont-Regular.ttf');
+  font-family: "Times New Roman";
+  src: url("https://pe-hu.github.io/ver/font/times.ttf");
 }
 
 @font-face {
-    font-family: 'S2G';
-    src: url('font/love.ttf');
+  font-family: "Arial";
+  src: url("https://pe-hu.github.io/ver/font/Arial.ttf");
 }
 
-h1 {
-    width: 100%;
+#weare h1,
+#weare h2 {
+	padding: 0;
+	margin: 1rem;
 }
 
-h2 {
-    font-size: 200%;
+#weare section {
+	margin: 2.5rem;
 }
 
-h1 strong {
-    font-family: 'S2G', cursive;
+dialog {
+	background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
+	height: 100%;
+	overflow: scroll;
 }
 
-h1 small,
+h1,
 h2,
-#dialog a {
-    font-family: 'CheekFont', cursive;
+h3,
+strong {
+	font-weight: 500;
 }
 
-main ul {
-    gap: 2.5rem;
-    padding: 1rem;
+.pehu {
+	font-family: "MS Mincho", "SimSong", serif;
+	letter-spacing: 0.04rem;
 }
 
-main ul li.img {
-    background-size: contain;
-    background-position: center;
-    width: 70vw;
-    max-width: 300px;
-    height: 450px;
-    max-height: 100%;
-    z-index: 1;
-    transition: 1s;
+#weare h1 {
+	color: #fff;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 250%;
+	font-style: italic;
 }
 
-#dialog section {
-    display: flex;
-    pointer-events: none;
-    user-select: none;
+#weare h2 {
+	font-family: Arial, sans-serif;
+	font-size: 175%;
+	line-height: 150%;
 }
 
-#dialog a {
-    font-size: 250%;
-    background: #fff;
-    color: #000;
-    padding: 0 0.25rem;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+#weare h3 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 125%;
+	margin: 2.22rem auto;
+	width: 22.22rem;
 }
 
-#dialog section img {
-    padding: 0;
-    margin: 0;
-    filter: blur(0.1rem);
+#weare h3 strong,
+#weare section p {
+	font-size: 111%;
 }
 
-#dialog section#kn {
-    max-width: 600px;
-    flex-wrap: wrap;
+#weare section p {
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
 }
 
-#dialog section#kn img:first-of-type {
-    display: none;
-}
-
-#dialog section#kn img:nth-of-type(2) {
-    order: -3;
-}
-
-#dialog section#kn img:nth-of-type(3) {
-    order: -2;
-}
-
-#dialog section#kn img:last-of-type {
-    order: -1;
-}
-
-#dialog section#kn img {
-    max-width: 200px;
-    width: calc(100%/3);
-}
-
-
-#dialog section#le img,
-#dialog section#renren img {
-    max-width: 200px;
-    width: calc(100%/3);
-}
-
-#dialog section#aa,
-#dialog section#pal,
-#dialog section#acchi {
-    max-width: 1000px;
-    flex-wrap: wrap;
-}
-
-#dialog section#aa img,
-#dialog section#pal img,
-#dialog section#acchi img {
-    max-width: 200px;
-    width: calc(100%/5);
-}
-
-#dialog section#pal img:first-of-type {
-    order: 1;
-}
-
-#dialog section#funa {
-    max-width: 400px;
-    flex-wrap: wrap;
-}
-
-#dialog section#funa img {
-    max-width: 200px;
-    width: calc(100%/2);
-}
-
-#dialog section#funa img:first-of-type,
-#dialog section#funa img:last-of-type {
-    display: none;
-}
-
-#dialog section#tk {
-    flex-flow: column;
-    flex-wrap: wrap;
-}
-
-#dialog section#tk img {
-    max-width: 200px;
-    width: calc(100%/1);
+.as {
+	display: inline-block;
+	width: 10rem;
 }

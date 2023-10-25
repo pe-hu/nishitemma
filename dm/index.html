@@ -16,6 +16,7 @@
       } else if (event.target.readyState === 'complete') {
         fetchHTML('../menu.html', '#menu');
         fetchHTML('pr/index.html', '#index');
+        fetchHTML('weare/index.html', '#weare');
       }
     });
   </script>
@@ -39,6 +40,7 @@
   <link rel="stylesheet" href="pr/rotate.css">
   <link rel="stylesheet" href="pr/index.css">
   <link rel="stylesheet" href="img/slideshow.css">
+  <link rel="stylesheet" href="weare/style.css">
 </head>
 
 <body>
@@ -83,41 +85,17 @@
 
     <dialog id="dialog" class="pehu">
       <button type="button" onclick="closeDialog()">×</button>
-      <video id="video" preload="auto" playsinline>
-        <source src="pr/sample.mp4" type="video/mp4" />
-      </video>
-      <h3>The Digital Magazine 2019 (PDF Edition)</h3>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" value="9AQZ36AP4NBGJ" />
-        <input type="hidden" name="currency_code" value="JPY" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
-      </form>
-      <section>
-        <p>Price <b>2019</b> JPN</p>
-        <p>425 Pages | 61.29 MB</p>
-      </section>
+      <section id="weare"></section>
     </dialog>
 
     <script>
-      const dialog = document.querySelector("#dialog"),
-        video = document.querySelector('#video');
-
-      function playMP4() {
-        video.load();
-        video.play();
-        video.addEventListener("ended", function () {
-          video.play();
-        }, false);
-      }
+      const dialog = document.querySelector("#dialog");
 
       function preview() {
         dialog.showModal()
-        playMP4()
       }
 
       function closeDialog() {
-        video.pause()
         dialog.close()
       }
     </script>
