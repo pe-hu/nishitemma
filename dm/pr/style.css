@@ -115,27 +115,10 @@ i {
     position: fixed;
 }
 
-#dialog section,
-#dialog form,
 footer {
     display: flex;
     flex-wrap: wrap;
-}
-
-#dialog section,
-footer {
     justify-content: space-between;
-}
-
-#dialog form {
-    margin: 1rem 0;
-    width: 100%;
-    justify-content: center;
-}
-
-#dialog h3,
-#dialog p {
-    margin: 0;
 }
 
 #dialog button {
@@ -158,10 +141,6 @@ hr {
 }
 
 @media (orientation: landscape) {
-    #dialog {
-        width: 75vh;
-    }
-
     #video {
         float: left;
         margin: 0 1rem 0 0;
@@ -170,10 +149,6 @@ hr {
 }
 
 @media (orientation: portrait) {
-    #dialog {
-        width: 90vw;
-    }
-
     #video {
         margin: 0 0 1rem 0;
         width: 100%;
