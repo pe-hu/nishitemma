@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>〇〇に聞きたい50のこと</title>
+  <meta content="ペフメンバーによるペフメンバーへのインタビュー集" name="description">
+
+  <script src="50q.js"></script>
+  <script>
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'interactive') {
+        indexJSON('50q.json')
+
+        const scrollElement = document.querySelector('main ul');
+        scrollElement.addEventListener('wheel', (e) => {
+          if (Math.abs(e.deltaY) < Math.abs(e.deltaX))
+            return;
+
+          const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth;
+          if (
+            (scrollElement.scrollLeft <= 0 && e.deltaY < 0) ||
+            (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0)
+          )
+            return;
+
+          e.preventDefault();
+          scrollElement.scrollLeft += e.deltaY;
+        });
+      } else if (event.target.readyState === 'complete') {
+        const dialog = document.querySelector("#dialog")
+
+        // URLにアンカーがある場合
+        const urlHash = location.hash;
+        let id = urlHash.replace('#', '')
+        if (urlHash) {
+          if (id === 'download') {
+            const h2 = document.querySelector("header h2")
+            const form = document.querySelector("header form")
+            h2.innerHTML = "表紙をクリックするとダウンロードリンクが表示されます。"
+            form.remove()
+          } else {
+            dialog.className = "blur"
+          }
+        } else {
+          dialog.className = "blur"
+        }
+
+        const backBtn = document.createElement('button');
+        backBtn.id = "backBtn"
+        backBtn.className = "noprint"
+        backBtn.textContent = "↵"
+        backBtn.type = "button"
+        backBtn.style.position = "fixed"
+        backBtn.style.bottom = "0.5rem"
+        backBtn.style.right = "0.5rem"
+        document.body.appendChild(backBtn);
+
+        backBtn.addEventListener('click', function () {
+          history.back(-1);
+        });
+      }
+    });
+  </script>
+
+  <link rel="stylesheet" href="50q.css">
+  <link rel="stylesheet" href="../pr/www.css">
+  <link rel="icon" href="https://vg.pe.hu/jp/icon.png" type="image/png">
+
+</html>
+
+<body>
+  <header>
+    <h1>
+      <strong>〇〇に聞きたい50のこと</strong><br>
+      <small>ペフメンバーによるペフメンバーへのインタビュー集</small>
+    </h1>
+    <h2>Name Your Price</h2>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="PR6GUN9GBXFR6" />
+      <input type="hidden" name="currency_code" value="JPY" />
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+    </form>
+  </header>
+  <main>
+    <ul></ul>
+  </main>
+
+  <dialog id="dialog">
+    <button type="button" onclick="closeDialog()">×</button>
+    <section></section>
+    <a></a>
+  </dialog>
+
+  <script>
+    const dialog = document.querySelector("#dialog")
+    function closeDialog() {
+      dialog.close()
+    }
+  </script>
+</body>
+
+</html>

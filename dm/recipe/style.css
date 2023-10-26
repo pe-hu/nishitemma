@@ -1,0 +1,158 @@
+body {
+    background-color: bisque;
+    color: #222;
+}
+
+header a {
+    margin-top: 1rem;
+}
+
+h1 {
+    width: 80%;
+}
+
+h2,
+a {
+    font-size: 150%;
+    color: #222;
+}
+
+a {
+    border: #222 solid 0.2rem;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+}
+
+h1 strong,
+h2 {
+    font-family: 'Abril Fatface', serif;
+}
+
+h1 small,
+main ul li.about,
+#dialog a {
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+main ul {
+    gap: 10%;
+    padding: 2.5rem 5%;
+    place-self: end;
+    max-height: 100vw;
+}
+
+main ul li.img {
+    background-position: center;
+    width: 75vw;
+    max-width: 90vh;
+    height: 75vw;
+    max-height: 100%;
+    z-index: 1;
+    transition: 1s;
+}
+
+main#recipes ul li.img:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+main ul li strong {
+    font-size: 125%;
+    font-weight: 500;
+}
+
+main ul li.about {
+    background: #fff;
+    z-index: 5;
+}
+
+#dialog {
+    max-width: 350px;
+    max-height: 90%;
+}
+
+#img {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 100%;
+}
+
+.lemon {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    place-self: start;
+    margin-left: -10rem;
+    transform: rotateZ(10deg);
+}
+
+.ginger {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    place-self: end;
+    margin-left: -4.5rem;
+    margin-right: -15rem;
+    margin-bottom: 1rem;
+    transform: rotateZ(-5deg);
+}
+
+.croque {
+    border-radius: 50%;
+    padding: 5rem 2.5rem;
+    margin-top: -2.5rem;
+    margin-left: -10rem;
+    place-self: start;
+    transform: rotateZ(5deg);
+}
+
+.renren {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    place-self: end;
+    margin-right: -10rem;
+    margin-bottom: 1rem;
+}
+
+#lemon {
+    background-image: url(lemon.jpg);
+    background-size: cover;
+    border-radius: 5rem;
+}
+
+#ginger {
+    background-image: url(ginger.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#croque {
+    background-image: url(croque.jpg);
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+#hoshizaki {
+    background-size: contain;
+    background-position: right;
+}
+
+#hoshizaki:hover::after {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 0.25rem;
+    margin: 0.5rem;
+}
+
+#hoshizaki:hover::after {
+    content: '2018年9月19日、れんれんは食品衛生責任者育成講習会を修了しました！';
+}
+
+#water {
+    position: relative;
+    background-image: url(water.jpg);
+    background-size: cover;
+}

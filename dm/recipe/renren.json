@@ -1,0 +1,29 @@
+{
+  "recipe": [
+    {
+      "id": "lemon",
+      "name": "レモンシロップのレシピを見る",
+      "www": "https://arena-attachments.s3.amazonaws.com/24259966/8528e528807ed60fd5b0f5126ddf943a.pdf"
+    },
+    {
+      "id": "ginger",
+      "name": "ジンジャーシロップのレシピを見る",
+      "www": "https://arena-attachments.s3.amazonaws.com/24259968/44bd309e136178006ee3904427effd55.pdf"
+    },
+    {
+      "id": "croque",
+      "name": "ベシャメルソースのレシピを見る",
+      "www": "https://arena-attachments.s3.amazonaws.com/24259967/104448168de401b53156625abd6013b9.pdf"
+    },
+    {
+      "id": "water",
+      "name": "白湯のレシピを見る",
+      "www": "https://arena-attachments.s3.amazonaws.com/24259972/af2b39dac580ad375b8fe0ebcfbd2fef.pdf"
+    },
+    {
+      "id": "hoshizaki",
+      "name": "2018年10月9日<br>れんれんはホシザキの冷蔵庫を落札しました！",
+      "www": "hoshizaki/"
+    }
+  ]
+}
