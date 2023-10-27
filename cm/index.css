@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "MS Mincho";
+    src: url("https://pe-hu.github.io/ver/font/MSMincho.ttc");
+}
+
+@font-face {
+    font-family: "SimSong";
+    src: url("https://pe-hu.github.io/ver/font/SimSong.ttc");
+  }
+
+@font-face {
+    font-family: "Times New Roman";
+    src: url("https://pe-hu.github.io/ver/font/times.ttf");
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("https://pe-hu.github.io/ver/font/Arial.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+article {
+    font-size: 3.21vw;
+}
+
+@media screen and (max-width: 700px) {
+    #dialog {
+        font-size: 2.5vw;
+    }
+}
+
+body,
+h1,
+#dialog h2,
+#dialog button,
+nav h3 {
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    padding: 1rem;
+}
+
+h1,
+h2,
+#dialog section,
+article h3 a {
+    font-family: "MS Mincho", "SimSong", serif;
+    font-weight: 500;
+}
+
+#members,
+article h3 small {
+    font-family: "Arial", Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+h1,
+#members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+#dialog section p {
+    font-size: 125%;
+}
+
+#members button,
+article h3 small {
+    font-size: 111%;
+}
+
+article h2 {
+    font-size: 75%;
+}
+
+#members,
+nav {
+    margin-top: 1rem;
+}
+
+#members p {
+    width: 50%;
+}
+
+#members button {
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+a {
+    color: #000;
+}
+
+article h3 a {
+    text-decoration: none;
+}
+
+a:hover,
+#dialog button,
+#members button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#dialog button {
+    font-size: 300%;
+    position: fixed;
+    top: 0;
+    right: 0.5rem;
+}
+
+button {
+    appearance: none;
+    color: #000;
+    background: transparent;
+    font-family: inherit;
+    border: none;
+    outline: none;
+}

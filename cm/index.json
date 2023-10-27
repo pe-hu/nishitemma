@@ -1,0 +1,399 @@
+{
+  "members": [
+    {
+      "as": "Chief Executive Officer",
+      "list": [
+        {
+          "name": "Hiroki Kusakabe",
+          "note": [
+            {
+              "title": "",
+              "description": "最高経営責任者",
+              "url":""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "as": "Co-Founder",
+      "list": [
+        {
+          "name": "Kaori Nakao",
+          "note": [
+            {
+              "title": "共同設立者",
+              "description": "コミュニティスペース・喫茶の運営、経理などを担当",
+              "url":"https://vg.pe.hu/jp/"
+            },
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "企画・編集・制作に参加",
+              "url":"https://creative-community.space/value/book/"
+            },
+            {
+              "title": "This USB Card is The Digital Magazine",
+              "description": "編集・制作に参加",
+              "url":"https://vg.pe.hu/jp/dm/"
+            },
+            {
+              "title": "わかば",
+              "description": "数話のエッセイを随筆",
+              "url":"https://vg.pe.hu/jp/2019/essay/"
+            },
+            {
+              "title": "31 Questions for daily life",
+              "description": "質問の作成に参加",
+              "url":"https://vg.pe.hu/jp/2019/31q/"
+            },
+            {
+              "title": "かおちょに聞きたい50のこと",
+              "description": "",
+              "url":"50q.html"
+            }
+          ]
+        },
+        {
+          "name": "Kazuma Sasajima",
+          "note": [
+            {
+              "title": "共同設立者",
+              "description": "支配人、ギャラリー運営・イベント企画、ウェブマスター",
+              "url":"https://vg.pe.hu/jp/"
+            },
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "編集長として制作に参加",
+              "url":"https://creative-community.space/value/book/"
+            },
+            {
+              "title": "This USB Card is The Digital Magazine",
+              "description": "編集長として制作に参加",
+              "url":"https://vg.pe.hu/jp/dm/"
+            },
+            {
+              "title": "わかば",
+              "description": "編集長として制作に参加",
+              "url":"https://vg.pe.hu/jp/2019/essay/"
+            },
+            {
+              "title": "Think Note",
+              "description": "編集長として制作に参加",
+              "url":"https://vg.pe.hu/jp/2019/members/"
+            },
+            {
+              "title": "31 Questions for daily life",
+              "description": "編集長として制作に参加",
+              "url":"https://vg.pe.hu/jp/2019/31q/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "as": "Creative Directors",
+      "list": [
+        {
+          "name": "Kazutaka Tsutsui",
+          "note": [
+            {
+              "title": "TWS 1",
+              "description": "展覧会の企画に参加",
+              "url":"https://vg.pe.hu/2f/tws1.html"
+            },
+            {
+              "title": "31 Questions for daily life",
+              "description": "質問の作成に参加",
+              "url":"https://vg.pe.hu/jp/2019/31q/"
+            },
+            {
+              "title": "A+A- AA CC K2 X W",
+              "description": "BnA Alter Museumにて展覧会を企画",
+              "url":"https://the-answers-are-always-inside-of-you.github.io/"
+            },
+            {
+              "title": "TKに聞きたい50のこと",
+              "description": "",
+              "url":"50q.html"
+            }
+          ]
+        },
+        {
+          "name": "Shoji Funakawa",
+          "note": [
+            {
+              "title": "展覧会・音楽会",
+              "description": "展覧会・音楽会の企画、またアーティストとして音楽会・展覧会に参加",
+              "url":"https://vg.pe.hu/jp/"
+            },
+            {
+              "title": "籠本 真一 個展「 さくら 」",
+              "description": "展覧会を企画・開催",
+              "url":"https://vg.pe.hu/2f/sakura.html"
+            },
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "大切なもの「ように Wishes」を出展",
+              "url":"https://creative-community.space/value/book/"
+            },
+            {
+              "title": "ふなに聞きたい50のこと",
+              "description": "",
+              "url":"50q.html"
+            }
+          ]
+        },
+        {
+          "name": "Moire",
+          "note": [
+            {
+              "title": "MS 1",
+              "description": "展覧会の企画に参加",
+              "url":"https://vg.pe.hu/2f/ms1.html"
+            }
+          ]
+        },
+        {
+          "name": "Ray Washio",
+          "note": [
+            {
+              "title": "TWS 1",
+              "description": "展覧会の企画に参加",
+              "url":"https://vg.pe.hu/2f/tws1.html"
+            },
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "大切なもの「どうでもいい Whatever」を出展",
+              "url":"https://creative-community.space/value/book/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "as": "Creative Members",
+      "list": [
+        {
+          "name": "Hamaji",
+          "note": [
+            {
+              "title": "HF+S1",
+              "description": "展覧会の企画に参加",
+              "url":"https://vg.pe.hu/2f/hf1.html"
+            },
+            {
+              "title": "サウンドチェック",
+              "description": "音楽会を企画",
+              "url":"https://vg.pe.hu/jp/show/020219.html"
+            },
+            {
+              "title": "VAMPIRE✞HUNTER™ one man gig",
+              "description": "音楽会を企画",
+              "url":"https://vg.pe.hu/jp/show/022519.html"
+            },
+            {
+              "title": "食べたもの、他",
+              "description": "2018年11月26日 - 2019年6月15日の日記",
+              "url":"hamaji/"
+            }
+          ]
+        },
+        {
+          "name": "M Otsu",
+          "note": [
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "大切なもの数点を出展、きっかけを担当",
+              "url":"https://creative-community.space/value/book/"
+            },
+            {
+              "title": "わかば",
+              "description": "数話のエッセイを随筆",
+              "url":"https://vg.pe.hu/jp/2019/essay/"
+            }
+          ]
+        },
+        {
+          "name": "Masamichi Furukawa",
+          "note": [
+            {
+              "title": "pe hu talk",
+              "description": "2018年9月から2019年3月まで、トークイベントを主催",
+              "url": "fm/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "as": "Co-Store Owner",
+      "list": [
+        {
+          "name": "Ayumi Akutagawa",
+          "note": [
+            {
+              "title": "abi",
+              "description": "ショップの共同運営に参加",
+              "url": "https://vg.pe.hu/jp/shop/"
+            },
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "大切なもの数点を出展、デザインを担当",
+              "url":"https://creative-community.space/value/book/"
+            },
+            {
+              "title": "This USB Card is The Digital Magazine",
+              "description": "デザインを担当",
+              "url":"https://vg.pe.hu/jp/dm/"
+            },
+            {
+              "title": "わかば",
+              "description": "数話のエッセイを随筆、デザイン・翻訳を担当",
+              "url":"https://vg.pe.hu/jp/2019/essay/"
+            },
+            {
+              "title": "Think Note",
+              "description": "デザインを担当",
+              "url":"https://vg.pe.hu/jp/2019/members/"
+            },
+            {
+              "title": "31 Questions for daily life",
+              "description": "翻訳・質問の作成に参加",
+              "url":"https://vg.pe.hu/jp/2019/31q/"
+            },
+            {
+              "title": "あくちゃんに聞きたい50のこと",
+              "description": "",
+              "url":"50q.html"
+            }
+          ]
+        },
+        {
+          "name": "Keisuke Iiri",
+          "note": [
+            {
+              "title": "Pure Voryage",
+              "description": "ショップの共同運営に参加",
+              "url": "https://vg.pe.hu/jp/shop/"
+            },
+            {
+              "title": "This USB Card is The Digital Magazine",
+              "description": "ペフのテーマソングを制作",
+              "url":"https://vg.pe.hu/jp/dm/"
+            },
+            {
+              "title": "るに聞きたい50のこと",
+              "description": "",
+              "url":"50q.html"
+            }
+          ]
+        },
+        {
+          "name": "Renge Hamasaki",
+          "note": [
+            {
+              "title": "Pure Voryage",
+              "description": "ショップの共同運営に参加",
+              "url": "https://vg.pe.hu/jp/shop/"
+            },
+            {
+              "title": "喫茶料理長",
+              "description": "ペフ喫茶のレシピを制作",
+              "url":"renren/"
+            },
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "大切なもの数点を出展",
+              "url":"https://creative-community.space/value/book/"
+            },
+            {
+              "title": "れんれんに聞きたい50のこと",
+              "description": "",
+              "url":"50q.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "as": "Co-Cafe Owner",
+      "list": [
+        {
+          "name": "Ayami Konishi",
+          "note": [
+            {
+              "title": "喫茶共同オーナー",
+              "description": "喫茶・コミュニティスペースの共同運営に参加",
+              "url": "https://vg.pe.hu/jp/"
+            },
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "大切なもの数点を出展、編集・制作に参加",
+              "url":"https://creative-community.space/value/book/"
+            },
+            {
+              "title": "わかば",
+              "description": "数話のエッセイを随筆",
+              "url":"https://vg.pe.hu/jp/2019/essay/"
+            },
+            {
+              "title": "This USB Card is The Digital Magazine",
+              "description": "挿絵・イラスト・漫画を担当",
+              "url":"https://vg.pe.hu/jp/dm/"
+            },
+            {
+              "title": "31 Questions for daily life",
+              "description": "質問の作成に参加",
+              "url":"https://vg.pe.hu/jp/2019/31q/"
+            },
+            {
+              "title": "あっちに聞きたい50のこと",
+              "description": "",
+              "url":"50q.html"
+            }
+          ]
+        },
+        {
+          "name": "Haruka N",
+          "note": [
+            {
+              "title": "喫茶共同オーナー",
+              "description": "喫茶・コミュニティスペースの共同運営に参加",
+              "url": "https://vg.pe.hu/jp/"
+            },
+            {
+              "title": "tbpj",
+              "description": "ショップの共同運営に参加",
+              "url": "https://vg.pe.hu/jp/shop/"
+            },
+            {
+              "title": "大切にすることを大切にするための本",
+              "description": "大切なもの数点を出展、翻訳を担当",
+              "url":"https://creative-community.space/value/book/"
+            },
+            {
+              "title": "This USB Card is The Digital Magazine",
+              "description": "翻訳を担当",
+              "url":"https://vg.pe.hu/jp/dm/"
+            },
+            {
+              "title": "わかば",
+              "description": "翻訳を担当",
+              "url":"https://vg.pe.hu/jp/2019/essay/"
+            },
+            {
+              "title": "31 Questions for daily life",
+              "description": "翻訳・質問の作成に参加",
+              "url":"https://vg.pe.hu/jp/2019/31q/"
+            },
+            {
+              "title": "ぱるに聞きたい50のこと",
+              "description": "",
+              "url":"50q.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
