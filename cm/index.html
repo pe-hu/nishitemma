@@ -6,14 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <script src="index.js"></script>
+  <script>
+    async function fetchHTML(url = '', query = '') {
+      fetch(url)
+        .then(response => response.text())
+        .then(innerHTML => {
+          document.querySelector(query).innerHTML = innerHTML
+        });
+    }
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === 'complete') {
+        fetchHTML('../menu.html', '#menu');
+        fetchHTML('../floor.html', '#floor');
+      }
+    });
+  </script>
 
   <title>∧° ┐ | creative, community space</title>
   <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." name="description">
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="../menu.css">
+  <link rel="stylesheet" href="../floor.css">
+  <style>
+    #members button {
+        pointer-events: none;
+        user-select: none;
+        display: block;
+        text-align: left;
+        padding: 0;
+        margin: 0.5rem 0;
+    }
+    </style>
   <link rel="icon" href="https://vg.pe.hu/jp/icon.png" type="image/png">
 </head>
 
-<body>
+<body class="open">
+  <header id="menu"></header>
   <article>
     <h1>
       Alumni and Alumnae
@@ -21,13 +49,14 @@
     <h2>西天満のペフの運営に携わった人たち</h2>
     <section id="members"></section>
     <br>
-    <nav>
+    <aside>
       <h3>
         <small>We were</small><br>
         <a href="/jp/">creative, community space ∧°┐</a>
       </h3>
-    </nav>
+    </aside>
   </article>
+  <nav id="floor"></nav>
 
   <dialog id="dialog">
     <button type="button" onclick="closeDialog()">×</button>

@@ -36,7 +36,7 @@ body,
 h1,
 #dialog h2,
 #dialog button,
-nav h3 {
+aside h3 {
     padding: 0;
     margin: 0;
 }
@@ -83,7 +83,7 @@ article h2 {
 }
 
 #members,
-nav {
+aside {
     margin-top: 1rem;
 }
 

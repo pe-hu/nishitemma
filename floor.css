@@ -9,10 +9,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  font-style: oblique;
-}
-
 .floor {
   list-style-type: none;
   padding: 1rem;
